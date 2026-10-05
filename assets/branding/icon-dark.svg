@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Local LLM VRAM Atlas — repository icon (dark-surface variant)
+
+  Same geometry as icon.svg. Tuned for dark repository chrome: the plate is
+  lifted to near-black, stratum contrast is reduced so the lattice stays
+  legible, and the amber evidence marker is the only saturated accent.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128"
+     role="img" aria-labelledby="atlas-icon-dark-title atlas-icon-dark-desc">
+  <title id="atlas-icon-dark-title">Local LLM VRAM Atlas — dark variant</title>
+  <desc id="atlas-icon-dark-desc">A layered atlas plate resolving into a memory die across four VRAM tiers.</desc>
+
+  <defs>
+    <clipPath id="atlas-plate-clip-dark">
+      <path d="M18 16 H96 L110 30 V112 H18 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- plate substrate -->
+  <path d="M18 16 H96 L110 30 V112 H18 Z" fill="#05090E"/>
+
+  <g clip-path="url(#atlas-plate-clip-dark)">
+    <!-- stratum 4 GB -->
+    <rect x="18" y="20" width="92" height="18" fill="#2C5C88"/>
+    <!-- stratum 8 GB -->
+    <rect x="18" y="42" width="92" height="18" fill="#234A72"/>
+    <!-- stratum 12 GB -->
+    <rect x="18" y="64" width="92" height="18" fill="#1B3A5C"/>
+    <!-- stratum 16 GB -->
+    <rect x="18" y="86" width="92" height="18" fill="#142B46"/>
+
+    <!-- capacity aperture -->
+    <rect x="86" y="20" width="24" height="84" fill="#02050A" opacity="0.5"/>
+
+    <!-- architecture-aware memory bus -->
+    <rect x="30" y="20" width="4" height="84" fill="#A8CBE6"/>
+    <rect x="30" y="20" width="4" height="16" fill="#F0C070"/>
+
+    <!-- record lattice -->
+    <g fill="#E7F0F8">
+      <rect x="46" y="26" width="8" height="8"/>
+      <rect x="60" y="26" width="8" height="8" opacity="0.55"/>
+      <rect x="46" y="48" width="8" height="8"/>
+      <rect x="60" y="48" width="8" height="8"/>
+      <rect x="74" y="48" width="8" height="8" opacity="0.55"/>
+      <rect x="46" y="70" width="8" height="8" opacity="0.7"/>
+      <rect x="60" y="70" width="8" height="8"/>
+      <rect x="46" y="92" width="8" height="8" opacity="0.45"/>
+      <rect x="60" y="92" width="8" height="8" opacity="0.45"/>
+      <rect x="74" y="92" width="8" height="8" opacity="0.45"/>
+    </g>
+
+    <!-- evidence markers -->
+    <g fill="#F0C070">
+      <rect x="46" y="70" width="8" height="2"/>
+      <rect x="46" y="92" width="8" height="2"/>
+    </g>
+  </g>
+
+  <!-- plate edge -->
+  <path d="M18 16 H96 L110 30 V112 H18 Z" fill="none" stroke="#9FC3DE" stroke-width="2"
+        stroke-linejoin="round"/>
+
+  <!-- tier ticks -->
+  <g stroke="#A8CBE6" stroke-width="2" stroke-linecap="round">
+    <path d="M104 29 H110"/>
+    <path d="M104 51 H110"/>
+    <path d="M104 73 H110"/>
+    <path d="M104 95 H110"/>
+  </g>
+</svg>

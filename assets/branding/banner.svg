@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Local LLM VRAM Atlas — repository banner (README header / social preview source)
+
+  Canvas 1280 x 360, 16:4.5. Renders at any width; all text uses a generic
+  system font stack so no webfont fetch is required.
+
+  Latin script only, by design: SVG embedded through an <img> element is
+  rasterised by the host, and Arabic shaping is not guaranteed across
+  renderers. The Arabic wordmark is therefore set as styled text in the
+  README itself. See assets/branding/brand-guidelines.md.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360"
+     role="img" aria-labelledby="atlas-banner-title atlas-banner-desc">
+  <title id="atlas-banner-title">Local LLM VRAM Atlas</title>
+  <desc id="atlas-banner-desc">Banner showing the Atlas mark, the project wordmark, the tagline
+  "Evidence-aware atlas for local LLMs across VRAM tiers", and the four VRAM tiers 4, 8, 12 and 16 GB.</desc>
+
+  <defs>
+    <pattern id="atlas-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0 H0 V32" fill="none" stroke="#16202C" stroke-width="1"/>
+    </pattern>
+    <clipPath id="atlas-banner-plate-clip">
+      <path d="M86 96 H164 L178 110 V192 H86 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- surface -->
+  <rect width="1280" height="360" fill="#0B1119"/>
+  <rect width="1280" height="360" fill="url(#atlas-grid)" opacity="0.7"/>
+
+  <!-- mark -->
+  <g transform="translate(0,0)">
+    <g transform="translate(40,66) scale(1.375)">
+      <path d="M18 16 H96 L110 30 V112 H18 Z" fill="#05090E"/>
+      <g clip-path="url(#atlas-banner-plate-clip)">
+        <rect x="18" y="20" width="92" height="18" fill="#2C5C88"/>
+        <rect x="18" y="42" width="92" height="18" fill="#234A72"/>
+        <rect x="18" y="64" width="92" height="18" fill="#1B3A5C"/>
+        <rect x="18" y="86" width="92" height="18" fill="#142B46"/>
+        <rect x="86" y="20" width="24" height="84" fill="#02050A" opacity="0.5"/>
+        <rect x="30" y="20" width="4" height="84" fill="#A8CBE6"/>
+        <rect x="30" y="20" width="4" height="16" fill="#F0C070"/>
+        <g fill="#E7F0F8">
+          <rect x="46" y="26" width="8" height="8"/>
+          <rect x="60" y="26" width="8" height="8" opacity="0.55"/>
+          <rect x="46" y="48" width="8" height="8"/>
+          <rect x="60" y="48" width="8" height="8"/>
+          <rect x="74" y="48" width="8" height="8" opacity="0.55"/>
+          <rect x="46" y="70" width="8" height="8" opacity="0.7"/>
+          <rect x="60" y="70" width="8" height="8"/>
+          <rect x="46" y="92" width="8" height="8" opacity="0.45"/>
+          <rect x="60" y="92" width="8" height="8" opacity="0.45"/>
+          <rect x="74" y="92" width="8" height="8" opacity="0.45"/>
+        </g>
+        <g fill="#F0C070">
+          <rect x="46" y="70" width="8" height="2"/>
+          <rect x="46" y="92" width="8" height="2"/>
+        </g>
+      </g>
+      <path d="M18 16 H96 L110 30 V112 H18 Z" fill="none" stroke="#9FC3DE" stroke-width="2"
+            stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- wordmark -->
+  <g font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif">
+    <text x="240" y="132" fill="#F2F7FC" font-size="46" font-weight="600" letter-spacing="3">
+      LOCAL LLM VRAM ATLAS
+    </text>
+    <text x="240" y="172" fill="#9FC3DE" font-size="21" letter-spacing="0.4">
+      Evidence-aware atlas for local LLMs across VRAM tiers
+    </text>
+    <text x="240" y="206" fill="#6E8AA3" font-size="16" letter-spacing="0.3">
+      Canonical records &#183; quantization intelligence &#183; architecture-aware memory analysis
+      &#183; quality evidence
+    </text>
+    <text x="240" y="232" fill="#6E8AA3" font-size="16" letter-spacing="0.3">
+      Recommendation readiness &#8212; reported honestly, including where evidence is insufficient
+    </text>
+  </g>
+
+  <!-- tier band -->
+  <g font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif">
+    <rect x="240" y="264" width="200" height="6" fill="#2C5C88"/>
+    <rect x="446" y="264" width="200" height="6" fill="#234A72"/>
+    <rect x="652" y="264" width="200" height="6" fill="#1B3A5C"/>
+    <rect x="858" y="264" width="182" height="6" fill="#142B46"/>
+    <g fill="#A8CBE6" font-size="14" letter-spacing="1.2">
+      <text x="240" y="294">4 GB</text>
+      <text x="446" y="294">8 GB</text>
+      <text x="652" y="294">12 GB</text>
+      <text x="858" y="294">16 GB</text>
+    </g>
+    <g fill="#5F7A93" font-size="13" letter-spacing="0.3">
+      <text x="240" y="316">VRAM tiers under analysis</text>
+    </g>
+  </g>
+
+  <!-- footer -->
+  <g font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif">
+    <text x="1044" y="316" fill="#5F7A93" font-size="13" text-anchor="end" letter-spacing="0.3">
+      Apache-2.0 &#183; metadata-only catalog &#183; no model weights
+    </text>
+  </g>
+</svg>

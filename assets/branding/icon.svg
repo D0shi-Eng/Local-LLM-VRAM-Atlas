@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Local LLM VRAM Atlas — repository icon (light-surface variant)
+
+  Concept: a stratified atlas plate resolving into a memory die.
+  Four horizontal strata = the four VRAM tiers (4 / 8 / 12 / 16 GB).
+  The upper stratum is densest (4 GB, most constrained).
+  The notched aperture on the right edge = the VRAM capacity boundary.
+  The vertical bus = the architecture-aware memory model that links strata.
+  Node lattice = canonical model records held in the catalog.
+
+  Grid: 128 x 128 viewBox, all geometry on a 4 px sub-grid.
+  Legible at 32 px. No third-party marks. No gradients.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128"
+     role="img" aria-labelledby="atlas-icon-title atlas-icon-desc">
+  <title id="atlas-icon-title">Local LLM VRAM Atlas</title>
+  <desc id="atlas-icon-desc">A layered atlas plate resolving into a memory die across four VRAM tiers.</desc>
+
+  <defs>
+    <clipPath id="atlas-plate-clip">
+      <path d="M18 16 H96 L110 30 V112 H18 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- plate substrate -->
+  <path d="M18 16 H96 L110 30 V112 H18 Z" fill="#0F1620"/>
+
+  <g clip-path="url(#atlas-plate-clip)">
+    <!-- stratum 4 GB — densest, most constrained -->
+    <rect x="18" y="20" width="92" height="18" fill="#3E7CB1"/>
+    <!-- stratum 8 GB -->
+    <rect x="18" y="42" width="92" height="18" fill="#2F5F8F"/>
+    <!-- stratum 12 GB -->
+    <rect x="18" y="64" width="92" height="18" fill="#24486E"/>
+    <!-- stratum 16 GB -->
+    <rect x="18" y="86" width="92" height="18" fill="#1B3552"/>
+
+    <!-- capacity aperture: capacity boundary on the leading edge -->
+    <rect x="86" y="20" width="24" height="84" fill="#0B1017" opacity="0.55"/>
+
+    <!-- architecture-aware memory bus -->
+    <rect x="30" y="20" width="4" height="84" fill="#8FB8D8"/>
+    <rect x="30" y="20" width="4" height="16" fill="#E8B45A"/>
+
+    <!-- record lattice: canonical model records -->
+    <g fill="#DCE7F1">
+      <rect x="46" y="26" width="8" height="8"/>
+      <rect x="60" y="26" width="8" height="8" opacity="0.55"/>
+      <rect x="46" y="48" width="8" height="8"/>
+      <rect x="60" y="48" width="8" height="8"/>
+      <rect x="74" y="48" width="8" height="8" opacity="0.55"/>
+      <rect x="46" y="70" width="8" height="8" opacity="0.7"/>
+      <rect x="60" y="70" width="8" height="8"/>
+      <rect x="46" y="92" width="8" height="8" opacity="0.45"/>
+      <rect x="60" y="92" width="8" height="8" opacity="0.45"/>
+      <rect x="74" y="92" width="8" height="8" opacity="0.45"/>
+    </g>
+
+    <!-- evidence markers: only the strata carrying strong evidence are marked -->
+    <g fill="#E8B45A">
+      <rect x="46" y="70" width="8" height="2"/>
+      <rect x="46" y="92" width="8" height="2"/>
+    </g>
+  </g>
+
+  <!-- plate edge -->
+  <path d="M18 16 H96 L110 30 V112 H18 Z" fill="none" stroke="#7FA8C9" stroke-width="2"
+        stroke-linejoin="round"/>
+
+  <!-- tier ticks: four capacity marks on the aperture edge -->
+  <g stroke="#8FB8D8" stroke-width="2" stroke-linecap="round">
+    <path d="M104 29 H110"/>
+    <path d="M104 51 H110"/>
+    <path d="M104 73 H110"/>
+    <path d="M104 95 H110"/>
+  </g>
+</svg>
