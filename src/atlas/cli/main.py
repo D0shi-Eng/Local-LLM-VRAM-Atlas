@@ -1630,8 +1630,9 @@ def _run_discover(args: argparse.Namespace) -> int:
             trimmed.append(item)
         queries = trimmed
     if getattr(args, "apply", False):
-        print("discover apply: live discovery is performed only by the Phase 4")
-        print("population run with explicit budgets (see docs/phases/phase-04/).")
+        print("discover apply: live discovery is performed only by an explicit")
+        print("population run with declared budgets (see docs/en/methodology/")
+        print("catalog-population.md).")
         print("This inspection command never writes catalog state.")
         return 0
     if getattr(args, "json", False):

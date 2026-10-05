@@ -1,8 +1,8 @@
-"""Bounded deterministic evidence identifiers (Phase 5, V2).
+"""Bounded deterministic evidence identifiers (V2).
 
 Legacy defect: ``f"{model_id}-ev-{slug}"`` concatenates an unbounded model
 name with a field slug, so long repositories overflow the 121-char
-``evidence_id`` pattern (see ``docs/phases/phase-05/evidence-id-audit.md``).
+``evidence_id`` pattern declared in ``schemas/evidence.schema.json``.
 
 V2 fixes this with a cryptographic digest over stable semantic inputs only:
 
