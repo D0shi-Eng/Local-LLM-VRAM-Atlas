@@ -1,0 +1,23 @@
+{
+  "absolute_delta": null,
+  "base_release": "ifm-k2-horizon-7b-gguf",
+  "base_score": null,
+  "benchmark_id": "unresolved",
+  "benchmark_version": null,
+  "evaluation_settings_match": false,
+  "evidence_ids": [],
+  "evidence_quality": "unknown",
+  "metric": null,
+  "metric_direction": null,
+  "notes": "no evaluation evidence for either release; No exact base-release evaluation is available for this artifact, so retention stays unknown rather than inherited.",
+  "publisher_claim": null,
+  "quant_score": null,
+  "quantization": "BF16",
+  "quantized_artifact": "ifm-k2-horizon-7b-gguf",
+  "relative_delta": null,
+  "retention_id": "ret-v1-0f695bc86031431c2f0fba4eea17276b2b25511b6b89f8a2fa08ae8c28a73b1b",
+  "retention_status": "unknown",
+  "schema_version": "0.6.0",
+  "source": null,
+  "verification_status": null
+}

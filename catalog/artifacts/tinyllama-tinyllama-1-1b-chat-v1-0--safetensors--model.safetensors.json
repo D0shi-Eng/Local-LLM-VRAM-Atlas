@@ -1,0 +1,31 @@
+{
+  "artifact_set_id": "tinyllama-tinyllama-1-1b-chat-v1-0--safetensors--model.safetensors",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "config",
+    "docs",
+    "metadata",
+    "other",
+    "tokenizer"
+  ],
+  "files": [
+    {
+      "extension": ".safetensors",
+      "filename": "model.safetensors",
+      "path": "model.safetensors",
+      "source_reported_size_bytes": 2200119864
+    }
+  ],
+  "format": "safetensors",
+  "kind": "single",
+  "model_id": "tinyllama-tinyllama-1-1b-chat-v1-0",
+  "primary_weight_bytes": 2200119864,
+  "revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+  "schema_version": "0.2.0",
+  "shard_count": 1,
+  "shard_total": null,
+  "shards_complete": null,
+  "total_source_reported_bytes": 2200119864,
+  "variant": null,
+  "verification_status": "source_reported"
+}

@@ -1,0 +1,50 @@
+{
+  "architecture_family": "llama",
+  "architecture_inputs": {
+    "head_dim": 64,
+    "layer_plan_heterogeneous": null,
+    "layer_plan_used": false,
+    "num_key_value_heads": 4,
+    "num_layers": 22,
+    "sliding_window": null
+  },
+  "artifact_set_id": "tinyllama-tinyllama-1-1b-chat-v1-0--safetensors--model.safetensors",
+  "assumptions": [
+    "advertised_max=2048 < calculation_context=8192; context is never raised synthetically"
+  ],
+  "attention_regime": "unknown",
+  "by_tier": {
+    "12": "insufficient_evidence",
+    "16": "insufficient_evidence",
+    "4": "insufficient_evidence",
+    "8": "insufficient_evidence"
+  },
+  "calculation_context_tokens": 8192,
+  "calculation_profile_id": "atlas-text-8k-baseline-v1",
+  "candidate_id": "core-4g-06-tinyllama-1-1b",
+  "device_weight_bytes": null,
+  "estimate_status": "insufficient_evidence",
+  "evidence_basis": "model advertises less context than the calculation profile targets",
+  "formula_refs": [],
+  "kv_or_state_cache_bytes": null,
+  "lower_bytes": null,
+  "multimodal_note": null,
+  "multimodal_wrapper": false,
+  "note": "Artifact byte size supplies the weight component only. The KV/cache component comes from current architecture inputs and the Atlas baseline profile. A fit verdict still requires a reliable upper bound.",
+  "runtime_overhead_state": "absent: no runtime memory profile carries documented overhead, so the reliable upper bound required for an estimated fit does not exist",
+  "schema_version": "0.1.0",
+  "tier_reasons": {
+    "12": "no trustworthy lower bound; unknown overhead blocks the decision",
+    "16": "no trustworthy lower bound; unknown overhead blocks the decision",
+    "4": "no trustworthy lower bound; unknown overhead blocks the decision",
+    "8": "no trustworthy lower bound; unknown overhead blocks the decision"
+  },
+  "unknown_components": [
+    "kv_or_state_cache_bytes"
+  ],
+  "unsupported_components": [],
+  "upper_bytes": null,
+  "warnings": [
+    "calculation refused at this profile; use a smaller context profile"
+  ]
+}

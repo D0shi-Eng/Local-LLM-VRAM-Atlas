@@ -1,0 +1,218 @@
+{
+  "kv_documented": {
+    "architecture_note": "The 27B is a hybrid-attention backbone (~75% linear / ~25% full attention); the publisher states the hybrid attention already keeps the cache small. A per-token KV rate is therefore not the standard full-attention KV equation and is not interchangeable with it.",
+    "backend": "CUDA",
+    "context_tokens_in_example": 100000,
+    "flash_attention_required_for_quantized_kv": true,
+    "kv_dtype_alternative": "q4_0",
+    "kv_dtype_baseline": "fp16",
+    "kv_fp16_bytes_at_example_context": 6764573491,
+    "kv_fp16_bytes_per_token": 65536,
+    "kv_q4_0_bytes_at_example_context": 1932735283,
+    "kv_q4_0_bytes_per_token": 18432,
+    "kv_reduction_factor_claim": "roughly 3.5x",
+    "runtime": "llama.cpp (PrismML-Eng fork)",
+    "source_statement": "BONSAI_KV4=1 stores the KV cache in Q4_0 (4-bit) instead of FP16, cutting KV memory roughly 3.5x: from 64 KiB per token to about 18 KiB per token on the 27B, so a 100K-token context needs about 1.8 GiB instead of 6.3 GiB."
+  },
+  "llamacpp_overhead_finding": {
+    "answer": "no_published_bound",
+    "consequence": "A universal llama.cpp overhead constant would be a fabrication. Atlas keeps known_static_overhead_bytes and known_dynamic_overhead_bytes absent, so the estimateupper bound stays absent and the tier verdict stays insufficient_evidence rather than aguessed fit.",
+    "evidence": "llama.cpp's own build documentation shows the backend reporting its device allocations at runtime, for one specific backend and model: 'llm_load_tensors: CANN model buffer size = 13313.00 MiB' and 'llama_new_context_with_model: CANN compute buffer size = 1260.81 MiB'. The compute buffer is therefore a backend-specific, model-specific, runtime-reportedvalue. The documentation states no bound, no maximum and no constant for it, and the backend directory documentation contains no CUDA memory-budget page.",
+    "question": "Does llama.cpp publish a static and dynamic GPU-memory overhead figure that Atlas could use as a documented upper bound for a weight+KV estimate?",
+    "scope_limits": [
+      "The quoted figure is the CANN backend, not CUDA; it is recorded as evidence that the quantity exists and is runtime-reported, never as a CUDA overhead value.",
+      "No GPU was used by Atlas and no CUDA context was created at any point."
+    ]
+  },
+  "note": "Machine-readable conditions behind the evidence sidecars. evidence.schema.json is closed, so the structured detail lives here instead of inside a sidecar, and each sidecar's notes carry the same figures in prose.",
+  "observed_at": "2026-10-05T00:00:00Z",
+  "os_local_validation": {
+    "functional_checks_passed": {
+      "PQ2_0": "16/16",
+      "PTQ1_0": "16/16"
+    },
+    "harmless_alpaca_ja_perplexity": {
+      "PQ2_0": 16.7833,
+      "PTQ1_0": 16.7744
+    },
+    "harness": "publisher local validation; perplexity measured with a 512-token context over 4,080 English and 3,570 Japanese scored tokens; functional checks covered arithmetic, JSON, translation and reading comprehension",
+    "kl_divergence_vs_original": 0.0135,
+    "refusals": {
+      "original": "95/100",
+      "variant": "0/100"
+    },
+    "self_disclosure": "These are small local tests, not a comprehensive benchmark.",
+    "wikitext2_perplexity": {
+      "PQ2_0": 10.146,
+      "PTQ1_0": 10.1435
+    }
+  },
+  "prism_harness": {
+    "conditions": "identical infrastructure, decoding and scoring",
+    "evaluation_suite": "EvalScope",
+    "hardware": "NVIDIA H100",
+    "reasoning_mode": "thinking",
+    "serving_stack": "vLLM",
+    "variants": {
+      "Bonsai 2 27B": {
+        "footprint": "5.95 GB",
+        "thinking_avg": 84.78,
+        "true_bpw": 1.72
+      },
+      "Qwen3.8-27B FP16": {
+        "footprint": "54 GB",
+        "thinking_avg": 86.32,
+        "true_bpw": 16.0
+      },
+      "Qwen3.8-27B IQ2_XXS": {
+        "footprint": "7.27 GB",
+        "thinking_avg": 72.59,
+        "true_bpw": 2.16
+      },
+      "Qwen3.8-27B UD-Q4_K_XL": {
+        "footprint": "17.6 GB",
+        "thinking_avg": 85.18,
+        "true_bpw": 5.2
+      }
+    }
+  },
+  "prism_packings": [
+    {
+      "declared_filestem": "Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+      "description": "dense trits",
+      "publisher_label": "PTQ1_0",
+      "publisher_stated_size": "5.95 GB",
+      "true_bits_per_weight": 1.75
+    },
+    {
+      "declared_filestem": "Ternary-Bonsai-2-27B-PQ2_0.gguf",
+      "description": "each trit in a 2-bit slot",
+      "publisher_label": "PQ2_0",
+      "publisher_stated_size": "7.21 GB",
+      "true_bits_per_weight": 2.13
+    }
+  ],
+  "prism_per_benchmark": [
+    {
+      "benchmark_id": "mmlu-redux",
+      "benchmark_name": "MMLU-Redux",
+      "bonsai_2_27b": 89.09,
+      "fp16": 91.46,
+      "iq2_xxs": 88.93,
+      "ud_q4_k_xl": 93.35
+    },
+    {
+      "benchmark_id": "musr",
+      "benchmark_name": "MuSR",
+      "bonsai_2_27b": 70.63,
+      "fp16": 79.63,
+      "iq2_xxs": 66.99,
+      "ud_q4_k_xl": 73.01
+    },
+    {
+      "benchmark_id": "gsm8k",
+      "benchmark_name": "GSM8K",
+      "bonsai_2_27b": 96.66,
+      "fp16": 97.19,
+      "iq2_xxs": 89.9,
+      "ud_q4_k_xl": 96.66
+    },
+    {
+      "benchmark_id": "math-500",
+      "benchmark_name": "MATH-500",
+      "bonsai_2_27b": 98.8,
+      "fp16": 99.8,
+      "iq2_xxs": 84.6,
+      "ud_q4_k_xl": 99.4
+    },
+    {
+      "benchmark_id": "aime25",
+      "benchmark_name": "AIME25",
+      "bonsai_2_27b": 95.0,
+      "fp16": 96.67,
+      "iq2_xxs": 66.67,
+      "ud_q4_k_xl": 92.91
+    },
+    {
+      "benchmark_id": "aime26",
+      "benchmark_name": "AIME26",
+      "bonsai_2_27b": 95.83,
+      "fp16": 94.58,
+      "iq2_xxs": 57.5,
+      "ud_q4_k_xl": 93.0
+    },
+    {
+      "benchmark_id": "humaneval-plus",
+      "benchmark_name": "HumanEval+",
+      "bonsai_2_27b": 95.12,
+      "fp16": 93.29,
+      "iq2_xxs": 91.46,
+      "ud_q4_k_xl": 95.73
+    },
+    {
+      "benchmark_id": "mbpp-plus",
+      "benchmark_name": "MBPP+",
+      "bonsai_2_27b": 83.07,
+      "fp16": 83.86,
+      "iq2_xxs": 78.89,
+      "ud_q4_k_xl": 83.86
+    },
+    {
+      "benchmark_id": "livecodebench",
+      "benchmark_name": "LiveCodeBench",
+      "bonsai_2_27b": 90.07,
+      "fp16": 90.05,
+      "iq2_xxs": 56.4,
+      "ud_q4_k_xl": 87.96
+    },
+    {
+      "benchmark_id": "ifeval",
+      "benchmark_name": "IFEval",
+      "bonsai_2_27b": 91.31,
+      "fp16": 91.5,
+      "iq2_xxs": 84.03,
+      "ud_q4_k_xl": 88.83
+    },
+    {
+      "benchmark_id": "ifbench-prompt-loose",
+      "benchmark_name": "IFBench (prompt-loose)",
+      "bonsai_2_27b": 74.0,
+      "fp16": 71.0,
+      "iq2_xxs": 53.76,
+      "ud_q4_k_xl": 65.65
+    },
+    {
+      "benchmark_id": "bfcl-v3",
+      "benchmark_name": "BFCL v3",
+      "bonsai_2_27b": 74.92,
+      "fp16": 76.74,
+      "iq2_xxs": 70.28,
+      "ud_q4_k_xl": 75.05
+    },
+    {
+      "benchmark_id": "mmmu-pro",
+      "benchmark_name": "MMMU-Pro",
+      "bonsai_2_27b": 75.49,
+      "fp16": 81.73,
+      "iq2_xxs": 65.19,
+      "ud_q4_k_xl": 81.73
+    },
+    {
+      "benchmark_id": "ocr-bench-v2",
+      "benchmark_name": "OCR Bench v2",
+      "bonsai_2_27b": 56.88,
+      "fp16": 60.99,
+      "iq2_xxs": 61.7,
+      "ud_q4_k_xl": 65.45
+    }
+  ],
+  "prism_quality_source_class": "Q4",
+  "prism_runtime_statement": "Stock llama.cpp will not run these files. It rejects PQ2_0 and PTQ1_0 as unknown types, and it loads Q2_0 without any warning and produces garbage, because it has no Hadamard activation runtime. A binary from the PrismML-Eng/llama.cpp fork is required.",
+  "prism_variant_columns": {
+    "Bonsai 2 27B": "ternary_g128_PTQ1_0",
+    "Qwen3.8-27B FP16": "fp16",
+    "Qwen3.8-27B IQ2_XXS": "IQ2_XXS",
+    "Qwen3.8-27B UD-Q4_K_XL": "UD-Q4_K_XL"
+  },
+  "schema_version": "0.1.0"
+}

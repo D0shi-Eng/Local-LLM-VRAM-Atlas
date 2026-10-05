@@ -1,0 +1,94 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "unknown",
+    "base_model": "Qwen/Qwen3-0.6B-Base",
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "variant_author": "Qwen",
+    "variant_source": "https://huggingface.co/Qwen/Qwen3-0.6B",
+    "verification_status": "unknown"
+  },
+  "architecture": "Qwen3ForCausalLM",
+  "architecture_type": "unknown",
+  "base_models": [
+    "Qwen/Qwen3-0.6B-Base"
+  ],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "Qwen",
+  "display_name": "Qwen/Qwen3-0.6B",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "apache-2.0",
+    "license_name": null,
+    "license_notes": "raw_license_value='apache-2.0'; spdx=True",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "qwen-qwen3-0-6b",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "open_weights_permissive",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:05.136711Z",
+    "downloads": 30037022,
+    "likes": 1732,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 1503300328,
+    "file_size_gib": 1.4,
+    "format": "safetensors",
+    "native_quantization": null,
+    "quant_family": "unknown",
+    "quant_name": null,
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "split_files": false
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "qwen-qwen3-0-6b",
+  "total_parameters_b": 0.751632384,
+  "verification": {
+    "evidence_ids": [
+      "qwen-qwen3-0-6b-ev-license-license-id",
+      "qwen-qwen3-0-6b-ev-openness",
+      "qwen-qwen3-0-6b-ev-base-models",
+      "qwen-qwen3-0-6b-ev-architecture",
+      "qwen-qwen3-0-6b-ev-total-parameters-b",
+      "qwen-qwen3-0-6b-ev-context-length-advertised-max",
+      "qwen-qwen3-0-6b-ev-quantization-quant-name",
+      "qwen-qwen3-0-6b-ev-popularity",
+      "qwen-qwen3-0-6b-ev-resolved-revision",
+      "ev-v2-9b21dc1db3e56a84e071381d36c2d98358d8a8021c4708b8f9b5731865ae256e",
+      "ev-v2-ab90866732a8c3763db0db368cc5c3d79d345b1965716a4021744492cf8675f8"
+    ],
+    "status": "publisher_claim"
+  }
+}

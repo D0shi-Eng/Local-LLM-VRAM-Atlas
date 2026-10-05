@@ -1,0 +1,30 @@
+{
+  "artifact_set_id": "google-gemma-4-12b--safetensors--model.safetensors",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "config",
+    "docs",
+    "metadata",
+    "tokenizer"
+  ],
+  "files": [
+    {
+      "extension": ".safetensors",
+      "filename": "model.safetensors",
+      "path": "model.safetensors",
+      "source_reported_size_bytes": 23919549408
+    }
+  ],
+  "format": "safetensors",
+  "kind": "single",
+  "model_id": "google-gemma-4-12b",
+  "primary_weight_bytes": 23919549408,
+  "revision": "023679ed352de9bb66cc873c9009ce3482585c08",
+  "schema_version": "0.2.0",
+  "shard_count": 1,
+  "shard_total": null,
+  "shards_complete": null,
+  "total_source_reported_bytes": 23919549408,
+  "variant": null,
+  "verification_status": "source_reported"
+}

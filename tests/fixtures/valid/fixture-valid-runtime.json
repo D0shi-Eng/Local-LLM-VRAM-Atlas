@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.1.0",
+  "runtime": "FixtureRuntime (synthetic)",
+  "runtime_version": "0.0.0-fixture",
+  "backend": "CPU",
+  "platform": "Windows",
+  "device_family": null,
+  "support_status": "reported",
+  "support_source": "https://example.com/forum/fixture-runtime-report",
+  "requires_custom_fork": false,
+  "fork_url": null,
+  "fork_revision": null,
+  "known_limitations": ["Synthetic fixture: no real limitations."],
+  "tested": false,
+  "tested_at": null
+}

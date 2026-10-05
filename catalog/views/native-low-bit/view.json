@@ -1,0 +1,38 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "alignment": {
+        "alignment_variant": "unknown",
+        "base_model": null,
+        "capability_retention_evidence": null,
+        "method_documented": null,
+        "refusal_evaluation": null,
+        "uncensored_claimed": null,
+        "uncensoring_method": null,
+        "variant_author": "microsoft",
+        "variant_source": "https://huggingface.co/microsoft/bitnet-b1.58-2B-4T",
+        "verification_status": "unknown"
+      },
+      "display_name": "microsoft/bitnet-b1.58-2B-4T",
+      "model_id": "microsoft-bitnet-b1-58-2b-4t",
+      "quantization": {
+        "bits_per_weight": null,
+        "checksum": null,
+        "compression_category": null,
+        "file_size_bytes": 1178623988,
+        "file_size_gib": 1.098,
+        "format": "safetensors",
+        "native_quantization": null,
+        "quant_family": "unknown",
+        "quant_name": null,
+        "quantizer": null,
+        "quantizer_repo": null,
+        "source_revision": "04c3b9ad9361b824064a1f25ea60a8be9599b127",
+        "split_files": false
+      }
+    }
+  ],
+  "note": "Native low-bit requires training-architecture evidence.",
+  "view_id": "native-low-bit"
+}

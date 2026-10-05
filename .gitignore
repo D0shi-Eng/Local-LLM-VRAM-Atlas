@@ -1,0 +1,106 @@
+# ---------------------------------------------------------------------------
+# Local LLM VRAM Atlas — repository hygiene
+#
+# Goal: a checkout of this repository is reproducible from source and the
+# canonical catalog alone. Nothing below is required to read, validate, or
+# regenerate the published dataset.
+# ---------------------------------------------------------------------------
+
+# Python build / install artefacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tox/
+.nox/
+
+# Test and coverage output
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.pytest-cache/
+
+# Editor / OS noise
+.idea/
+.vscode/
+*.swp
+*~
+Thumbs.db
+desktop.ini
+.DS_Store
+$RECYCLE.BIN/
+
+# Local credentials and environment — must never enter version control
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+credentials.json
+secrets.json
+token.json
+tokens.json
+
+# Local model weights and inference artefacts — Atlas is metadata-only and
+# must never carry weights or VRAM dumps.
+*.gguf
+*.ggml
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.npz
+*.npy
+*.gguf-split*
+
+# Local measurement output (machine-specific; recorded through the Atlas
+# evidence pipeline instead of being committed ad hoc).
+measurements-local/
+*.vram-report.json
+nvidia-smi-*.txt
+
+# ---------------------------------------------------------------------------
+# Machine-local operational manifests.
+#
+# Both carry owner-machine data: an absolute local path and a process/port
+# observation. Neither is required to read, validate or regenerate the dataset.
+# ---------------------------------------------------------------------------
+catalog/release-candidate-data-manifest.json
+catalog/closure/external/bonsai-existing-server.json
+
+# ---------------------------------------------------------------------------
+# Internal engineering history.
+#
+# Build-phase reports, closure reports, audits, handoff inventories and
+# publication-planning notes stay local. Only the curated public surface is
+# version-controlled.
+# ---------------------------------------------------------------------------
+docs/phases/
+
+# ---------------------------------------------------------------------------
+# Volatile refresh state.
+#
+# Canonical catalog data under catalog/ IS version-controlled. The refresh
+# run records, discovery checkpoints and the operational change journal are
+# transient run state and are regenerated on demand.
+# ---------------------------------------------------------------------------
+catalog/refresh/
+catalog/checkpoints/
+catalog/changes/

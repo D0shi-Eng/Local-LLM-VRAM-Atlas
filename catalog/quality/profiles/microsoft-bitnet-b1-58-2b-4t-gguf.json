@@ -1,0 +1,65 @@
+{
+  "axes": {
+    "agentic_tool_use": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "arabic": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "coding": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "general_intelligence": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "instruction_following": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "knowledge": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "long_context": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "multilingual": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "multimodal": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "non_hallucination": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "professional_tasks": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "reasoning": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "safety_refusal_behavior": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    }
+  },
+  "evidence_status": "unknown",
+  "high_quality_candidate": false,
+  "high_quality_rationale": "no exact-match evaluation evidence",
+  "model_id": "microsoft-bitnet-b1-58-2b-4t-gguf",
+  "policy_id": "atlas-quality-policy",
+  "policy_version": "0.6.0",
+  "profile_id": "qp-v1-6c4eef263075e0fa9da9e3507e229c2c4566aab420fac93af5aeb29a1aa76919",
+  "quality_snapshot_version": "0.6.0",
+  "schema_version": "0.6.0"
+}

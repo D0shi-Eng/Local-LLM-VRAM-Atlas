@@ -1,0 +1,14 @@
+{
+  "claim_type": "architecture_property",
+  "evidence_id": "ev-v2-0569495b7023482b0ee113d371b43231b5d956f464e94668cd4014c827fd51dc",
+  "evidence_level": "publisher_claim",
+  "field_path": "architecture",
+  "notes": "Current architecture inputs read anonymously from the publisher's configuration source (declared_base_model_config); repo=Qwen/Qwen3-8B-Base; revision=49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+  "publisher": "Qwen",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-4g-05-qwen3-8b-q2k-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/Qwen/Qwen3-8B-Base",
+  "verification_status": "independently_verified"
+}

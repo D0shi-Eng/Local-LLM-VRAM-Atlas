@@ -1,0 +1,23 @@
+{
+  "absolute_delta": null,
+  "base_release": "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf",
+  "base_score": null,
+  "benchmark_id": "unresolved",
+  "benchmark_version": null,
+  "evaluation_settings_match": false,
+  "evidence_ids": [],
+  "evidence_quality": "unknown",
+  "metric": null,
+  "metric_direction": null,
+  "notes": "no evaluation evidence for either release; No exact base-release evaluation is available for this artifact, so retention stays unknown rather than inherited.",
+  "publisher_claim": null,
+  "quant_score": null,
+  "quantization": "Q2",
+  "quantized_artifact": "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf",
+  "relative_delta": null,
+  "retention_id": "ret-v1-9a24f80118ac67b9a7a4b36766143a3693d0236ee871a19b78919669c0b5ab29",
+  "retention_status": "unknown",
+  "schema_version": "0.6.0",
+  "source": null,
+  "verification_status": null
+}

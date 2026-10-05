@@ -1,0 +1,38 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "alignment": {
+        "alignment_variant": "heretic",
+        "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+        "capability_retention_evidence": null,
+        "method_documented": null,
+        "refusal_evaluation": null,
+        "uncensored_claimed": true,
+        "uncensoring_method": "publisher_or_variant_author_claim",
+        "variant_author": "OS-Software",
+        "variant_source": "https://huggingface.co/OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF",
+        "verification_status": "publisher_claim"
+      },
+      "display_name": "OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF",
+      "model_id": "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf",
+      "quantization": {
+        "bits_per_weight": null,
+        "checksum": null,
+        "compression_category": null,
+        "file_size_bytes": 7206168928,
+        "file_size_gib": 6.711,
+        "format": "GGUF",
+        "native_quantization": false,
+        "quant_family": "q2",
+        "quant_name": "Q2",
+        "quantizer": null,
+        "quantizer_repo": null,
+        "source_revision": "5ab50fd49410941a8d4f97912303b1c7d458ffa2",
+        "split_files": true
+      }
+    }
+  ],
+  "note": "Heretic is a variant-author claim, never a quality signal.",
+  "view_id": "heretic"
+}

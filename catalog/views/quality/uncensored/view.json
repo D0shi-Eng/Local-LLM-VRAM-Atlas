@@ -1,0 +1,23 @@
+{
+  "entries": [
+    {
+      "evaluation_count": 0,
+      "evidence_status": "unknown",
+      "model_id": "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf",
+      "note": "abliterated: parent score is reference only; exact-variant evidence required"
+    },
+    {
+      "evaluation_count": 0,
+      "evidence_status": "unknown",
+      "model_id": "orenguteng-llama-3-1-8b-lexi-uncensored-gguf",
+      "note": "uncensored: parent score is reference only; exact-variant evidence required"
+    },
+    {
+      "evaluation_count": 0,
+      "evidence_status": "unknown",
+      "model_id": "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf",
+      "note": "heretic: parent score is reference only; exact-variant evidence required"
+    }
+  ],
+  "view": "uncensored"
+}

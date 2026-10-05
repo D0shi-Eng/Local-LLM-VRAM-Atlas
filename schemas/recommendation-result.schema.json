@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-llm-vram-atlas.local/schemas/recommendation-result.schema.json",
+  "title": "AtlasRecommendationResult",
+  "description": "Recommendation readiness for one model at one VRAM tier under a declared policy. Quality, fit, runtime, license and evidence quality are separate domains; an incomplete domain never yields strict eligibility. Specification version 0.6.0 (Phase 6, pre-1.0).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "model_id",
+    "tier_gb",
+    "eligibility",
+    "confidence_state",
+    "reasons",
+    "domains",
+    "evidence_ids",
+    "policy_id",
+    "policy_version"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^0\\.[0-9]+\\.[0-9]+$"
+    },
+    "model_id": { "type": "string", "minLength": 1 },
+    "tier_gb": { "type": "integer", "enum": [4, 8, 12, 16] },
+    "use_case": { "type": ["string", "null"] },
+    "eligibility": {
+      "type": "string",
+      "enum": ["eligible", "candidate", "insufficient_evidence", "ineligible"],
+      "description": "Strict lists only contain 'eligible'. Never mixed with weaker categories."
+    },
+    "confidence_state": {
+      "type": "string",
+      "enum": ["high_evidence", "moderate_evidence", "limited_evidence", "insufficient"],
+      "description": "Categorical evidence state; never a calibrated probability."
+    },
+    "reasons": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Human-readable reasons resolved to evidence; no opaque winner."
+    },
+    "domains": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["quality", "vram_fit", "runtime", "license", "variant_identity", "evidence_quality"],
+      "properties": {
+        "quality": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["known", "partially_known", "unevaluated", "conflicted"]
+            },
+            "evidence_status": {
+              "type": ["string", "null"],
+              "enum": ["independent_multi_source", "independent_single_source", "verified_single_source", "publisher_only", "community_only", "insufficient", "unknown", null]
+            },
+            "detail": { "type": ["string", "null"] }
+          }
+        },
+        "vram_fit": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["state"],
+          "properties": {
+            "state": {
+              "type": "string",
+              "enum": ["estimated_fit", "indeterminate_fit", "estimated_not_fit", "insufficient_evidence", "unsupported"]
+            },
+            "detail": { "type": ["string", "null"] }
+          }
+        },
+        "runtime": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["documented", "partial", "unknown", "unsupported"]
+            },
+            "runtimes": {
+              "type": "array",
+              "items": { "type": "string", "minLength": 1 },
+              "uniqueItems": true
+            }
+          }
+        },
+        "license": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["permissive", "restricted", "unclear", "proprietary"]
+            },
+            "license_id": { "type": ["string", "null"] },
+            "restriction_note": { "type": ["string", "null"] }
+          }
+        },
+        "variant_identity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["exact", "ambiguous", "conflict", "unknown"]
+            },
+            "detail": { "type": ["string", "null"] }
+          }
+        },
+        "evidence_quality": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["complete", "partial", "logical_reference_only", "missing"]
+            },
+            "detail": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+    "quant_retention": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": ["string", "null"],
+          "enum": ["directly_measured", "independently_measured", "publisher_measured", "partially_comparable", "insufficient_evidence", "unknown", null]
+        },
+        "disclosure": { "type": ["string", "null"] },
+        "retention_id": { "type": ["string", "null"] }
+      },
+      "description": "Present whenever the recommended entry is a quantized artifact."
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true,
+      "description": "Every strict recommendation must resolve to persisted evidence."
+    },
+    "policy_id": { "type": "string", "minLength": 1 },
+    "policy_version": { "type": "string", "minLength": 1 }
+  }
+}

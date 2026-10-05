@@ -1,0 +1,14 @@
+{
+  "schema_version": "0.1.0",
+  "model_id": "fixture-invalid-verified-no-evidence",
+  "display_name": "Verified Without Evidence Fixture (must fail)",
+  "creator": "Atlas Test Fixtures",
+  "architecture": "FixtureTransformer",
+  "architecture_type": "dense",
+  "openness": "unclear",
+  "verification": {
+    "status": "independently_verified"
+  },
+  "catalog_status": "verified",
+  "lifecycle_status": "active"
+}

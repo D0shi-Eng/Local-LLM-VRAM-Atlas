@@ -1,0 +1,992 @@
+{
+  "candidates": [
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "model.safetensors",
+      "artifact_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "artifact_set_id": "qwen-qwen3-0-6b--safetensors--model.safetensors",
+      "artifact_variant": null,
+      "artifact_weight_bytes": 1503300328,
+      "candidate_id": "core-4g-01-qwen3-0-6b",
+      "catalog_architecture": "Qwen3ForCausalLM",
+      "container_format": "safetensors",
+      "license_id": "apache-2.0",
+      "model_id": "qwen-qwen3-0-6b",
+      "openness": "open_weights_permissive",
+      "quantization_label": "bf16",
+      "schema_version": "0.1.0",
+      "selection_reason": "smallest released dense Qwen3 checkpoint in the catalog; exercises the 4GB tier with a resolvable standard-GQA architecture",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 30037022,
+          "likes": 1732,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unknown",
+        "current_availability": "active",
+        "known_local_inference_format": "safetensors",
+        "metadata_completeness": [
+          "architecture",
+          "artifact_revision",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "Transformers"
+        ],
+        "special_low_bit_relevance": "native_precision",
+        "tier_relevance_by_weight_only": [
+          4,
+          8,
+          12,
+          16
+        ]
+      },
+      "target_tiers": [
+        4
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "model.safetensors",
+      "artifact_revision": "04c3b9ad9361b824064a1f25ea60a8be9599b127",
+      "artifact_set_id": "microsoft-bitnet-b1-58-2b-4t--safetensors--model.safetensors",
+      "artifact_variant": null,
+      "artifact_weight_bytes": 1178623988,
+      "candidate_id": "core-4g-02-bitnet-native",
+      "catalog_architecture": "BitNetForCausalLM",
+      "container_format": "safetensors",
+      "license_id": "mit",
+      "model_id": "microsoft-bitnet-b1-58-2b-4t",
+      "openness": "open_weights_permissive",
+      "quantization_label": "native_1.58bit",
+      "schema_version": "0.1.0",
+      "selection_reason": "native low-bit training architecture in the catalog; relevant to the 4GB tier and to native-low-bit handling",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 19974,
+          "likes": 1498,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unknown",
+        "current_availability": "active",
+        "known_local_inference_format": "safetensors",
+        "metadata_completeness": [
+          "architecture",
+          "artifact_revision",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "Transformers"
+        ],
+        "special_low_bit_relevance": "native_low_bit",
+        "tier_relevance_by_weight_only": [
+          4,
+          8,
+          12,
+          16
+        ]
+      },
+      "target_tiers": [
+        4
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "ggml-model-i2_s.gguf",
+      "artifact_revision": "a1f2f1c765812aa8af3f6eda4a313707064bba15",
+      "artifact_set_id": "microsoft-bitnet-b1-58-2b-4t-gguf--gguf--ggml-model-i2_s.gguf",
+      "artifact_variant": null,
+      "artifact_weight_bytes": 1187801280,
+      "candidate_id": "core-4g-03-bitnet-gguf-i2s",
+      "catalog_architecture": "unknown",
+      "container_format": "GGUF",
+      "license_id": "mit",
+      "model_id": "microsoft-bitnet-b1-58-2b-4t-gguf",
+      "openness": "open_weights_permissive",
+      "quantization_label": "unlabeled_gguf_variant",
+      "schema_version": "0.1.0",
+      "selection_reason": "GGUF packaging of a native low-bit model; included to verify whether an unlabeled artifact variant can carry exact artifact identity",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 16814,
+          "likes": 296,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unresolved",
+        "current_availability": "active",
+        "known_local_inference_format": "GGUF",
+        "metadata_completeness": [
+          "artifact_revision",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "llama.cpp"
+        ],
+        "special_low_bit_relevance": "native_precision",
+        "tier_relevance_by_weight_only": [
+          4,
+          8,
+          12,
+          16
+        ]
+      },
+      "target_tiers": [
+        4
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "Qwen2.5-7B-Instruct-IQ3_XS.gguf",
+      "artifact_revision": "8911e8a47f92bac19d6f5c64a2e2095bd2f7d031",
+      "artifact_set_id": "bartowski-qwen2-5-7b-instruct-gguf--gguf--qwen2.5-7b-instruct-gguf--iq3_xs",
+      "artifact_variant": "IQ3_XS",
+      "artifact_weight_bytes": 3346256576,
+      "candidate_id": "core-4g-04-qwen2-5-7b-iq3xs",
+      "catalog_architecture": "unknown",
+      "container_format": "GGUF",
+      "license_id": "apache-2.0",
+      "model_id": "bartowski-qwen2-5-7b-instruct-gguf",
+      "openness": "open_weights_permissive",
+      "quantization_label": "IQ3_XS",
+      "schema_version": "0.1.0",
+      "selection_reason": "7B instruct model at a sub-4GiB low-bit artifact; tests whether 4GB tier relevance survives exact artifact accounting",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 185649,
+          "likes": 78,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unresolved",
+        "current_availability": "active",
+        "known_local_inference_format": "GGUF",
+        "metadata_completeness": [
+          "artifact_revision",
+          "artifact_variant",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "llama.cpp"
+        ],
+        "special_low_bit_relevance": "post_training_quant",
+        "tier_relevance_by_weight_only": [
+          4,
+          8,
+          12,
+          16
+        ]
+      },
+      "target_tiers": [
+        4
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "Qwen3-8B.Q2_K.gguf",
+      "artifact_revision": "1a85ad16e1e80725404ad707448c10dd414ed045",
+      "artifact_set_id": "quantfactory-qwen3-8b-gguf--gguf--qwen3-8b-gguf--q2_k",
+      "artifact_variant": "Q2_K",
+      "artifact_weight_bytes": 3281732800,
+      "candidate_id": "core-4g-05-qwen3-8b-q2k",
+      "catalog_architecture": "unknown",
+      "container_format": "GGUF",
+      "license_id": "apache-2.0",
+      "model_id": "quantfactory-qwen3-8b-gguf",
+      "openness": "open_weights_permissive",
+      "quantization_label": "Q2_K",
+      "schema_version": "0.1.0",
+      "selection_reason": "8B base-model GGUF at an extreme low-bit artifact; 4GB-tier relevance and high-compression evidence",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 1370,
+          "likes": 2,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unresolved",
+        "current_availability": "active",
+        "known_local_inference_format": "GGUF",
+        "metadata_completeness": [
+          "artifact_revision",
+          "artifact_variant",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "llama.cpp"
+        ],
+        "special_low_bit_relevance": "post_training_quant",
+        "tier_relevance_by_weight_only": [
+          4,
+          8,
+          12,
+          16
+        ]
+      },
+      "target_tiers": [
+        4
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "model.safetensors",
+      "artifact_revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+      "artifact_set_id": "tinyllama-tinyllama-1-1b-chat-v1-0--safetensors--model.safetensors",
+      "artifact_variant": null,
+      "artifact_weight_bytes": 2200119864,
+      "candidate_id": "core-4g-06-tinyllama-1-1b",
+      "catalog_architecture": "LlamaForCausalLM",
+      "container_format": "safetensors",
+      "license_id": "apache-2.0",
+      "model_id": "tinyllama-tinyllama-1-1b-chat-v1-0",
+      "openness": "open_weights_permissive",
+      "quantization_label": "bf16",
+      "schema_version": "0.1.0",
+      "selection_reason": "smallest chat release in the catalog with a resolvable architecture; included to test the Atlas context baseline against a 2K-context model",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 1322168,
+          "likes": 1837,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unknown",
+        "current_availability": "active",
+        "known_local_inference_format": "safetensors",
+        "metadata_completeness": [
+          "architecture",
+          "artifact_revision",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "Transformers"
+        ],
+        "special_low_bit_relevance": "native_precision",
+        "tier_relevance_by_weight_only": [
+          4,
+          8,
+          12,
+          16
+        ]
+      },
+      "target_tiers": [
+        4
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+      "artifact_revision": "8911e8a47f92bac19d6f5c64a2e2095bd2f7d031",
+      "artifact_set_id": "bartowski-qwen2-5-7b-instruct-gguf--gguf--qwen2.5-7b-instruct-gguf--q4_k_m",
+      "artifact_variant": "Q4_K_M",
+      "artifact_weight_bytes": 4683074240,
+      "candidate_id": "core-8g-01-qwen2-5-7b-q4km",
+      "catalog_architecture": "unknown",
+      "container_format": "GGUF",
+      "license_id": "apache-2.0",
+      "model_id": "bartowski-qwen2-5-7b-instruct-gguf",
+      "openness": "open_weights_permissive",
+      "quantization_label": "Q4_K_M",
+      "schema_version": "0.1.0",
+      "selection_reason": "most-referenced 7B GGUF artifact shape in the catalog; canonical 8GB-tier quantized recommendation target",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 185649,
+          "likes": 78,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unresolved",
+        "current_availability": "active",
+        "known_local_inference_format": "GGUF",
+        "metadata_completeness": [
+          "artifact_revision",
+          "artifact_variant",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "llama.cpp"
+        ],
+        "special_low_bit_relevance": "post_training_quant",
+        "tier_relevance_by_weight_only": [
+          8,
+          12,
+          16
+        ]
+      },
+      "target_tiers": [
+        8
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "Qwen3-8B.Q4_K_M.gguf",
+      "artifact_revision": "1a85ad16e1e80725404ad707448c10dd414ed045",
+      "artifact_set_id": "quantfactory-qwen3-8b-gguf--gguf--qwen3-8b-gguf--q4_k_m",
+      "artifact_variant": "Q4_K_M",
+      "artifact_weight_bytes": 5027783872,
+      "candidate_id": "core-8g-02-qwen3-8b-q4km",
+      "catalog_architecture": "unknown",
+      "container_format": "GGUF",
+      "license_id": "apache-2.0",
+      "model_id": "quantfactory-qwen3-8b-gguf",
+      "openness": "open_weights_permissive",
+      "quantization_label": "Q4_K_M",
+      "schema_version": "0.1.0",
+      "selection_reason": "8B release at the same quantization family as core-8g-01, from a different packager; enables artifact-vs-quantizer separation",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 1370,
+          "likes": 2,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unresolved",
+        "current_availability": "active",
+        "known_local_inference_format": "GGUF",
+        "metadata_completeness": [
+          "artifact_revision",
+          "artifact_variant",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "llama.cpp"
+        ],
+        "special_low_bit_relevance": "post_training_quant",
+        "tier_relevance_by_weight_only": [
+          8,
+          12,
+          16
+        ]
+      },
+      "target_tiers": [
+        8
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "model-00001-of-00003.safetensors",
+      "artifact_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "artifact_set_id": "qwen-qwen3-4b-instruct-2507--safetensors--model.safetensors",
+      "artifact_variant": null,
+      "artifact_weight_bytes": 8044982000,
+      "candidate_id": "core-8g-03-qwen3-4b-instruct-2507",
+      "catalog_architecture": "Qwen3ForCausalLM",
+      "container_format": "safetensors",
+      "license_id": "apache-2.0",
+      "model_id": "qwen-qwen3-4b-instruct-2507",
+      "openness": "open_weights_permissive",
+      "quantization_label": "bf16",
+      "schema_version": "0.1.0",
+      "selection_reason": "current-generation 4B instruct release whose declared checkpoint is close to the 8GB tier capacity; tests boundary honesty",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 3648462,
+          "likes": 991,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unknown",
+        "current_availability": "active",
+        "known_local_inference_format": "safetensors",
+        "metadata_completeness": [
+          "architecture",
+          "artifact_revision",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "Transformers"
+        ],
+        "special_low_bit_relevance": "native_precision",
+        "tier_relevance_by_weight_only": [
+          8,
+          12,
+          16
+        ]
+      },
+      "target_tiers": [
+        8
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "model-00001-of-00002.safetensors",
+      "artifact_revision": "f39ac1d28e925b323eae81227eaba4464caced4e",
+      "artifact_set_id": "microsoft-phi-3-mini-4k-instruct--safetensors--model.safetensors",
+      "artifact_variant": null,
+      "artifact_weight_bytes": 7642181880,
+      "candidate_id": "core-8g-04-phi-3-mini-4k",
+      "catalog_architecture": "Phi3ForCausalLM",
+      "container_format": "safetensors",
+      "license_id": "mit",
+      "model_id": "microsoft-phi-3-mini-4k-instruct",
+      "openness": "open_weights_permissive",
+      "quantization_label": "bf16",
+      "schema_version": "0.1.0",
+      "selection_reason": "permissively licensed 3.8B release with a declared context shorter than the Atlas baseline; included to prove context incompatibility is reported, not hidden",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 345411,
+          "likes": 1467,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unknown",
+        "current_availability": "active",
+        "known_local_inference_format": "safetensors",
+        "metadata_completeness": [
+          "architecture",
+          "artifact_revision",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "Transformers"
+        ],
+        "special_low_bit_relevance": "native_precision",
+        "tier_relevance_by_weight_only": [
+          8,
+          12,
+          16
+        ]
+      },
+      "target_tiers": [
+        8
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+      "artifact_revision": "b072e1d3b35a0a630cece372c2127528e0994386",
+      "artifact_set_id": "prism-ml-ternary-bonsai-2-27b-gguf--gguf--ternary-bonsai-2-27b-p.gguf--tq1_0",
+      "artifact_variant": "TQ1_0",
+      "artifact_weight_bytes": 5946648928,
+      "candidate_id": "core-8g-05-ternary-bonsai-tq1",
+      "catalog_architecture": "unknown",
+      "container_format": "GGUF",
+      "license_id": "apache-2.0",
+      "model_id": "prism-ml-ternary-bonsai-2-27b-gguf",
+      "openness": "open_weights_permissive",
+      "quantization_label": "TQ1_0",
+      "schema_version": "0.1.0",
+      "selection_reason": "ternary TQ-format artifact; special low-bit relevance for the 8GB tier",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 4045810,
+          "likes": 2428,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unresolved",
+        "current_availability": "active",
+        "known_local_inference_format": "GGUF",
+        "metadata_completeness": [
+          "artifact_revision",
+          "artifact_variant",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "llama.cpp"
+        ],
+        "special_low_bit_relevance": "post_training_quant",
+        "tier_relevance_by_weight_only": [
+          8,
+          12,
+          16
+        ]
+      },
+      "target_tiers": [
+        8
+      ]
+    },
+    {
+      "alignment_variant": "uncensored",
+      "artifact_filename": "Llama-3.1-8B-Lexi-Uncensored_Q4.gguf",
+      "artifact_revision": "d5cc0aa376e3693a85612d34574be8cff33a2f56",
+      "artifact_set_id": "orenguteng-llama-3-1-8b-lexi-uncensored-gguf--gguf--llama-3.1-8b-lexi-uncensored-gguf--q4",
+      "artifact_variant": "Q4",
+      "artifact_weight_bytes": 4661211616,
+      "candidate_id": "core-8g-06-llama31-lexi-uncensored-q4",
+      "catalog_architecture": "unknown",
+      "container_format": "GGUF",
+      "license_id": "llama3.1",
+      "model_id": "orenguteng-llama-3-1-8b-lexi-uncensored-gguf",
+      "openness": "unclear",
+      "quantization_label": "Q4",
+      "schema_version": "0.1.0",
+      "selection_reason": "alignment-modified (uncensored) variant; proves a parent score is never inherited by the variant",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 967,
+          "likes": 20,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unresolved",
+        "current_availability": "active",
+        "known_local_inference_format": "GGUF",
+        "metadata_completeness": [
+          "artifact_revision",
+          "artifact_variant",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "llama.cpp"
+        ],
+        "special_low_bit_relevance": "post_training_quant",
+        "tier_relevance_by_weight_only": [
+          8,
+          12,
+          16
+        ]
+      },
+      "target_tiers": [
+        8
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "Qwen3-8B.Q6_K.gguf",
+      "artifact_revision": "1a85ad16e1e80725404ad707448c10dd414ed045",
+      "artifact_set_id": "quantfactory-qwen3-8b-gguf--gguf--qwen3-8b-gguf--q6_k",
+      "artifact_variant": "Q6_K",
+      "artifact_weight_bytes": 6725899456,
+      "candidate_id": "core-12g-01-qwen3-8b-q6k",
+      "catalog_architecture": "unknown",
+      "container_format": "GGUF",
+      "license_id": "apache-2.0",
+      "model_id": "quantfactory-qwen3-8b-gguf",
+      "openness": "open_weights_permissive",
+      "quantization_label": "Q6_K",
+      "schema_version": "0.1.0",
+      "selection_reason": "high-fidelity low-bit artifact of the same 8B release as core-8g-02; gives the 12GB tier a same-release quantization comparison",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 1370,
+          "likes": 2,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unresolved",
+        "current_availability": "active",
+        "known_local_inference_format": "GGUF",
+        "metadata_completeness": [
+          "artifact_revision",
+          "artifact_variant",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "llama.cpp"
+        ],
+        "special_low_bit_relevance": "post_training_quant",
+        "tier_relevance_by_weight_only": [
+          8,
+          12,
+          16
+        ]
+      },
+      "target_tiers": [
+        12
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "Qwen3.8-27B-UD-IQ3_S.gguf",
+      "artifact_revision": "4ca720788d1e01f1bff70c033e0d0028fd02e502",
+      "artifact_set_id": "unsloth-qwen3-8-27b-gguf--gguf--qwen3.8-27b-ud-gguf--iq3_s",
+      "artifact_variant": "IQ3_S",
+      "artifact_weight_bytes": 12040883104,
+      "candidate_id": "core-12g-02-qwen38-27b-iq3s",
+      "catalog_architecture": "Qwen3_5ForConditionalGeneration",
+      "container_format": "GGUF",
+      "license_id": "apache-2.0",
+      "model_id": "unsloth-qwen3-8-27b-gguf",
+      "openness": "open_weights_permissive",
+      "quantization_label": "IQ3_S",
+      "schema_version": "0.1.0",
+      "selection_reason": "27B-class MoE release at a sub-12GiB artifact; 12GB-tier relevance for a mixture-of-experts release",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 6509525,
+          "likes": 4850,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unknown",
+        "current_availability": "active",
+        "known_local_inference_format": "GGUF",
+        "metadata_completeness": [
+          "architecture",
+          "artifact_revision",
+          "artifact_variant",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "llama.cpp"
+        ],
+        "special_low_bit_relevance": "post_training_quant",
+        "tier_relevance_by_weight_only": [
+          12,
+          16
+        ]
+      },
+      "target_tiers": [
+        12
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "openai_gpt-oss-20b-MXFP4.gguf",
+      "artifact_revision": "e39ba3aa000c47c83dacdc9e1ca2c9dd0808c205",
+      "artifact_set_id": "bartowski-openai-gpt-oss-20b-gguf--gguf--openai_gpt-oss-20b-gguf--mxfp4",
+      "artifact_variant": "MXFP4",
+      "artifact_weight_bytes": 12109565760,
+      "candidate_id": "core-12g-03-gpt-oss-20b-mxfp4-gguf",
+      "catalog_architecture": "unknown",
+      "container_format": "GGUF",
+      "license_id": null,
+      "model_id": "bartowski-openai-gpt-oss-20b-gguf",
+      "openness": "unclear",
+      "quantization_label": "MXFP_4",
+      "schema_version": "0.1.0",
+      "selection_reason": "repackaged native-4-bit release whose catalog license record is unresolved; included to verify the license gate blocks strict status",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 15276,
+          "likes": 39,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unresolved",
+        "current_availability": "active",
+        "known_local_inference_format": "GGUF",
+        "metadata_completeness": [
+          "artifact_revision",
+          "artifact_variant",
+          "artifact_weight_bytes",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "llama.cpp"
+        ],
+        "special_low_bit_relevance": "post_training_quant",
+        "tier_relevance_by_weight_only": [
+          12,
+          16
+        ]
+      },
+      "target_tiers": [
+        12
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "original/model.safetensors",
+      "artifact_revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+      "artifact_set_id": "openai-gpt-oss-20b--safetensors--original/model.safetensors",
+      "artifact_variant": null,
+      "artifact_weight_bytes": 13761300984,
+      "candidate_id": "core-16g-01-gpt-oss-20b-native",
+      "catalog_architecture": "GptOssForCausalLM",
+      "container_format": "safetensors",
+      "license_id": "apache-2.0",
+      "model_id": "openai-gpt-oss-20b",
+      "openness": "open_weights_permissive",
+      "quantization_label": "native_mxfp4",
+      "schema_version": "0.1.0",
+      "selection_reason": "official natively 4-bit release with heterogeneous attention layer types; 16GB-tier reference point and a native-low-bit (non-post-training) case",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 6323616,
+          "likes": 5130,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unknown",
+        "current_availability": "active",
+        "known_local_inference_format": "safetensors",
+        "metadata_completeness": [
+          "architecture",
+          "artifact_revision",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "Transformers"
+        ],
+        "special_low_bit_relevance": "native_precision",
+        "tier_relevance_by_weight_only": [
+          16
+        ]
+      },
+      "target_tiers": [
+        16
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "Qwen3-Coder-30B-A3B-Instruct-Q3_K_M.gguf",
+      "artifact_revision": "b17cb02dd882d5b6ab62fc777ad2995f19668350",
+      "artifact_set_id": "unsloth-qwen3-coder-30b-a3b-instruct-gguf--gguf--qwen3-coder-30b-a3b-instruct-gguf--q3_k_m",
+      "artifact_variant": "Q3_K_M",
+      "artifact_weight_bytes": 14711850144,
+      "candidate_id": "core-16g-02-qwen3-coder-30b-q3km",
+      "catalog_architecture": "unknown",
+      "container_format": "GGUF",
+      "license_id": "apache-2.0",
+      "model_id": "unsloth-qwen3-coder-30b-a3b-instruct-gguf",
+      "openness": "open_weights_permissive",
+      "quantization_label": "Q3_K_M",
+      "schema_version": "0.1.0",
+      "selection_reason": "code-specialized 30B-class MoE release at a 16GB-tier artifact; coding use-case relevance",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 7361953,
+          "likes": 1106,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unresolved",
+        "current_availability": "active",
+        "known_local_inference_format": "GGUF",
+        "metadata_completeness": [
+          "artifact_revision",
+          "artifact_variant",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "llama.cpp"
+        ],
+        "special_low_bit_relevance": "post_training_quant",
+        "tier_relevance_by_weight_only": [
+          16
+        ]
+      },
+      "target_tiers": [
+        16
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "artifact_filename": "model-00001-of-00005.safetensors",
+      "artifact_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "artifact_set_id": "qwen-qwen3-8b--safetensors--model.safetensors",
+      "artifact_variant": null,
+      "artifact_weight_bytes": 16381516776,
+      "candidate_id": "core-16g-03-qwen3-8b",
+      "catalog_architecture": "Qwen3ForCausalLM",
+      "container_format": "safetensors",
+      "license_id": "apache-2.0",
+      "model_id": "qwen-qwen3-8b",
+      "openness": "open_weights_permissive",
+      "quantization_label": "bf16",
+      "schema_version": "0.1.0",
+      "selection_reason": "8B release at native precision; 16GB-tier relevance with no post-training quantization, so no base-vs-quant retention is required",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 10080256,
+          "likes": 2075,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unknown",
+        "current_availability": "active",
+        "known_local_inference_format": "safetensors",
+        "metadata_completeness": [
+          "architecture",
+          "artifact_revision",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "Transformers"
+        ],
+        "special_low_bit_relevance": "native_precision",
+        "tier_relevance_by_weight_only": [
+          16
+        ]
+      },
+      "target_tiers": [
+        16
+      ]
+    },
+    {
+      "alignment_variant": "heretic",
+      "artifact_filename": "Ternary-Bonsai-2-27B-Uncensored-Heretic-PTQ1_0.gguf",
+      "artifact_revision": "5ab50fd49410941a8d4f97912303b1c7d458ffa2",
+      "artifact_set_id": "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf--gguf--ternary-bonsai-2-27b-uncensored-heretic-p.gguf--tq1_0",
+      "artifact_variant": "TQ1_0",
+      "artifact_weight_bytes": 5946648928,
+      "candidate_id": "core-8g-07-ternary-heretic-tq1",
+      "catalog_architecture": "unknown",
+      "container_format": "GGUF",
+      "license_id": "apache-2.0",
+      "model_id": "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf",
+      "openness": "open_weights_permissive",
+      "quantization_label": "TQ1_0",
+      "schema_version": "0.1.0",
+      "selection_reason": "intersection of a ternary release and a heretic alignment modification; non-blocking unevaluated-alignment case",
+      "signals": {
+        "adoption_discovery_signal_only": {
+          "downloads": 136157,
+          "likes": 63,
+          "usage": "discovery_only_never_quality_or_ranking"
+        },
+        "architecture_support": "unresolved",
+        "current_availability": "active",
+        "known_local_inference_format": "GGUF",
+        "metadata_completeness": [
+          "artifact_revision",
+          "artifact_variant",
+          "artifact_weight_bytes",
+          "license_id",
+          "openness",
+          "resolved_revision",
+          "total_parameters_b"
+        ],
+        "runtime_relevance_documented": [
+          "llama.cpp"
+        ],
+        "special_low_bit_relevance": "post-training-lowbit",
+        "tier_relevance_by_weight_only": [
+          8,
+          12,
+          16
+        ]
+      },
+      "target_tiers": [
+        8,
+        16
+      ]
+    }
+  ],
+  "counts": {
+    "candidate_count": 19,
+    "per_tier_declared": {
+      "12": 3,
+      "16": 4,
+      "4": 6,
+      "8": 7
+    },
+    "unique_artifact_count": 19,
+    "unique_model_count": 16
+  },
+  "determinism": "candidates and signals are recomputed from canonical catalog records; the declaration order is stable and no field depends on wall-clock time",
+  "excluded_selection_signals": [
+    "brand_preference",
+    "repo_name_prestige",
+    "personal_preference",
+    "desired_final_ranking",
+    "benchmark_score_expectation",
+    "popularity_as_quality",
+    "parameter_count_as_quality",
+    "recency_as_quality"
+  ],
+  "policy_id": "atlas-core-recommendation-set",
+  "policy_version": "0.1.0",
+  "purpose": "bounded evidence-closure set for the 4/8/12/16GB tiers; members are candidates for evidence work, not winners",
+  "reference_date": "2026-10-05",
+  "resolution_problems": [],
+  "schema_version": "0.1.0",
+  "selection_signals": [
+    "tier_relevance",
+    "current_availability",
+    "known_local_inference_format",
+    "architecture_support",
+    "metadata_completeness",
+    "runtime_relevance",
+    "special_low_bit_relevance",
+    "adoption_as_discovery_signal_only"
+  ],
+  "set_version": "0.1.0",
+  "unique_artifact_set_ids": [
+    "bartowski-openai-gpt-oss-20b-gguf--gguf--openai_gpt-oss-20b-gguf--mxfp4",
+    "bartowski-qwen2-5-7b-instruct-gguf--gguf--qwen2.5-7b-instruct-gguf--iq3_xs",
+    "bartowski-qwen2-5-7b-instruct-gguf--gguf--qwen2.5-7b-instruct-gguf--q4_k_m",
+    "microsoft-bitnet-b1-58-2b-4t--safetensors--model.safetensors",
+    "microsoft-bitnet-b1-58-2b-4t-gguf--gguf--ggml-model-i2_s.gguf",
+    "microsoft-phi-3-mini-4k-instruct--safetensors--model.safetensors",
+    "openai-gpt-oss-20b--safetensors--original/model.safetensors",
+    "orenguteng-llama-3-1-8b-lexi-uncensored-gguf--gguf--llama-3.1-8b-lexi-uncensored-gguf--q4",
+    "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf--gguf--ternary-bonsai-2-27b-uncensored-heretic-p.gguf--tq1_0",
+    "prism-ml-ternary-bonsai-2-27b-gguf--gguf--ternary-bonsai-2-27b-p.gguf--tq1_0",
+    "quantfactory-qwen3-8b-gguf--gguf--qwen3-8b-gguf--q2_k",
+    "quantfactory-qwen3-8b-gguf--gguf--qwen3-8b-gguf--q4_k_m",
+    "quantfactory-qwen3-8b-gguf--gguf--qwen3-8b-gguf--q6_k",
+    "qwen-qwen3-0-6b--safetensors--model.safetensors",
+    "qwen-qwen3-4b-instruct-2507--safetensors--model.safetensors",
+    "qwen-qwen3-8b--safetensors--model.safetensors",
+    "tinyllama-tinyllama-1-1b-chat-v1-0--safetensors--model.safetensors",
+    "unsloth-qwen3-8-27b-gguf--gguf--qwen3.8-27b-ud-gguf--iq3_s",
+    "unsloth-qwen3-coder-30b-a3b-instruct-gguf--gguf--qwen3-coder-30b-a3b-instruct-gguf--q3_k_m"
+  ],
+  "unique_model_ids": [
+    "bartowski-openai-gpt-oss-20b-gguf",
+    "bartowski-qwen2-5-7b-instruct-gguf",
+    "microsoft-bitnet-b1-58-2b-4t",
+    "microsoft-bitnet-b1-58-2b-4t-gguf",
+    "microsoft-phi-3-mini-4k-instruct",
+    "openai-gpt-oss-20b",
+    "orenguteng-llama-3-1-8b-lexi-uncensored-gguf",
+    "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf",
+    "prism-ml-ternary-bonsai-2-27b-gguf",
+    "quantfactory-qwen3-8b-gguf",
+    "qwen-qwen3-0-6b",
+    "qwen-qwen3-4b-instruct-2507",
+    "qwen-qwen3-8b",
+    "tinyllama-tinyllama-1-1b-chat-v1-0",
+    "unsloth-qwen3-8-27b-gguf",
+    "unsloth-qwen3-coder-30b-a3b-instruct-gguf"
+  ]
+}

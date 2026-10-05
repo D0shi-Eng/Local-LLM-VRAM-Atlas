@@ -1,0 +1,15 @@
+{
+  "accessed_at": "2026-10-05T06:10:09.815890Z",
+  "archived_reference": null,
+  "authority_level": "tier_a_primary",
+  "commit_or_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "notes": "platform=hugging-face; repo_id=Qwen/Qwen3.8-27B; requested_revision=main; resolved_revision=1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0; officiality_status=unverified (namespace alone never proves officiality)",
+  "published_at": null,
+  "publisher": "Qwen",
+  "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "schema_version": "0.1.0",
+  "source_id": "qwen-qwen3-8-27b-src-hf",
+  "source_type": "official_repo",
+  "title": "Hugging Face repository Qwen/Qwen3.8-27B (publisher-published metadata)",
+  "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
+}

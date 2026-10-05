@@ -1,0 +1,92 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "unknown",
+    "base_model": "meta-llama/Meta-Llama-3.1-8B",
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "variant_author": "meta-llama",
+    "variant_source": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+    "verification_status": "unknown"
+  },
+  "architecture": "LlamaForCausalLM",
+  "architecture_type": "unknown",
+  "base_models": [
+    "meta-llama/Meta-Llama-3.1-8B"
+  ],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "meta-llama",
+  "display_name": "meta-llama/Llama-3.1-8B-Instruct",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "llama3.1",
+    "license_name": null,
+    "license_notes": "raw_license_value='llama3.1'; spdx=False",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "meta-llama-llama-3-1-8b-instruct",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "unclear",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:10.986822Z",
+    "downloads": 6104298,
+    "likes": 8221,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 16060556376,
+    "file_size_gib": 14.958,
+    "format": "safetensors",
+    "native_quantization": null,
+    "quant_family": "unknown",
+    "quant_name": null,
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "split_files": true
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "meta-llama-llama-3-1-8b-instruct",
+  "total_parameters_b": 8.030261248,
+  "verification": {
+    "evidence_ids": [
+      "meta-llama-llama-3-1-8b-instruct-ev-license-license-id",
+      "meta-llama-llama-3-1-8b-instruct-ev-openness",
+      "meta-llama-llama-3-1-8b-instruct-ev-base-models",
+      "meta-llama-llama-3-1-8b-instruct-ev-architecture",
+      "meta-llama-llama-3-1-8b-instruct-ev-total-parameters-b",
+      "meta-llama-llama-3-1-8b-instruct-ev-context-length-advertised-max",
+      "meta-llama-llama-3-1-8b-instruct-ev-quantization-quant-name",
+      "meta-llama-llama-3-1-8b-instruct-ev-popularity",
+      "meta-llama-llama-3-1-8b-instruct-ev-resolved-revision"
+    ],
+    "status": "publisher_claim"
+  }
+}

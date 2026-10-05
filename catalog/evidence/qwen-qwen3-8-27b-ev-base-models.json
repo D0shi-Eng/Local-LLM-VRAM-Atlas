@@ -1,0 +1,14 @@
+{
+  "claim_type": "other",
+  "evidence_id": "qwen-qwen3-8-27b-ev-base-models",
+  "evidence_level": "publisher_claim",
+  "field_path": "base_models",
+  "notes": "repo_id=Qwen/Qwen3.8-27B; resolved_revision=1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0; requested_revision=main",
+  "publisher": "Qwen",
+  "retrieved_at": "2026-10-05T06:10:09.815890Z",
+  "schema_version": "0.1.0",
+  "source_id": "qwen-qwen3-8-27b-src-hf",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+  "verification_status": "unknown"
+}

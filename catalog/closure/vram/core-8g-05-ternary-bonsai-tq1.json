@@ -1,0 +1,27 @@
+{
+  "architecture_family": "unknown",
+  "artifact_set_id": "prism-ml-ternary-bonsai-2-27b-gguf--gguf--ternary-bonsai-2-27b-p.gguf--tq1_0",
+  "by_tier": {
+    "12": "unsupported",
+    "16": "unsupported",
+    "4": "unsupported",
+    "8": "unsupported"
+  },
+  "calculation_context_tokens": 8192,
+  "calculation_profile_id": "atlas-text-8k-baseline-v1",
+  "candidate_id": "core-8g-05-ternary-bonsai-tq1",
+  "estimate_status": "refused",
+  "lower_bytes": null,
+  "note": "Refusal is a correct outcome. Artifact byte size alone can never create a fit verdict, and an unmodeled component is never counted as zero.",
+  "refusal_detail": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+  "refusal_reason": "architecture_cache_inputs_missing",
+  "runtime_overhead_state": "absent: no runtime memory profile carries documented overhead, so the reliable upper bound required for an estimated fit does not exist",
+  "schema_version": "0.1.0",
+  "tier_reasons": {
+    "12": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+    "16": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+    "4": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+    "8": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence"
+  },
+  "upper_bytes": null
+}

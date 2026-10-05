@@ -1,0 +1,53 @@
+{
+  "architecture_family": "gpt_oss",
+  "architecture_inputs": {
+    "head_dim": 64,
+    "layer_plan_heterogeneous": true,
+    "layer_plan_used": true,
+    "num_key_value_heads": 8,
+    "num_layers": 24,
+    "sliding_window": null
+  },
+  "artifact_set_id": "openai-gpt-oss-20b--safetensors--original/model.safetensors",
+  "assumptions": [
+    "lower bound covers resident weights plus cache only; upper bound unavailable without measured runtime overhead"
+  ],
+  "attention_regime": "standard",
+  "by_tier": {
+    "12": "estimated_not_fit",
+    "16": "insufficient_evidence",
+    "4": "estimated_not_fit",
+    "8": "estimated_not_fit"
+  },
+  "calculation_context_tokens": 8192,
+  "calculation_profile_id": "atlas-text-8k-baseline-v1",
+  "candidate_id": "core-16g-01-gpt-oss-20b-native",
+  "device_weight_bytes": 13761300984,
+  "estimate_status": "estimated",
+  "evidence_basis": "inputs include assumptions recorded alongside",
+  "formula_refs": [
+    "standard-kv-layer-plan-v1"
+  ],
+  "kv_or_state_cache_bytes": 204472320,
+  "lower_bytes": 13965773304,
+  "multimodal_note": null,
+  "multimodal_wrapper": false,
+  "note": "Artifact byte size supplies the weight component only. The KV/cache component comes from current architecture inputs and the Atlas baseline profile. A fit verdict still requires a reliable upper bound.",
+  "runtime_overhead_state": "absent: no runtime memory profile carries documented overhead, so the reliable upper bound required for an estimated fit does not exist",
+  "schema_version": "0.1.0",
+  "tier_reasons": {
+    "12": "trustworthy lower bound alone exceeds tier capacity",
+    "16": "reliable upper bound unavailable; runtime overhead unknown",
+    "4": "trustworthy lower bound alone exceeds tier capacity",
+    "8": "trustworthy lower bound alone exceeds tier capacity"
+  },
+  "unknown_components": [
+    "runtime_static_bytes",
+    "runtime_dynamic_bytes"
+  ],
+  "unsupported_components": [],
+  "upper_bytes": null,
+  "warnings": [
+    "runtime profile missing: independent components only, no default"
+  ]
+}

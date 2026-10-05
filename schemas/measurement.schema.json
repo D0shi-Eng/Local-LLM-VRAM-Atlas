@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-llm-vram-atlas.local/schemas/measurement.schema.json",
+  "title": "AtlasExternalMeasurement",
+  "description": "An externally reported VRAM observation Atlas stores but never performs. Origin stays explicit; atlas_measured is forbidden here; calculated values are never stored as measured. Specification version 0.3.0 (Phase 3).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "measurement_id",
+    "model_id",
+    "evidence_level"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^0\\.[0-9]+\\.[0-9]+$"
+    },
+    "measurement_id": { "type": "string", "minLength": 1 },
+    "model_id": { "type": "string", "minLength": 1 },
+    "revision": { "type": ["string", "null"] },
+    "artifact_variant": { "type": ["string", "null"] },
+    "runtime": { "type": ["string", "null"] },
+    "runtime_version": { "type": ["string", "null"] },
+    "backend": { "type": ["string", "null"] },
+    "gpu": { "type": ["string", "null"] },
+    "gpu_vram": { "type": ["string", "null"] },
+    "driver": { "type": ["string", "null"] },
+    "os": { "type": ["string", "null"] },
+    "system_ram": { "type": ["string", "null"] },
+    "context_tokens": { "type": ["integer", "null"], "minimum": 1 },
+    "batch_or_sequences": { "type": ["integer", "null"], "minimum": 1 },
+    "kv_format": { "type": ["string", "null"] },
+    "offload_mode": { "type": ["string", "null"] },
+    "reported_vram_bytes": { "type": ["integer", "null"], "minimum": 1 },
+    "measurement_stage": {
+      "type": "string",
+      "enum": ["weights_loaded", "kv_allocated", "prefill_done", "decoding", "peak", "unknown"]
+    },
+    "measurement_method": {
+      "type": "string",
+      "enum": ["nvidia_smi", "runtime_reported", "profiler", "documented", "unknown"]
+    },
+    "source": { "type": ["string", "null"] },
+    "evidence_level": {
+      "type": "string",
+      "enum": ["official_runtime_measurement", "publisher_measurement", "independent_measurement", "community_measurement"]
+    },
+    "observed_at": { "type": ["string", "null"], "format": "date-time" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "evidence_level": { "const": "official_runtime_measurement" } } },
+      "then": { "required": ["source"] }
+    }
+  ]
+}

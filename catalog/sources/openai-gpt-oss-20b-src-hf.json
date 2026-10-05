@@ -1,0 +1,15 @@
+{
+  "accessed_at": "2026-10-05T06:10:15.514594Z",
+  "archived_reference": null,
+  "authority_level": "tier_a_primary",
+  "commit_or_revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+  "notes": "platform=hugging-face; repo_id=openai/gpt-oss-20b; requested_revision=main; resolved_revision=6cee5e81ee83917806bbde320786a8fb61efebee; officiality_status=unverified (namespace alone never proves officiality)",
+  "published_at": null,
+  "publisher": "openai",
+  "revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+  "schema_version": "0.1.0",
+  "source_id": "openai-gpt-oss-20b-src-hf",
+  "source_type": "official_repo",
+  "title": "Hugging Face repository openai/gpt-oss-20b (publisher-published metadata)",
+  "url": "https://huggingface.co/openai/gpt-oss-20b"
+}

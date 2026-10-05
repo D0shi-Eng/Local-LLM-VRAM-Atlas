@@ -1,0 +1,94 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "heretic",
+    "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": true,
+    "uncensoring_method": "publisher_or_variant_author_claim",
+    "variant_author": "OS-Software",
+    "variant_source": "https://huggingface.co/OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF",
+    "verification_status": "publisher_claim"
+  },
+  "architecture": "unknown",
+  "architecture_type": "unknown",
+  "base_models": [
+    "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "OS-Software",
+  "display_name": "OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "apache-2.0",
+    "license_name": null,
+    "license_notes": "raw_license_value='apache-2.0'; spdx=True",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "open_weights_permissive",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:10.292450Z",
+    "downloads": 136157,
+    "likes": 63,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 7206168928,
+    "file_size_gib": 6.711,
+    "format": "GGUF",
+    "native_quantization": false,
+    "quant_family": "q2",
+    "quant_name": "Q2",
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "5ab50fd49410941a8d4f97912303b1c7d458ffa2",
+    "split_files": true
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf",
+  "total_parameters_b": 26.895998464,
+  "verification": {
+    "evidence_ids": [
+      "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-license-license-id",
+      "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-openness",
+      "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-base-models",
+      "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-architecture",
+      "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-total-parameters-b",
+      "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-context-length-advertised-max",
+      "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-quantization-quant-name",
+      "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-popularity",
+      "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-resolved-revision",
+      "ev-v2-ae5f074fec96b6dfb701644b8e5d6581db4174d1c9e2476639cd1e606e0c6347",
+      "ev-v2-4a7af9652027878b130efce5b1c8a2fbd6f4a6e8facbd9e4adb7b8bec4688e75"
+    ],
+    "status": "publisher_claim"
+  }
+}

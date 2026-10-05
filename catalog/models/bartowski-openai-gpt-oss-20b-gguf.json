@@ -1,0 +1,95 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "unknown",
+    "base_model": "openai/gpt-oss-20b",
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "variant_author": "bartowski",
+    "variant_source": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF",
+    "verification_status": "unknown"
+  },
+  "architecture": "unknown",
+  "architecture_type": "unknown",
+  "base_models": [
+    "openai/gpt-oss-20b"
+  ],
+  "catalog_status": "pending_license",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "bartowski",
+  "display_name": "bartowski/openai_gpt-oss-20b-GGUF",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": null,
+    "license_name": null,
+    "license_notes": "raw_license_value=None; spdx=False",
+    "license_source": null,
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "unknown"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "bartowski-openai-gpt-oss-20b-gguf",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "unclear",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:04.504922Z",
+    "downloads": 15276,
+    "likes": 39,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 13792637760,
+    "file_size_gib": 12.845,
+    "format": "GGUF",
+    "native_quantization": null,
+    "quant_family": "bf16",
+    "quant_name": "BF16",
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "e39ba3aa000c47c83dacdc9e1ca2c9dd0808c205",
+    "split_files": true
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "bartowski-openai-gpt-oss-20b-gguf",
+  "total_parameters_b": 20.914757184,
+  "verification": {
+    "evidence_ids": [
+      "bartowski-openai-gpt-oss-20b-gguf-ev-license-license-id",
+      "bartowski-openai-gpt-oss-20b-gguf-ev-openness",
+      "bartowski-openai-gpt-oss-20b-gguf-ev-base-models",
+      "bartowski-openai-gpt-oss-20b-gguf-ev-architecture",
+      "bartowski-openai-gpt-oss-20b-gguf-ev-total-parameters-b",
+      "bartowski-openai-gpt-oss-20b-gguf-ev-context-length-advertised-max",
+      "bartowski-openai-gpt-oss-20b-gguf-ev-quantization-quant-name",
+      "bartowski-openai-gpt-oss-20b-gguf-ev-popularity",
+      "bartowski-openai-gpt-oss-20b-gguf-ev-resolved-revision",
+      "ev-v2-abf8bacd76aae6192c4c3c6c4df9649b3ed1b435007be19c92abbf2cb9431d44",
+      "ev-v2-8712d51947710d074b774af97c58d04a4a949e6be148847df9fe982ce356cc41",
+      "ev-v2-f74ace1e553ebf2f032a21ea24ff8ab7dfa54afb9945e1ccc984afc764cc552e"
+    ],
+    "status": "publisher_claim"
+  }
+}

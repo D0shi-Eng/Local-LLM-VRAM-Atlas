@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-llm-vram-atlas.local/schemas/runtime.schema.json",
+  "title": "AtlasRuntimeRecord",
+  "description": "Runtime compatibility is always bound to a runtime, version, and backend. A bare 'compatible = true' is forbidden, and a .gguf extension alone proves nothing about stock llama.cpp, LM Studio, Ollama, Jan, CUDA, or Metal support. Specification version 0.1.0.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "runtime",
+    "support_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^0\\.[0-9]+\\.[0-9]+$"
+    },
+    "runtime": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Runtime project name, e.g. llama.cpp. Never inferred from the file extension."
+    },
+    "runtime_version": {
+      "type": ["string", "null"],
+      "description": "Exact version or commit; some architectures or quants need a recent build or a custom fork."
+    },
+    "backend": {
+      "type": ["string", "null"],
+      "description": "e.g. CUDA, Metal, Vulkan, CPU. Support on one backend never implies support on another."
+    },
+    "platform": { "type": ["string", "null"], "description": "e.g. Windows, Linux, macOS." },
+    "device_family": { "type": ["string", "null"] },
+    "support_status": {
+      "type": "string",
+      "enum": ["official", "verified", "reported", "experimental", "unsupported", "unknown"]
+    },
+    "support_source": {
+      "type": ["string", "null"],
+      "description": "Where the support statement comes from (official docs, test log, issue link). Mandatory for official/verified status."
+    },
+    "requires_custom_fork": { "type": ["boolean", "null"] },
+    "fork_url": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "pattern": "^https?://\\S+$",
+      "description": "Absolute http(s) URL of the custom fork."
+    },
+    "fork_revision": { "type": ["string", "null"] },
+    "known_limitations": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "e.g. architectures needing a fork, quants unsupported on a backend."
+    },
+    "tested": { "type": ["boolean", "null"] },
+    "tested_at": { "type": ["string", "null"], "format": "date-time" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "support_status": { "enum": ["official", "verified"] } } },
+      "then": { "required": ["support_source", "runtime_version"] }
+    },
+    {
+      "if": { "properties": { "requires_custom_fork": { "const": true } } },
+      "then": {
+        "required": ["fork_url"],
+        "properties": { "fork_url": { "type": "string", "pattern": "^https?://\\S+$" } }
+      }
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "unknown",
+    "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "variant_author": "unsloth",
+    "variant_source": "https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+    "verification_status": "unknown"
+  },
+  "architecture": "unknown",
+  "architecture_type": "unknown",
+  "base_models": [
+    "Qwen/Qwen3-Coder-30B-A3B-Instruct"
+  ],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "unsloth",
+  "display_name": "unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "apache-2.0",
+    "license_name": null,
+    "license_notes": "raw_license_value='apache-2.0'; spdx=True",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "unsloth-qwen3-coder-30b-a3b-instruct-gguf",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "open_weights_permissive",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:07.301358Z",
+    "downloads": 7361953,
+    "likes": 1106,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 49655154016,
+    "file_size_gib": 46.245,
+    "format": "GGUF",
+    "native_quantization": null,
+    "quant_family": "bf16",
+    "quant_name": "BF16",
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "b17cb02dd882d5b6ab62fc777ad2995f19668350",
+    "split_files": true
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "unsloth-qwen3-coder-30b-a3b-instruct-gguf",
+  "total_parameters_b": 30.532122624,
+  "verification": {
+    "evidence_ids": [
+      "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-license-license-id",
+      "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-openness",
+      "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-base-models",
+      "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-architecture",
+      "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-total-parameters-b",
+      "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-context-length-advertised-max",
+      "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-quantization-quant-name",
+      "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-popularity",
+      "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-resolved-revision",
+      "ev-v2-d26c8854b1a962cd95d13ceb3b9521cff0e30856c4c8e734d9c87095d7797479",
+      "ev-v2-90c9731e26843ca7e9a4e7b7c6fc080d49b45aa48c8929c881167e4f113195a3"
+    ],
+    "status": "publisher_claim"
+  }
+}

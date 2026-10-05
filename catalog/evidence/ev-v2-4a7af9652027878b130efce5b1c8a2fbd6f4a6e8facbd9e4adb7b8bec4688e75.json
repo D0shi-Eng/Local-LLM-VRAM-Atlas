@@ -1,0 +1,14 @@
+{
+  "claim_type": "benchmark_score",
+  "evidence_id": "ev-v2-4a7af9652027878b130efce5b1c8a2fbd6f4a6e8facbd9e4adb7b8bec4688e75",
+  "evidence_level": "publisher_claim",
+  "field_path": "quality.local_validation",
+  "notes": "Publisher local-validation table for the heretic variant. Perplexity measured with a 512-token context over 4,080 English and 3,570 Japanese scored tokens; functional checks covered arithmetic, JSON, translation and reading comprehension. WikiText-2 test perplexity: PQ2_0 10.1460, PTQ1_0 10.1435. harmless_alpaca_ja test perplexity: PQ2_0 16.7833, PTQ1_0 16.7744. Functional checks passed 16/16 for both packings. KL divergence against the original release 0.0135; refusals 0/100 versus 95/100 for the original. The publisher states these are small local tests, not a comprehensive benchmark, and that long-context and vision behaviour were not evaluated. The alignment modification baked a rank-128 Heretic LoRA into 34 matrices of the PQ2_0 model, an approximate ternary-code merge rather than a floating-point LoRA merge.; methodology_version=0.1.0 | source_revision=5ab50fd49410941a8d4f97912303b1c7d458ffa2 | identity_status=exact_repository_identity_with_disclosed_artifact_label",
+  "publisher": "OS-Software",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "os-software-heretic-card",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF",
+  "verification_status": "publisher_claim"
+}

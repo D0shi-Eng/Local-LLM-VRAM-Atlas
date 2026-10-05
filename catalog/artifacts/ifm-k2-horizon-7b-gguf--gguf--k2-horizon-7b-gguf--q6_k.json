@@ -1,0 +1,28 @@
+{
+  "artifact_set_id": "ifm-k2-horizon-7b-gguf--gguf--k2-horizon-7b-gguf--q6_k",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "docs",
+    "metadata"
+  ],
+  "files": [
+    {
+      "extension": ".gguf",
+      "filename": "K2-Horizon-7B-Q6_K.gguf",
+      "path": "K2-Horizon-7B-Q6_K.gguf",
+      "source_reported_size_bytes": 7394548096
+    }
+  ],
+  "format": "GGUF",
+  "kind": "single",
+  "model_id": "ifm-k2-horizon-7b-gguf",
+  "primary_weight_bytes": 7394548096,
+  "revision": "9fb01f7b397994455262f4b8256e4e00e4949ea9",
+  "schema_version": "0.2.0",
+  "shard_count": 1,
+  "shard_total": null,
+  "shards_complete": null,
+  "total_source_reported_bytes": 7394548096,
+  "variant": "Q6_K",
+  "verification_status": "source_reported"
+}

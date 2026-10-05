@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-3b5a3fa5a31a553aacfe0e5ee5975f27be932a99a78599bd6b33f76d7f66b3c6",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.packaging_identity",
+  "notes": "Publisher-declared packing identity. Exactly two packings exist: PTQ1_0 (dense trits, 1.75 bits/weight, 5.95 GB, file stem Ternary-Bonsai-2-27B-PTQ1_0.gguf) and PQ2_0 (each trit in a 2-bit slot, 2.13 bits/weight, 7.21 GB, file stem Ternary-Bonsai-2-27B-PQ2_0.gguf). Ternary g128 with a blockwise Hadamard rotation folded into the stored weights; 1.72 bits/weight for the language model as a whole; derived from Qwen3.8-27B, 64 blocks, ~75% linear / ~25% full attention; 262K context inherited from the base model. DISCREPANCY: the catalog labels this artifact variant 'TQ1_0', a label the publisher does not use, while the catalog's own artifact_weight_bytes 5946648928 matches the stated PTQ1_0 packing. RUNTIME: stock llama.cpp rejects PQ2_0 and PTQ1_0 as unknown types and loads Q2_0 without warning while producing garbage, because it has no Hadamard activation runtime; the PrismML-Eng/llama.cpp fork is required.; methodology_version=0.1.0 | source_revision=b072e1d3b35a0a630cece372c2127528e0994386 | identity_status=exact_repository_identity_with_disclosed_artifact_label",
+  "publisher": "prism-ml",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "prism-ml-bonsai-card",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "verification_status": "publisher_claim"
+}

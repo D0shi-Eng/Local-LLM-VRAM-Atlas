@@ -1,0 +1,141 @@
+{
+  "active_parameters_b": null,
+  "architecture_raw": null,
+  "architecture_type_raw": null,
+  "author": "IFM",
+  "base_models_raw": [
+    "IFM/K2-Horizon-7B"
+  ],
+  "card_text": null,
+  "conflicts": [],
+  "context_advertised": null,
+  "datasets_raw": [
+    "IFM/K2-Horizon-Pretrain-Data",
+    "IFM/K2-Horizon-Midtrain-Data"
+  ],
+  "disabled": false,
+  "downloads": 23168,
+  "experts_active": null,
+  "experts_total": null,
+  "gated": false,
+  "languages": [
+    "en"
+  ],
+  "library_name": "transformers",
+  "license_raw": "apache-2.0",
+  "likes": 70,
+  "namespace": "IFM",
+  "pipeline_tag": "text-generation",
+  "platform": "hugging-face",
+  "private": false,
+  "repo_id": "IFM/K2-Horizon-7B-GGUF",
+  "repo_name": "K2-Horizon-7B-GGUF",
+  "requested_revision": "main",
+  "resolved_revision": "9fb01f7b397994455262f4b8256e4e00e4949ea9",
+  "retrieved_at": "2026-10-05T06:10:58.279208Z",
+  "siblings": [
+    {
+      "extension": ".gitattributes",
+      "filename": ".gitattributes",
+      "path": ".gitattributes",
+      "source_reported_hash": "7fdf8b6e185ac25eca438e1088ab7c9fdb4a294d",
+      "source_reported_size_bytes": 2040,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".gguf",
+      "filename": "K2-Horizon-7B-BF16.gguf",
+      "path": "K2-Horizon-7B-BF16.gguf",
+      "source_reported_hash": "0f4cad4687da50d868d8aa3512038fc70e62333c",
+      "source_reported_size_bytes": 18010413440,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "K2-Horizon-7B-Q4_K_M.gguf",
+      "path": "K2-Horizon-7B-Q4_K_M.gguf",
+      "source_reported_hash": "bfed280f66322cac9a8f9cff7385e0f07cda9275",
+      "source_reported_size_bytes": 5592217984,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "K2-Horizon-7B-Q5_0.gguf",
+      "path": "K2-Horizon-7B-Q5_0.gguf",
+      "source_reported_hash": "250773c15f0ed9fa41c5f72f8e16fe5ee6a72383",
+      "source_reported_size_bytes": 6335723904,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "K2-Horizon-7B-Q5_K_M.gguf",
+      "path": "K2-Horizon-7B-Q5_K_M.gguf",
+      "source_reported_hash": "a986102961db90bf99091fadc158660d7114a73f",
+      "source_reported_size_bytes": 6466075008,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "K2-Horizon-7B-Q6_K.gguf",
+      "path": "K2-Horizon-7B-Q6_K.gguf",
+      "source_reported_hash": "29f46a82b97164c1aa53c9ab191345a7ad2fb8b8",
+      "source_reported_size_bytes": 7394548096,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "K2-Horizon-7B-Q8_0.gguf",
+      "path": "K2-Horizon-7B-Q8_0.gguf",
+      "source_reported_hash": "06b672df0abde449c28ceef6b9a0e08795ae6ca5",
+      "source_reported_size_bytes": 9573964160,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".md",
+      "filename": "README.md",
+      "path": "README.md",
+      "source_reported_hash": "9cdb3582f6c5d1b49ac9db41da00cacf21d12cd1",
+      "source_reported_size_bytes": 26863,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".png",
+      "filename": "assets/k2-horizon-7b-benchmarks.png",
+      "path": "assets/k2-horizon-7b-benchmarks.png",
+      "source_reported_hash": "2f2c9fc3d0b7ae4fb2367802b38721c9bffeb53e",
+      "source_reported_size_bytes": 1205943,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".png",
+      "filename": "assets/k2-horizon-7b-training-loss-vs-tokens.png",
+      "path": "assets/k2-horizon-7b-training-loss-vs-tokens.png",
+      "source_reported_hash": "6bb46dcbe6bf98f1a299b5896a4068994f319957",
+      "source_reported_size_bytes": 482156,
+      "source_reported_storage": "lfs"
+    }
+  ],
+  "source_url": "https://huggingface.co/IFM/K2-Horizon-7B-GGUF",
+  "tags": [
+    "transformers",
+    "gguf",
+    "k2-horizon",
+    "7b",
+    "dense",
+    "open-weights",
+    "ifm",
+    "text-generation",
+    "en",
+    "dataset:IFM/K2-Horizon-Pretrain-Data",
+    "dataset:IFM/K2-Horizon-Midtrain-Data",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "total_parameters_b": 8.99917824,
+  "trending_score": null,
+  "warnings": []
+}

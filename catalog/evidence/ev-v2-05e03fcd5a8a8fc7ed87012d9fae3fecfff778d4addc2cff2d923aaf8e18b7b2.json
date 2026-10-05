@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-05e03fcd5a8a8fc7ed87012d9fae3fecfff778d4addc2cff2d923aaf8e18b7b2",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.source_revision",
+  "notes": "Current resolved revision and exact artifact identity reacquired anonymously; repo=TinyLlama/TinyLlama-1.1B-Chat-v1.0; revision=fe8a4ea1ffedaf415f4da2f062534de366a451e6; artifact=tinyllama-tinyllama-1-1b-chat-v1-0--safetensors--model.safetensors",
+  "publisher": "TinyLlama",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-4g-06-tinyllama-1-1b-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "verification_status": "independently_verified"
+}

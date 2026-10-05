@@ -1,0 +1,10 @@
+{
+  "schema_version": "0.1.0",
+  "source_id": "fixture-invalid-url",
+  "source_type": "official_docs",
+  "title": "Malformed URL Fixture (must fail)",
+  "publisher": "Fixture Publisher (synthetic)",
+  "url": "not-a-valid-url",
+  "accessed_at": "2026-10-05T08:20:00+03:00",
+  "authority_level": "tier_a_primary"
+}

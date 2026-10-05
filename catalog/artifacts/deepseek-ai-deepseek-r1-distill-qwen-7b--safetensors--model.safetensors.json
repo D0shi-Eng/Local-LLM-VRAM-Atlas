@@ -1,0 +1,37 @@
+{
+  "artifact_set_id": "deepseek-ai-deepseek-r1-distill-qwen-7b--safetensors--model.safetensors",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "config",
+    "docs",
+    "index",
+    "metadata",
+    "tokenizer"
+  ],
+  "files": [
+    {
+      "extension": ".safetensors",
+      "filename": "model-00001-of-000002.safetensors",
+      "path": "model-00001-of-000002.safetensors",
+      "source_reported_size_bytes": 8606596466
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00002-of-000002.safetensors",
+      "path": "model-00002-of-000002.safetensors",
+      "source_reported_size_bytes": 6624675384
+    }
+  ],
+  "format": "safetensors",
+  "kind": "sharded",
+  "model_id": "deepseek-ai-deepseek-r1-distill-qwen-7b",
+  "primary_weight_bytes": 15231271850,
+  "revision": "916b56a44061fd5cd7d6a8fb632557ed4f724f60",
+  "schema_version": "0.2.0",
+  "shard_count": 2,
+  "shard_total": 2,
+  "shards_complete": true,
+  "total_source_reported_bytes": 15231271850,
+  "variant": null,
+  "verification_status": "source_reported"
+}

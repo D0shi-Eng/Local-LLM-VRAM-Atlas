@@ -1,0 +1,30 @@
+{
+  "artifact_set_id": "prism-ml-ternary-bonsai-2-27b-gguf--gguf--ternary-bonsai-2-27b-p.gguf--q2_0",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "docs",
+    "metadata",
+    "other",
+    "projector"
+  ],
+  "files": [
+    {
+      "extension": ".gguf",
+      "filename": "Ternary-Bonsai-2-27B-PQ2_0.gguf",
+      "path": "Ternary-Bonsai-2-27B-PQ2_0.gguf",
+      "source_reported_size_bytes": 7206168928
+    }
+  ],
+  "format": "GGUF",
+  "kind": "single",
+  "model_id": "prism-ml-ternary-bonsai-2-27b-gguf",
+  "primary_weight_bytes": 7206168928,
+  "revision": "b072e1d3b35a0a630cece372c2127528e0994386",
+  "schema_version": "0.2.0",
+  "shard_count": 1,
+  "shard_total": null,
+  "shards_complete": null,
+  "total_source_reported_bytes": 7206168928,
+  "variant": "Q2_0",
+  "verification_status": "source_reported"
+}

@@ -1,0 +1,294 @@
+{
+  "active_parameters_b": null,
+  "architecture_raw": null,
+  "architecture_type_raw": null,
+  "author": "bartowski",
+  "base_models_raw": [
+    "openai/gpt-oss-20b"
+  ],
+  "card_text": null,
+  "conflicts": [],
+  "context_advertised": null,
+  "datasets_raw": [],
+  "disabled": false,
+  "downloads": 15234,
+  "experts_active": null,
+  "experts_total": null,
+  "gated": false,
+  "languages": [],
+  "library_name": null,
+  "license_raw": null,
+  "likes": 39,
+  "namespace": "bartowski",
+  "pipeline_tag": "text-generation",
+  "platform": "hugging-face",
+  "private": false,
+  "repo_id": "bartowski/openai_gpt-oss-20b-GGUF",
+  "repo_name": "openai_gpt-oss-20b-GGUF",
+  "requested_revision": "main",
+  "resolved_revision": "e39ba3aa000c47c83dacdc9e1ca2c9dd0808c205",
+  "retrieved_at": "2026-10-05T06:10:59.276254Z",
+  "siblings": [
+    {
+      "extension": ".gitattributes",
+      "filename": ".gitattributes",
+      "path": ".gitattributes",
+      "source_reported_hash": "ff9ed188b0e657d4d7320d230497a816f774450e",
+      "source_reported_size_bytes": 3450,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".md",
+      "filename": "README.md",
+      "path": "README.md",
+      "source_reported_hash": "aef9371907f26bedb7d0cbbd9a33fcaf5f87344c",
+      "source_reported_size_bytes": 14378,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-IQ2_M.gguf",
+      "path": "openai_gpt-oss-20b-IQ2_M.gguf",
+      "source_reported_hash": "fe6b431775f1443b40c5f67984b7d0bb51a2dffd",
+      "source_reported_size_bytes": 11545731136,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-IQ2_S.gguf",
+      "path": "openai_gpt-oss-20b-IQ2_S.gguf",
+      "source_reported_hash": "cdd87799f2cabe13ebb2c4813270ac2666233414",
+      "source_reported_size_bytes": 11545731136,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-IQ2_XS.gguf",
+      "path": "openai_gpt-oss-20b-IQ2_XS.gguf",
+      "source_reported_hash": "ae007aad83481b50d2b92484f26165278fe7bb46",
+      "source_reported_size_bytes": 11510341696,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-IQ2_XXS.gguf",
+      "path": "openai_gpt-oss-20b-IQ2_XXS.gguf",
+      "source_reported_hash": "94ac49a64253ebac6ef6f62df7ea4664c5ff279c",
+      "source_reported_size_bytes": 11510341696,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-IQ3_M.gguf",
+      "path": "openai_gpt-oss-20b-IQ3_M.gguf",
+      "source_reported_hash": "5c907608b41605c860e931e90f4da6716a9e1078",
+      "source_reported_size_bytes": 11559002176,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-IQ3_XS.gguf",
+      "path": "openai_gpt-oss-20b-IQ3_XS.gguf",
+      "source_reported_hash": "640ba6309cbd77c45ee4086a475154bcc7c53239",
+      "source_reported_size_bytes": 11559002176,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-IQ3_XXS.gguf",
+      "path": "openai_gpt-oss-20b-IQ3_XXS.gguf",
+      "source_reported_hash": "a1b217dffd75f58d6b7547fd86c5915a62e83e03",
+      "source_reported_size_bytes": 11559002176,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-IQ4_NL.gguf",
+      "path": "openai_gpt-oss-20b-IQ4_NL.gguf",
+      "source_reported_hash": "9e5b7fc07fd640c7d1916be5d490d8a65497ee1e",
+      "source_reported_size_bytes": 11561214016,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-IQ4_XS.gguf",
+      "path": "openai_gpt-oss-20b-IQ4_XS.gguf",
+      "source_reported_hash": "b68d82cad6d62b06c89d45896ba75356b6db894f",
+      "source_reported_size_bytes": 11561214016,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-MXFP4.gguf",
+      "path": "openai_gpt-oss-20b-MXFP4.gguf",
+      "source_reported_hash": "39aafa16aba9f9dc2051395a2c60f4afdcba58fc",
+      "source_reported_size_bytes": 12109565760,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q2_K.gguf",
+      "path": "openai_gpt-oss-20b-Q2_K.gguf",
+      "source_reported_hash": "1949b8f808733940f1434125e535a06df8baf32b",
+      "source_reported_size_bytes": 11559002176,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q2_K_L.gguf",
+      "path": "openai_gpt-oss-20b-Q2_K_L.gguf",
+      "source_reported_hash": "03779e995e90653a6c51d2b2e0dec0769be5bc40",
+      "source_reported_size_bytes": 11848568896,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q3_K_L.gguf",
+      "path": "openai_gpt-oss-20b-Q3_K_L.gguf",
+      "source_reported_hash": "dc7c5e6c7c7c78a32eb871979977cbe65a9c01bc",
+      "source_reported_size_bytes": 11488223296,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q3_K_M.gguf",
+      "path": "openai_gpt-oss-20b-Q3_K_M.gguf",
+      "source_reported_hash": "27ffaa7eeac1dbd3b520df8a05aa5c1b9e8e359e",
+      "source_reported_size_bytes": 11559186496,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q3_K_S.gguf",
+      "path": "openai_gpt-oss-20b-Q3_K_S.gguf",
+      "source_reported_hash": "06b40216dc788d91ea44a0625e4baca60c003d10",
+      "source_reported_size_bytes": 11554578496,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q3_K_XL.gguf",
+      "path": "openai_gpt-oss-20b-Q3_K_XL.gguf",
+      "source_reported_hash": "998b256318a9ddcbdcc042ff80a784db266daa30",
+      "source_reported_size_bytes": 11777790016,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q4_0.gguf",
+      "path": "openai_gpt-oss-20b-Q4_0.gguf",
+      "source_reported_hash": "2d01a17ef5fceed7f9159f4989b9575a6e207356",
+      "source_reported_size_bytes": 11519189056,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q4_1.gguf",
+      "path": "openai_gpt-oss-20b-Q4_1.gguf",
+      "source_reported_hash": "65031bc0ac8264a89bb16f210a041424418340be",
+      "source_reported_size_bytes": 11592986176,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q4_K_L.gguf",
+      "path": "openai_gpt-oss-20b-Q4_K_L.gguf",
+      "source_reported_hash": "9aee07751ed9c7492e703ef2d3cd1e0842ff5bb7",
+      "source_reported_size_bytes": 11890593856,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q4_K_M.gguf",
+      "path": "openai_gpt-oss-20b-Q4_K_M.gguf",
+      "source_reported_hash": "e5977ff225d51e7582d5d9371f35b84e10ebeb21",
+      "source_reported_size_bytes": 11673418816,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q4_K_S.gguf",
+      "path": "openai_gpt-oss-20b-Q4_K_S.gguf",
+      "source_reported_hash": "b5334dde022e44800a5a0eccf080438ea27c8929",
+      "source_reported_size_bytes": 11667151936,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q5_K_L.gguf",
+      "path": "openai_gpt-oss-20b-Q5_K_L.gguf",
+      "source_reported_hash": "bbe43955f1db7f4b88d2e398405f5e2a06947822",
+      "source_reported_size_bytes": 11909394496,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q5_K_M.gguf",
+      "path": "openai_gpt-oss-20b-Q5_K_M.gguf",
+      "source_reported_hash": "d8caa0ceddcc438432eb7b3b3ea0e6af01cdf8f7",
+      "source_reported_size_bytes": 11728415296,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q5_K_S.gguf",
+      "path": "openai_gpt-oss-20b-Q5_K_S.gguf",
+      "source_reported_hash": "015acac40dafd94367c1fea90cdfc4035eee6d3a",
+      "source_reported_size_bytes": 11722885696,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q6_K.gguf",
+      "path": "openai_gpt-oss-20b-Q6_K.gguf",
+      "source_reported_hash": "9b000006df63176ce9eea0767e4b5ddb7858157b",
+      "source_reported_size_bytes": 12040998976,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q6_K_L.gguf",
+      "path": "openai_gpt-oss-20b-Q6_K_L.gguf",
+      "source_reported_hash": "9b000006df63176ce9eea0767e4b5ddb7858157b",
+      "source_reported_size_bytes": 12040998976,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q8_0.gguf",
+      "path": "openai_gpt-oss-20b-Q8_0.gguf",
+      "source_reported_hash": "6bd5b74b1b0750bdd184ed43ea462c2ad22d4e45",
+      "source_reported_size_bytes": 12109566016,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-bf16.gguf",
+      "path": "openai_gpt-oss-20b-bf16.gguf",
+      "source_reported_hash": "caeeb38700a1616ac8c367772e602304073539ae",
+      "source_reported_size_bytes": 13792637760,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-imatrix.gguf",
+      "path": "openai_gpt-oss-20b-imatrix.gguf",
+      "source_reported_hash": "7423e44f650288af346cf80f16425c21a4dfcbb3",
+      "source_reported_size_bytes": 28079776,
+      "source_reported_storage": "lfs"
+    }
+  ],
+  "source_url": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF",
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:quantized:openai/gpt-oss-20b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "total_parameters_b": 20.914757184,
+  "trending_score": null,
+  "warnings": []
+}

@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-014466baf8dbf1ec49df54e976aaa0e88fd0faac6ecc8574a3a77b47783696c8",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.source_revision",
+  "notes": "Current resolved revision and exact artifact identity reacquired anonymously; repo=bartowski/Qwen2.5-7B-Instruct-GGUF; revision=8911e8a47f92bac19d6f5c64a2e2095bd2f7d031; artifact=bartowski-qwen2-5-7b-instruct-gguf--gguf--qwen2.5-7b-instruct-gguf--iq3_xs",
+  "publisher": "bartowski",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-4g-04-qwen2-5-7b-iq3xs-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF",
+  "verification_status": "independently_verified"
+}

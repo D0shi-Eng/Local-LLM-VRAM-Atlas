@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-55bcea5e81b8a0e618664593cda050549745656bf0efb87f6c57d59e71a0a7b3",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.source_revision",
+  "notes": "Current resolved revision and exact artifact identity reacquired anonymously; repo=Orenguteng/Llama-3.1-8B-Lexi-Uncensored-GGUF; revision=d5cc0aa376e3693a85612d34574be8cff33a2f56; artifact=orenguteng-llama-3-1-8b-lexi-uncensored-gguf--gguf--llama-3.1-8b-lexi-uncensored-gguf--q4",
+  "publisher": "Orenguteng",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-8g-06-llama31-lexi-uncensored-q4-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-GGUF",
+  "verification_status": "independently_verified"
+}

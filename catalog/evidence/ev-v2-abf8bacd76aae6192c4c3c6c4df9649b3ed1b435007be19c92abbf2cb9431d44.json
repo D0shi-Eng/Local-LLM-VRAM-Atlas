@@ -1,0 +1,14 @@
+{
+  "claim_type": "architecture_property",
+  "evidence_id": "ev-v2-abf8bacd76aae6192c4c3c6c4df9649b3ed1b435007be19c92abbf2cb9431d44",
+  "evidence_level": "publisher_claim",
+  "field_path": "architecture",
+  "notes": "Current architecture inputs read anonymously from the publisher's configuration source (declared_base_model_config); repo=openai/gpt-oss-20b; revision=6cee5e81ee83917806bbde320786a8fb61efebee",
+  "publisher": "openai",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-12g-03-gpt-oss-20b-mxfp4-gguf-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/openai/gpt-oss-20b",
+  "verification_status": "independently_verified"
+}

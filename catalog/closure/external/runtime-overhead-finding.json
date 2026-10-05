@@ -1,0 +1,12 @@
+{
+  "answer": "no_published_bound",
+  "consequence": "A universal llama.cpp overhead constant would be a fabrication. Atlas keeps known_static_overhead_bytes and known_dynamic_overhead_bytes absent, so the estimateupper bound stays absent and the tier verdict stays insufficient_evidence rather than aguessed fit.",
+  "evidence": "llama.cpp's own build documentation shows the backend reporting its device allocations at runtime, for one specific backend and model: 'llm_load_tensors: CANN model buffer size = 13313.00 MiB' and 'llama_new_context_with_model: CANN compute buffer size = 1260.81 MiB'. The compute buffer is therefore a backend-specific, model-specific, runtime-reportedvalue. The documentation states no bound, no maximum and no constant for it, and the backend directory documentation contains no CUDA memory-budget page.",
+  "observed_at": "2026-10-05T00:00:00Z",
+  "question": "Does llama.cpp publish a static and dynamic GPU-memory overhead figure that Atlas could use as a documented upper bound for a weight+KV estimate?",
+  "schema_version": "0.1.0",
+  "scope_limits": [
+    "The quoted figure is the CANN backend, not CUDA; it is recorded as evidence that the quantity exists and is runtime-reported, never as a CUDA overhead value.",
+    "No GPU was used by Atlas and no CUDA context was created at any point."
+  ]
+}

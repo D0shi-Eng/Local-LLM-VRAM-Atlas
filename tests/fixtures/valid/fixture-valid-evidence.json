@@ -1,0 +1,14 @@
+{
+  "schema_version": "0.1.0",
+  "evidence_id": "fixture-evidence-001",
+  "claim_type": "vram_requirement",
+  "field_path": "vram.measured_vram_gib",
+  "source_id": "fixture-source-001",
+  "source_type": "independent_measurement",
+  "source_url": "https://example.com/measurements/fixture-001",
+  "retrieved_at": "2026-10-05T08:20:00+03:00",
+  "publisher": "Fixture Lab (synthetic)",
+  "evidence_level": "independent_measurement",
+  "verification_status": "independently_verified",
+  "notes": "Synthetic fixture only."
+}

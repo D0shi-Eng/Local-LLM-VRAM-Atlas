@@ -1,0 +1,14 @@
+{
+  "claim_type": "other",
+  "evidence_id": "openbmb-minicpm5-2b-ev-base-models",
+  "evidence_level": "publisher_claim",
+  "field_path": "base_models",
+  "notes": "repo_id=openbmb/MiniCPM5-2B; resolved_revision=f97400052a43d642bbc6e9975e2397e3ae6a6b52; requested_revision=main",
+  "publisher": "openbmb",
+  "retrieved_at": "2026-10-05T06:10:40.102019Z",
+  "schema_version": "0.1.0",
+  "source_id": "openbmb-minicpm5-2b-src-hf",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/openbmb/MiniCPM5-2B",
+  "verification_status": "unknown"
+}

@@ -1,0 +1,96 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "unknown",
+    "base_model": "Qwen/Qwen2.5-7B-Instruct",
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "variant_author": "bartowski",
+    "variant_source": "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF",
+    "verification_status": "unknown"
+  },
+  "architecture": "unknown",
+  "architecture_type": "unknown",
+  "base_models": [
+    "Qwen/Qwen2.5-7B-Instruct"
+  ],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "bartowski",
+  "display_name": "bartowski/Qwen2.5-7B-Instruct-GGUF",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "apache-2.0",
+    "license_name": null,
+    "license_notes": "raw_license_value='apache-2.0'; spdx=True",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "bartowski-qwen2-5-7b-instruct-gguf",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "open_weights_permissive",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:09.398642Z",
+    "downloads": 185649,
+    "likes": 78,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 15237853600,
+    "file_size_gib": 14.191,
+    "format": "GGUF",
+    "native_quantization": false,
+    "quant_family": "unknown",
+    "quant_name": null,
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "8911e8a47f92bac19d6f5c64a2e2095bd2f7d031",
+    "split_files": true
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "bartowski-qwen2-5-7b-instruct-gguf",
+  "total_parameters_b": 7.615616512,
+  "verification": {
+    "evidence_ids": [
+      "bartowski-qwen2-5-7b-instruct-gguf-ev-license-license-id",
+      "bartowski-qwen2-5-7b-instruct-gguf-ev-openness",
+      "bartowski-qwen2-5-7b-instruct-gguf-ev-base-models",
+      "bartowski-qwen2-5-7b-instruct-gguf-ev-architecture",
+      "bartowski-qwen2-5-7b-instruct-gguf-ev-total-parameters-b",
+      "bartowski-qwen2-5-7b-instruct-gguf-ev-context-length-advertised-max",
+      "bartowski-qwen2-5-7b-instruct-gguf-ev-quantization-quant-name",
+      "bartowski-qwen2-5-7b-instruct-gguf-ev-popularity",
+      "bartowski-qwen2-5-7b-instruct-gguf-ev-resolved-revision",
+      "ev-v2-c74a9ea0df4ca728c86e7aa0bc458cf9ca4e756ddab8107511d14f886f716bd4",
+      "ev-v2-014466baf8dbf1ec49df54e976aaa0e88fd0faac6ecc8574a3a77b47783696c8",
+      "ev-v2-e879f109497f717d6fbe45cb85252722be8e3acd47cfc6a42a57daada150e91f",
+      "ev-v2-04112f88265579e84c3e14afc924ca942740aa877911bdd25bc43d076a9f58ff"
+    ],
+    "status": "publisher_claim"
+  }
+}

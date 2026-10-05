@@ -1,0 +1,13 @@
+{
+  "schema_version": "0.1.0",
+  "model_id": "fixture-invalid-missing-field",
+  "creator": "Atlas Test Fixtures",
+  "architecture": "FixtureTransformer",
+  "architecture_type": "dense",
+  "openness": "unclear",
+  "verification": {
+    "status": "unverified"
+  },
+  "catalog_status": "experimental",
+  "lifecycle_status": "active"
+}

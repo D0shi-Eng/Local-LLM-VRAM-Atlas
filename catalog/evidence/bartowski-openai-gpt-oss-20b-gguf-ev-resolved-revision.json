@@ -1,0 +1,14 @@
+{
+  "claim_type": "other",
+  "evidence_id": "bartowski-openai-gpt-oss-20b-gguf-ev-resolved-revision",
+  "evidence_level": "publisher_claim",
+  "field_path": "resolved_revision",
+  "notes": "repo_id=bartowski/openai_gpt-oss-20b-GGUF; resolved_revision=e39ba3aa000c47c83dacdc9e1ca2c9dd0808c205; requested_revision=main",
+  "publisher": "bartowski",
+  "retrieved_at": "2026-10-05T06:10:23.068720Z",
+  "schema_version": "0.1.0",
+  "source_id": "bartowski-openai-gpt-oss-20b-gguf-src-hf",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF",
+  "verification_status": "publisher_claim"
+}

@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-ae5f074fec96b6dfb701644b8e5d6581db4174d1c9e2476639cd1e606e0c6347",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.source_revision",
+  "notes": "Current resolved revision and exact artifact identity reacquired anonymously; repo=OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF; revision=5ab50fd49410941a8d4f97912303b1c7d458ffa2; artifact=os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf--gguf--ternary-bonsai-2-27b-uncensored-heretic-p.gguf--tq1_0",
+  "publisher": "OS-Software",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-8g-07-ternary-heretic-tq1-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF",
+  "verification_status": "independently_verified"
+}

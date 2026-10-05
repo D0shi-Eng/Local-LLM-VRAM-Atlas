@@ -1,0 +1,249 @@
+{
+  "active_parameters_b": null,
+  "architecture_raw": "Mistral3ForConditionalGeneration",
+  "architecture_type_raw": null,
+  "author": "mistralai",
+  "base_models_raw": [
+    "mistralai/Mistral-Small-3.1-24B-Base-2503"
+  ],
+  "card_text": null,
+  "conflicts": [],
+  "context_advertised": null,
+  "datasets_raw": [],
+  "disabled": false,
+  "downloads": 255950,
+  "experts_active": null,
+  "experts_total": null,
+  "gated": false,
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "it",
+    "ja",
+    "ko",
+    "ru",
+    "zh",
+    "ar",
+    "fa",
+    "id",
+    "ms",
+    "ne",
+    "pl",
+    "ro",
+    "sr",
+    "sv",
+    "tr",
+    "uk",
+    "vi",
+    "hi",
+    "bn"
+  ],
+  "library_name": "vllm",
+  "license_raw": "apache-2.0",
+  "likes": 622,
+  "namespace": "mistralai",
+  "pipeline_tag": null,
+  "platform": "hugging-face",
+  "private": false,
+  "repo_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "repo_name": "Mistral-Small-3.2-24B-Instruct-2506",
+  "requested_revision": "main",
+  "resolved_revision": "95a6d26c4bfb886c58daf9d3f7332c857cb27b43",
+  "retrieved_at": "2026-10-05T06:10:59.070910Z",
+  "siblings": [
+    {
+      "extension": ".gitattributes",
+      "filename": ".gitattributes",
+      "path": ".gitattributes",
+      "source_reported_hash": "ed18453a3dbda4c3ae158368dc6a42bf6488d24c",
+      "source_reported_size_bytes": 1567,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".md",
+      "filename": "README.md",
+      "path": "README.md",
+      "source_reported_hash": "4f2c434dc5b906af54b9f600302d057e80cc2c24",
+      "source_reported_size_bytes": 25365,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".txt",
+      "filename": "SYSTEM_PROMPT.txt",
+      "path": "SYSTEM_PROMPT.txt",
+      "source_reported_hash": "5be4721443042209880d7b84bd2df6f950354ace",
+      "source_reported_size_bytes": 2334,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "config.json",
+      "path": "config.json",
+      "source_reported_hash": "786d10ba172eb033ce576f199e13cd65c3a8d905",
+      "source_reported_size_bytes": 1172,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "consolidated.safetensors",
+      "path": "consolidated.safetensors",
+      "source_reported_hash": "772a5e115942e5aa6443745fa10ffc4eb819837f",
+      "source_reported_size_bytes": 48022792280,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".json",
+      "filename": "generation_config.json",
+      "path": "generation_config.json",
+      "source_reported_hash": "5d14022fd56f8ef7a703afca06d5c74ecd9f8a3b",
+      "source_reported_size_bytes": 155,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00001-of-00010.safetensors",
+      "path": "model-00001-of-00010.safetensors",
+      "source_reported_hash": "9334aa8c8f37f7d1f07a473417f8b894547c26c1",
+      "source_reported_size_bytes": 4883550696,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00002-of-00010.safetensors",
+      "path": "model-00002-of-00010.safetensors",
+      "source_reported_hash": "fcb7894da6a7a965eea02488d2f4940d4e2130cc",
+      "source_reported_size_bytes": 4781593336,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00003-of-00010.safetensors",
+      "path": "model-00003-of-00010.safetensors",
+      "source_reported_hash": "60cfde381fd512f6cf304b6243f19c638651d8f0",
+      "source_reported_size_bytes": 4886472224,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00004-of-00010.safetensors",
+      "path": "model-00004-of-00010.safetensors",
+      "source_reported_hash": "a3ee5d7e40d99acc5ba67db34adce5896d13a9e8",
+      "source_reported_size_bytes": 4781593376,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00005-of-00010.safetensors",
+      "path": "model-00005-of-00010.safetensors",
+      "source_reported_hash": "052736bd2824ddbea5003490afdeb3b8c6aa74da",
+      "source_reported_size_bytes": 4781593368,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00006-of-00010.safetensors",
+      "path": "model-00006-of-00010.safetensors",
+      "source_reported_hash": "6f5cb536521fb494afef1ea22613ad16e1f4fd4b",
+      "source_reported_size_bytes": 4886472248,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00007-of-00010.safetensors",
+      "path": "model-00007-of-00010.safetensors",
+      "source_reported_hash": "54a80d2461a72f8b8be0a000df938c59c45a8def",
+      "source_reported_size_bytes": 4781593376,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00008-of-00010.safetensors",
+      "path": "model-00008-of-00010.safetensors",
+      "source_reported_hash": "4727f8811a5c4c2a157f11fb108834b509448c22",
+      "source_reported_size_bytes": 4781593368,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00009-of-00010.safetensors",
+      "path": "model-00009-of-00010.safetensors",
+      "source_reported_hash": "def6e0d9a9fe4b3a63217b2df8aefbff9881d92c",
+      "source_reported_size_bytes": 4886472248,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00010-of-00010.safetensors",
+      "path": "model-00010-of-00010.safetensors",
+      "source_reported_hash": "0d4923e880d9469b07c68942b0852689d65c521a",
+      "source_reported_size_bytes": 4571866320,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".json",
+      "filename": "model.safetensors.index.json",
+      "path": "model.safetensors.index.json",
+      "source_reported_hash": "c8d12958a1c6d6de8f6539883802e6e1a7bcac6a",
+      "source_reported_size_bytes": 57907,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "params.json",
+      "path": "params.json",
+      "source_reported_hash": "ba80d5d1ebf33f2b8e7ad064f7a0c05057af7ab0",
+      "source_reported_size_bytes": 807,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "tekken.json",
+      "path": "tekken.json",
+      "source_reported_hash": "43967936b455cd0af9f0d41e4bbfe2568b61335c",
+      "source_reported_size_bytes": 19399895,
+      "source_reported_storage": "lfs"
+    }
+  ],
+  "source_url": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral3",
+    "mistral-common",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "it",
+    "ja",
+    "ko",
+    "ru",
+    "zh",
+    "ar",
+    "fa",
+    "id",
+    "ms",
+    "ne",
+    "pl",
+    "ro",
+    "sr",
+    "sv",
+    "tr",
+    "uk",
+    "vi",
+    "hi",
+    "bn",
+    "base_model:mistralai/Mistral-Small-3.1-24B-Base-2503",
+    "base_model:finetune:mistralai/Mistral-Small-3.1-24B-Base-2503",
+    "license:apache-2.0",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "total_parameters_b": 24.01136128,
+  "trending_score": null,
+  "warnings": []
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "0.1.0",
+  "model_id": "fixture-invalid-vram-tier",
+  "display_name": "Invalid VRAM Tier Fixture (must fail)",
+  "creator": "Atlas Test Fixtures",
+  "architecture": "FixtureTransformer",
+  "architecture_type": "dense",
+  "openness": "unclear",
+  "vram": {
+    "weight_file_size_gib": 4.35,
+    "vram_tier_gb": 10,
+    "evidence": "unknown"
+  },
+  "verification": {
+    "status": "unverified"
+  },
+  "catalog_status": "experimental",
+  "lifecycle_status": "active"
+}

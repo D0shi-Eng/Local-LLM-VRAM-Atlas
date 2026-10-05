@@ -1,0 +1,92 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "unknown",
+    "base_model": "mistralai/Mistral-7B-v0.3",
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "variant_author": "mistralai",
+    "variant_source": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3",
+    "verification_status": "unknown"
+  },
+  "architecture": "MistralForCausalLM",
+  "architecture_type": "unknown",
+  "base_models": [
+    "mistralai/Mistral-7B-v0.3"
+  ],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "mistralai",
+  "display_name": "mistralai/Mistral-7B-Instruct-v0.3",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "apache-2.0",
+    "license_name": null,
+    "license_notes": "raw_license_value='apache-2.0'; spdx=True",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "mistralai-mistral-7b-instruct-v0-3",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "open_weights_permissive",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:08.342229Z",
+    "downloads": 2139487,
+    "likes": 3723,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 28992159440,
+    "file_size_gib": 27.001,
+    "format": "safetensors",
+    "native_quantization": null,
+    "quant_family": "unknown",
+    "quant_name": null,
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+    "split_files": true
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "mistralai-mistral-7b-instruct-v0-3",
+  "total_parameters_b": 7.248023552,
+  "verification": {
+    "evidence_ids": [
+      "mistralai-mistral-7b-instruct-v0-3-ev-license-license-id",
+      "mistralai-mistral-7b-instruct-v0-3-ev-openness",
+      "mistralai-mistral-7b-instruct-v0-3-ev-base-models",
+      "mistralai-mistral-7b-instruct-v0-3-ev-architecture",
+      "mistralai-mistral-7b-instruct-v0-3-ev-total-parameters-b",
+      "mistralai-mistral-7b-instruct-v0-3-ev-context-length-advertised-max",
+      "mistralai-mistral-7b-instruct-v0-3-ev-quantization-quant-name",
+      "mistralai-mistral-7b-instruct-v0-3-ev-popularity",
+      "mistralai-mistral-7b-instruct-v0-3-ev-resolved-revision"
+    ],
+    "status": "publisher_claim"
+  }
+}

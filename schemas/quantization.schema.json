@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-llm-vram-atlas.local/schemas/quantization.schema.json",
+  "title": "AtlasQuantizationEntry",
+  "description": "One versioned quantization registry entry: family, container, runtime, bit depth, and provenance. Families are labels, never quality rankings. Specification version 0.2.0 (Phase 2).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "quantization_id",
+    "canonical_name",
+    "family",
+    "registry_version",
+    "verification_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^0\\.[0-9]+\\.[0-9]+$"
+    },
+    "quantization_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{1,80}$"
+    },
+    "canonical_name": { "type": "string", "minLength": 1, "maxLength": 120 },
+    "family": {
+      "type": "string",
+      "enum": ["f32", "f16", "bf16", "fp8", "int8", "q8", "q6", "q5", "q4", "iq4", "q3", "iq3", "q2", "iq2", "iq1", "q1", "tq", "ternary", "mxfp4", "nvfp4", "awq", "gptq", "exl2", "mlx", "bitsandbytes", "other", "unknown"]
+    },
+    "container_format": {
+      "type": ["string", "null"],
+      "description": "Container/serialization format (GGUF, safetensors); null when not container-bound."
+    },
+    "runtime_family": {
+      "type": ["string", "null"],
+      "description": "Runtime family this definition belongs to, if any."
+    },
+    "nominal_bits": {
+      "type": ["number", "null"],
+      "exclusiveMinimum": 0,
+      "description": "Nameplate bits; never used as storage truth."
+    },
+    "effective_bits_per_weight": {
+      "type": ["number", "null"],
+      "exclusiveMinimum": 0,
+      "description": "Documented or artifact-derived bpw; null when unknown, never name-derived."
+    },
+    "block_size": { "type": ["integer", "null"], "minimum": 1 },
+    "type_size_bytes": { "type": ["integer", "null"], "minimum": 1 },
+    "group_size": { "type": ["integer", "null"], "minimum": 1 },
+    "mixed_precision": {
+      "type": ["boolean", "null"],
+      "description": "True when tensors use more than one precision by definition."
+    },
+    "native_quantization": {
+      "type": ["boolean", "null"],
+      "description": "True only when the checkpoint was natively trained at this depth."
+    },
+    "weight_only": { "type": ["boolean", "null"] },
+    "weight_activation": { "type": ["boolean", "null"] },
+    "cache_quantization": { "type": ["boolean", "null"] },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true,
+      "description": "Runtime aliases recorded apart from the canonical type."
+    },
+    "source_project": { "type": ["string", "null"] },
+    "source_revision": {
+      "type": ["string", "null"],
+      "description": "Immutable revision where reproducibility matters; branch names drift."
+    },
+    "retrieved_at": { "type": ["string", "null"], "format": "date-time" },
+    "registry_version": { "type": "string", "minLength": 1 },
+    "verification_status": {
+      "type": "string",
+      "enum": ["unknown", "unverified", "estimated", "publisher_claim", "quantizer_claim", "independently_verified", "atlas_verified", "verified_metadata", "source_reported", "calculated", "filename_inferred", "community_report"]
+    },
+    "lifecycle": {
+      "type": ["string", "null"],
+      "enum": ["active", "deprecated", "removed", "legacy", "unknown", null]
+    },
+    "notes": { "type": ["string", "null"], "maxLength": 2000 }
+  }
+}

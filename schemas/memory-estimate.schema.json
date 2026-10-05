@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-llm-vram-atlas.local/schemas/memory-estimate.schema.json",
+  "title": "AtlasMemoryEstimate",
+  "description": "An evidence-aware VRAM estimate: ranged bounds, unknown components, formula versions, and calculation profile. Unknown never becomes zero; a lone file size never becomes a fit verdict. Specification version 0.2.0 (Phase 2).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "estimate_status",
+    "evidence_basis",
+    "calculation_profile_id",
+    "components"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^0\\.[0-9]+\\.[0-9]+$"
+    },
+    "estimate_status": {
+      "type": "string",
+      "enum": ["calculated_from_verified_metadata", "calculated_from_source_metadata", "estimated", "insufficient_evidence", "unsupported_architecture_for_estimation"],
+      "description": "'measured' is forbidden without a real measurement; a formula is calculation, not measurement."
+    },
+    "evidence_basis": { "type": "string", "minLength": 1 },
+    "evidence_class": {
+      "type": ["string", "null"],
+      "enum": ["atlas_measured", "independently_measured", "runtime_documented", "publisher_measured", "calculated_from_verified_metadata", "calculated_from_source_metadata", "estimated", "filename_inferred", "community_report", "publisher_claim", "quantizer_claim", "unknown", null]
+    },
+    "formula_refs": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "formula_versions": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "calculation_profile_id": {
+      "type": ["string", "null"],
+      "description": "Explicit profile id, e.g. atlas-text-8k-baseline-v1; never a hidden default."
+    },
+    "components": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "device_weight_bytes": { "type": ["integer", "null"], "minimum": 0 },
+        "kv_or_state_cache_bytes": { "type": ["integer", "null"], "minimum": 0 },
+        "runtime_static_bytes": { "type": ["integer", "null"], "minimum": 0 },
+        "runtime_dynamic_bytes": { "type": ["integer", "null"], "minimum": 0 },
+        "compute_workspace_bytes": { "type": ["integer", "null"], "minimum": 0 },
+        "graph_buffer_bytes": { "type": ["integer", "null"], "minimum": 0 },
+        "output_buffer_bytes": { "type": ["integer", "null"], "minimum": 0 },
+        "multimodal_component_bytes": { "type": ["integer", "null"], "minimum": 0 },
+        "speculative_decoding_bytes": { "type": ["integer", "null"], "minimum": 0 },
+        "other_known_bytes": { "type": ["integer", "null"], "minimum": 0 }
+      },
+      "description": "Named memory components; unknown stays null, never zero."
+    },
+    "estimated_vram_lower_bytes": { "type": ["integer", "null"], "minimum": 0 },
+    "estimated_vram_upper_bytes": { "type": ["integer", "null"], "minimum": 0 },
+    "unknown_components": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "unsupported_components": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "tier_classifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["tier_gb", "classification"],
+        "properties": {
+          "tier_gb": { "type": "integer", "enum": [4, 8, 12, 16] },
+          "classification": {
+            "type": "string",
+            "enum": ["verified_fit", "estimated_fit", "indeterminate_fit", "estimated_not_fit", "verified_not_fit", "insufficient_evidence", "unsupported"]
+          },
+          "reason": { "type": ["string", "null"] }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "estimate_status": { "enum": ["calculated_from_verified_metadata", "calculated_from_source_metadata", "estimated"] } }
+      },
+      "then": { "required": ["estimated_vram_lower_bytes"] }
+    }
+  ]
+}

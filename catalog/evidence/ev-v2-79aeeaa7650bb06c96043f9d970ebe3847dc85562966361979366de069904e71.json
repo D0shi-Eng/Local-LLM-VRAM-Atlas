@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-79aeeaa7650bb06c96043f9d970ebe3847dc85562966361979366de069904e71",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.native_quantization",
+  "notes": "Source-reported training-time quantization method 'bitnet'; native low-bit is a training property, not a post-training quantization, so no base-vs-quant retention is implied",
+  "publisher": "microsoft",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-4g-02-bitnet-native-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/microsoft/bitnet-b1.58-2B-4T",
+  "verification_status": "independently_verified"
+}

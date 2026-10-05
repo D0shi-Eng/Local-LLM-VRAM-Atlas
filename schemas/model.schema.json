@@ -1,0 +1,304 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-llm-vram-atlas.local/schemas/model.schema.json",
+  "title": "AtlasModelRecord",
+  "description": "Canonical machine-readable record for a single model variant (base, fine-tune, or quantized). File size is always separate from measured/recommended VRAM; a weight file smaller than a GPU budget never proves the model runs there. Specification version 0.1.0 (Phase 0, initial development, not 1.0.0).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "model_id",
+    "display_name",
+    "creator",
+    "architecture",
+    "architecture_type",
+    "openness",
+    "verification",
+    "catalog_status",
+    "lifecycle_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^0\\.[0-9]+\\.[0-9]+$",
+      "description": "Specification version of this record. Must stay 0.x while the specification is in initial development; 1.0.0 is forbidden in Phase 0."
+    },
+    "model_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{1,120}$",
+      "description": "Stable machine identifier, lowercase kebab-case."
+    },
+    "display_name": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "creator": { "type": "string", "minLength": 1, "description": "Person or team that published this variant." },
+    "organization": { "type": ["string", "null"], "description": "Publishing organization, if known; null means unknown, never guessed." },
+    "model_family": { "type": ["string", "null"] },
+    "base_models": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Lineage chain: quantized variant -> modified model -> base model -> original family. Empty only for true originals."
+    },
+    "release_date": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "Publisher release date (calendar date). Null when unknown; never invented."
+    },
+    "last_verified_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "ISO 8601 timestamp with timezone of the last verification pass."
+    },
+    "architecture": { "type": "string", "minLength": 1, "description": "Architecture name as documented by the publisher (e.g. a transformer family name). Not a compatibility claim." },
+    "architecture_type": {
+      "type": "string",
+      "enum": ["dense", "moe", "hybrid", "unknown"],
+      "description": "Structural class. 'unknown' when the publisher does not document it."
+    },
+    "total_parameters_b": {
+      "type": ["number", "null"],
+      "exclusiveMinimum": 0,
+      "description": "Total parameters in billions. Null when unknown. Never the sole basis for VRAM classification, especially for MoE."
+    },
+    "active_parameters_b": {
+      "type": ["number", "null"],
+      "exclusiveMinimum": 0,
+      "description": "Active parameters per forward pass in billions (MoE/hybrid). Null for dense or unknown."
+    },
+    "experts_total": { "type": ["integer", "null"], "minimum": 1 },
+    "experts_active": { "type": ["integer", "null"], "minimum": 1 },
+    "context_length": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "advertised_max": { "type": ["integer", "null"], "minimum": 1 },
+        "tested": { "type": ["integer", "null"], "minimum": 1 },
+        "vram_measurement_context": { "type": ["integer", "null"], "minimum": 1 }
+      },
+      "description": "Advertised context is never evidence that the full context runs inside the same VRAM tier."
+    },
+    "modalities": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["text", "vision", "audio", "video", "other"] },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "multimodal_components": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "vision_encoder": { "type": ["string", "null"] },
+        "projector": { "type": ["string", "null"] },
+        "audio_encoder": { "type": ["string", "null"] },
+        "notes": { "type": ["string", "null"] }
+      },
+      "description": "Text-only VRAM estimates never apply automatically to multimodal mode."
+    },
+    "quantization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["format", "quant_family"],
+      "properties": {
+        "format": {
+          "type": "string",
+          "enum": ["GGUF", "EXL2", "AWQ", "GPTQ", "MXFP4", "NVFP4", "MLX", "safetensors", "native_ternary", "native_1bit", "native_2bit", "other", "unknown"],
+          "description": "Container/quantization format. A GGUF extension alone proves nothing about runtime support."
+        },
+        "quant_family": {
+          "type": "string",
+          "enum": ["fp32", "fp16", "bf16", "fp8", "q8", "q6", "q5", "q4", "iq4", "q3", "iq3", "q2", "iq2", "iq1", "tq", "ternary", "mxfp4", "nvfp4", "awq", "gptq", "exl2", "mlx", "other", "unknown"],
+          "description": "Quantization family. Families are labels, not quality rankings; members are never treated as directly comparable without evidence."
+        },
+        "quant_name": { "type": ["string", "null"], "description": "Exact quant label, e.g. Q4_K_M. Null when not applicable (native precision)." },
+        "bits_per_weight": { "type": ["number", "null"], "exclusiveMinimum": 0 },
+        "native_quantization": { "type": ["boolean", "null"], "description": "True only when the model was trained natively at this bit depth." },
+        "compression_category": {
+          "type": ["string", "null"],
+          "enum": ["native_precision", "light_quantization", "balanced_quantization", "aggressive_quantization", "ultra_compressed", "extreme_compression", "native_low_bit", null],
+          "description": "Descriptive bucket only, never an absolute quality verdict; the real quant type stays in quant_family/quant_name."
+        },
+        "quantizer": { "type": ["string", "null"] },
+        "quantizer_repo": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "pattern": "^https?://\\S+$",
+          "description": "Absolute http(s) URL of the quantizer repository."
+        },
+        "file_size_bytes": { "type": ["integer", "null"], "minimum": 0 },
+        "file_size_gib": { "type": ["number", "null"], "exclusiveMinimum": 0, "description": "Binary gibibytes. Informational only; never input to a fits-decision." },
+        "split_files": { "type": ["boolean", "null"] },
+        "source_revision": { "type": ["string", "null"], "description": "Commit/hash/revision of the quantized artifact when known." },
+        "checksum": { "type": ["string", "null"], "description": "Checksum string with algorithm prefix when available, e.g. 'sha256:...'." }
+      }
+    },
+    "vram": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vram_tier_gb", "evidence"],
+      "properties": {
+        "weight_file_size_gib": { "type": ["number", "null"], "exclusiveMinimum": 0 },
+        "measured_vram_gib": { "type": ["number", "null"], "exclusiveMinimum": 0 },
+        "estimated_vram_gib": { "type": ["number", "null"], "exclusiveMinimum": 0 },
+        "minimum_vram_gib": {
+          "type": ["number", "null"],
+          "exclusiveMinimum": 0,
+          "description": "Lowest VRAM at which operation was shown or estimated under documented conditions."
+        },
+        "recommended_vram_gib": {
+          "type": ["number", "null"],
+          "exclusiveMinimum": 0,
+          "description": "Level with a realistic margin for runtime, KV cache, and context. A 15.9 GiB footprint is not 'recommended' for 16 GB just because weights are under 16 GB."
+        },
+        "vram_tier_gb": {
+          "type": "integer",
+          "enum": [4, 8, 12, 16],
+          "description": "Official Atlas tier label. A label only; the measured figure is authoritative."
+        },
+        "evidence": {
+          "type": "string",
+          "enum": ["measured", "estimated", "publisher_claim", "community_report", "unknown"],
+          "description": "How the VRAM figures were obtained. The measurement source must be recorded alongside."
+        },
+        "measurement_conditions": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "properties": {
+            "batch_size": { "type": ["integer", "null"], "minimum": 1 },
+            "task": { "type": ["string", "null"], "description": "e.g. text_generation. Baseline for text LLMs is batch size 1, full GPU offload, 8K context where applicable." },
+            "gpu_offload": { "type": ["string", "null"] },
+            "cpu_offload": { "type": ["boolean", "null"] },
+            "backend": { "type": ["string", "null"] },
+            "runtime": { "type": ["string", "null"] },
+            "runtime_version": { "type": ["string", "null"] },
+            "kv_cache_config": { "type": ["string", "null"] },
+            "gpu_model": { "type": ["string", "null"] },
+            "tested_context": { "type": ["integer", "null"], "minimum": 1 }
+          },
+          "description": "No VRAM number is meaningful without its conditions; changed context, KV format, or backend can change VRAM."
+        },
+        "runtime_overhead_gib": { "type": ["number", "null"], "minimum": 0 }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "evidence": { "const": "measured" } } },
+          "then": { "required": ["measured_vram_gib", "measurement_conditions"] }
+        }
+      ]
+    },
+    "openness": {
+      "type": "string",
+      "enum": ["open_source_ai", "open_weights_permissive", "open_weights_restricted", "source_available", "proprietary", "unclear"],
+      "description": "Precise openness class. Downloadable weights alone never imply open_source_ai; when in doubt, use 'unclear'."
+    },
+    "open_source_ai_reference": {
+      "type": ["string", "null"],
+      "description": "When openness is open_source_ai, cites the definition standard applied (baseline: Open Source AI Definition 1.0, Open Source Initiative). Informational, not a legal ruling by the Atlas."
+    },
+    "license": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["verification_status"],
+      "properties": {
+        "license_id": { "type": ["string", "null"], "description": "SPDX identifier when the license is SPDX-listed; the literal custom id otherwise. Never coerced into MIT/Apache." },
+        "license_name": { "type": ["string", "null"] },
+        "license_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "pattern": "^https?://\\S+$",
+          "description": "Absolute http(s) URL of the license text."
+        },
+        "license_source": { "type": ["string", "null"], "description": "Where the license text was found." },
+        "commercial_use_status": { "type": ["string", "null"], "enum": ["allowed", "restricted", "prohibited", "unclear", null] },
+        "redistribution_status": { "type": ["string", "null"], "enum": ["allowed", "restricted", "prohibited", "unclear", null] },
+        "derivative_use_status": { "type": ["string", "null"], "enum": ["allowed", "restricted", "prohibited", "unclear", null] },
+        "license_notes": { "type": ["string", "null"] },
+        "verification_status": {
+          "type": "string",
+          "enum": ["unknown", "unverified", "estimated", "publisher_claim", "quantizer_claim", "independently_verified", "atlas_verified"]
+        }
+      }
+    },
+    "alignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "alignment_variant": {
+          "type": "string",
+          "enum": ["standard", "uncensored", "abliterated", "heretic", "other", "unknown"],
+          "description": "These labels are not scientific synonyms; each variant documents its own method and evidence."
+        },
+        "uncensored_claimed": { "type": ["boolean", "null"] },
+        "uncensoring_method": { "type": ["string", "null"] },
+        "method_documented": { "type": ["boolean", "null"] },
+        "base_model": { "type": ["string", "null"] },
+        "variant_author": { "type": ["string", "null"] },
+        "variant_source": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "pattern": "^https?://\\S+$",
+          "description": "Absolute http(s) URL of the variant publication."
+        },
+        "capability_retention_evidence": { "type": ["string", "null"], "description": "Independent evidence that capabilities survived modification; ablation alone proves nothing." },
+        "refusal_evaluation": { "type": ["string", "null"] },
+        "verification_status": {
+          "type": ["string", "null"],
+          "enum": ["unknown", "unverified", "estimated", "publisher_claim", "quantizer_claim", "independently_verified", "atlas_verified", null]
+        }
+      },
+      "description": "Uncensored never implies better, smarter, safer, more accurate, or lower hallucination; quality is recorded independently."
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["unknown", "unverified", "estimated", "publisher_claim", "quantizer_claim", "independently_verified", "atlas_verified"]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true,
+          "description": "Evidence records backing this status. Mandatory for independent/atlas verification."
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "enum": ["independently_verified", "atlas_verified"] } } },
+          "then": { "required": ["evidence_ids"], "properties": { "evidence_ids": { "minItems": 1 } } }
+        }
+      ]
+    },
+    "catalog_status": {
+      "type": "string",
+      "enum": ["discovered", "pending_metadata", "pending_license", "pending_runtime_validation", "pending_benchmark_validation", "experimental", "verified", "recommended", "rejected", "deprecated"],
+      "description": "Discovery never auto-promotes to recommended. 'verified' means data is documented/tested per policy; 'recommended' additionally requires future quality gates."
+    },
+    "lifecycle_status": {
+      "type": "string",
+      "enum": ["active", "superseded", "deprecated", "withdrawn", "unsafe", "unavailable"]
+    },
+    "lifecycle_reason": { "type": ["string", "null"] },
+    "popularity": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "downloads": { "type": ["integer", "null"], "minimum": 0 },
+        "likes": { "type": ["integer", "null"], "minimum": 0 },
+        "trending": { "type": ["boolean", "null"] },
+        "captured_at": { "type": ["string", "null"], "format": "date-time" }
+      },
+      "description": "Popularity signals only. Never a quality benchmark, never intelligence evidence."
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "architecture_type": { "const": "moe" } } },
+      "then": { "required": ["experts_total", "experts_active"] }
+    },
+    {
+      "if": { "properties": { "openness": { "const": "open_source_ai" } } },
+      "then": { "required": ["open_source_ai_reference"] }
+    }
+  ]
+}

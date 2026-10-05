@@ -1,0 +1,28 @@
+{
+  "artifact_set_id": "orenguteng-llama-3-1-8b-lexi-uncensored-gguf--gguf--llama-3.1-8b-lexi-uncensored-fixedrope.gguf--q5",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "docs",
+    "metadata"
+  ],
+  "files": [
+    {
+      "extension": ".gguf",
+      "filename": "Llama-3.1-8B-Lexi-Uncensored_Q5_fixedrope.gguf",
+      "path": "Llama-3.1-8B-Lexi-Uncensored_Q5_fixedrope.gguf",
+      "source_reported_size_bytes": 5599294208
+    }
+  ],
+  "format": "GGUF",
+  "kind": "single",
+  "model_id": "orenguteng-llama-3-1-8b-lexi-uncensored-gguf",
+  "primary_weight_bytes": 5599294208,
+  "revision": "d5cc0aa376e3693a85612d34574be8cff33a2f56",
+  "schema_version": "0.2.0",
+  "shard_count": 1,
+  "shard_total": null,
+  "shards_complete": null,
+  "total_source_reported_bytes": 5599294208,
+  "variant": "Q5",
+  "verification_status": "source_reported"
+}

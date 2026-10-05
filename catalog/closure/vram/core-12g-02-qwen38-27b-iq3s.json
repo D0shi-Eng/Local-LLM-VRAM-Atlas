@@ -1,0 +1,27 @@
+{
+  "architecture_family": "qwen3_5",
+  "artifact_set_id": "unsloth-qwen3-8-27b-gguf--gguf--qwen3.8-27b-ud-gguf--iq3_s",
+  "by_tier": {
+    "12": "unsupported",
+    "16": "unsupported",
+    "4": "unsupported",
+    "8": "unsupported"
+  },
+  "calculation_context_tokens": 8192,
+  "calculation_profile_id": "atlas-text-8k-baseline-v1",
+  "candidate_id": "core-12g-02-qwen38-27b-iq3s",
+  "estimate_status": "refused",
+  "lower_bytes": null,
+  "note": "Refusal is a correct outcome. Artifact byte size alone can never create a fit verdict, and an unmodeled component is never counted as zero.",
+  "refusal_detail": "attention regime hybrid: Atlas has no state-cache model, so estimating from attention layers alone would understate memory and could create a false fit",
+  "refusal_reason": "hybrid_or_state_space_attention",
+  "runtime_overhead_state": "absent: no runtime memory profile carries documented overhead, so the reliable upper bound required for an estimated fit does not exist",
+  "schema_version": "0.1.0",
+  "tier_reasons": {
+    "12": "attention regime hybrid: Atlas has no state-cache model, so estimating from attention layers alone would understate memory and could create a false fit",
+    "16": "attention regime hybrid: Atlas has no state-cache model, so estimating from attention layers alone would understate memory and could create a false fit",
+    "4": "attention regime hybrid: Atlas has no state-cache model, so estimating from attention layers alone would understate memory and could create a false fit",
+    "8": "attention regime hybrid: Atlas has no state-cache model, so estimating from attention layers alone would understate memory and could create a false fit"
+  },
+  "upper_bytes": null
+}

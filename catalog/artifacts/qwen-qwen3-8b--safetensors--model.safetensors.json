@@ -1,0 +1,55 @@
+{
+  "artifact_set_id": "qwen-qwen3-8b--safetensors--model.safetensors",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "config",
+    "docs",
+    "index",
+    "metadata",
+    "tokenizer"
+  ],
+  "files": [
+    {
+      "extension": ".safetensors",
+      "filename": "model-00001-of-00005.safetensors",
+      "path": "model-00001-of-00005.safetensors",
+      "source_reported_size_bytes": 3996250744
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00002-of-00005.safetensors",
+      "path": "model-00002-of-00005.safetensors",
+      "source_reported_size_bytes": 3993160032
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00003-of-00005.safetensors",
+      "path": "model-00003-of-00005.safetensors",
+      "source_reported_size_bytes": 3959604768
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00004-of-00005.safetensors",
+      "path": "model-00004-of-00005.safetensors",
+      "source_reported_size_bytes": 3187841392
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00005-of-00005.safetensors",
+      "path": "model-00005-of-00005.safetensors",
+      "source_reported_size_bytes": 1244659840
+    }
+  ],
+  "format": "safetensors",
+  "kind": "sharded",
+  "model_id": "qwen-qwen3-8b",
+  "primary_weight_bytes": 16381516776,
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "schema_version": "0.2.0",
+  "shard_count": 5,
+  "shard_total": 5,
+  "shards_complete": true,
+  "total_source_reported_bytes": 16381516776,
+  "variant": null,
+  "verification_status": "source_reported"
+}

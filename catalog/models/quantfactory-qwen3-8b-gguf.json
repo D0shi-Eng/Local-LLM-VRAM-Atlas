@@ -1,0 +1,98 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "unknown",
+    "base_model": "Qwen/Qwen3-8B-Base",
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "variant_author": "QuantFactory",
+    "variant_source": "https://huggingface.co/QuantFactory/Qwen3-8B-GGUF",
+    "verification_status": "unknown"
+  },
+  "architecture": "unknown",
+  "architecture_type": "unknown",
+  "base_models": [
+    "Qwen/Qwen3-8B-Base"
+  ],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "QuantFactory",
+  "display_name": "QuantFactory/Qwen3-8B-GGUF",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "apache-2.0",
+    "license_name": null,
+    "license_notes": "raw_license_value='apache-2.0'; spdx=True",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "quantfactory-qwen3-8b-gguf",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "open_weights_permissive",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:10.776945Z",
+    "downloads": 1370,
+    "likes": 2,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 8709518528,
+    "file_size_gib": 8.111,
+    "format": "GGUF",
+    "native_quantization": false,
+    "quant_family": "q8",
+    "quant_name": "Q8_0",
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "1a85ad16e1e80725404ad707448c10dd414ed045",
+    "split_files": true
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "quantfactory-qwen3-8b-gguf",
+  "total_parameters_b": 8.19073536,
+  "verification": {
+    "evidence_ids": [
+      "quantfactory-qwen3-8b-gguf-ev-license-license-id",
+      "quantfactory-qwen3-8b-gguf-ev-openness",
+      "quantfactory-qwen3-8b-gguf-ev-base-models",
+      "quantfactory-qwen3-8b-gguf-ev-architecture",
+      "quantfactory-qwen3-8b-gguf-ev-total-parameters-b",
+      "quantfactory-qwen3-8b-gguf-ev-context-length-advertised-max",
+      "quantfactory-qwen3-8b-gguf-ev-quantization-quant-name",
+      "quantfactory-qwen3-8b-gguf-ev-popularity",
+      "quantfactory-qwen3-8b-gguf-ev-resolved-revision",
+      "ev-v2-f2f6a96a0b8e4c170aa7a06d6982d72ab5cccc0a9401d9fce2935c1d848b2b33",
+      "ev-v2-52390b4af8d427e469d9e930d8228c0d91839614ae7ccf7557220e88ed59b0aa",
+      "ev-v2-0569495b7023482b0ee113d371b43231b5d956f464e94668cd4014c827fd51dc",
+      "ev-v2-f420855ac6971857b133ce7279f8e3c606796c19303895a932214a7423172070",
+      "ev-v2-33a9e91a5de7cc8738dda3ee6d9da09a0fae61d70c6ac3fb5029af65746b2c02",
+      "ev-v2-5f5ffcd865a302204a34dd8659bdefb20865afd95b13eb088702e2a15112ffbb"
+    ],
+    "status": "publisher_claim"
+  }
+}

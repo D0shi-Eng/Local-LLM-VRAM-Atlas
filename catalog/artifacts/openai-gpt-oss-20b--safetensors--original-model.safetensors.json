@@ -1,0 +1,32 @@
+{
+  "artifact_set_id": "openai-gpt-oss-20b--safetensors--original/model.safetensors",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "config",
+    "docs",
+    "index",
+    "metadata",
+    "other",
+    "tokenizer"
+  ],
+  "files": [
+    {
+      "extension": ".safetensors",
+      "filename": "original/model.safetensors",
+      "path": "original/model.safetensors",
+      "source_reported_size_bytes": 13761300984
+    }
+  ],
+  "format": "safetensors",
+  "kind": "single",
+  "model_id": "openai-gpt-oss-20b",
+  "primary_weight_bytes": 13761300984,
+  "revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+  "schema_version": "0.2.0",
+  "shard_count": 1,
+  "shard_total": null,
+  "shards_complete": null,
+  "total_source_reported_bytes": 13761300984,
+  "variant": null,
+  "verification_status": "source_reported"
+}

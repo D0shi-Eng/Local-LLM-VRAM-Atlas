@@ -1,0 +1,14 @@
+{
+  "claim_type": "benchmark_score",
+  "evidence_id": "ev-v2-b078d5eb5812df5a84438624fa1cb28e7d644227ff6170a78d94ad7639db1fab",
+  "evidence_level": "publisher_claim",
+  "field_path": "quality.benchmark_table",
+  "notes": "Publisher-reported 14-benchmark thinking-mode table under one declared harness: EvalScope + vLLM on NVIDIA H100, identical infrastructure, decoding and scoring. 14-benchmark thinking averages: Qwen3.8-27B FP16 (16.0 bpw, 54 GB) 86.32; UD-Q4_K_XL (5.2 bpw, 17.6 GB) 85.18; IQ2_XXS (2.16 bpw, 7.27 GB) 72.59; Bonsai 2 27B ternary g128 (1.72 bpw, 5.95 GB) 84.78. Per-benchmark rows (FP16 / UD-Q4_K_XL / IQ2_XXS / Bonsai 2 27B): MMLU-Redux 91.46/93.35/88.93/89.09; MuSR 79.63/73.01/66.99/70.63; GSM8K 97.19/96.66/89.90/96.66; MATH-500 99.80/99.40/84.60/98.80; AIME25 96.67/92.91/66.67/95.00; AIME26 94.58/93.00/57.50/95.83; HumanEval+ 93.29/95.73/91.46/95.12; MBPP+ 83.86/83.86/78.89/83.07; LiveCodeBench 90.05/87.96/56.40/90.07; IFEval 91.50/88.83/84.03/91.31; IFBench prompt-loose 71.00/65.65/53.76/74.00; BFCL v3 76.74/75.05/70.28/74.92; MMMU-Pro 81.73/81.73/65.19/75.49; OCR Bench v2 60.99/65.45/61.70/56.88. Publisher claim, therefore Q4: it can never satisfy an independent-multi-source quality gate and is not relabelled independent anywhere in Atlas. It does provide one harness under which the base and low-bit sides are directly comparable, which is what a retention computation requires, and it is the Phase 6.6 extreme-compression investigation: a genuine sub-2-bit build scored under the same suite as the FP16 reference.; methodology_version=0.1.0 | source_revision=b072e1d3b35a0a630cece372c2127528e0994386 | identity_status=exact_repository_identity_with_disclosed_artifact_label",
+  "publisher": "prism-ml",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "prism-ml-bonsai-card",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "verification_status": "publisher_claim"
+}

@@ -1,0 +1,15 @@
+{
+  "accessed_at": "2026-10-05T06:10:18.139594Z",
+  "archived_reference": null,
+  "authority_level": "tier_a_primary",
+  "commit_or_revision": "95a6d26c4bfb886c58daf9d3f7332c857cb27b43",
+  "notes": "platform=hugging-face; repo_id=mistralai/Mistral-Small-3.2-24B-Instruct-2506; requested_revision=main; resolved_revision=95a6d26c4bfb886c58daf9d3f7332c857cb27b43; officiality_status=unverified (namespace alone never proves officiality)",
+  "published_at": null,
+  "publisher": "mistralai",
+  "revision": "95a6d26c4bfb886c58daf9d3f7332c857cb27b43",
+  "schema_version": "0.1.0",
+  "source_id": "mistralai-mistral-small-3-2-24b-instruct-2506-src-hf",
+  "source_type": "official_repo",
+  "title": "Hugging Face repository mistralai/Mistral-Small-3.2-24B-Instruct-2506 (publisher-published metadata)",
+  "url": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506"
+}

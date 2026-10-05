@@ -1,0 +1,14 @@
+{
+  "claim_type": "architecture_property",
+  "evidence_id": "ev-v2-48098aadb545608229a944a046d93beb88bf4c95a2492b0231d16e38e091fb3a",
+  "evidence_level": "publisher_claim",
+  "field_path": "architecture",
+  "notes": "Current architecture inputs read anonymously from the publisher's configuration source (own_config); repo=unsloth/Qwen3.8-27B-GGUF; revision=4ca720788d1e01f1bff70c033e0d0028fd02e502",
+  "publisher": "unsloth",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-12g-02-qwen38-27b-iq3s-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+  "verification_status": "independently_verified"
+}

@@ -1,0 +1,164 @@
+{
+  "active_parameters_b": null,
+  "architecture_raw": "LlamaForCausalLM",
+  "architecture_type_raw": null,
+  "author": "openbmb",
+  "base_models_raw": [],
+  "card_text": null,
+  "conflicts": [],
+  "context_advertised": null,
+  "datasets_raw": [
+    "openbmb/Ultra-FineWeb",
+    "openbmb/UltraX-Preview",
+    "openbmb/Ultra-FineWeb-L3",
+    "openbmb/UltraData-Math",
+    "openbmb/UltraData-Code",
+    "openbmb/UltraData-SFT-2605",
+    "openbmb/UltraData-SFT-Agent-2609",
+    "openbmb/UltraData-RL-2609"
+  ],
+  "disabled": false,
+  "downloads": 1106325,
+  "experts_active": null,
+  "experts_total": null,
+  "gated": false,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "library_name": "transformers",
+  "license_raw": "apache-2.0",
+  "likes": 1714,
+  "namespace": "openbmb",
+  "pipeline_tag": "text-generation",
+  "platform": "hugging-face",
+  "private": false,
+  "repo_id": "openbmb/MiniCPM5-2B",
+  "repo_name": "MiniCPM5-2B",
+  "requested_revision": "main",
+  "resolved_revision": "f97400052a43d642bbc6e9975e2397e3ae6a6b52",
+  "retrieved_at": "2026-10-05T06:10:57.979100Z",
+  "siblings": [
+    {
+      "extension": ".gitattributes",
+      "filename": ".gitattributes",
+      "path": ".gitattributes",
+      "source_reported_hash": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "source_reported_size_bytes": 1519,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".md",
+      "filename": "README-cn.md",
+      "path": "README-cn.md",
+      "source_reported_hash": "acaee37d6747f06977104eae6cf4ae15642c7602",
+      "source_reported_size_bytes": 110251,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".md",
+      "filename": "README.md",
+      "path": "README.md",
+      "source_reported_hash": "c8edea089a2b1a2edab1d9f7866016e3ab7ba0f4",
+      "source_reported_size_bytes": 112204,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".jinja",
+      "filename": "chat_template.jinja",
+      "path": "chat_template.jinja",
+      "source_reported_hash": "603f4c287d9346b8a6d58d794af5d47aee827826",
+      "source_reported_size_bytes": 5435,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "config.json",
+      "path": "config.json",
+      "source_reported_hash": "9860d7132a243c1c9ce58e39a2704c3f52ad6ea1",
+      "source_reported_size_bytes": 704,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "generation_config.json",
+      "path": "generation_config.json",
+      "source_reported_hash": "be1cb19dd96be786cf0dd4ee45630afe1c81238b",
+      "source_reported_size_bytes": 213,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00000-of-00001.safetensors",
+      "path": "model-00000-of-00001.safetensors",
+      "source_reported_hash": "e9aecaf1e9466b87ffee9ba1b8e0fb69acc9b17c",
+      "source_reported_size_bytes": 5033557096,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".json",
+      "filename": "model.safetensors.index.json",
+      "path": "model.safetensors.index.json",
+      "source_reported_hash": "6133ebe3ac1d320b6671b9c8d8dde62d859c7f5e",
+      "source_reported_size_bytes": 31378,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "special_tokens_map.json",
+      "path": "special_tokens_map.json",
+      "source_reported_hash": "492d4b2966a1763442d426d880dbc29f94906e4c",
+      "source_reported_size_bytes": 551,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "tokenizer.json",
+      "path": "tokenizer.json",
+      "source_reported_hash": "ec0bf9a34dc884738494ed1f74d0c5327b06d690",
+      "source_reported_size_bytes": 9894271,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "tokenizer_config.json",
+      "path": "tokenizer_config.json",
+      "source_reported_hash": "9df89e3f645a975cf87bd22379e9f77b28a1cf02",
+      "source_reported_size_bytes": 94391,
+      "source_reported_storage": null
+    }
+  ],
+  "source_url": "https://huggingface.co/openbmb/MiniCPM5-2B",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "arxiv:2506.07900",
+    "arxiv:2602.09003",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "total_parameters_b": 2.51675648,
+  "trending_score": null,
+  "warnings": []
+}

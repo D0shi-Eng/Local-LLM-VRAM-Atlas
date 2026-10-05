@@ -1,0 +1,22 @@
+{
+  "manifest_version": "0.5.0",
+  "generated_at": "2026-10-05T00:00:00Z",
+  "migration_version": "evidence-id-v2-0.5.0",
+  "scope": "preserve-valid-legacy-use-v2-for-new",
+  "mappings": [],
+  "mapping_count": 0,
+  "collision_count": 0,
+  "files_examined": 63,
+  "references_examined": 306,
+  "invalid_ids": 0,
+  "overflow_ids": 0,
+  "duplicate_ids": 0,
+  "dry_run": {
+    "uniqueness": "pass",
+    "collisions": 0,
+    "schema_validation": "pass",
+    "references": "pass-logical-243-sidecars-not-persisted-by-phase4-design",
+    "files_to_change": 0
+  },
+  "notes": "All 63 persisted legacy IDs are schema-valid; 306 references are schema-valid. 243 Phase-4 logical references have no sidecar files by Phase-4 persist_bundle design (models/artifacts/views/manifest only). No rewrite performed (minimize churn). V2 (ev-v2-<sha256>, 70 chars, 256-bit) is used for newly generated evidence only."
+}

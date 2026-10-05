@@ -1,0 +1,53 @@
+{
+  "architecture_family": "qwen2",
+  "architecture_inputs": {
+    "head_dim": 128,
+    "layer_plan_heterogeneous": null,
+    "layer_plan_used": false,
+    "num_key_value_heads": 4,
+    "num_layers": 28,
+    "sliding_window": null
+  },
+  "artifact_set_id": "bartowski-qwen2-5-7b-instruct-gguf--gguf--qwen2.5-7b-instruct-gguf--q4_k_m",
+  "assumptions": [
+    "lower bound covers resident weights plus cache only; upper bound unavailable without measured runtime overhead"
+  ],
+  "attention_regime": "unknown",
+  "by_tier": {
+    "12": "insufficient_evidence",
+    "16": "insufficient_evidence",
+    "4": "estimated_not_fit",
+    "8": "insufficient_evidence"
+  },
+  "calculation_context_tokens": 8192,
+  "calculation_profile_id": "atlas-text-8k-baseline-v1",
+  "candidate_id": "core-8g-01-qwen2-5-7b-q4km",
+  "device_weight_bytes": 4683074240,
+  "estimate_status": "estimated",
+  "evidence_basis": "inputs include assumptions recorded alongside",
+  "formula_refs": [
+    "standard-kv-v1"
+  ],
+  "kv_or_state_cache_bytes": 469762048,
+  "lower_bytes": 5152836288,
+  "multimodal_note": null,
+  "multimodal_wrapper": false,
+  "note": "Artifact byte size supplies the weight component only. The KV/cache component comes from current architecture inputs and the Atlas baseline profile. A fit verdict still requires a reliable upper bound.",
+  "runtime_overhead_state": "absent: no runtime memory profile carries documented overhead, so the reliable upper bound required for an estimated fit does not exist",
+  "schema_version": "0.1.0",
+  "tier_reasons": {
+    "12": "reliable upper bound unavailable; runtime overhead unknown",
+    "16": "reliable upper bound unavailable; runtime overhead unknown",
+    "4": "trustworthy lower bound alone exceeds tier capacity",
+    "8": "reliable upper bound unavailable; runtime overhead unknown"
+  },
+  "unknown_components": [
+    "runtime_static_bytes",
+    "runtime_dynamic_bytes"
+  ],
+  "unsupported_components": [],
+  "upper_bytes": null,
+  "warnings": [
+    "runtime profile missing: independent components only, no default"
+  ]
+}

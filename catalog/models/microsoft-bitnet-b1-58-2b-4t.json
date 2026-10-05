@@ -1,0 +1,93 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "unknown",
+    "base_model": null,
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "variant_author": "microsoft",
+    "variant_source": "https://huggingface.co/microsoft/bitnet-b1.58-2B-4T",
+    "verification_status": "unknown"
+  },
+  "architecture": "BitNetForCausalLM",
+  "architecture_type": "unknown",
+  "base_models": [],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "microsoft",
+  "display_name": "microsoft/bitnet-b1.58-2B-4T",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "mit",
+    "license_name": null,
+    "license_notes": "raw_license_value='mit'; spdx=True",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "microsoft-bitnet-b1-58-2b-4t",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "open_weights_permissive",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:06.423596Z",
+    "downloads": 19974,
+    "likes": 1498,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 1178623988,
+    "file_size_gib": 1.098,
+    "format": "safetensors",
+    "native_quantization": null,
+    "quant_family": "unknown",
+    "quant_name": null,
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "04c3b9ad9361b824064a1f25ea60a8be9599b127",
+    "split_files": false
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "microsoft-bitnet-b1-58-2b-4t",
+  "total_parameters_b": 0.84978709,
+  "verification": {
+    "evidence_ids": [
+      "microsoft-bitnet-b1-58-2b-4t-ev-license-license-id",
+      "microsoft-bitnet-b1-58-2b-4t-ev-openness",
+      "microsoft-bitnet-b1-58-2b-4t-ev-base-models",
+      "microsoft-bitnet-b1-58-2b-4t-ev-architecture",
+      "microsoft-bitnet-b1-58-2b-4t-ev-total-parameters-b",
+      "microsoft-bitnet-b1-58-2b-4t-ev-context-length-advertised-max",
+      "microsoft-bitnet-b1-58-2b-4t-ev-quantization-quant-name",
+      "microsoft-bitnet-b1-58-2b-4t-ev-popularity",
+      "microsoft-bitnet-b1-58-2b-4t-ev-resolved-revision",
+      "ev-v2-836adaaf35a3580451ca55c524c5bf57ff9d61ee0425e0996d6aa7e3301c3759",
+      "ev-v2-bbc1b7f00e4bb90f689ab0ef87b2e2bc15f10bd01eb36aa47d7878a06d835ac6",
+      "ev-v2-79aeeaa7650bb06c96043f9d970ebe3847dc85562966361979366de069904e71"
+    ],
+    "status": "publisher_claim"
+  }
+}

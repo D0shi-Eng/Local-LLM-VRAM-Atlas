@@ -1,0 +1,32 @@
+[
+  {
+    "absolute_delta": -1.54,
+    "base_release": "qwen-qwen3-8-27b",
+    "base_score": 86.32,
+    "benchmark_id": "prism-ml-14b-thinking-average",
+    "benchmark_version": "card-as-observed-2026-10-05",
+    "evaluation_settings_match": true,
+    "evidence_ids": [
+      "ev-v2-3b5a3fa5a31a553aacfe0e5ee5975f27be932a99a78599bd6b33f76d7f66b3c6",
+      "ev-v2-b078d5eb5812df5a84438624fa1cb28e7d644227ff6170a78d94ad7639db1fab"
+    ],
+    "evidence_quality": "publisher_only",
+    "metric": "thinking_mode_average_14_benchmarks",
+    "metric_direction": "higher_is_better",
+    "notes": "identical benchmark version, metric, unit and evaluation settings; One publisher run, one harness (EvalScope + vLLM on NVIDIA H100, thinking mode), one benchmark identity, so base and quantized sides are comparable. The quantized side is a natively ternary-trained variant (1.72 bits/weight) rather than a post-training quantization of the FP16 checkpoint; that distinction is disclosed rather than smoothed over. Publisher evidence cannot satisfy the strict retention gate.",
+    "publisher_claim": {
+      "publisher_metric": "14-benchmark thinking-mode average",
+      "publisher_retention_statement": "98.2% of FP16 intelligence retained",
+      "status": "publisher_claim"
+    },
+    "quant_score": 84.78,
+    "quantization": "PTQ1_0",
+    "quantized_artifact": "prism-ml-ternary-bonsai-2-27b-gguf--gguf--ternary-bonsai-2-27b-p.gguf--tq1_0",
+    "relative_delta": -0.017841,
+    "retention_id": "ret-v1-d49075eb199a143b66f962d7b6f8146f902ffa68ecec853826f7644eceb2a1f8",
+    "retention_status": "publisher_measured",
+    "schema_version": "0.6.0",
+    "source": "prism-ml-bonsai-card",
+    "verification_status": "publisher_claim"
+  }
+]

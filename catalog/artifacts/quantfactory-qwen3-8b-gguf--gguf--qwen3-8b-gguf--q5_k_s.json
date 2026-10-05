@@ -1,0 +1,28 @@
+{
+  "artifact_set_id": "quantfactory-qwen3-8b-gguf--gguf--qwen3-8b-gguf--q5_k_s",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "docs",
+    "metadata"
+  ],
+  "files": [
+    {
+      "extension": ".gguf",
+      "filename": "Qwen3-8B.Q5_K_S.gguf",
+      "path": "Qwen3-8B.Q5_K_S.gguf",
+      "source_reported_size_bytes": 5720761536
+    }
+  ],
+  "format": "GGUF",
+  "kind": "single",
+  "model_id": "quantfactory-qwen3-8b-gguf",
+  "primary_weight_bytes": 5720761536,
+  "revision": "1a85ad16e1e80725404ad707448c10dd414ed045",
+  "schema_version": "0.2.0",
+  "shard_count": 1,
+  "shard_total": null,
+  "shards_complete": null,
+  "total_source_reported_bytes": 5720761536,
+  "variant": "Q5_K_S",
+  "verification_status": "source_reported"
+}

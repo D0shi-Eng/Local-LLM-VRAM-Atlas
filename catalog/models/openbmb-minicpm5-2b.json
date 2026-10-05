@@ -1,0 +1,90 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "unknown",
+    "base_model": null,
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "variant_author": "openbmb",
+    "variant_source": "https://huggingface.co/openbmb/MiniCPM5-2B",
+    "verification_status": "unknown"
+  },
+  "architecture": "LlamaForCausalLM",
+  "architecture_type": "unknown",
+  "base_models": [],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "openbmb",
+  "display_name": "openbmb/MiniCPM5-2B",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "apache-2.0",
+    "license_name": null,
+    "license_notes": "raw_license_value='apache-2.0'; spdx=True",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "openbmb-minicpm5-2b",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "open_weights_permissive",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:03.378032Z",
+    "downloads": 1106325,
+    "likes": 1714,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 5033557096,
+    "file_size_gib": 4.688,
+    "format": "safetensors",
+    "native_quantization": null,
+    "quant_family": "unknown",
+    "quant_name": null,
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "f97400052a43d642bbc6e9975e2397e3ae6a6b52",
+    "split_files": false
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "openbmb-minicpm5-2b",
+  "total_parameters_b": 2.51675648,
+  "verification": {
+    "evidence_ids": [
+      "openbmb-minicpm5-2b-ev-license-license-id",
+      "openbmb-minicpm5-2b-ev-openness",
+      "openbmb-minicpm5-2b-ev-base-models",
+      "openbmb-minicpm5-2b-ev-architecture",
+      "openbmb-minicpm5-2b-ev-total-parameters-b",
+      "openbmb-minicpm5-2b-ev-context-length-advertised-max",
+      "openbmb-minicpm5-2b-ev-quantization-quant-name",
+      "openbmb-minicpm5-2b-ev-popularity",
+      "openbmb-minicpm5-2b-ev-resolved-revision"
+    ],
+    "status": "publisher_claim"
+  }
+}

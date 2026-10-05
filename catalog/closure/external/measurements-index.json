@@ -1,0 +1,9 @@
+{
+  "measurement_ids": [
+    "meas-v1-bonsai27b-kv-fp16-100k",
+    "meas-v1-bonsai27b-kv-q4-100k"
+  ],
+  "note": "External memory facts stored with their scope. A scope that differs from theAtlas baseline context or that omits a full-device peak can never create a fit verdict.",
+  "observed_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0"
+}

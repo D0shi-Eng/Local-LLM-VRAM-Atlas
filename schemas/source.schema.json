@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-llm-vram-atlas.local/schemas/source.schema.json",
+  "title": "AtlasSourceRecord",
+  "description": "A citable source with authority tier and retrieval metadata. Primary official sources are always preferred over secondary coverage. Specification version 0.1.0.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_id",
+    "source_type",
+    "title",
+    "publisher",
+    "url",
+    "accessed_at",
+    "authority_level"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^0\\.[0-9]+\\.[0-9]+$"
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{1,120}$"
+    },
+    "source_type": {
+      "type": "string",
+      "enum": ["official_repo", "official_docs", "official_license", "official_spec", "paper", "independent_benchmark", "independent_measurement", "quantizer_repo", "technical_report", "community_issue", "community_discussion", "forum", "other"],
+      "description": "Tier D community sources (issues, discussions, forums) help discover problems but never become facts on their own."
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "publisher": { "type": "string", "minLength": 1 },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://\\S+$",
+      "description": "Absolute http(s) URL. Relative strings and bare text are rejected by the pattern constraint."
+    },
+    "accessed_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 access timestamp with timezone. Never fabricated."
+    },
+    "published_at": { "type": ["string", "null"], "format": "date" },
+    "revision": {
+      "type": ["string", "null"],
+      "description": "Immutable revision (commit/hash/tag) when reproducibility matters. Content on main/master branches drifts over time."
+    },
+    "commit_or_revision": { "type": ["string", "null"] },
+    "authority_level": {
+      "type": "string",
+      "enum": ["tier_a_primary", "tier_b_independent", "tier_c_specialist", "tier_d_community"],
+      "description": "Tier A: official repos/docs/licenses/specs/papers. Tier B: reputable independent benchmarks/measurements. Tier C: quantizer repos and specialist reports. Tier D: community channels."
+    },
+    "archived_reference": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "pattern": "^https?://\\S+$",
+      "description": "Archive copy (e.g. web archive) when long-term citability matters."
+    },
+    "notes": { "type": ["string", "null"], "maxLength": 2000 }
+  }
+}

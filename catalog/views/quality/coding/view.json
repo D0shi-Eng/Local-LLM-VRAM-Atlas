@@ -1,0 +1,17 @@
+{
+  "entries": [
+    {
+      "evaluation_count": 2,
+      "evidence_status": "publisher_only",
+      "model_id": "deepseek-ai-deepseek-r1-distill-qwen-7b",
+      "note": null
+    },
+    {
+      "evaluation_count": 1,
+      "evidence_status": "publisher_only",
+      "model_id": "microsoft-phi-4",
+      "note": null
+    }
+  ],
+  "view": "coding"
+}

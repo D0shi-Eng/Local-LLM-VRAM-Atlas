@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-1ea36149fdbce430ab5699a5ca0ef966ba746b4b64a8410fa0877f096772ca66",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.source_revision",
+  "notes": "Current resolved revision and exact artifact identity reacquired anonymously; repo=unsloth/Qwen3.8-27B-GGUF; revision=4ca720788d1e01f1bff70c033e0d0028fd02e502; artifact=unsloth-qwen3-8-27b-gguf--gguf--qwen3.8-27b-ud-gguf--iq3_s",
+  "publisher": "unsloth",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-12g-02-qwen38-27b-iq3s-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+  "verification_status": "independently_verified"
+}

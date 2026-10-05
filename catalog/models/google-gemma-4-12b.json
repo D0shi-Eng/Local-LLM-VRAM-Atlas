@@ -1,0 +1,91 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "unknown",
+    "base_model": null,
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "variant_author": "google",
+    "variant_source": "https://huggingface.co/google/gemma-4-12B",
+    "verification_status": "unknown"
+  },
+  "architecture": "Gemma4UnifiedForConditionalGeneration",
+  "architecture_type": "unknown",
+  "base_models": [],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "google",
+  "display_name": "google/gemma-4-12B",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "apache-2.0",
+    "license_name": null,
+    "license_notes": "raw_license_value='apache-2.0'; spdx=True",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text",
+    "vision"
+  ],
+  "model_family": null,
+  "model_id": "google-gemma-4-12b",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "open_weights_permissive",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:03.906673Z",
+    "downloads": 109157,
+    "likes": 761,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 23919549408,
+    "file_size_gib": 22.277,
+    "format": "safetensors",
+    "native_quantization": null,
+    "quant_family": "unknown",
+    "quant_name": null,
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "023679ed352de9bb66cc873c9009ce3482585c08",
+    "split_files": false
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "google-gemma-4-12b",
+  "total_parameters_b": 11.959730224,
+  "verification": {
+    "evidence_ids": [
+      "google-gemma-4-12b-ev-license-license-id",
+      "google-gemma-4-12b-ev-openness",
+      "google-gemma-4-12b-ev-base-models",
+      "google-gemma-4-12b-ev-architecture",
+      "google-gemma-4-12b-ev-total-parameters-b",
+      "google-gemma-4-12b-ev-context-length-advertised-max",
+      "google-gemma-4-12b-ev-quantization-quant-name",
+      "google-gemma-4-12b-ev-popularity",
+      "google-gemma-4-12b-ev-resolved-revision"
+    ],
+    "status": "publisher_claim"
+  }
+}

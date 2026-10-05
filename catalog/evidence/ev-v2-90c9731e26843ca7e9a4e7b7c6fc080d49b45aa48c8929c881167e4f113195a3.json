@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-90c9731e26843ca7e9a4e7b7c6fc080d49b45aa48c8929c881167e4f113195a3",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.source_revision",
+  "notes": "Current resolved revision and exact artifact identity reacquired anonymously; repo=unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF; revision=b17cb02dd882d5b6ab62fc777ad2995f19668350; artifact=unsloth-qwen3-coder-30b-a3b-instruct-gguf--gguf--qwen3-coder-30b-a3b-instruct-gguf--q3_k_m",
+  "publisher": "unsloth",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-16g-02-qwen3-coder-30b-q3km-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+  "verification_status": "independently_verified"
+}

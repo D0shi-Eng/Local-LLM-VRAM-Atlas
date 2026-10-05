@@ -1,0 +1,96 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "unknown",
+    "base_model": "Qwen/Qwen3.8-27B",
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "variant_author": "prism-ml",
+    "variant_source": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "verification_status": "unknown"
+  },
+  "architecture": "unknown",
+  "architecture_type": "unknown",
+  "base_models": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "prism-ml",
+  "display_name": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "apache-2.0",
+    "license_name": null,
+    "license_notes": "raw_license_value='apache-2.0'; spdx=True",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "prism-ml-ternary-bonsai-2-27b-gguf",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "open_weights_permissive",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:09.631209Z",
+    "downloads": 4045810,
+    "likes": 2428,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 53808408928,
+    "file_size_gib": 50.113,
+    "format": "GGUF",
+    "native_quantization": false,
+    "quant_family": "unknown",
+    "quant_name": null,
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "b072e1d3b35a0a630cece372c2127528e0994386",
+    "split_files": true
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "prism-ml-ternary-bonsai-2-27b-gguf",
+  "total_parameters_b": 26.895998464,
+  "verification": {
+    "evidence_ids": [
+      "prism-ml-ternary-bonsai-2-27b-gguf-ev-license-license-id",
+      "prism-ml-ternary-bonsai-2-27b-gguf-ev-openness",
+      "prism-ml-ternary-bonsai-2-27b-gguf-ev-base-models",
+      "prism-ml-ternary-bonsai-2-27b-gguf-ev-architecture",
+      "prism-ml-ternary-bonsai-2-27b-gguf-ev-total-parameters-b",
+      "prism-ml-ternary-bonsai-2-27b-gguf-ev-context-length-advertised-max",
+      "prism-ml-ternary-bonsai-2-27b-gguf-ev-quantization-quant-name",
+      "prism-ml-ternary-bonsai-2-27b-gguf-ev-popularity",
+      "prism-ml-ternary-bonsai-2-27b-gguf-ev-resolved-revision",
+      "ev-v2-bf56dd9adf3691ce62d40d89110878c15157ff225dcfa0c5dacfd71dd4b2abdb",
+      "ev-v2-3b5a3fa5a31a553aacfe0e5ee5975f27be932a99a78599bd6b33f76d7f66b3c6",
+      "ev-v2-b078d5eb5812df5a84438624fa1cb28e7d644227ff6170a78d94ad7639db1fab",
+      "ev-v2-1c212f90670bfcc12ada6e9a50f0a11e701f20a45380748230ccca0f380a7ecf"
+    ],
+    "status": "publisher_claim"
+  }
+}

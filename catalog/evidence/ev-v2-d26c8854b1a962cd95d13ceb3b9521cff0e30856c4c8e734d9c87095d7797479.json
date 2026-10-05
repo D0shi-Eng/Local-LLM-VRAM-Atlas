@@ -1,0 +1,14 @@
+{
+  "claim_type": "architecture_property",
+  "evidence_id": "ev-v2-d26c8854b1a962cd95d13ceb3b9521cff0e30856c4c8e734d9c87095d7797479",
+  "evidence_level": "publisher_claim",
+  "field_path": "architecture",
+  "notes": "Current architecture inputs read anonymously from the publisher's configuration source (declared_base_model_config); repo=Qwen/Qwen3-Coder-30B-A3B-Instruct; revision=b2cff646eb4bb1d68355c01b18ae02e7cf42d120",
+  "publisher": "Qwen",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-16g-02-qwen3-coder-30b-q3km-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "verification_status": "independently_verified"
+}

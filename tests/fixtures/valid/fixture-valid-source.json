@@ -1,0 +1,15 @@
+{
+  "schema_version": "0.1.0",
+  "source_id": "fixture-source-001",
+  "source_type": "official_docs",
+  "title": "Fixture Documentation Page (synthetic)",
+  "publisher": "Fixture Publisher (synthetic)",
+  "url": "https://example.com/docs/fixture",
+  "accessed_at": "2026-10-05T08:20:00+03:00",
+  "published_at": null,
+  "revision": null,
+  "commit_or_revision": null,
+  "authority_level": "tier_a_primary",
+  "archived_reference": null,
+  "notes": "Synthetic fixture only."
+}

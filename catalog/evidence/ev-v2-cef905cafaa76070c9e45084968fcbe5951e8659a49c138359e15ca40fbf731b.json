@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-cef905cafaa76070c9e45084968fcbe5951e8659a49c138359e15ca40fbf731b",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.source_revision",
+  "notes": "Current resolved revision and exact artifact identity reacquired anonymously; repo=openai/gpt-oss-20b; revision=6cee5e81ee83917806bbde320786a8fb61efebee; artifact=openai-gpt-oss-20b--safetensors--original/model.safetensors",
+  "publisher": "openai",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-16g-01-gpt-oss-20b-native-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/openai/gpt-oss-20b",
+  "verification_status": "independently_verified"
+}

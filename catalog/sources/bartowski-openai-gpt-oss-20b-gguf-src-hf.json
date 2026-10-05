@@ -1,0 +1,15 @@
+{
+  "accessed_at": "2026-10-05T06:10:23.068720Z",
+  "archived_reference": null,
+  "authority_level": "tier_c_specialist",
+  "commit_or_revision": "e39ba3aa000c47c83dacdc9e1ca2c9dd0808c205",
+  "notes": "platform=hugging-face; repo_id=bartowski/openai_gpt-oss-20b-GGUF; requested_revision=main; resolved_revision=e39ba3aa000c47c83dacdc9e1ca2c9dd0808c205; officiality_status=unverified (namespace alone never proves officiality)",
+  "published_at": null,
+  "publisher": "bartowski",
+  "revision": "e39ba3aa000c47c83dacdc9e1ca2c9dd0808c205",
+  "schema_version": "0.1.0",
+  "source_id": "bartowski-openai-gpt-oss-20b-gguf-src-hf",
+  "source_type": "quantizer_repo",
+  "title": "Hugging Face repository bartowski/openai_gpt-oss-20b-GGUF (publisher-published metadata)",
+  "url": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF"
+}

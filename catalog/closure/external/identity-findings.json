@@ -1,0 +1,46 @@
+{
+  "findings": [
+    {
+      "action_rationale": "Renaming the variant would change artifact_set_id, which keys retention records, quality artifact matching and every closure view. That is a catalog-wide identity change requiring its own versioned decision, not an evidence-ingestion sideeffect.",
+      "action_taken": "recorded_only",
+      "candidate_id": "core-8g-05-ternary-bonsai-tq1",
+      "catalog_artifact_variant": "TQ1_0",
+      "corroboration": "artifact_weight_bytes 5946648928 is consistent with the publisher's stated 5.95GB PTQ1_0 packing and inconsistent with the 7.21 GB PQ2_0 packing.",
+      "finding_id": "identity-01-ternary-packing-label",
+      "observed": "The catalog records the artifact filename Ternary-Bonsai-2-27B-PTQ1_0.gguf (which matches the publisher's PTQ1_0 pack) but labels the variant 'TQ1_0', a label thepublisher does not use. The publisher declares exactly two packings: PTQ1_0 and PQ2_0.",
+      "publisher_declared_labels": [
+        "PTQ1_0",
+        "PQ2_0"
+      ],
+      "severity": "material_for_exact_artifact_matching"
+    },
+    {
+      "action_rationale": "The publisher's per-packing perplexity values exist, but attaching them under a 'Q2' label would assert a quantization the measurement did not use. The record is stored as evidence and the result is recorded as a rejected attachment.",
+      "action_taken": "rejected_attachment",
+      "candidate_id": "core-8g-07-ternary-heretic-tq1",
+      "catalog_artifact_variant": "TQ1_0",
+      "finding_id": "identity-02-model-level-quant-label-vs-artifact",
+      "observed": "The model-level catalog record declares quant_name 'Q2' / quant_family 'q2',taken from one packing, while the Core candidate selects the other packing's artifact. Model-level quantization metadata cannot disambiguate two packings of onerelease, so an exact per-packing publisher result cannot be attached to this record.",
+      "severity": "material_for_exact_artifact_matching"
+    },
+    {
+      "action_rationale": "Native low-bit releases must use their native evaluation evidence rather than be forced through post-training retention semantics. The retention record created here discloses the distinction explicitly instead of being hidden.",
+      "action_taken": "recorded_only",
+      "candidate_id": "core-8g-05-ternary-bonsai-tq1",
+      "finding_id": "identity-03-bonsai-quantization-scope",
+      "observed": "The release is a natively ternary-trained model with Hadamard rotation foldedinto the stored weights, not a post-training quantization. The catalog treats any artifact_variant without a declared native quant method as post-training quantized, which routes this artifact into base-vs-quant retention logic.",
+      "severity": "methodological"
+    },
+    {
+      "action_rationale": "The publisher result was attached to the exact artifact via artifact_id, with the publisher's own packing label recorded in the retention record and in this file. The closure's own retention builder still reads only model-level quantization metadata, so its state for this artifact remains less specific than the measured comparison recorded here. That limitation is reported rather than hidden.",
+      "action_taken": "recorded_with_explicit_artifact_binding",
+      "candidate_id": "core-8g-05-ternary-bonsai-tq1",
+      "finding_id": "identity-04-model-record-lacks-quantization-name",
+      "observed": "The model-level catalog record for this release declares quant_family 'unknown'and quant_name null, because the publisher ships two packings of one release. Consequently the base-versus-quant identity guard treats the record as non-quantized, and a per-packing result can only be attached with an empty quantization field plus an artifact_id binding.",
+      "severity": "material_for_exact_artifact_matching"
+    }
+  ],
+  "note": "Exact-artifact discrepancies surfaced by external evidence. Recorded, notsilently repaired.",
+  "observed_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0"
+}

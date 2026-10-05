@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1.0",
+  "model_id": "fixture-synthetic-verified",
+  "display_name": "Synthetic Verified Fixture (NOT a real model)",
+  "creator": "Atlas Test Fixtures",
+  "architecture": "FixtureTransformer",
+  "architecture_type": "dense",
+  "quantization": {
+    "format": "GGUF",
+    "quant_family": "q8"
+  },
+  "vram": {
+    "weight_file_size_gib": 7.9,
+    "measured_vram_gib": 9.4,
+    "estimated_vram_gib": null,
+    "minimum_vram_gib": 10.0,
+    "recommended_vram_gib": 12.0,
+    "vram_tier_gb": 12,
+    "evidence": "measured",
+    "measurement_conditions": {
+      "batch_size": 1,
+      "task": "text_generation",
+      "gpu_offload": "full",
+      "cpu_offload": false,
+      "backend": "CUDA",
+      "runtime": "FixtureRuntime",
+      "runtime_version": "0.0.0-fixture",
+      "kv_cache_config": "f16-8k",
+      "gpu_model": "Synthetic GPU 16GB (fictional)",
+      "tested_context": 8192
+    },
+    "runtime_overhead_gib": 1.5
+  },
+  "openness": "unclear",
+  "license": {
+    "verification_status": "unknown"
+  },
+  "verification": {
+    "status": "independently_verified",
+    "evidence_ids": ["fixture-evidence-001"]
+  },
+  "catalog_status": "verified",
+  "lifecycle_status": "active"
+}

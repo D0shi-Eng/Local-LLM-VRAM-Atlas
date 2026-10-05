@@ -1,0 +1,14 @@
+{
+  "claim_type": "vram_requirement",
+  "evidence_id": "ev-v2-1c212f90670bfcc12ada6e9a50f0a11e701f20a45380748230ccca0f380a7ecf",
+  "evidence_level": "publisher_claim",
+  "field_path": "vram.kv_cache_bytes_per_token",
+  "notes": "Documented KV-cache memory for the 27B hybrid-attention backbone on the PrismML llama.cpp fork: 64 KiB per token in FP16 and about 18 KiB per token in Q4_0, so a 100K-token context needs about 6.3 GiB instead of about 1.8 GiB, a documented roughly 3.5x reduction. Q4_0 requires flash attention, which the documented scripts already enable, and is passed as --cache-type-k q4_0 --cache-type-v q4_0. SCOPE LIMITS: the 100K example context is not the Atlas 8192-token text baseline; the figures are KV-cache allocations, not a full-device peak; no GPU model, driver, batch state or offload state is published for them; and because the backbone is ~75% linear attention this per-token rate is NOT the standard full-attention KV equation and is never substituted for it. The publisher separately documents an optional system-RAM residency for the vision projector (--no-mmproj-offload) to free VRAM on tight cards.; methodology_version=0.1.0 | source_revision=unresolved | identity_status=exact_repository_identity_with_disclosed_artifact_label",
+  "publisher": "Prism ML",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "bonsai-demo-documentation",
+  "source_type": "official_docs",
+  "source_url": "https://github.com/PrismML-Eng/Bonsai-demo",
+  "verification_status": "publisher_claim"
+}

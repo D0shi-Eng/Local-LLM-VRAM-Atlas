@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-llm-vram-atlas.local/schemas/quality-profile.schema.json",
+  "title": "AtlasQualityProfile",
+  "description": "Multi-axis quality profile built deterministically from canonical evaluation records. Missing axes stay unknown (never zero). No single magic score. Specification version 0.6.0 (Phase 6, pre-1.0).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "profile_id",
+    "model_id",
+    "quality_snapshot_version",
+    "policy_id",
+    "policy_version",
+    "axes",
+    "evidence_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^0\\.[0-9]+\\.[0-9]+$"
+    },
+    "profile_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{1,120}$",
+      "description": "Deterministic digest over model + evaluation IDs + policy (no timestamps in identity)."
+    },
+    "model_id": { "type": "string", "minLength": 1 },
+    "quality_snapshot_version": { "type": "string", "minLength": 1 },
+    "policy_id": { "type": "string", "minLength": 1 },
+    "policy_version": { "type": "string", "minLength": 1 },
+    "axes": {
+      "type": "object",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[a-z][a-z0-9_]{1,60}$": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "evaluation_ids"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["known", "unknown"],
+              "description": "Unknown means unevaluated, never failed."
+            },
+            "evaluation_ids": {
+              "type": "array",
+              "items": { "type": "string", "minLength": 1 },
+              "uniqueItems": true
+            },
+            "note": { "type": ["string", "null"], "maxLength": 1000 }
+          }
+        }
+      }
+    },
+    "evidence_status": {
+      "type": "string",
+      "enum": ["independent_multi_source", "independent_single_source", "verified_single_source", "publisher_only", "community_only", "insufficient", "unknown"]
+    },
+    "high_quality_candidate": { "type": ["boolean", "null"] },
+    "high_quality_rationale": { "type": ["string", "null"], "maxLength": 1000 }
+  }
+}

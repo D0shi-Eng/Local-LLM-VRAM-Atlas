@@ -1,0 +1,111 @@
+{
+  "active_parameters_b": null,
+  "architecture_raw": "Gemma4UnifiedForConditionalGeneration",
+  "architecture_type_raw": null,
+  "author": "google",
+  "base_models_raw": [],
+  "card_text": null,
+  "conflicts": [],
+  "context_advertised": null,
+  "datasets_raw": [],
+  "disabled": false,
+  "downloads": 109157,
+  "experts_active": null,
+  "experts_total": null,
+  "gated": false,
+  "languages": [],
+  "library_name": "transformers",
+  "license_raw": "apache-2.0",
+  "likes": 761,
+  "namespace": "google",
+  "pipeline_tag": "any-to-any",
+  "platform": "hugging-face",
+  "private": false,
+  "repo_id": "google/gemma-4-12B",
+  "repo_name": "gemma-4-12B",
+  "requested_revision": "main",
+  "resolved_revision": "023679ed352de9bb66cc873c9009ce3482585c08",
+  "retrieved_at": "2026-10-05T06:10:58.672513Z",
+  "siblings": [
+    {
+      "extension": ".gitattributes",
+      "filename": ".gitattributes",
+      "path": ".gitattributes",
+      "source_reported_hash": "602d20f6eefed4b62821062891a7a495e25435f9",
+      "source_reported_size_bytes": 1624,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".md",
+      "filename": "README.md",
+      "path": "README.md",
+      "source_reported_hash": "221970dc42ea6e97090b16ef09790b46777c1d91",
+      "source_reported_size_bytes": 28340,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "config.json",
+      "path": "config.json",
+      "source_reported_hash": "6d3994fd0b98fd5eaaaadbf918bd826d778ce5ea",
+      "source_reported_size_bytes": 4383,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "generation_config.json",
+      "path": "generation_config.json",
+      "source_reported_hash": "6e4ef65e8cf563a9177fd933423f89eed2f74d74",
+      "source_reported_size_bytes": 233,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model.safetensors",
+      "path": "model.safetensors",
+      "source_reported_hash": "b486eba79038fd235f4fa3b1aa502d3df9a4c23c",
+      "source_reported_size_bytes": 23919549408,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".json",
+      "filename": "processor_config.json",
+      "path": "processor_config.json",
+      "source_reported_hash": "b889adcd78015bf5a0139438c5fb0b7067529a61",
+      "source_reported_size_bytes": 1382,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "tokenizer.json",
+      "path": "tokenizer.json",
+      "source_reported_hash": "890ddaefca8201dd023c4f013db5ce492d12e7e0",
+      "source_reported_size_bytes": 32170070,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".json",
+      "filename": "tokenizer_config.json",
+      "path": "tokenizer_config.json",
+      "source_reported_hash": "0a3fe0009f6816c5c615c6102eea6599680c1523",
+      "source_reported_size_bytes": 888,
+      "source_reported_storage": null
+    }
+  ],
+  "source_url": "https://huggingface.co/google/gemma-4-12B",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "total_parameters_b": 11.959730224,
+  "trending_score": null,
+  "warnings": []
+}

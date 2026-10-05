@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-llm-vram-atlas.local/schemas/artifact.schema.json",
+  "title": "AtlasArtifactSet",
+  "description": "A single quantized model variant as a set of files: shards grouped together, distinct quant variants kept separate, companion files recorded apart from main weights. Specification version 0.2.0 (Phase 2).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "artifact_set_id",
+    "model_id",
+    "format",
+    "kind",
+    "files",
+    "verification_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^0\\.[0-9]+\\.[0-9]+$",
+      "description": "Specification version of this record (0.2.0 at Phase 2 introduction)."
+    },
+    "artifact_set_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "model_id": { "type": "string", "minLength": 1 },
+    "revision": {
+      "type": ["string", "null"],
+      "description": "Resolved immutable revision; null when unknown, never invented."
+    },
+    "variant": {
+      "type": ["string", "null"],
+      "description": "Exact quant label, e.g. Q4_K_M. Distinct variants are never merged as shards."
+    },
+    "format": {
+      "type": "string",
+      "enum": ["GGUF", "safetensors", "EXL2", "AWQ", "GPTQ", "MLX", "bin", "pt", "pth", "ckpt", "onnx", "other", "unknown"],
+      "description": "Container/serialization format, never the quantization scheme itself."
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["single", "sharded"],
+      "description": "Whether this variant is one file or grouped shards of one variant."
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["filename", "path"],
+        "properties": {
+          "filename": { "type": "string", "minLength": 1 },
+          "path": { "type": "string", "minLength": 1 },
+          "extension": { "type": ["string", "null"] },
+          "source_reported_size_bytes": { "type": ["integer", "null"], "minimum": 0 }
+        }
+      }
+    },
+    "shard_count": { "type": ["integer", "null"], "minimum": 1 },
+    "shard_total": { "type": ["integer", "null"], "minimum": 1 },
+    "shards_complete": {
+      "type": ["boolean", "null"],
+      "description": "True only when every expected shard index is present exactly once."
+    },
+    "total_source_reported_bytes": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "Sum of source-reported file sizes; null when any size is missing."
+    },
+    "primary_weight_bytes": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "Weight bytes only; companion artifacts are recorded separately."
+    },
+    "auxiliary_bytes": { "type": ["integer", "null"], "minimum": 0 },
+    "companion_components": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Companion kinds present (tokenizer, config, index, projector, docs)."
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": ["unknown", "unverified", "estimated", "publisher_claim", "quantizer_claim", "independently_verified", "atlas_verified", "verified_metadata", "source_reported", "calculated", "filename_inferred", "community_report"]
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "kind": { "const": "sharded" } } },
+      "then": { "required": ["shard_count", "shard_total", "shards_complete"] }
+    }
+  ]
+}

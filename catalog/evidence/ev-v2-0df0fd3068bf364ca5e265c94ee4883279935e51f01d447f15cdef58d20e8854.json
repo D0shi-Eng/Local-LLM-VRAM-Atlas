@@ -1,0 +1,14 @@
+{
+  "claim_type": "benchmark_score",
+  "evidence_id": "ev-v2-0df0fd3068bf364ca5e265c94ee4883279935e51f01d447f15cdef58d20e8854",
+  "evidence_level": "publisher_claim",
+  "field_path": "quality",
+  "notes": "Quality claim evidence: recorded publisher-reported evaluation results. See catalog/benchmarks/evaluations/ for per-result provenance and quality evidence_ids. Popularity, size, recency and brand are excluded.",
+  "publisher": "microsoft",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "microsoft-phi-4-quality-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/microsoft/phi-4",
+  "verification_status": "publisher_claim"
+}

@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-bbc1b7f00e4bb90f689ab0ef87b2e2bc15f10bd01eb36aa47d7878a06d835ac6",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.source_revision",
+  "notes": "Current resolved revision and exact artifact identity reacquired anonymously; repo=microsoft/bitnet-b1.58-2B-4T; revision=04c3b9ad9361b824064a1f25ea60a8be9599b127; artifact=microsoft-bitnet-b1-58-2b-4t--safetensors--model.safetensors",
+  "publisher": "microsoft",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-4g-02-bitnet-native-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/microsoft/bitnet-b1.58-2B-4T",
+  "verification_status": "independently_verified"
+}

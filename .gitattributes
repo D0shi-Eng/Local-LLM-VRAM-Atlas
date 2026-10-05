@@ -1,0 +1,73 @@
+# ---------------------------------------------------------------------------
+# Line endings and file types.
+#
+# Everything textual is stored with LF in the repository, on every platform.
+# This matters here for two reasons: the catalog is machine-read JSON and must
+# stay byte-stable for the recorded checksums, and the Arabic documentation must
+# not be rewritten by a checkout on a different platform.
+# ---------------------------------------------------------------------------
+
+* text=auto eol=lf
+
+# Bilingual documentation and prose
+*.md    text eol=lf
+*.txt   text eol=lf
+
+# Canonical machine-readable data: LF only, no conversion, never touched
+*.json  text eol=lf
+*.jsonl text eol=lf
+
+# Code and configuration
+*.py    text eol=lf
+*.toml  text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.cfg   text eol=lf
+*.ini   text eol=lf
+
+# Visual identity: SVG is text and must stay diffable
+*.svg   text eol=lf
+
+# Binary assets: never diffed, never converted
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.woff  binary
+*.woff2 binary
+
+# Model weights must never enter version control. Declared here as well as in
+# .gitignore so that a mistake is caught by git rather than silently staged.
+*.gguf         binary
+*.ggml         binary
+*.safetensors  binary
+*.onnx         binary
+*.pt           binary
+*.pth          binary
+*.npy          binary
+*.npz          binary
+*.pkl          binary
+*.pickle       binary
+
+# Lock files and vendored trees
+*.lock   -diff
+vendor/  linguist-vendored
+
+# Generated documentation and views. Linguist should not attempt to summarise
+# them; they are outputs of the pipeline, not authored prose.
+catalog/views/**      linguist-generated=true
+catalog/quality/**     linguist-generated=true
+catalog/manifest.json  linguist-generated=true
+
+# ---------------------------------------------------------------------------
+# Diff and merge behaviour
+# ---------------------------------------------------------------------------
+
+# Lock files and generated machine data are not usefully merged by hand.
+catalog/manifest.json      merge=binary
+catalog/quality/manifest.json merge=binary
+catalog/changes/           merge=binary
+
+# Documentation is prose; keep normal line-based merging.
+docs/**  text eol=lf

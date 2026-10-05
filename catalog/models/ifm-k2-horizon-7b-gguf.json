@@ -1,0 +1,92 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "unknown",
+    "base_model": "IFM/K2-Horizon-7B",
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "variant_author": "IFM",
+    "variant_source": "https://huggingface.co/IFM/K2-Horizon-7B-GGUF",
+    "verification_status": "unknown"
+  },
+  "architecture": "unknown",
+  "architecture_type": "unknown",
+  "base_models": [
+    "IFM/K2-Horizon-7B"
+  ],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "IFM",
+  "display_name": "IFM/K2-Horizon-7B-GGUF",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "apache-2.0",
+    "license_name": null,
+    "license_notes": "raw_license_value='apache-2.0'; spdx=True",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "ifm-k2-horizon-7b-gguf",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "open_weights_permissive",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:04.709265Z",
+    "downloads": 23168,
+    "likes": 70,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 18010413440,
+    "file_size_gib": 16.774,
+    "format": "GGUF",
+    "native_quantization": null,
+    "quant_family": "bf16",
+    "quant_name": "BF16",
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "9fb01f7b397994455262f4b8256e4e00e4949ea9",
+    "split_files": true
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "ifm-k2-horizon-7b-gguf",
+  "total_parameters_b": 8.99917824,
+  "verification": {
+    "evidence_ids": [
+      "ifm-k2-horizon-7b-gguf-ev-license-license-id",
+      "ifm-k2-horizon-7b-gguf-ev-openness",
+      "ifm-k2-horizon-7b-gguf-ev-base-models",
+      "ifm-k2-horizon-7b-gguf-ev-architecture",
+      "ifm-k2-horizon-7b-gguf-ev-total-parameters-b",
+      "ifm-k2-horizon-7b-gguf-ev-context-length-advertised-max",
+      "ifm-k2-horizon-7b-gguf-ev-quantization-quant-name",
+      "ifm-k2-horizon-7b-gguf-ev-popularity",
+      "ifm-k2-horizon-7b-gguf-ev-resolved-revision"
+    ],
+    "status": "publisher_claim"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": "0.1.0",
+  "model_id": "fixture-synthetic-dense",
+  "display_name": "Synthetic Dense Fixture (NOT a real model)",
+  "slug": "fixture-synthetic-dense",
+  "creator": "Atlas Test Fixtures",
+  "organization": null,
+  "model_family": "fixture-family",
+  "base_models": [],
+  "release_date": null,
+  "last_verified_at": null,
+  "architecture": "FixtureTransformer",
+  "architecture_type": "dense",
+  "total_parameters_b": 7.5,
+  "active_parameters_b": null,
+  "experts_total": null,
+  "experts_active": null,
+  "context_length": {
+    "advertised_max": 8192,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "modalities": ["text"],
+  "multimodal_components": null,
+  "quantization": {
+    "format": "GGUF",
+    "quant_family": "q4",
+    "quant_name": "Q4_K_M",
+    "bits_per_weight": 4.5,
+    "native_quantization": false,
+    "compression_category": "balanced_quantization",
+    "quantizer": null,
+    "quantizer_repo": null,
+    "file_size_bytes": 4670000000,
+    "file_size_gib": 4.35,
+    "split_files": false,
+    "source_revision": null,
+    "checksum": null
+  },
+  "vram": {
+    "weight_file_size_gib": 4.35,
+    "measured_vram_gib": null,
+    "estimated_vram_gib": 6.1,
+    "minimum_vram_gib": null,
+    "recommended_vram_gib": null,
+    "vram_tier_gb": 8,
+    "evidence": "estimated",
+    "measurement_conditions": null,
+    "runtime_overhead_gib": null
+  },
+  "openness": "unclear",
+  "open_source_ai_reference": null,
+  "license": {
+    "license_id": null,
+    "license_name": null,
+    "license_url": null,
+    "license_source": null,
+    "commercial_use_status": "unclear",
+    "redistribution_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_notes": "Synthetic fixture: license unknown on purpose.",
+    "verification_status": "unknown"
+  },
+  "alignment": {
+    "alignment_variant": "unknown",
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "method_documented": null,
+    "base_model": null,
+    "variant_author": null,
+    "variant_source": null,
+    "capability_retention_evidence": null,
+    "refusal_evaluation": null,
+    "verification_status": "unknown"
+  },
+  "verification": {
+    "status": "unverified",
+    "evidence_ids": []
+  },
+  "catalog_status": "experimental",
+  "lifecycle_status": "active",
+  "lifecycle_reason": null,
+  "popularity": {
+    "downloads": null,
+    "likes": null,
+    "trending": null,
+    "captured_at": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "claim_type": "benchmark_score",
+  "evidence_id": "ev-v2-f2c5d0475df8fb260861af8cbf1fa0f403e2dd1b028eb6b9cb70e0a854c236be",
+  "evidence_level": "publisher_claim",
+  "field_path": "quality",
+  "notes": "Quality claim evidence: recorded publisher-reported evaluation results. See catalog/benchmarks/evaluations/ for per-result provenance and quality evidence_ids. Popularity, size, recency and brand are excluded.",
+  "publisher": "deepseek-ai",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "deepseek-ai-deepseek-r1-distill-qwen-7b-quality-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "verification_status": "publisher_claim"
+}

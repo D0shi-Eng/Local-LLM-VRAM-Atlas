@@ -1,0 +1,23 @@
+{
+  "entries": [
+    {
+      "evaluation_count": 5,
+      "evidence_status": "publisher_only",
+      "model_id": "deepseek-ai-deepseek-r1-distill-qwen-7b",
+      "note": null
+    },
+    {
+      "evaluation_count": 2,
+      "evidence_status": "publisher_only",
+      "model_id": "huggingfacetb-smollm2-1-7b-instruct",
+      "note": null
+    },
+    {
+      "evaluation_count": 3,
+      "evidence_status": "publisher_only",
+      "model_id": "microsoft-phi-4",
+      "note": null
+    }
+  ],
+  "view": "reasoning"
+}

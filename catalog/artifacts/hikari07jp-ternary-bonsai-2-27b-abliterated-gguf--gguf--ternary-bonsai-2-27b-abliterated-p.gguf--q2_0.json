@@ -1,0 +1,29 @@
+{
+  "artifact_set_id": "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf--gguf--ternary-bonsai-2-27b-abliterated-p.gguf--q2_0",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "docs",
+    "metadata",
+    "other"
+  ],
+  "files": [
+    {
+      "extension": ".gguf",
+      "filename": "Ternary-Bonsai-2-27B-Abliterated-PQ2_0.gguf",
+      "path": "Ternary-Bonsai-2-27B-Abliterated-PQ2_0.gguf",
+      "source_reported_size_bytes": 7206168928
+    }
+  ],
+  "format": "GGUF",
+  "kind": "single",
+  "model_id": "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf",
+  "primary_weight_bytes": 7206168928,
+  "revision": "e7f6daf95ab820ef8de7d8f5e883d95d546ab02c",
+  "schema_version": "0.2.0",
+  "shard_count": 1,
+  "shard_total": null,
+  "shards_complete": null,
+  "total_source_reported_bytes": 7206168928,
+  "variant": "Q2_0",
+  "verification_status": "source_reported"
+}

@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-f420855ac6971857b133ce7279f8e3c606796c19303895a932214a7423172070",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.source_revision",
+  "notes": "Current resolved revision and exact artifact identity reacquired anonymously; repo=QuantFactory/Qwen3-8B-GGUF; revision=1a85ad16e1e80725404ad707448c10dd414ed045; artifact=quantfactory-qwen3-8b-gguf--gguf--qwen3-8b-gguf--q2_k",
+  "publisher": "QuantFactory",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-4g-05-qwen3-8b-q2k-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/QuantFactory/Qwen3-8B-GGUF",
+  "verification_status": "independently_verified"
+}

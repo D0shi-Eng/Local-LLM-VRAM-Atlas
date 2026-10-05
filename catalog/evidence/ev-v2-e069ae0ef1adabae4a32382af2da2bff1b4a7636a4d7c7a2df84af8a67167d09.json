@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-e069ae0ef1adabae4a32382af2da2bff1b4a7636a4d7c7a2df84af8a67167d09",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.source_revision",
+  "notes": "Current resolved revision and exact artifact identity reacquired anonymously; repo=microsoft/bitnet-b1.58-2B-4T-gguf; revision=a1f2f1c765812aa8af3f6eda4a313707064bba15; artifact=microsoft-bitnet-b1-58-2b-4t-gguf--gguf--ggml-model-i2_s.gguf",
+  "publisher": "microsoft",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-4g-03-bitnet-gguf-i2s-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/microsoft/bitnet-b1.58-2B-4T-gguf",
+  "verification_status": "independently_verified"
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "0.1.0",
+  "model_id": "fixture-invalid-enum",
+  "display_name": "Invalid Enum Fixture (must fail)",
+  "creator": "Atlas Test Fixtures",
+  "architecture": "FixtureTransformer",
+  "architecture_type": "super-dense",
+  "openness": "unclear",
+  "verification": {
+    "status": "unverified"
+  },
+  "catalog_status": "experimental",
+  "lifecycle_status": "active"
+}

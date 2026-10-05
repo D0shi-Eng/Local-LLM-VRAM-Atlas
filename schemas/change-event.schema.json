@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-llm-vram-atlas.local/schemas/change-event.schema.json",
+  "title": "AtlasChangeEvent",
+  "description": "One semantic catalog delta. Specification version 0.6.0 (Phase 6, pre-1.0); Phase 6 adds six quality-evidence event types additively (enum extension only, no existing value removed or renamed, no previously valid record becomes invalid). Compact references only; no duplicated model records.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "event_version",
+    "event_type",
+    "severity",
+    "model_id",
+    "detected_at",
+    "review_status",
+    "apply_status"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{1,120}$",
+      "description": "Bounded deterministic digest ID (chg-v1-<sha256>)."
+    },
+    "event_version": { "type": "string", "pattern": "^0\\.[0-9]+\\.[0-9]+$" },
+    "event_type": {
+      "type": "string",
+      "enum": ["model_discovered", "repository_revision_changed", "metadata_changed", "artifact_added", "artifact_removed", "artifact_changed", "quant_variant_added", "quant_variant_removed", "license_changed", "openness_changed", "lineage_changed", "architecture_changed", "base_model_changed", "gating_changed", "repository_disabled", "repository_unavailable", "repository_restored", "alignment_claim_changed", "runtime_evidence_changed", "source_officiality_changed", "popularity_changed", "quality_evidence_added", "quality_evidence_updated", "quality_evidence_withdrawn", "benchmark_superseded", "evaluation_identity_conflict", "retention_evidence_added"]
+    },
+    "severity": { "type": "string", "enum": ["critical", "high", "medium", "low", "informational"] },
+    "model_id": { "type": "string", "minLength": 1 },
+    "artifact_id": { "type": ["string", "null"] },
+    "source_id": { "type": ["string", "null"] },
+    "old_revision": { "type": ["string", "null"] },
+    "new_revision": { "type": ["string", "null"] },
+    "old_fingerprint": { "type": ["string", "null"] },
+    "new_fingerprint": { "type": ["string", "null"] },
+    "changed_fields": { "type": "array", "items": { "type": "string" } },
+    "evidence_ids": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "detected_at": { "type": "string", "format": "date-time" },
+    "review_status": { "type": "string", "enum": ["safe_auto_apply", "review_required", "blocked", "informational_only"] },
+    "apply_status": { "type": "string", "enum": ["pending", "applied", "skipped", "superseded"] },
+    "notes": { "type": ["string", "null"], "maxLength": 2000 }
+  }
+}

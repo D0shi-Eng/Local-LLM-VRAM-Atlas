@@ -1,0 +1,14 @@
+{
+  "claim_type": "architecture_property",
+  "evidence_id": "google-gemma-4-12b-ev-context-length-advertised-max",
+  "evidence_level": "publisher_claim",
+  "field_path": "context_length.advertised_max",
+  "notes": "repo_id=google/gemma-4-12B; resolved_revision=023679ed352de9bb66cc873c9009ce3482585c08; requested_revision=main",
+  "publisher": "google",
+  "retrieved_at": "2026-10-05T06:10:12.659336Z",
+  "schema_version": "0.1.0",
+  "source_id": "google-gemma-4-12b-src-hf",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/google/gemma-4-12B",
+  "verification_status": "unknown"
+}

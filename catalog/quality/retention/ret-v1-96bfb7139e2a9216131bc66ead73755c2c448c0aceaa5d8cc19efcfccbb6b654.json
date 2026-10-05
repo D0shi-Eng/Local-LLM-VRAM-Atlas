@@ -1,0 +1,23 @@
+{
+  "absolute_delta": null,
+  "base_release": "quantfactory-qwen3-8b-gguf",
+  "base_score": null,
+  "benchmark_id": "unresolved",
+  "benchmark_version": null,
+  "evaluation_settings_match": false,
+  "evidence_ids": [],
+  "evidence_quality": "unknown",
+  "metric": null,
+  "metric_direction": null,
+  "notes": "no evaluation evidence for either release; No exact base-release evaluation is available for this artifact, so retention stays unknown rather than inherited.",
+  "publisher_claim": null,
+  "quant_score": null,
+  "quantization": "Q8_0",
+  "quantized_artifact": "quantfactory-qwen3-8b-gguf",
+  "relative_delta": null,
+  "retention_id": "ret-v1-96bfb7139e2a9216131bc66ead73755c2c448c0aceaa5d8cc19efcfccbb6b654",
+  "retention_status": "unknown",
+  "schema_version": "0.6.0",
+  "source": null,
+  "verification_status": null
+}

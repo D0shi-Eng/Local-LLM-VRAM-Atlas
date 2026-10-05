@@ -1,0 +1,76 @@
+{
+  "axes": {
+    "agentic_tool_use": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "arabic": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "coding": {
+      "evaluation_ids": [
+        "evl-v1-7fadc74980b6e1121299e0ca54153b270bd3eb62a3785d2067f3d99f9e5ccaa1",
+        "evl-v1-f406e84f178339441285309d3a7fb831794a49d3cdfaa93a340fabae52ab4c62"
+      ],
+      "status": "known"
+    },
+    "general_intelligence": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "instruction_following": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "knowledge": {
+      "evaluation_ids": [
+        "evl-v1-3c8bd6b67a42deb973717674941614e519ed27115d70a38c4bd658c03cf38fdd"
+      ],
+      "status": "known"
+    },
+    "long_context": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "multilingual": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "multimodal": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "non_hallucination": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "professional_tasks": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "reasoning": {
+      "evaluation_ids": [
+        "evl-v1-2b61b13233fed885cf036abfe1a6ccc67fad319952ee3aea93300ee32f77d5fd",
+        "evl-v1-3c8bd6b67a42deb973717674941614e519ed27115d70a38c4bd658c03cf38fdd",
+        "evl-v1-a90c85eaec153945b5995667d1b3c44a2f675ba41a680b3b7564c0de70effbbf",
+        "evl-v1-f406e84f178339441285309d3a7fb831794a49d3cdfaa93a340fabae52ab4c62",
+        "evl-v1-fa6364502c8a715287179133b6af833d5d92b641d677d3eb2606818a1bc5dcf4"
+      ],
+      "status": "known"
+    },
+    "safety_refusal_behavior": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    }
+  },
+  "evidence_status": "publisher_only",
+  "high_quality_candidate": false,
+  "high_quality_rationale": "evidence status publisher_only is below the independent threshold",
+  "model_id": "deepseek-ai-deepseek-r1-distill-qwen-7b",
+  "policy_id": "atlas-quality-policy",
+  "policy_version": "0.6.0",
+  "profile_id": "qp-v1-d4965e5a18e41370839f3f9097403aafb44a1886b2b022332359d752da81a16b",
+  "quality_snapshot_version": "0.6.0",
+  "schema_version": "0.6.0"
+}

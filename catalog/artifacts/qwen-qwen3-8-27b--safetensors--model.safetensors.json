@@ -1,0 +1,134 @@
+{
+  "artifact_set_id": "qwen-qwen3-8-27b--safetensors--model.safetensors",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "config",
+    "docs",
+    "index",
+    "metadata",
+    "other",
+    "tokenizer"
+  ],
+  "files": [
+    {
+      "extension": ".safetensors",
+      "filename": "model-00001-of-00018.safetensors",
+      "path": "model-00001-of-00018.safetensors",
+      "source_reported_size_bytes": 3966730552
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00002-of-00018.safetensors",
+      "path": "model-00002-of-00018.safetensors",
+      "source_reported_size_bytes": 3043080328
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00003-of-00018.safetensors",
+      "path": "model-00003-of-00018.safetensors",
+      "source_reported_size_bytes": 2542796952
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00004-of-00018.safetensors",
+      "path": "model-00004-of-00018.safetensors",
+      "source_reported_size_bytes": 3988973152
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00005-of-00018.safetensors",
+      "path": "model-00005-of-00018.safetensors",
+      "source_reported_size_bytes": 2099339864
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00006-of-00018.safetensors",
+      "path": "model-00006-of-00018.safetensors",
+      "source_reported_size_bytes": 3979553696
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00007-of-00018.safetensors",
+      "path": "model-00007-of-00018.safetensors",
+      "source_reported_size_bytes": 2108759344
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00008-of-00018.safetensors",
+      "path": "model-00008-of-00018.safetensors",
+      "source_reported_size_bytes": 3979553696
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00009-of-00018.safetensors",
+      "path": "model-00009-of-00018.safetensors",
+      "source_reported_size_bytes": 2108759344
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00010-of-00018.safetensors",
+      "path": "model-00010-of-00018.safetensors",
+      "source_reported_size_bytes": 3979553696
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00011-of-00018.safetensors",
+      "path": "model-00011-of-00018.safetensors",
+      "source_reported_size_bytes": 2108759344
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00012-of-00018.safetensors",
+      "path": "model-00012-of-00018.safetensors",
+      "source_reported_size_bytes": 3979553696
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00013-of-00018.safetensors",
+      "path": "model-00013-of-00018.safetensors",
+      "source_reported_size_bytes": 2108759344
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00014-of-00018.safetensors",
+      "path": "model-00014-of-00018.safetensors",
+      "source_reported_size_bytes": 3979553696
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00015-of-00018.safetensors",
+      "path": "model-00015-of-00018.safetensors",
+      "source_reported_size_bytes": 2108759344
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00016-of-00018.safetensors",
+      "path": "model-00016-of-00018.safetensors",
+      "source_reported_size_bytes": 3979564040
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00017-of-00018.safetensors",
+      "path": "model-00017-of-00018.safetensors",
+      "source_reported_size_bytes": 2108759344
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00018-of-00018.safetensors",
+      "path": "model-00018-of-00018.safetensors",
+      "source_reported_size_bytes": 3392197344
+    }
+  ],
+  "format": "safetensors",
+  "kind": "sharded",
+  "model_id": "qwen-qwen3-8-27b",
+  "primary_weight_bytes": 55563006776,
+  "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "schema_version": "0.2.0",
+  "shard_count": 18,
+  "shard_total": 18,
+  "shards_complete": true,
+  "total_source_reported_bytes": 55563006776,
+  "variant": null,
+  "verification_status": "source_reported"
+}

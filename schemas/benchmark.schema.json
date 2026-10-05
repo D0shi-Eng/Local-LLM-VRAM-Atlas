@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-llm-vram-atlas.local/schemas/benchmark.schema.json",
+  "title": "AtlasBenchmarkRecord",
+  "description": "Records a benchmark result together with its full configuration. Scores from different setups are never compared as equals, publisher results are never merged with independent ones, and downloads/likes are never quality evidence. Specification version 0.1.0.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "benchmark_name",
+    "model",
+    "score",
+    "score_unit",
+    "benchmark_origin",
+    "source",
+    "evaluation_date"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^0\\.[0-9]+\\.[0-9]+$"
+    },
+    "benchmark_name": { "type": "string", "minLength": 1 },
+    "benchmark_version": { "type": ["string", "null"] },
+    "benchmark_owner": { "type": ["string", "null"] },
+    "model": { "type": "string", "minLength": 1, "description": "Model variant identifier this result belongs to." },
+    "model_revision": { "type": ["string", "null"] },
+    "quantization": { "type": ["string", "null"], "description": "Exact quant tested; a base-model score never stands in for a quantized variant." },
+    "runtime": { "type": ["string", "null"] },
+    "runtime_version": { "type": ["string", "null"] },
+    "hardware": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "gpu_vendor": { "type": ["string", "null"] },
+        "gpu_model": { "type": ["string", "null"] },
+        "gpu_vram_gib": { "type": ["number", "null"], "exclusiveMinimum": 0 },
+        "driver": { "type": ["string", "null"] },
+        "backend": { "type": ["string", "null"] },
+        "os": { "type": ["string", "null"] },
+        "cpu": { "type": ["string", "null"] },
+        "system_ram_gib": { "type": ["number", "null"], "exclusiveMinimum": 0 }
+      },
+      "description": "Full hardware context is mandatory for atlas_verified hardware measurements; publisher claims may legitimately omit fields."
+    },
+    "prompting": { "type": ["string", "null"] },
+    "reasoning_mode": { "type": ["string", "null"], "description": "Reasoning on/off and budget when applicable; never compared across modes without disclosure." },
+    "context": { "type": ["integer", "null"], "minimum": 1 },
+    "score": { "type": "number" },
+    "score_unit": { "type": "string", "minLength": 1, "description": "Unit is part of the result; unitless comparison across benchmarks is forbidden." },
+    "source": { "type": "string", "minLength": 1, "description": "Reference to the source record (source.schema.json) this result comes from." },
+    "evaluation_date": { "type": "string", "format": "date" },
+    "independent": { "type": ["boolean", "null"] },
+    "reproducible": { "type": ["boolean", "null"] },
+    "benchmark_origin": {
+      "type": "string",
+      "enum": ["publisher", "independent", "atlas", "community"],
+      "description": "A publisher benchmark is not an independent benchmark. Origins are never averaged together without a published method."
+    },
+    "notes": { "type": ["string", "null"], "maxLength": 2000 }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "benchmark_origin": { "const": "atlas" } } },
+      "then": {
+        "required": ["hardware", "runtime", "reproducible"],
+        "properties": { "hardware": { "type": "object" } }
+      }
+    }
+  ]
+}

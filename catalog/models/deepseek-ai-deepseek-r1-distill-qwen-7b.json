@@ -1,0 +1,90 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "unknown",
+    "base_model": null,
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "variant_author": "deepseek-ai",
+    "variant_source": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "verification_status": "unknown"
+  },
+  "architecture": "Qwen2ForCausalLM",
+  "architecture_type": "unknown",
+  "base_models": [],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "deepseek-ai",
+  "display_name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "mit",
+    "license_name": null,
+    "license_notes": "raw_license_value='mit'; spdx=True",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "deepseek-ai-deepseek-r1-distill-qwen-7b",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "open_weights_permissive",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:08.110842Z",
+    "downloads": 266719,
+    "likes": 904,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 15231271850,
+    "file_size_gib": 14.185,
+    "format": "safetensors",
+    "native_quantization": null,
+    "quant_family": "unknown",
+    "quant_name": null,
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "916b56a44061fd5cd7d6a8fb632557ed4f724f60",
+    "split_files": true
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "deepseek-ai-deepseek-r1-distill-qwen-7b",
+  "total_parameters_b": 7.615616512,
+  "verification": {
+    "evidence_ids": [
+      "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-license-license-id",
+      "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-openness",
+      "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-base-models",
+      "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-architecture",
+      "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-total-parameters-b",
+      "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-context-length-advertised-max",
+      "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-quantization-quant-name",
+      "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-popularity",
+      "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-resolved-revision"
+    ],
+    "status": "publisher_claim"
+  }
+}

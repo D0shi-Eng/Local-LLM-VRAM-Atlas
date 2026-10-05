@@ -1,0 +1,11 @@
+{
+  "entries": [
+    {
+      "evaluation_count": 0,
+      "evidence_status": "unknown",
+      "model_id": "microsoft-bitnet-b1-58-2b-4t",
+      "note": "architecture=bitnetforcausallm source-reported native 1.58-bit training"
+    }
+  ],
+  "view": "native-low-bit"
+}

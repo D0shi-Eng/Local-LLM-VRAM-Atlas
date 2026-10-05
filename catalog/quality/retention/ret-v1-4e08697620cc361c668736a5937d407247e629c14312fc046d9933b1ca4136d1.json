@@ -1,0 +1,23 @@
+{
+  "absolute_delta": null,
+  "base_release": "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf",
+  "base_score": null,
+  "benchmark_id": "unresolved",
+  "benchmark_version": null,
+  "evaluation_settings_match": false,
+  "evidence_ids": [],
+  "evidence_quality": "unknown",
+  "metric": null,
+  "metric_direction": null,
+  "notes": "no evaluation evidence for either release; No exact base-release evaluation is available for this artifact, so retention stays unknown rather than inherited.",
+  "publisher_claim": null,
+  "quant_score": null,
+  "quantization": "Q2",
+  "quantized_artifact": "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf",
+  "relative_delta": null,
+  "retention_id": "ret-v1-4e08697620cc361c668736a5937d407247e629c14312fc046d9933b1ca4136d1",
+  "retention_status": "unknown",
+  "schema_version": "0.6.0",
+  "source": null,
+  "verification_status": null
+}

@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-bf56dd9adf3691ce62d40d89110878c15157ff225dcfa0c5dacfd71dd4b2abdb",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.source_revision",
+  "notes": "Current resolved revision and exact artifact identity reacquired anonymously; repo=prism-ml/Ternary-Bonsai-2-27B-gguf; revision=b072e1d3b35a0a630cece372c2127528e0994386; artifact=prism-ml-ternary-bonsai-2-27b-gguf--gguf--ternary-bonsai-2-27b-p.gguf--tq1_0",
+  "publisher": "prism-ml",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-8g-05-ternary-bonsai-tq1-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "verification_status": "independently_verified"
+}

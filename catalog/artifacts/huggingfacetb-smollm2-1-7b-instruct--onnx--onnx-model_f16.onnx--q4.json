@@ -1,0 +1,31 @@
+{
+  "artifact_set_id": "huggingfacetb-smollm2-1-7b-instruct--onnx--onnx/model_f16.onnx--q4",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "config",
+    "docs",
+    "metadata",
+    "other",
+    "tokenizer"
+  ],
+  "files": [
+    {
+      "extension": ".onnx",
+      "filename": "onnx/model_q4f16.onnx",
+      "path": "onnx/model_q4f16.onnx",
+      "source_reported_size_bytes": 1108730338
+    }
+  ],
+  "format": "onnx",
+  "kind": "single",
+  "model_id": "huggingfacetb-smollm2-1-7b-instruct",
+  "primary_weight_bytes": 1108730338,
+  "revision": "31b70e2e869a7173562077fd711b654946d38674",
+  "schema_version": "0.2.0",
+  "shard_count": 1,
+  "shard_total": null,
+  "shards_complete": null,
+  "total_source_reported_bytes": 1108730338,
+  "variant": "Q4",
+  "verification_status": "source_reported"
+}

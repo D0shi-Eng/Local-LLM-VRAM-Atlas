@@ -1,0 +1,28 @@
+{
+  "artifact_set_id": "microsoft-bitnet-b1-58-2b-4t-gguf--gguf--ggml-model-i2_s.gguf",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "docs",
+    "metadata"
+  ],
+  "files": [
+    {
+      "extension": ".gguf",
+      "filename": "ggml-model-i2_s.gguf",
+      "path": "ggml-model-i2_s.gguf",
+      "source_reported_size_bytes": 1187801280
+    }
+  ],
+  "format": "GGUF",
+  "kind": "single",
+  "model_id": "microsoft-bitnet-b1-58-2b-4t-gguf",
+  "primary_weight_bytes": 1187801280,
+  "revision": "a1f2f1c765812aa8af3f6eda4a313707064bba15",
+  "schema_version": "0.2.0",
+  "shard_count": 1,
+  "shard_total": null,
+  "shards_complete": null,
+  "total_source_reported_bytes": 1187801280,
+  "variant": null,
+  "verification_status": "source_reported"
+}

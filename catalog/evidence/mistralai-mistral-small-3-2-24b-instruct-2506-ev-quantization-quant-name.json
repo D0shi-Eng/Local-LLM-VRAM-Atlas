@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "mistralai-mistral-small-3-2-24b-instruct-2506-ev-quantization-quant-name",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.quant_name",
+  "notes": "repo_id=mistralai/Mistral-Small-3.2-24B-Instruct-2506; resolved_revision=95a6d26c4bfb886c58daf9d3f7332c857cb27b43; requested_revision=main",
+  "publisher": "mistralai",
+  "retrieved_at": "2026-10-05T06:10:18.139594Z",
+  "schema_version": "0.1.0",
+  "source_id": "mistralai-mistral-small-3-2-24b-instruct-2506-src-hf",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "verification_status": "unknown"
+}

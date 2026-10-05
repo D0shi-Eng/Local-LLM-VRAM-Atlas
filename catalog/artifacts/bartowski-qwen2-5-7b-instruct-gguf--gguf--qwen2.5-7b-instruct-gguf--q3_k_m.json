@@ -1,0 +1,29 @@
+{
+  "artifact_set_id": "bartowski-qwen2-5-7b-instruct-gguf--gguf--qwen2.5-7b-instruct-gguf--q3_k_m",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "docs",
+    "imatrix",
+    "metadata"
+  ],
+  "files": [
+    {
+      "extension": ".gguf",
+      "filename": "Qwen2.5-7B-Instruct-Q3_K_M.gguf",
+      "path": "Qwen2.5-7B-Instruct-Q3_K_M.gguf",
+      "source_reported_size_bytes": 3808391872
+    }
+  ],
+  "format": "GGUF",
+  "kind": "single",
+  "model_id": "bartowski-qwen2-5-7b-instruct-gguf",
+  "primary_weight_bytes": 3808391872,
+  "revision": "8911e8a47f92bac19d6f5c64a2e2095bd2f7d031",
+  "schema_version": "0.2.0",
+  "shard_count": 1,
+  "shard_total": null,
+  "shards_complete": null,
+  "total_source_reported_bytes": 3808391872,
+  "variant": "Q3_K_M",
+  "verification_status": "source_reported"
+}

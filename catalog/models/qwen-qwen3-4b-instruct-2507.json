@@ -1,0 +1,92 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "unknown",
+    "base_model": null,
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "variant_author": "Qwen",
+    "variant_source": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+    "verification_status": "unknown"
+  },
+  "architecture": "Qwen3ForCausalLM",
+  "architecture_type": "unknown",
+  "base_models": [],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "Qwen",
+  "display_name": "Qwen/Qwen3-4B-Instruct-2507",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "apache-2.0",
+    "license_name": null,
+    "license_notes": "raw_license_value='apache-2.0'; spdx=True",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "qwen-qwen3-4b-instruct-2507",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "open_weights_permissive",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:07.709521Z",
+    "downloads": 3648462,
+    "likes": 991,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 8044982000,
+    "file_size_gib": 7.492,
+    "format": "safetensors",
+    "native_quantization": null,
+    "quant_family": "unknown",
+    "quant_name": null,
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "split_files": true
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "qwen-qwen3-4b-instruct-2507",
+  "total_parameters_b": 4.022468096,
+  "verification": {
+    "evidence_ids": [
+      "qwen-qwen3-4b-instruct-2507-ev-license-license-id",
+      "qwen-qwen3-4b-instruct-2507-ev-openness",
+      "qwen-qwen3-4b-instruct-2507-ev-base-models",
+      "qwen-qwen3-4b-instruct-2507-ev-architecture",
+      "qwen-qwen3-4b-instruct-2507-ev-total-parameters-b",
+      "qwen-qwen3-4b-instruct-2507-ev-context-length-advertised-max",
+      "qwen-qwen3-4b-instruct-2507-ev-quantization-quant-name",
+      "qwen-qwen3-4b-instruct-2507-ev-popularity",
+      "qwen-qwen3-4b-instruct-2507-ev-resolved-revision",
+      "ev-v2-a5addadfb9961fa895786fed69f9e70dbe37af44dc59e96f6f8b631f19cd4f32",
+      "ev-v2-30409b413167ff2b2fcd7569bc1361f2cd5028c2770ff98a48b11947a80ce051"
+    ],
+    "status": "publisher_claim"
+  }
+}

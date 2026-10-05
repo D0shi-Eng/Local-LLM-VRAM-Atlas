@@ -1,0 +1,85 @@
+{
+  "artifact_set_id": "mistralai-mistral-small-3-2-24b-instruct-2506--safetensors--model.safetensors",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "config",
+    "docs",
+    "index",
+    "metadata",
+    "tokenizer"
+  ],
+  "files": [
+    {
+      "extension": ".safetensors",
+      "filename": "model-00001-of-00010.safetensors",
+      "path": "model-00001-of-00010.safetensors",
+      "source_reported_size_bytes": 4883550696
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00002-of-00010.safetensors",
+      "path": "model-00002-of-00010.safetensors",
+      "source_reported_size_bytes": 4781593336
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00003-of-00010.safetensors",
+      "path": "model-00003-of-00010.safetensors",
+      "source_reported_size_bytes": 4886472224
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00004-of-00010.safetensors",
+      "path": "model-00004-of-00010.safetensors",
+      "source_reported_size_bytes": 4781593376
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00005-of-00010.safetensors",
+      "path": "model-00005-of-00010.safetensors",
+      "source_reported_size_bytes": 4781593368
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00006-of-00010.safetensors",
+      "path": "model-00006-of-00010.safetensors",
+      "source_reported_size_bytes": 4886472248
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00007-of-00010.safetensors",
+      "path": "model-00007-of-00010.safetensors",
+      "source_reported_size_bytes": 4781593376
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00008-of-00010.safetensors",
+      "path": "model-00008-of-00010.safetensors",
+      "source_reported_size_bytes": 4781593368
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00009-of-00010.safetensors",
+      "path": "model-00009-of-00010.safetensors",
+      "source_reported_size_bytes": 4886472248
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00010-of-00010.safetensors",
+      "path": "model-00010-of-00010.safetensors",
+      "source_reported_size_bytes": 4571866320
+    }
+  ],
+  "format": "safetensors",
+  "kind": "sharded",
+  "model_id": "mistralai-mistral-small-3-2-24b-instruct-2506",
+  "primary_weight_bytes": 48022800560,
+  "revision": "95a6d26c4bfb886c58daf9d3f7332c857cb27b43",
+  "schema_version": "0.2.0",
+  "shard_count": 10,
+  "shard_total": 10,
+  "shards_complete": true,
+  "total_source_reported_bytes": 48022800560,
+  "variant": null,
+  "verification_status": "source_reported"
+}

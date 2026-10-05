@@ -1,0 +1,92 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "unknown",
+    "base_model": "Qwen/Qwen2.5-7B-Instruct",
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "variant_author": "Qwen",
+    "variant_source": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-AWQ",
+    "verification_status": "unknown"
+  },
+  "architecture": "Qwen2ForCausalLM",
+  "architecture_type": "unknown",
+  "base_models": [
+    "Qwen/Qwen2.5-7B-Instruct"
+  ],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "Qwen",
+  "display_name": "Qwen/Qwen2.5-7B-Instruct-AWQ",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "apache-2.0",
+    "license_name": null,
+    "license_notes": "raw_license_value='apache-2.0'; spdx=True",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "qwen-qwen2-5-7b-instruct-awq",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "open_weights_permissive",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:09.187006Z",
+    "downloads": 2770240,
+    "likes": 53,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 5570829760,
+    "file_size_gib": 5.188,
+    "format": "safetensors",
+    "native_quantization": null,
+    "quant_family": "unknown",
+    "quant_name": null,
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "b25037543e9394b818fdfca67ab2a00ecc7dd641",
+    "split_files": true
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "qwen-qwen2-5-7b-instruct-awq",
+  "total_parameters_b": 7.615616512,
+  "verification": {
+    "evidence_ids": [
+      "qwen-qwen2-5-7b-instruct-awq-ev-license-license-id",
+      "qwen-qwen2-5-7b-instruct-awq-ev-openness",
+      "qwen-qwen2-5-7b-instruct-awq-ev-base-models",
+      "qwen-qwen2-5-7b-instruct-awq-ev-architecture",
+      "qwen-qwen2-5-7b-instruct-awq-ev-total-parameters-b",
+      "qwen-qwen2-5-7b-instruct-awq-ev-context-length-advertised-max",
+      "qwen-qwen2-5-7b-instruct-awq-ev-quantization-quant-name",
+      "qwen-qwen2-5-7b-instruct-awq-ev-popularity",
+      "qwen-qwen2-5-7b-instruct-awq-ev-resolved-revision"
+    ],
+    "status": "publisher_claim"
+  }
+}

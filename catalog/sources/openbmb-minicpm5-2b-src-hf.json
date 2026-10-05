@@ -1,0 +1,15 @@
+{
+  "accessed_at": "2026-10-05T06:10:40.102019Z",
+  "archived_reference": null,
+  "authority_level": "tier_a_primary",
+  "commit_or_revision": "f97400052a43d642bbc6e9975e2397e3ae6a6b52",
+  "notes": "platform=hugging-face; repo_id=openbmb/MiniCPM5-2B; requested_revision=main; resolved_revision=f97400052a43d642bbc6e9975e2397e3ae6a6b52; officiality_status=unverified (namespace alone never proves officiality)",
+  "published_at": null,
+  "publisher": "openbmb",
+  "revision": "f97400052a43d642bbc6e9975e2397e3ae6a6b52",
+  "schema_version": "0.1.0",
+  "source_id": "openbmb-minicpm5-2b-src-hf",
+  "source_type": "official_repo",
+  "title": "Hugging Face repository openbmb/MiniCPM5-2B (publisher-published metadata)",
+  "url": "https://huggingface.co/openbmb/MiniCPM5-2B"
+}

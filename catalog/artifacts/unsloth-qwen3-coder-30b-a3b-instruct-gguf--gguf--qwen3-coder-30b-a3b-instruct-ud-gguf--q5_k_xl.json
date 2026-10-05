@@ -1,0 +1,30 @@
+{
+  "artifact_set_id": "unsloth-qwen3-coder-30b-a3b-instruct-gguf--gguf--qwen3-coder-30b-a3b-instruct-ud-gguf--q5_k_xl",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "docs",
+    "imatrix",
+    "metadata",
+    "other"
+  ],
+  "files": [
+    {
+      "extension": ".gguf",
+      "filename": "Qwen3-Coder-30B-A3B-Instruct-UD-Q5_K_XL.gguf",
+      "path": "Qwen3-Coder-30B-A3B-Instruct-UD-Q5_K_XL.gguf",
+      "source_reported_size_bytes": 21740305568
+    }
+  ],
+  "format": "GGUF",
+  "kind": "single",
+  "model_id": "unsloth-qwen3-coder-30b-a3b-instruct-gguf",
+  "primary_weight_bytes": 21740305568,
+  "revision": "b17cb02dd882d5b6ab62fc777ad2995f19668350",
+  "schema_version": "0.2.0",
+  "shard_count": 1,
+  "shard_total": null,
+  "shards_complete": null,
+  "total_source_reported_bytes": 21740305568,
+  "variant": "Q5_K_XL",
+  "verification_status": "source_reported"
+}

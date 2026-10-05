@@ -1,0 +1,14 @@
+{
+  "claim_type": "architecture_property",
+  "evidence_id": "openai-gpt-oss-20b-ev-total-parameters-b",
+  "evidence_level": "publisher_claim",
+  "field_path": "total_parameters_b",
+  "notes": "repo_id=openai/gpt-oss-20b; resolved_revision=6cee5e81ee83917806bbde320786a8fb61efebee; requested_revision=main",
+  "publisher": "openai",
+  "retrieved_at": "2026-10-05T06:10:15.514594Z",
+  "schema_version": "0.1.0",
+  "source_id": "openai-gpt-oss-20b-src-hf",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/openai/gpt-oss-20b",
+  "verification_status": "publisher_claim"
+}

@@ -1,0 +1,14 @@
+{
+  "claim_type": "other",
+  "evidence_id": "ifm-k2-horizon-7b-gguf-ev-resolved-revision",
+  "evidence_level": "publisher_claim",
+  "field_path": "resolved_revision",
+  "notes": "repo_id=IFM/K2-Horizon-7B-GGUF; resolved_revision=9fb01f7b397994455262f4b8256e4e00e4949ea9; requested_revision=main",
+  "publisher": "IFM",
+  "retrieved_at": "2026-10-05T06:10:01.894149Z",
+  "schema_version": "0.1.0",
+  "source_id": "ifm-k2-horizon-7b-gguf-src-hf",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/IFM/K2-Horizon-7B-GGUF",
+  "verification_status": "publisher_claim"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-llm-vram-atlas.local/schemas/discovery-checkpoint.schema.json",
+  "title": "AtlasDiscoveryCheckpoint",
+  "description": "Per-strategy discovery watermark. Specification version 0.5.0 (Phase 5, pre-1.0). Operational state only, never inside model records.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["strategy_id", "source_id", "provider", "status"],
+  "properties": {
+    "strategy_id": { "type": "string", "minLength": 1 },
+    "source_id": { "type": "string", "minLength": 1 },
+    "provider": { "type": "string", "minLength": 1 },
+    "last_successful_run": { "type": ["string", "null"], "format": "date-time" },
+    "provider_watermark": { "type": ["string", "null"] },
+    "overlap_start": { "type": ["string", "null"] },
+    "last_seen_identity": { "type": ["string", "null"] },
+    "last_seen_revision": { "type": ["string", "null"] },
+    "continuation_state": { "type": ["string", "null"] },
+    "status": { "type": "string", "enum": ["ok", "partial", "failed", "rate_limited", "budget_exhausted"] }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-616bd2845ae0770dc6fa539882614287044e91cd209eddc875fd517fd89c3d82",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.source_revision",
+  "notes": "Current resolved revision and exact artifact identity reacquired anonymously; repo=Qwen/Qwen3-8B; revision=b968826d9c46dd6066d109eabc6255188de91218; artifact=qwen-qwen3-8b--safetensors--model.safetensors",
+  "publisher": "Qwen",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-16g-03-qwen3-8b-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/Qwen/Qwen3-8B",
+  "verification_status": "independently_verified"
+}

@@ -1,0 +1,29 @@
+{
+  "artifact_set_id": "bartowski-openai-gpt-oss-20b-gguf--gguf--openai_gpt-oss-20b-gguf--q2_k",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "docs",
+    "imatrix",
+    "metadata"
+  ],
+  "files": [
+    {
+      "extension": ".gguf",
+      "filename": "openai_gpt-oss-20b-Q2_K.gguf",
+      "path": "openai_gpt-oss-20b-Q2_K.gguf",
+      "source_reported_size_bytes": 11559002176
+    }
+  ],
+  "format": "GGUF",
+  "kind": "single",
+  "model_id": "bartowski-openai-gpt-oss-20b-gguf",
+  "primary_weight_bytes": 11559002176,
+  "revision": "e39ba3aa000c47c83dacdc9e1ca2c9dd0808c205",
+  "schema_version": "0.2.0",
+  "shard_count": 1,
+  "shard_total": null,
+  "shards_complete": null,
+  "total_source_reported_bytes": 11559002176,
+  "variant": "Q2_K",
+  "verification_status": "source_reported"
+}

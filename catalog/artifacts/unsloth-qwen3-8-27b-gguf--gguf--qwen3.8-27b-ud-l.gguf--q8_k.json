@@ -1,0 +1,31 @@
+{
+  "artifact_set_id": "unsloth-qwen3-8-27b-gguf--gguf--qwen3.8-27b-ud-l.gguf--q8_k",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "config",
+    "docs",
+    "imatrix",
+    "metadata",
+    "projector"
+  ],
+  "files": [
+    {
+      "extension": ".gguf",
+      "filename": "Qwen3.8-27B-UD-Q8_K_L.gguf",
+      "path": "Qwen3.8-27B-UD-Q8_K_L.gguf",
+      "source_reported_size_bytes": 28045695904
+    }
+  ],
+  "format": "GGUF",
+  "kind": "single",
+  "model_id": "unsloth-qwen3-8-27b-gguf",
+  "primary_weight_bytes": 28045695904,
+  "revision": "4ca720788d1e01f1bff70c033e0d0028fd02e502",
+  "schema_version": "0.2.0",
+  "shard_count": 1,
+  "shard_total": null,
+  "shards_complete": null,
+  "total_source_reported_bytes": 28045695904,
+  "variant": "Q8_K",
+  "verification_status": "source_reported"
+}

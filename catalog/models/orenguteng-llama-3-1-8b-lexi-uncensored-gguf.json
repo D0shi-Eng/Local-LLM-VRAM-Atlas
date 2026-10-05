@@ -1,0 +1,91 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "uncensored",
+    "base_model": null,
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": true,
+    "uncensoring_method": "publisher_or_variant_author_claim",
+    "variant_author": "Orenguteng",
+    "variant_source": "https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-GGUF",
+    "verification_status": "publisher_claim"
+  },
+  "architecture": "unknown",
+  "architecture_type": "unknown",
+  "base_models": [],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "Orenguteng",
+  "display_name": "Orenguteng/Llama-3.1-8B-Lexi-Uncensored-GGUF",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "llama3.1",
+    "license_name": null,
+    "license_notes": "raw_license_value='llama3.1'; spdx=False",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "orenguteng-llama-3-1-8b-lexi-uncensored-gguf",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "unclear",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:10.579517Z",
+    "downloads": 967,
+    "likes": 20,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 16068891392,
+    "file_size_gib": 14.965,
+    "format": "GGUF",
+    "native_quantization": false,
+    "quant_family": "unknown",
+    "quant_name": null,
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "d5cc0aa376e3693a85612d34574be8cff33a2f56",
+    "split_files": true
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "orenguteng-llama-3-1-8b-lexi-uncensored-gguf",
+  "total_parameters_b": 8.030261312,
+  "verification": {
+    "evidence_ids": [
+      "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-license-license-id",
+      "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-openness",
+      "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-base-models",
+      "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-architecture",
+      "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-total-parameters-b",
+      "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-context-length-advertised-max",
+      "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-quantization-quant-name",
+      "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-popularity",
+      "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-resolved-revision",
+      "ev-v2-55bcea5e81b8a0e618664593cda050549745656bf0efb87f6c57d59e71a0a7b3"
+    ],
+    "status": "publisher_claim"
+  }
+}

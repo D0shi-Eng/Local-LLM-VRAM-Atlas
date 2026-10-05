@@ -1,0 +1,76 @@
+{
+  "axes": {
+    "agentic_tool_use": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "arabic": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "coding": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "general_intelligence": {
+      "evaluation_ids": [
+        "evl-v1-2baff72af762a0603995b856733d7fa6e36c7371cd926c0f492b3c38986a4b0c",
+        "evl-v1-b41cfd1257321d7d866ab330e0611ed154453a37e9ed9de0d18817ab592ca118"
+      ],
+      "status": "known"
+    },
+    "instruction_following": {
+      "evaluation_ids": [
+        "evl-v1-5ed1a1b7c1c5dcfd0436875c7371b406c185a839526e08272a995f63d5b2b44e",
+        "evl-v1-d44371c1daf3e9aea177206dc061f1792812620d11c504ed01c6c76bf2f9eb0f"
+      ],
+      "status": "known"
+    },
+    "knowledge": {
+      "evaluation_ids": [
+        "evl-v1-2baff72af762a0603995b856733d7fa6e36c7371cd926c0f492b3c38986a4b0c"
+      ],
+      "status": "known"
+    },
+    "long_context": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "multilingual": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "multimodal": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "non_hallucination": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "professional_tasks": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "reasoning": {
+      "evaluation_ids": [
+        "evl-v1-525531aabb29d60b435751f88a27f831800d2f0d0d63f8e797aab6f4438a3d8f",
+        "evl-v1-d21f7b1ab4e991f350c0e980c12e20594d197f40d8dbfa134cb0cdd11a777aea"
+      ],
+      "status": "known"
+    },
+    "safety_refusal_behavior": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    }
+  },
+  "evidence_status": "publisher_only",
+  "high_quality_candidate": false,
+  "high_quality_rationale": "evidence status publisher_only is below the independent threshold",
+  "model_id": "huggingfacetb-smollm2-1-7b-instruct",
+  "policy_id": "atlas-quality-policy",
+  "policy_version": "0.6.0",
+  "profile_id": "qp-v1-e50b9eb4ce8c988a0f099c34cc0a72907cff1204ca33daf47c35f275845a187e",
+  "quality_snapshot_version": "0.6.0",
+  "schema_version": "0.6.0"
+}

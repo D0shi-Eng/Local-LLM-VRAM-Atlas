@@ -1,0 +1,304 @@
+{
+  "active_parameters_b": null,
+  "architecture_raw": "Qwen3_5ForConditionalGeneration",
+  "architecture_type_raw": null,
+  "author": "Qwen",
+  "base_models_raw": [],
+  "card_text": null,
+  "conflicts": [],
+  "context_advertised": null,
+  "datasets_raw": [],
+  "disabled": false,
+  "downloads": 6821761,
+  "experts_active": null,
+  "experts_total": null,
+  "gated": false,
+  "languages": [],
+  "library_name": "transformers",
+  "license_raw": "apache-2.0",
+  "likes": 16953,
+  "namespace": "Qwen",
+  "pipeline_tag": "image-text-to-text",
+  "platform": "hugging-face",
+  "private": false,
+  "repo_id": "Qwen/Qwen3.8-27B",
+  "repo_name": "Qwen3.8-27B",
+  "requested_revision": "main",
+  "resolved_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "retrieved_at": "2026-10-05T06:10:58.479332Z",
+  "siblings": [
+    {
+      "extension": ".gitattributes",
+      "filename": ".gitattributes",
+      "path": ".gitattributes",
+      "source_reported_hash": "52373fe24473b1aa44333d318f578ae6bf04b49b",
+      "source_reported_size_bytes": 1570,
+      "source_reported_storage": null
+    },
+    {
+      "extension": "",
+      "filename": "LICENSE",
+      "path": "LICENSE",
+      "source_reported_hash": "f938136e3adacfd92be087f6e113b5d6d97f678f",
+      "source_reported_size_bytes": 11544,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".md",
+      "filename": "README.md",
+      "path": "README.md",
+      "source_reported_hash": "bc8aa0e396cd029c21cd773cca21830d0ded28ec",
+      "source_reported_size_bytes": 65012,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".jinja",
+      "filename": "chat_template.jinja",
+      "path": "chat_template.jinja",
+      "source_reported_hash": "c0c686f9c38d70d179fb7b5f5aa7530bc913dda3",
+      "source_reported_size_bytes": 8952,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "config.json",
+      "path": "config.json",
+      "source_reported_hash": "706cebd746c4b6f2b1d1f892630867acfdfd3df8",
+      "source_reported_size_bytes": 4312,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".txt",
+      "filename": "crc32.txt",
+      "path": "crc32.txt",
+      "source_reported_hash": "6de5ee6a0c6596744baee911af0a5cdcb8d99a1e",
+      "source_reported_size_bytes": 238,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "generation_config.json",
+      "path": "generation_config.json",
+      "source_reported_hash": "023756cfadf88e5bf69eefeee3e172f38c448d64",
+      "source_reported_size_bytes": 202,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".txt",
+      "filename": "merges.txt",
+      "path": "merges.txt",
+      "source_reported_hash": "a494e019ca1502219fd0128658b979e5f05ae8e8",
+      "source_reported_size_bytes": 3353259,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00001-of-00018.safetensors",
+      "path": "model-00001-of-00018.safetensors",
+      "source_reported_hash": "79b73cdd69afeca931d181f5d1e21ad2d73bb7b7",
+      "source_reported_size_bytes": 3966730552,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00002-of-00018.safetensors",
+      "path": "model-00002-of-00018.safetensors",
+      "source_reported_hash": "81cf43545884a227a01351942dfbc72577812316",
+      "source_reported_size_bytes": 3043080328,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00003-of-00018.safetensors",
+      "path": "model-00003-of-00018.safetensors",
+      "source_reported_hash": "a2da5e6cd6307a6cae13d04820ab0d31b47b48bd",
+      "source_reported_size_bytes": 2542796952,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00004-of-00018.safetensors",
+      "path": "model-00004-of-00018.safetensors",
+      "source_reported_hash": "175ddab3f2488ad181f73d789d2d778cf6d4fca6",
+      "source_reported_size_bytes": 3988973152,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00005-of-00018.safetensors",
+      "path": "model-00005-of-00018.safetensors",
+      "source_reported_hash": "64890208fdd563c3aac0c2f55f69948bcaa1a492",
+      "source_reported_size_bytes": 2099339864,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00006-of-00018.safetensors",
+      "path": "model-00006-of-00018.safetensors",
+      "source_reported_hash": "3ae29b86e4c773babfe17124dbd10d54d37819ec",
+      "source_reported_size_bytes": 3979553696,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00007-of-00018.safetensors",
+      "path": "model-00007-of-00018.safetensors",
+      "source_reported_hash": "b7e9c0f038884839f3dad38fef7e75ee3362c24f",
+      "source_reported_size_bytes": 2108759344,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00008-of-00018.safetensors",
+      "path": "model-00008-of-00018.safetensors",
+      "source_reported_hash": "0b58cbc52714e1c683711be87e7c2e33fb10e7a0",
+      "source_reported_size_bytes": 3979553696,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00009-of-00018.safetensors",
+      "path": "model-00009-of-00018.safetensors",
+      "source_reported_hash": "4fc0c6b28004d809225d0e115f30e9e11c2345dc",
+      "source_reported_size_bytes": 2108759344,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00010-of-00018.safetensors",
+      "path": "model-00010-of-00018.safetensors",
+      "source_reported_hash": "9ec693a17c788084116c51b4f34632670df77612",
+      "source_reported_size_bytes": 3979553696,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00011-of-00018.safetensors",
+      "path": "model-00011-of-00018.safetensors",
+      "source_reported_hash": "3c63baaed16d833432a919647af53ac76bb6b007",
+      "source_reported_size_bytes": 2108759344,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00012-of-00018.safetensors",
+      "path": "model-00012-of-00018.safetensors",
+      "source_reported_hash": "8568b440a4666ed1b4cda0b5d21496378304f326",
+      "source_reported_size_bytes": 3979553696,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00013-of-00018.safetensors",
+      "path": "model-00013-of-00018.safetensors",
+      "source_reported_hash": "724083995a2257194321a3d00b36fd7d4bb7348d",
+      "source_reported_size_bytes": 2108759344,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00014-of-00018.safetensors",
+      "path": "model-00014-of-00018.safetensors",
+      "source_reported_hash": "a60b80b6510d7938d951fbddc76aaadd121c6268",
+      "source_reported_size_bytes": 3979553696,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00015-of-00018.safetensors",
+      "path": "model-00015-of-00018.safetensors",
+      "source_reported_hash": "7d4c34f3d716e1a47acff2f576b65b41a3ec4f3f",
+      "source_reported_size_bytes": 2108759344,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00016-of-00018.safetensors",
+      "path": "model-00016-of-00018.safetensors",
+      "source_reported_hash": "c67e3e42c9715298fa7f68c6b378bfb1d74290d0",
+      "source_reported_size_bytes": 3979564040,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00017-of-00018.safetensors",
+      "path": "model-00017-of-00018.safetensors",
+      "source_reported_hash": "23dd899179729a4370c655e2c2241cfdbe4ef4ba",
+      "source_reported_size_bytes": 2108759344,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00018-of-00018.safetensors",
+      "path": "model-00018-of-00018.safetensors",
+      "source_reported_hash": "a92b4073fc6a58ffc9334ac63360fc8d9cc50d33",
+      "source_reported_size_bytes": 3392197344,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".json",
+      "filename": "model.safetensors.index.json",
+      "path": "model.safetensors.index.json",
+      "source_reported_hash": "da35e3c564457dface7d138f0b6cac284ff8958c",
+      "source_reported_size_bytes": 112216,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "preprocessor_config.json",
+      "path": "preprocessor_config.json",
+      "source_reported_hash": "2ea84a437d448ff71b08df68fdd949d5cc4ebb64",
+      "source_reported_size_bytes": 390,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "tokenizer.json",
+      "path": "tokenizer.json",
+      "source_reported_hash": "9328ce9c41e80f6dd7bc2c66d8ae1fc93bf87440",
+      "source_reported_size_bytes": 12809320,
+      "source_reported_storage": "lfs"
+    },
+    {
+      "extension": ".json",
+      "filename": "tokenizer_config.json",
+      "path": "tokenizer_config.json",
+      "source_reported_hash": "5de744b3fca2129d7186979ae47c06be33903243",
+      "source_reported_size_bytes": 17928,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "video_preprocessor_config.json",
+      "path": "video_preprocessor_config.json",
+      "source_reported_hash": "3ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe",
+      "source_reported_size_bytes": 385,
+      "source_reported_storage": null
+    },
+    {
+      "extension": ".json",
+      "filename": "vocab.json",
+      "path": "vocab.json",
+      "source_reported_hash": "0aa0ce0658d60ac4a5d609f4eadb0e8e43514176",
+      "source_reported_size_bytes": 6722759,
+      "source_reported_storage": null
+    }
+  ],
+  "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "deploy:azure",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "total_parameters_b": 27.781427952,
+  "trending_score": null,
+  "warnings": []
+}

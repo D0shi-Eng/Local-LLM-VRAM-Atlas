@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "benchmark_name": "Fixture Benchmark (synthetic)",
+  "benchmark_version": "0.0-fixture",
+  "benchmark_owner": "Fixture Lab (synthetic)",
+  "model": "fixture-synthetic-dense",
+  "model_revision": null,
+  "quantization": "Q4_K_M",
+  "runtime": "FixtureRuntime",
+  "runtime_version": "0.0.0-fixture",
+  "hardware": {
+    "gpu_vendor": "Fictional",
+    "gpu_model": "Synthetic GPU 16GB (fictional)",
+    "gpu_vram_gib": 16.0,
+    "driver": null,
+    "backend": "CPU",
+    "os": "Windows",
+    "cpu": "Synthetic CPU (fictional)",
+    "system_ram_gib": 32.0
+  },
+  "prompting": "zero-shot (fixture)",
+  "reasoning_mode": "n/a",
+  "context": 2048,
+  "score": 42.0,
+  "score_unit": "accuracy_percent",
+  "source": "fixture-source-001",
+  "evaluation_date": "2026-10-05",
+  "independent": true,
+  "reproducible": true,
+  "benchmark_origin": "independent",
+  "notes": "Synthetic fixture only; not a real measurement."
+}

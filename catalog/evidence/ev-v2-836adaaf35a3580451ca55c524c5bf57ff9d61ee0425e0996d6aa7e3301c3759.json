@@ -1,0 +1,14 @@
+{
+  "claim_type": "architecture_property",
+  "evidence_id": "ev-v2-836adaaf35a3580451ca55c524c5bf57ff9d61ee0425e0996d6aa7e3301c3759",
+  "evidence_level": "publisher_claim",
+  "field_path": "architecture",
+  "notes": "Current architecture inputs read anonymously from the publisher's configuration source (own_config); repo=microsoft/bitnet-b1.58-2B-4T; revision=04c3b9ad9361b824064a1f25ea60a8be9599b127",
+  "publisher": "microsoft",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-4g-02-bitnet-native-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/microsoft/bitnet-b1.58-2B-4T",
+  "verification_status": "independently_verified"
+}

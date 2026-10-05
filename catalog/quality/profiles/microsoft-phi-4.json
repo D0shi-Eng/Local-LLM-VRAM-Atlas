@@ -1,0 +1,81 @@
+{
+  "axes": {
+    "agentic_tool_use": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "arabic": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "coding": {
+      "evaluation_ids": [
+        "evl-v1-ae443cc663d9ce008fa9be40cc0aa87aabc46c3a673387e343a2baea09627662"
+      ],
+      "status": "known"
+    },
+    "general_intelligence": {
+      "evaluation_ids": [
+        "evl-v1-b5da8f2009aa23d567bdb1f0d78cec4346b603ca13d00f7efe0f8e356629dbff"
+      ],
+      "status": "known"
+    },
+    "instruction_following": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "knowledge": {
+      "evaluation_ids": [
+        "evl-v1-5da57902cd6705a0ce79640dff4ee733b0ce21adf90701efa3116b4fc49a0760",
+        "evl-v1-938905014d7ec5fc1c17acaac7a3e1ee0eb1ad19719410fd7feaf866cb467955",
+        "evl-v1-b5da8f2009aa23d567bdb1f0d78cec4346b603ca13d00f7efe0f8e356629dbff"
+      ],
+      "status": "known"
+    },
+    "long_context": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "multilingual": {
+      "evaluation_ids": [
+        "evl-v1-3897818f25eb2b1e7c18060644f4a3815c947dc31311d77761d0b23e82c491be"
+      ],
+      "status": "known"
+    },
+    "multimodal": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "non_hallucination": {
+      "evaluation_ids": [
+        "evl-v1-5da57902cd6705a0ce79640dff4ee733b0ce21adf90701efa3116b4fc49a0760"
+      ],
+      "status": "known"
+    },
+    "professional_tasks": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    },
+    "reasoning": {
+      "evaluation_ids": [
+        "evl-v1-270f663947b2260bf2fc9ed23371c49d6b856cb8e2287331c7e20993cae0db85",
+        "evl-v1-3897818f25eb2b1e7c18060644f4a3815c947dc31311d77761d0b23e82c491be",
+        "evl-v1-938905014d7ec5fc1c17acaac7a3e1ee0eb1ad19719410fd7feaf866cb467955"
+      ],
+      "status": "known"
+    },
+    "safety_refusal_behavior": {
+      "evaluation_ids": [],
+      "status": "unknown"
+    }
+  },
+  "evidence_status": "publisher_only",
+  "high_quality_candidate": false,
+  "high_quality_rationale": "evidence status publisher_only is below the independent threshold",
+  "model_id": "microsoft-phi-4",
+  "policy_id": "atlas-quality-policy",
+  "policy_version": "0.6.0",
+  "profile_id": "qp-v1-5add4c8cbc9a88feda0b4e9050d209f314a36464d1a041c2b2d44c607fe65a35",
+  "quality_snapshot_version": "0.6.0",
+  "schema_version": "0.6.0"
+}

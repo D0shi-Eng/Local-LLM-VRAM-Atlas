@@ -1,0 +1,37 @@
+{
+  "core_artifacts_with_external_measurement": [
+    "meas-v1-bonsai27b-kv-fp16-100k",
+    "meas-v1-bonsai27b-kv-q4-100k"
+  ],
+  "measurement_count": 2,
+  "not_supporting_a_fit_verdict": [
+    {
+      "measurement_id": "meas-v1-bonsai27b-kv-fp16-100k",
+      "reasons": [
+        "context 100000 differs from the Atlas baseline 8192: baseline-context evidence not established"
+      ]
+    },
+    {
+      "measurement_id": "meas-v1-bonsai27b-kv-q4-100k",
+      "reasons": [
+        "context 100000 differs from the Atlas baseline 8192: baseline-context evidence not established"
+      ]
+    }
+  ],
+  "note": "Atlas stores external measurements and never performs any. An anecdotal or incompletely configured measurement can never create strict fit.",
+  "schema_version": "0.1.0",
+  "source_class_counts": {
+    "V1": 0,
+    "V2": 0,
+    "V3": 2,
+    "V4": 0,
+    "V5": 0
+  },
+  "source_class_definitions": {
+    "V1": "independent reproducible measurement with exact configuration",
+    "V2": "official runtime/vendor benchmark with exact configuration",
+    "V3": "publisher measurement with sufficiently complete conditions",
+    "V4": "structured community measurement with reproducible conditions",
+    "V5": "anecdotal statement; cannot create strict fit"
+  }
+}

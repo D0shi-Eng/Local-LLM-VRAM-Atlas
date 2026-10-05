@@ -1,0 +1,17 @@
+{
+  "entries": [
+    {
+      "evaluation_count": 0,
+      "evidence_status": "unknown",
+      "model_id": "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf",
+      "note": "quant_family=q2"
+    },
+    {
+      "evaluation_count": 0,
+      "evidence_status": "unknown",
+      "model_id": "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf",
+      "note": "quant_family=q2"
+    }
+  ],
+  "view": "high-compression"
+}

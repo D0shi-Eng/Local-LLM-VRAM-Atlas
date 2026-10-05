@@ -1,0 +1,38 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "alignment": {
+        "alignment_variant": "uncensored",
+        "base_model": null,
+        "capability_retention_evidence": null,
+        "method_documented": null,
+        "refusal_evaluation": null,
+        "uncensored_claimed": true,
+        "uncensoring_method": "publisher_or_variant_author_claim",
+        "variant_author": "Orenguteng",
+        "variant_source": "https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-GGUF",
+        "verification_status": "publisher_claim"
+      },
+      "display_name": "Orenguteng/Llama-3.1-8B-Lexi-Uncensored-GGUF",
+      "model_id": "orenguteng-llama-3-1-8b-lexi-uncensored-gguf",
+      "quantization": {
+        "bits_per_weight": null,
+        "checksum": null,
+        "compression_category": null,
+        "file_size_bytes": 16068891392,
+        "file_size_gib": 14.965,
+        "format": "GGUF",
+        "native_quantization": false,
+        "quant_family": "unknown",
+        "quant_name": null,
+        "quantizer": null,
+        "quantizer_repo": null,
+        "source_revision": "d5cc0aa376e3693a85612d34574be8cff33a2f56",
+        "split_files": true
+      }
+    }
+  ],
+  "note": "Uncensored is a variant-author claim, never a quality signal.",
+  "view_id": "uncensored"
+}

@@ -1,0 +1,2120 @@
+{
+  "candidate_ids": [],
+  "candidates": [],
+  "counts": {
+    "candidate": 0,
+    "eligible": 0,
+    "fit_known_quality_unknown": 0,
+    "ineligible": 0,
+    "insufficient_evidence": 34,
+    "quality_known_fit_unknown": 3
+  },
+  "fit_known_quality_unknown": [],
+  "ineligible": 0,
+  "insufficient": [
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "all referenced evidence sidecars persisted",
+          "status": "complete"
+        },
+        "license": {
+          "license_id": null,
+          "restriction_note": "raw_license_value=None; spdx=False",
+          "status": "unclear"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "LM Studio",
+            "Ollama",
+            "llama.cpp"
+          ],
+          "status": "documented"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "unsupported"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "bartowski-openai-gpt-oss-20b-gguf-ev-architecture",
+        "bartowski-openai-gpt-oss-20b-gguf-ev-base-models",
+        "bartowski-openai-gpt-oss-20b-gguf-ev-context-length-advertised-max",
+        "bartowski-openai-gpt-oss-20b-gguf-ev-license-license-id",
+        "bartowski-openai-gpt-oss-20b-gguf-ev-openness",
+        "bartowski-openai-gpt-oss-20b-gguf-ev-popularity",
+        "bartowski-openai-gpt-oss-20b-gguf-ev-quantization-quant-name",
+        "bartowski-openai-gpt-oss-20b-gguf-ev-resolved-revision",
+        "bartowski-openai-gpt-oss-20b-gguf-ev-total-parameters-b",
+        "ev-v2-8712d51947710d074b774af97c58d04a4a949e6be148847df9fe982ce356cc41",
+        "ev-v2-abf8bacd76aae6192c4c3c6c4df9649b3ed1b435007be19c92abbf2cb9431d44",
+        "ev-v2-f74ace1e553ebf2f032a21ea24ff8ab7dfa54afb9945e1ccc984afc764cc552e"
+      ],
+      "model_id": "bartowski-openai-gpt-oss-20b-gguf",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": {
+        "disclosure": "base model quality context only; quantized variant retention unknown",
+        "retention_id": null,
+        "status": "unknown"
+      },
+      "reasons": [
+        "architecture unsupported for VRAM estimation",
+        "license unclear: recorded, not inferred",
+        "runtime documented: LM Studio, Ollama, llama.cpp",
+        "quantized artifact: base quality known, retention unknown"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "some referenced evidence sidecars are not persisted",
+          "status": "partial"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "LM Studio",
+            "Ollama",
+            "llama.cpp"
+          ],
+          "status": "documented"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "unsupported"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "bartowski-qwen2-5-7b-instruct-gguf-ev-architecture",
+        "bartowski-qwen2-5-7b-instruct-gguf-ev-base-models",
+        "bartowski-qwen2-5-7b-instruct-gguf-ev-context-length-advertised-max",
+        "bartowski-qwen2-5-7b-instruct-gguf-ev-license-license-id",
+        "bartowski-qwen2-5-7b-instruct-gguf-ev-openness",
+        "bartowski-qwen2-5-7b-instruct-gguf-ev-popularity",
+        "bartowski-qwen2-5-7b-instruct-gguf-ev-quantization-quant-name",
+        "bartowski-qwen2-5-7b-instruct-gguf-ev-resolved-revision",
+        "bartowski-qwen2-5-7b-instruct-gguf-ev-total-parameters-b",
+        "ev-v2-014466baf8dbf1ec49df54e976aaa0e88fd0faac6ecc8574a3a77b47783696c8",
+        "ev-v2-04112f88265579e84c3e14afc924ca942740aa877911bdd25bc43d076a9f58ff",
+        "ev-v2-c74a9ea0df4ca728c86e7aa0bc458cf9ca4e756ddab8107511d14f886f716bd4",
+        "ev-v2-e879f109497f717d6fbe45cb85252722be8e3acd47cfc6a42a57daada150e91f"
+      ],
+      "model_id": "bartowski-qwen2-5-7b-instruct-gguf",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "architecture unsupported for VRAM estimation",
+        "runtime documented: LM Studio, Ollama, llama.cpp",
+        "evidence quality: partial"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "limited_evidence",
+      "domains": {
+        "evidence_quality": {
+          "detail": "evidence ids are logical references without persisted sidecars (evidence_sidecar_unavailable)",
+          "status": "logical_reference_only"
+        },
+        "license": {
+          "license_id": "mit",
+          "restriction_note": "raw_license_value='mit'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: coding, knowledge, reasoning",
+          "evidence_status": "publisher_only",
+          "status": "partially_known"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-architecture",
+        "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-base-models",
+        "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-context-length-advertised-max",
+        "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-license-license-id",
+        "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-openness",
+        "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-popularity",
+        "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-quantization-quant-name",
+        "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-resolved-revision",
+        "deepseek-ai-deepseek-r1-distill-qwen-7b-ev-total-parameters-b",
+        "evl-v1-2b61b13233fed885cf036abfe1a6ccc67fad319952ee3aea93300ee32f77d5fd",
+        "evl-v1-3c8bd6b67a42deb973717674941614e519ed27115d70a38c4bd658c03cf38fdd",
+        "evl-v1-7fadc74980b6e1121299e0ca54153b270bd3eb62a3785d2067f3d99f9e5ccaa1",
+        "evl-v1-a90c85eaec153945b5995667d1b3c44a2f675ba41a680b3b7564c0de70effbbf",
+        "evl-v1-f406e84f178339441285309d3a7fb831794a49d3cdfaa93a340fabae52ab4c62",
+        "evl-v1-fa6364502c8a715287179133b6af833d5d92b641d677d3eb2606818a1bc5dcf4"
+      ],
+      "model_id": "deepseek-ai-deepseek-r1-distill-qwen-7b",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers",
+        "evidence quality: logical_reference_only"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "all referenced evidence sidecars persisted",
+          "status": "complete"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "google-gemma-4-12b-ev-architecture",
+        "google-gemma-4-12b-ev-base-models",
+        "google-gemma-4-12b-ev-context-length-advertised-max",
+        "google-gemma-4-12b-ev-license-license-id",
+        "google-gemma-4-12b-ev-openness",
+        "google-gemma-4-12b-ev-popularity",
+        "google-gemma-4-12b-ev-quantization-quant-name",
+        "google-gemma-4-12b-ev-resolved-revision",
+        "google-gemma-4-12b-ev-total-parameters-b"
+      ],
+      "model_id": "google-gemma-4-12b",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "evidence ids are logical references without persisted sidecars (evidence_sidecar_unavailable)",
+          "status": "logical_reference_only"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "LM Studio",
+            "Ollama",
+            "llama.cpp"
+          ],
+          "status": "documented"
+        },
+        "variant_identity": {
+          "detail": "abliterated variant: exact-variant quality evidence required; parent score is reference only",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "unsupported"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf-ev-architecture",
+        "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf-ev-base-models",
+        "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf-ev-context-length-advertised-max",
+        "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf-ev-license-license-id",
+        "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf-ev-openness",
+        "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf-ev-popularity",
+        "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf-ev-quantization-quant-name",
+        "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf-ev-resolved-revision",
+        "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf-ev-total-parameters-b"
+      ],
+      "model_id": "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": {
+        "disclosure": "base model quality context only; quantized variant retention unknown",
+        "retention_id": null,
+        "status": "unknown"
+      },
+      "reasons": [
+        "abliterated variant shown separately; parent quality is reference only",
+        "architecture unsupported for VRAM estimation",
+        "runtime documented: LM Studio, Ollama, llama.cpp",
+        "evidence quality: logical_reference_only",
+        "quantized artifact: base quality known, retention unknown"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "limited_evidence",
+      "domains": {
+        "evidence_quality": {
+          "detail": "evidence ids are logical references without persisted sidecars (evidence_sidecar_unavailable)",
+          "status": "logical_reference_only"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: general_intelligence, instruction_following, knowledge, reasoning",
+          "evidence_status": "publisher_only",
+          "status": "partially_known"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "evl-v1-2baff72af762a0603995b856733d7fa6e36c7371cd926c0f492b3c38986a4b0c",
+        "evl-v1-525531aabb29d60b435751f88a27f831800d2f0d0d63f8e797aab6f4438a3d8f",
+        "evl-v1-5ed1a1b7c1c5dcfd0436875c7371b406c185a839526e08272a995f63d5b2b44e",
+        "evl-v1-b41cfd1257321d7d866ab330e0611ed154453a37e9ed9de0d18817ab592ca118",
+        "evl-v1-d21f7b1ab4e991f350c0e980c12e20594d197f40d8dbfa134cb0cdd11a777aea",
+        "evl-v1-d44371c1daf3e9aea177206dc061f1792812620d11c504ed01c6c76bf2f9eb0f",
+        "huggingfacetb-smollm2-1-7b-instruct-ev-architecture",
+        "huggingfacetb-smollm2-1-7b-instruct-ev-base-models",
+        "huggingfacetb-smollm2-1-7b-instruct-ev-context-length-advertised-max",
+        "huggingfacetb-smollm2-1-7b-instruct-ev-license-license-id",
+        "huggingfacetb-smollm2-1-7b-instruct-ev-openness",
+        "huggingfacetb-smollm2-1-7b-instruct-ev-popularity",
+        "huggingfacetb-smollm2-1-7b-instruct-ev-quantization-quant-name",
+        "huggingfacetb-smollm2-1-7b-instruct-ev-resolved-revision",
+        "huggingfacetb-smollm2-1-7b-instruct-ev-total-parameters-b"
+      ],
+      "model_id": "huggingfacetb-smollm2-1-7b-instruct",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers",
+        "evidence quality: logical_reference_only"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "all referenced evidence sidecars persisted",
+          "status": "complete"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "LM Studio",
+            "Ollama",
+            "llama.cpp"
+          ],
+          "status": "documented"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "unsupported"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "ifm-k2-horizon-7b-gguf-ev-architecture",
+        "ifm-k2-horizon-7b-gguf-ev-base-models",
+        "ifm-k2-horizon-7b-gguf-ev-context-length-advertised-max",
+        "ifm-k2-horizon-7b-gguf-ev-license-license-id",
+        "ifm-k2-horizon-7b-gguf-ev-openness",
+        "ifm-k2-horizon-7b-gguf-ev-popularity",
+        "ifm-k2-horizon-7b-gguf-ev-quantization-quant-name",
+        "ifm-k2-horizon-7b-gguf-ev-resolved-revision",
+        "ifm-k2-horizon-7b-gguf-ev-total-parameters-b"
+      ],
+      "model_id": "ifm-k2-horizon-7b-gguf",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": {
+        "disclosure": "base model quality context only; quantized variant retention unknown",
+        "retention_id": null,
+        "status": "unknown"
+      },
+      "reasons": [
+        "architecture unsupported for VRAM estimation",
+        "runtime documented: LM Studio, Ollama, llama.cpp",
+        "quantized artifact: base quality known, retention unknown"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "evidence ids are logical references without persisted sidecars (evidence_sidecar_unavailable)",
+          "status": "logical_reference_only"
+        },
+        "license": {
+          "license_id": "llama3.1",
+          "restriction_note": "raw_license_value='llama3.1'; spdx=False",
+          "status": "unclear"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "meta-llama-llama-3-1-8b-instruct-ev-architecture",
+        "meta-llama-llama-3-1-8b-instruct-ev-base-models",
+        "meta-llama-llama-3-1-8b-instruct-ev-context-length-advertised-max",
+        "meta-llama-llama-3-1-8b-instruct-ev-license-license-id",
+        "meta-llama-llama-3-1-8b-instruct-ev-openness",
+        "meta-llama-llama-3-1-8b-instruct-ev-popularity",
+        "meta-llama-llama-3-1-8b-instruct-ev-quantization-quant-name",
+        "meta-llama-llama-3-1-8b-instruct-ev-resolved-revision",
+        "meta-llama-llama-3-1-8b-instruct-ev-total-parameters-b"
+      ],
+      "model_id": "meta-llama-llama-3-1-8b-instruct",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "license unclear: recorded, not inferred",
+        "runtime evidence limited to Transformers",
+        "evidence quality: logical_reference_only"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "some referenced evidence sidecars are not persisted",
+          "status": "partial"
+        },
+        "license": {
+          "license_id": "mit",
+          "restriction_note": "raw_license_value='mit'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "unsupported"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "ev-v2-79aeeaa7650bb06c96043f9d970ebe3847dc85562966361979366de069904e71",
+        "ev-v2-836adaaf35a3580451ca55c524c5bf57ff9d61ee0425e0996d6aa7e3301c3759",
+        "ev-v2-bbc1b7f00e4bb90f689ab0ef87b2e2bc15f10bd01eb36aa47d7878a06d835ac6",
+        "microsoft-bitnet-b1-58-2b-4t-ev-architecture",
+        "microsoft-bitnet-b1-58-2b-4t-ev-base-models",
+        "microsoft-bitnet-b1-58-2b-4t-ev-context-length-advertised-max",
+        "microsoft-bitnet-b1-58-2b-4t-ev-license-license-id",
+        "microsoft-bitnet-b1-58-2b-4t-ev-openness",
+        "microsoft-bitnet-b1-58-2b-4t-ev-popularity",
+        "microsoft-bitnet-b1-58-2b-4t-ev-quantization-quant-name",
+        "microsoft-bitnet-b1-58-2b-4t-ev-resolved-revision",
+        "microsoft-bitnet-b1-58-2b-4t-ev-total-parameters-b"
+      ],
+      "model_id": "microsoft-bitnet-b1-58-2b-4t",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "architecture unsupported for VRAM estimation",
+        "runtime evidence limited to Transformers",
+        "evidence quality: partial"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "some referenced evidence sidecars are not persisted",
+          "status": "partial"
+        },
+        "license": {
+          "license_id": "mit",
+          "restriction_note": "raw_license_value='mit'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "LM Studio",
+            "Ollama",
+            "llama.cpp"
+          ],
+          "status": "documented"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "unsupported"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "ev-v2-e069ae0ef1adabae4a32382af2da2bff1b4a7636a4d7c7a2df84af8a67167d09",
+        "microsoft-bitnet-b1-58-2b-4t-gguf-ev-architecture",
+        "microsoft-bitnet-b1-58-2b-4t-gguf-ev-base-models",
+        "microsoft-bitnet-b1-58-2b-4t-gguf-ev-context-length-advertised-max",
+        "microsoft-bitnet-b1-58-2b-4t-gguf-ev-license-license-id",
+        "microsoft-bitnet-b1-58-2b-4t-gguf-ev-openness",
+        "microsoft-bitnet-b1-58-2b-4t-gguf-ev-popularity",
+        "microsoft-bitnet-b1-58-2b-4t-gguf-ev-quantization-quant-name",
+        "microsoft-bitnet-b1-58-2b-4t-gguf-ev-resolved-revision",
+        "microsoft-bitnet-b1-58-2b-4t-gguf-ev-total-parameters-b"
+      ],
+      "model_id": "microsoft-bitnet-b1-58-2b-4t-gguf",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "architecture unsupported for VRAM estimation",
+        "runtime documented: LM Studio, Ollama, llama.cpp",
+        "evidence quality: partial"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "some referenced evidence sidecars are not persisted",
+          "status": "partial"
+        },
+        "license": {
+          "license_id": "mit",
+          "restriction_note": "raw_license_value='mit'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "ev-v2-4becb85aaecb45adb3cc54d2b0258b74284e8f01b2466749c50c9b40536d1515",
+        "ev-v2-e0c19c11ebb40e0490dc42ad4f097f0fc8f4648303dc2398b3f26c0ebb927345",
+        "microsoft-phi-3-mini-4k-instruct-ev-architecture",
+        "microsoft-phi-3-mini-4k-instruct-ev-base-models",
+        "microsoft-phi-3-mini-4k-instruct-ev-context-length-advertised-max",
+        "microsoft-phi-3-mini-4k-instruct-ev-license-license-id",
+        "microsoft-phi-3-mini-4k-instruct-ev-openness",
+        "microsoft-phi-3-mini-4k-instruct-ev-popularity",
+        "microsoft-phi-3-mini-4k-instruct-ev-quantization-quant-name",
+        "microsoft-phi-3-mini-4k-instruct-ev-resolved-revision",
+        "microsoft-phi-3-mini-4k-instruct-ev-total-parameters-b"
+      ],
+      "model_id": "microsoft-phi-3-mini-4k-instruct",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers",
+        "evidence quality: partial"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "limited_evidence",
+      "domains": {
+        "evidence_quality": {
+          "detail": "evidence ids are logical references without persisted sidecars (evidence_sidecar_unavailable)",
+          "status": "logical_reference_only"
+        },
+        "license": {
+          "license_id": "mit",
+          "restriction_note": "raw_license_value='mit'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: coding, general_intelligence, knowledge, multilingual, non_hallucination, reasoning",
+          "evidence_status": "publisher_only",
+          "status": "partially_known"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "evl-v1-270f663947b2260bf2fc9ed23371c49d6b856cb8e2287331c7e20993cae0db85",
+        "evl-v1-3897818f25eb2b1e7c18060644f4a3815c947dc31311d77761d0b23e82c491be",
+        "evl-v1-5da57902cd6705a0ce79640dff4ee733b0ce21adf90701efa3116b4fc49a0760",
+        "evl-v1-938905014d7ec5fc1c17acaac7a3e1ee0eb1ad19719410fd7feaf866cb467955",
+        "evl-v1-ae443cc663d9ce008fa9be40cc0aa87aabc46c3a673387e343a2baea09627662",
+        "evl-v1-b5da8f2009aa23d567bdb1f0d78cec4346b603ca13d00f7efe0f8e356629dbff",
+        "microsoft-phi-4-ev-architecture",
+        "microsoft-phi-4-ev-base-models",
+        "microsoft-phi-4-ev-context-length-advertised-max",
+        "microsoft-phi-4-ev-license-license-id",
+        "microsoft-phi-4-ev-openness",
+        "microsoft-phi-4-ev-popularity",
+        "microsoft-phi-4-ev-quantization-quant-name",
+        "microsoft-phi-4-ev-resolved-revision",
+        "microsoft-phi-4-ev-total-parameters-b"
+      ],
+      "model_id": "microsoft-phi-4",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers",
+        "evidence quality: logical_reference_only"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "evidence ids are logical references without persisted sidecars (evidence_sidecar_unavailable)",
+          "status": "logical_reference_only"
+        },
+        "license": {
+          "license_id": "mit",
+          "restriction_note": "raw_license_value='mit'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "microsoft-phi-4-mini-instruct-ev-architecture",
+        "microsoft-phi-4-mini-instruct-ev-base-models",
+        "microsoft-phi-4-mini-instruct-ev-context-length-advertised-max",
+        "microsoft-phi-4-mini-instruct-ev-license-license-id",
+        "microsoft-phi-4-mini-instruct-ev-openness",
+        "microsoft-phi-4-mini-instruct-ev-popularity",
+        "microsoft-phi-4-mini-instruct-ev-quantization-quant-name",
+        "microsoft-phi-4-mini-instruct-ev-resolved-revision",
+        "microsoft-phi-4-mini-instruct-ev-total-parameters-b"
+      ],
+      "model_id": "microsoft-phi-4-mini-instruct",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers",
+        "evidence quality: logical_reference_only"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "evidence ids are logical references without persisted sidecars (evidence_sidecar_unavailable)",
+          "status": "logical_reference_only"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "mistralai-mistral-7b-instruct-v0-3-ev-architecture",
+        "mistralai-mistral-7b-instruct-v0-3-ev-base-models",
+        "mistralai-mistral-7b-instruct-v0-3-ev-context-length-advertised-max",
+        "mistralai-mistral-7b-instruct-v0-3-ev-license-license-id",
+        "mistralai-mistral-7b-instruct-v0-3-ev-openness",
+        "mistralai-mistral-7b-instruct-v0-3-ev-popularity",
+        "mistralai-mistral-7b-instruct-v0-3-ev-quantization-quant-name",
+        "mistralai-mistral-7b-instruct-v0-3-ev-resolved-revision",
+        "mistralai-mistral-7b-instruct-v0-3-ev-total-parameters-b"
+      ],
+      "model_id": "mistralai-mistral-7b-instruct-v0-3",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers",
+        "evidence quality: logical_reference_only"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "all referenced evidence sidecars persisted",
+          "status": "complete"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "mistralai-mistral-small-3-2-24b-instruct-2506-ev-architecture",
+        "mistralai-mistral-small-3-2-24b-instruct-2506-ev-base-models",
+        "mistralai-mistral-small-3-2-24b-instruct-2506-ev-context-length-advertised-max",
+        "mistralai-mistral-small-3-2-24b-instruct-2506-ev-license-license-id",
+        "mistralai-mistral-small-3-2-24b-instruct-2506-ev-openness",
+        "mistralai-mistral-small-3-2-24b-instruct-2506-ev-popularity",
+        "mistralai-mistral-small-3-2-24b-instruct-2506-ev-quantization-quant-name",
+        "mistralai-mistral-small-3-2-24b-instruct-2506-ev-resolved-revision",
+        "mistralai-mistral-small-3-2-24b-instruct-2506-ev-total-parameters-b"
+      ],
+      "model_id": "mistralai-mistral-small-3-2-24b-instruct-2506",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "all referenced evidence sidecars persisted",
+          "status": "complete"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "ev-v2-cb0eca164636eb72734067d93fb29eaf3da910fe0208a3ba4599dd935e54e98f",
+        "ev-v2-cef905cafaa76070c9e45084968fcbe5951e8659a49c138359e15ca40fbf731b",
+        "ev-v2-f5ad0340c80e9c89786b644dd89a3e15348a04f1e5fc3540dad123d90c3df898",
+        "openai-gpt-oss-20b-ev-architecture",
+        "openai-gpt-oss-20b-ev-base-models",
+        "openai-gpt-oss-20b-ev-context-length-advertised-max",
+        "openai-gpt-oss-20b-ev-license-license-id",
+        "openai-gpt-oss-20b-ev-openness",
+        "openai-gpt-oss-20b-ev-popularity",
+        "openai-gpt-oss-20b-ev-quantization-quant-name",
+        "openai-gpt-oss-20b-ev-resolved-revision",
+        "openai-gpt-oss-20b-ev-total-parameters-b"
+      ],
+      "model_id": "openai-gpt-oss-20b",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "all referenced evidence sidecars persisted",
+          "status": "complete"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "openbmb-minicpm5-2b-ev-architecture",
+        "openbmb-minicpm5-2b-ev-base-models",
+        "openbmb-minicpm5-2b-ev-context-length-advertised-max",
+        "openbmb-minicpm5-2b-ev-license-license-id",
+        "openbmb-minicpm5-2b-ev-openness",
+        "openbmb-minicpm5-2b-ev-popularity",
+        "openbmb-minicpm5-2b-ev-quantization-quant-name",
+        "openbmb-minicpm5-2b-ev-resolved-revision",
+        "openbmb-minicpm5-2b-ev-total-parameters-b"
+      ],
+      "model_id": "openbmb-minicpm5-2b",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "some referenced evidence sidecars are not persisted",
+          "status": "partial"
+        },
+        "license": {
+          "license_id": "llama3.1",
+          "restriction_note": "raw_license_value='llama3.1'; spdx=False",
+          "status": "unclear"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "LM Studio",
+            "Ollama",
+            "llama.cpp"
+          ],
+          "status": "documented"
+        },
+        "variant_identity": {
+          "detail": "uncensored variant: exact-variant quality evidence required; parent score is reference only",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "unsupported"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "ev-v2-55bcea5e81b8a0e618664593cda050549745656bf0efb87f6c57d59e71a0a7b3",
+        "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-architecture",
+        "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-base-models",
+        "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-context-length-advertised-max",
+        "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-license-license-id",
+        "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-openness",
+        "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-popularity",
+        "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-quantization-quant-name",
+        "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-resolved-revision",
+        "orenguteng-llama-3-1-8b-lexi-uncensored-gguf-ev-total-parameters-b"
+      ],
+      "model_id": "orenguteng-llama-3-1-8b-lexi-uncensored-gguf",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "uncensored variant shown separately; parent quality is reference only",
+        "architecture unsupported for VRAM estimation",
+        "license unclear: recorded, not inferred",
+        "runtime documented: LM Studio, Ollama, llama.cpp",
+        "evidence quality: partial"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "some referenced evidence sidecars are not persisted",
+          "status": "partial"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "LM Studio",
+            "Ollama",
+            "llama.cpp"
+          ],
+          "status": "documented"
+        },
+        "variant_identity": {
+          "detail": "heretic variant: exact-variant quality evidence required; parent score is reference only",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "unsupported"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "ev-v2-ae5f074fec96b6dfb701644b8e5d6581db4174d1c9e2476639cd1e606e0c6347",
+        "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-architecture",
+        "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-base-models",
+        "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-context-length-advertised-max",
+        "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-license-license-id",
+        "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-openness",
+        "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-popularity",
+        "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-quantization-quant-name",
+        "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-resolved-revision",
+        "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf-ev-total-parameters-b"
+      ],
+      "model_id": "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": {
+        "disclosure": "base model quality context only; quantized variant retention unknown",
+        "retention_id": null,
+        "status": "unknown"
+      },
+      "reasons": [
+        "heretic variant shown separately; parent quality is reference only",
+        "architecture unsupported for VRAM estimation",
+        "runtime documented: LM Studio, Ollama, llama.cpp",
+        "evidence quality: partial",
+        "quantized artifact: base quality known, retention unknown"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "some referenced evidence sidecars are not persisted",
+          "status": "partial"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "publisher_only",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "LM Studio",
+            "Ollama",
+            "llama.cpp"
+          ],
+          "status": "documented"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "unsupported"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "ev-v2-bf56dd9adf3691ce62d40d89110878c15157ff225dcfa0c5dacfd71dd4b2abdb",
+        "prism-ml-ternary-bonsai-2-27b-gguf-ev-architecture",
+        "prism-ml-ternary-bonsai-2-27b-gguf-ev-base-models",
+        "prism-ml-ternary-bonsai-2-27b-gguf-ev-context-length-advertised-max",
+        "prism-ml-ternary-bonsai-2-27b-gguf-ev-license-license-id",
+        "prism-ml-ternary-bonsai-2-27b-gguf-ev-openness",
+        "prism-ml-ternary-bonsai-2-27b-gguf-ev-popularity",
+        "prism-ml-ternary-bonsai-2-27b-gguf-ev-quantization-quant-name",
+        "prism-ml-ternary-bonsai-2-27b-gguf-ev-resolved-revision",
+        "prism-ml-ternary-bonsai-2-27b-gguf-ev-total-parameters-b"
+      ],
+      "model_id": "prism-ml-ternary-bonsai-2-27b-gguf",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "architecture unsupported for VRAM estimation",
+        "runtime documented: LM Studio, Ollama, llama.cpp",
+        "evidence quality: partial"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "some referenced evidence sidecars are not persisted",
+          "status": "partial"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "LM Studio",
+            "Ollama",
+            "llama.cpp"
+          ],
+          "status": "documented"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "unsupported"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "ev-v2-0569495b7023482b0ee113d371b43231b5d956f464e94668cd4014c827fd51dc",
+        "ev-v2-33a9e91a5de7cc8738dda3ee6d9da09a0fae61d70c6ac3fb5029af65746b2c02",
+        "ev-v2-52390b4af8d427e469d9e930d8228c0d91839614ae7ccf7557220e88ed59b0aa",
+        "ev-v2-5f5ffcd865a302204a34dd8659bdefb20865afd95b13eb088702e2a15112ffbb",
+        "ev-v2-f2f6a96a0b8e4c170aa7a06d6982d72ab5cccc0a9401d9fce2935c1d848b2b33",
+        "ev-v2-f420855ac6971857b133ce7279f8e3c606796c19303895a932214a7423172070",
+        "quantfactory-qwen3-8b-gguf-ev-architecture",
+        "quantfactory-qwen3-8b-gguf-ev-base-models",
+        "quantfactory-qwen3-8b-gguf-ev-context-length-advertised-max",
+        "quantfactory-qwen3-8b-gguf-ev-license-license-id",
+        "quantfactory-qwen3-8b-gguf-ev-openness",
+        "quantfactory-qwen3-8b-gguf-ev-popularity",
+        "quantfactory-qwen3-8b-gguf-ev-quantization-quant-name",
+        "quantfactory-qwen3-8b-gguf-ev-resolved-revision",
+        "quantfactory-qwen3-8b-gguf-ev-total-parameters-b"
+      ],
+      "model_id": "quantfactory-qwen3-8b-gguf",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": {
+        "disclosure": "base model quality context only; quantized variant retention unknown",
+        "retention_id": null,
+        "status": "unknown"
+      },
+      "reasons": [
+        "architecture unsupported for VRAM estimation",
+        "runtime documented: LM Studio, Ollama, llama.cpp",
+        "evidence quality: partial",
+        "quantized artifact: base quality known, retention unknown"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "evidence ids are logical references without persisted sidecars (evidence_sidecar_unavailable)",
+          "status": "logical_reference_only"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "qwen-qwen2-5-7b-instruct-awq-ev-architecture",
+        "qwen-qwen2-5-7b-instruct-awq-ev-base-models",
+        "qwen-qwen2-5-7b-instruct-awq-ev-context-length-advertised-max",
+        "qwen-qwen2-5-7b-instruct-awq-ev-license-license-id",
+        "qwen-qwen2-5-7b-instruct-awq-ev-openness",
+        "qwen-qwen2-5-7b-instruct-awq-ev-popularity",
+        "qwen-qwen2-5-7b-instruct-awq-ev-quantization-quant-name",
+        "qwen-qwen2-5-7b-instruct-awq-ev-resolved-revision",
+        "qwen-qwen2-5-7b-instruct-awq-ev-total-parameters-b"
+      ],
+      "model_id": "qwen-qwen2-5-7b-instruct-awq",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers",
+        "evidence quality: logical_reference_only"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "evidence ids are logical references without persisted sidecars (evidence_sidecar_unavailable)",
+          "status": "logical_reference_only"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "qwen-qwen2-5-coder-14b-instruct-ev-architecture",
+        "qwen-qwen2-5-coder-14b-instruct-ev-base-models",
+        "qwen-qwen2-5-coder-14b-instruct-ev-context-length-advertised-max",
+        "qwen-qwen2-5-coder-14b-instruct-ev-license-license-id",
+        "qwen-qwen2-5-coder-14b-instruct-ev-openness",
+        "qwen-qwen2-5-coder-14b-instruct-ev-popularity",
+        "qwen-qwen2-5-coder-14b-instruct-ev-quantization-quant-name",
+        "qwen-qwen2-5-coder-14b-instruct-ev-resolved-revision",
+        "qwen-qwen2-5-coder-14b-instruct-ev-total-parameters-b"
+      ],
+      "model_id": "qwen-qwen2-5-coder-14b-instruct",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers",
+        "evidence quality: logical_reference_only"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "evidence ids are logical references without persisted sidecars (evidence_sidecar_unavailable)",
+          "status": "logical_reference_only"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "qwen-qwen2-5-coder-7b-instruct-ev-architecture",
+        "qwen-qwen2-5-coder-7b-instruct-ev-base-models",
+        "qwen-qwen2-5-coder-7b-instruct-ev-context-length-advertised-max",
+        "qwen-qwen2-5-coder-7b-instruct-ev-license-license-id",
+        "qwen-qwen2-5-coder-7b-instruct-ev-openness",
+        "qwen-qwen2-5-coder-7b-instruct-ev-popularity",
+        "qwen-qwen2-5-coder-7b-instruct-ev-quantization-quant-name",
+        "qwen-qwen2-5-coder-7b-instruct-ev-resolved-revision",
+        "qwen-qwen2-5-coder-7b-instruct-ev-total-parameters-b"
+      ],
+      "model_id": "qwen-qwen2-5-coder-7b-instruct",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers",
+        "evidence quality: logical_reference_only"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "some referenced evidence sidecars are not persisted",
+          "status": "partial"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "ev-v2-9b21dc1db3e56a84e071381d36c2d98358d8a8021c4708b8f9b5731865ae256e",
+        "ev-v2-ab90866732a8c3763db0db368cc5c3d79d345b1965716a4021744492cf8675f8",
+        "qwen-qwen3-0-6b-ev-architecture",
+        "qwen-qwen3-0-6b-ev-base-models",
+        "qwen-qwen3-0-6b-ev-context-length-advertised-max",
+        "qwen-qwen3-0-6b-ev-license-license-id",
+        "qwen-qwen3-0-6b-ev-openness",
+        "qwen-qwen3-0-6b-ev-popularity",
+        "qwen-qwen3-0-6b-ev-quantization-quant-name",
+        "qwen-qwen3-0-6b-ev-resolved-revision",
+        "qwen-qwen3-0-6b-ev-total-parameters-b"
+      ],
+      "model_id": "qwen-qwen3-0-6b",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers",
+        "evidence quality: partial"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "evidence ids are logical references without persisted sidecars (evidence_sidecar_unavailable)",
+          "status": "logical_reference_only"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "qwen-qwen3-14b-ev-architecture",
+        "qwen-qwen3-14b-ev-base-models",
+        "qwen-qwen3-14b-ev-context-length-advertised-max",
+        "qwen-qwen3-14b-ev-license-license-id",
+        "qwen-qwen3-14b-ev-openness",
+        "qwen-qwen3-14b-ev-popularity",
+        "qwen-qwen3-14b-ev-quantization-quant-name",
+        "qwen-qwen3-14b-ev-resolved-revision",
+        "qwen-qwen3-14b-ev-total-parameters-b"
+      ],
+      "model_id": "qwen-qwen3-14b",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers",
+        "evidence quality: logical_reference_only"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "evidence ids are logical references without persisted sidecars (evidence_sidecar_unavailable)",
+          "status": "logical_reference_only"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "qwen-qwen3-30b-a3b-instruct-2507-ev-architecture",
+        "qwen-qwen3-30b-a3b-instruct-2507-ev-base-models",
+        "qwen-qwen3-30b-a3b-instruct-2507-ev-context-length-advertised-max",
+        "qwen-qwen3-30b-a3b-instruct-2507-ev-license-license-id",
+        "qwen-qwen3-30b-a3b-instruct-2507-ev-openness",
+        "qwen-qwen3-30b-a3b-instruct-2507-ev-popularity",
+        "qwen-qwen3-30b-a3b-instruct-2507-ev-quantization-quant-name",
+        "qwen-qwen3-30b-a3b-instruct-2507-ev-resolved-revision",
+        "qwen-qwen3-30b-a3b-instruct-2507-ev-total-parameters-b"
+      ],
+      "model_id": "qwen-qwen3-30b-a3b-instruct-2507",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers",
+        "evidence quality: logical_reference_only"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "some referenced evidence sidecars are not persisted",
+          "status": "partial"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "ev-v2-30409b413167ff2b2fcd7569bc1361f2cd5028c2770ff98a48b11947a80ce051",
+        "ev-v2-a5addadfb9961fa895786fed69f9e70dbe37af44dc59e96f6f8b631f19cd4f32",
+        "qwen-qwen3-4b-instruct-2507-ev-architecture",
+        "qwen-qwen3-4b-instruct-2507-ev-base-models",
+        "qwen-qwen3-4b-instruct-2507-ev-context-length-advertised-max",
+        "qwen-qwen3-4b-instruct-2507-ev-license-license-id",
+        "qwen-qwen3-4b-instruct-2507-ev-openness",
+        "qwen-qwen3-4b-instruct-2507-ev-popularity",
+        "qwen-qwen3-4b-instruct-2507-ev-quantization-quant-name",
+        "qwen-qwen3-4b-instruct-2507-ev-resolved-revision",
+        "qwen-qwen3-4b-instruct-2507-ev-total-parameters-b"
+      ],
+      "model_id": "qwen-qwen3-4b-instruct-2507",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers",
+        "evidence quality: partial"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "all referenced evidence sidecars persisted",
+          "status": "complete"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "publisher_only",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "qwen-qwen3-8-27b-ev-architecture",
+        "qwen-qwen3-8-27b-ev-base-models",
+        "qwen-qwen3-8-27b-ev-context-length-advertised-max",
+        "qwen-qwen3-8-27b-ev-license-license-id",
+        "qwen-qwen3-8-27b-ev-openness",
+        "qwen-qwen3-8-27b-ev-popularity",
+        "qwen-qwen3-8-27b-ev-quantization-quant-name",
+        "qwen-qwen3-8-27b-ev-resolved-revision",
+        "qwen-qwen3-8-27b-ev-total-parameters-b"
+      ],
+      "model_id": "qwen-qwen3-8-27b",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "some referenced evidence sidecars are not persisted",
+          "status": "partial"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "ev-v2-30574940a93ea8850c477759b573c90543017bbabda8bfc6c7fe754b9276635d",
+        "ev-v2-616bd2845ae0770dc6fa539882614287044e91cd209eddc875fd517fd89c3d82",
+        "qwen-qwen3-8b-ev-architecture",
+        "qwen-qwen3-8b-ev-base-models",
+        "qwen-qwen3-8b-ev-context-length-advertised-max",
+        "qwen-qwen3-8b-ev-license-license-id",
+        "qwen-qwen3-8b-ev-openness",
+        "qwen-qwen3-8b-ev-popularity",
+        "qwen-qwen3-8b-ev-quantization-quant-name",
+        "qwen-qwen3-8b-ev-resolved-revision",
+        "qwen-qwen3-8b-ev-total-parameters-b"
+      ],
+      "model_id": "qwen-qwen3-8b",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers",
+        "evidence quality: partial"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "some referenced evidence sidecars are not persisted",
+          "status": "partial"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "Transformers"
+          ],
+          "status": "partial"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "ev-v2-05e03fcd5a8a8fc7ed87012d9fae3fecfff778d4addc2cff2d923aaf8e18b7b2",
+        "ev-v2-25e40e64d8877a69eed95591802b73c2644954d6e0b0e3a1e80a6dae3882db50",
+        "tinyllama-tinyllama-1-1b-chat-v1-0-ev-architecture",
+        "tinyllama-tinyllama-1-1b-chat-v1-0-ev-base-models",
+        "tinyllama-tinyllama-1-1b-chat-v1-0-ev-context-length-advertised-max",
+        "tinyllama-tinyllama-1-1b-chat-v1-0-ev-license-license-id",
+        "tinyllama-tinyllama-1-1b-chat-v1-0-ev-openness",
+        "tinyllama-tinyllama-1-1b-chat-v1-0-ev-popularity",
+        "tinyllama-tinyllama-1-1b-chat-v1-0-ev-quantization-quant-name",
+        "tinyllama-tinyllama-1-1b-chat-v1-0-ev-resolved-revision",
+        "tinyllama-tinyllama-1-1b-chat-v1-0-ev-total-parameters-b"
+      ],
+      "model_id": "tinyllama-tinyllama-1-1b-chat-v1-0",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": null,
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime evidence limited to Transformers",
+        "evidence quality: partial"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "some referenced evidence sidecars are not persisted",
+          "status": "partial"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "LM Studio",
+            "Ollama",
+            "llama.cpp"
+          ],
+          "status": "documented"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "ev-v2-1ea36149fdbce430ab5699a5ca0ef966ba746b4b64a8410fa0877f096772ca66",
+        "ev-v2-48098aadb545608229a944a046d93beb88bf4c95a2492b0231d16e38e091fb3a",
+        "unsloth-qwen3-8-27b-gguf-ev-architecture",
+        "unsloth-qwen3-8-27b-gguf-ev-base-models",
+        "unsloth-qwen3-8-27b-gguf-ev-context-length-advertised-max",
+        "unsloth-qwen3-8-27b-gguf-ev-license-license-id",
+        "unsloth-qwen3-8-27b-gguf-ev-openness",
+        "unsloth-qwen3-8-27b-gguf-ev-popularity",
+        "unsloth-qwen3-8-27b-gguf-ev-quantization-quant-name",
+        "unsloth-qwen3-8-27b-gguf-ev-resolved-revision",
+        "unsloth-qwen3-8-27b-gguf-ev-total-parameters-b"
+      ],
+      "model_id": "unsloth-qwen3-8-27b-gguf",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": {
+        "disclosure": "base model quality context only; quantized variant retention unknown",
+        "retention_id": null,
+        "status": "unknown"
+      },
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime documented: LM Studio, Ollama, llama.cpp",
+        "evidence quality: partial",
+        "quantized artifact: base quality known, retention unknown"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "evidence ids are logical references without persisted sidecars (evidence_sidecar_unavailable)",
+          "status": "logical_reference_only"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "LM Studio",
+            "Ollama",
+            "llama.cpp"
+          ],
+          "status": "documented"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "insufficient_evidence"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "unsloth-qwen3-8b-gguf-ev-architecture",
+        "unsloth-qwen3-8b-gguf-ev-base-models",
+        "unsloth-qwen3-8b-gguf-ev-context-length-advertised-max",
+        "unsloth-qwen3-8b-gguf-ev-license-license-id",
+        "unsloth-qwen3-8b-gguf-ev-openness",
+        "unsloth-qwen3-8b-gguf-ev-popularity",
+        "unsloth-qwen3-8b-gguf-ev-quantization-quant-name",
+        "unsloth-qwen3-8b-gguf-ev-resolved-revision",
+        "unsloth-qwen3-8b-gguf-ev-total-parameters-b"
+      ],
+      "model_id": "unsloth-qwen3-8b-gguf",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": {
+        "disclosure": "base model quality context only; quantized variant retention unknown",
+        "retention_id": null,
+        "status": "unknown"
+      },
+      "reasons": [
+        "VRAM upper bound unavailable: fit not established",
+        "runtime documented: LM Studio, Ollama, llama.cpp",
+        "evidence quality: logical_reference_only",
+        "quantized artifact: base quality known, retention unknown"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    },
+    {
+      "confidence_state": "insufficient",
+      "domains": {
+        "evidence_quality": {
+          "detail": "some referenced evidence sidecars are not persisted",
+          "status": "partial"
+        },
+        "license": {
+          "license_id": "apache-2.0",
+          "restriction_note": "raw_license_value='apache-2.0'; spdx=True",
+          "status": "permissive"
+        },
+        "quality": {
+          "detail": "axes with evidence: none",
+          "evidence_status": "unknown",
+          "status": "unevaluated"
+        },
+        "runtime": {
+          "runtimes": [
+            "LM Studio",
+            "Ollama",
+            "llama.cpp"
+          ],
+          "status": "documented"
+        },
+        "variant_identity": {
+          "detail": "record identity from publisher claim",
+          "status": "exact"
+        },
+        "vram_fit": {
+          "detail": null,
+          "state": "unsupported"
+        }
+      },
+      "eligibility": "insufficient_evidence",
+      "evidence_ids": [
+        "ev-v2-90c9731e26843ca7e9a4e7b7c6fc080d49b45aa48c8929c881167e4f113195a3",
+        "ev-v2-d26c8854b1a962cd95d13ceb3b9521cff0e30856c4c8e734d9c87095d7797479",
+        "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-architecture",
+        "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-base-models",
+        "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-context-length-advertised-max",
+        "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-license-license-id",
+        "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-openness",
+        "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-popularity",
+        "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-quantization-quant-name",
+        "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-resolved-revision",
+        "unsloth-qwen3-coder-30b-a3b-instruct-gguf-ev-total-parameters-b"
+      ],
+      "model_id": "unsloth-qwen3-coder-30b-a3b-instruct-gguf",
+      "policy_id": "atlas-recommendation-policy",
+      "policy_version": "0.6.0",
+      "quant_retention": {
+        "disclosure": "base model quality context only; quantized variant retention unknown",
+        "retention_id": null,
+        "status": "unknown"
+      },
+      "reasons": [
+        "architecture unsupported for VRAM estimation",
+        "runtime documented: LM Studio, Ollama, llama.cpp",
+        "evidence quality: partial",
+        "quantized artifact: base quality known, retention unknown"
+      ],
+      "schema_version": "0.6.0",
+      "tier_gb": 12,
+      "use_case": null
+    }
+  ],
+  "insufficient_evidence": 34,
+  "insufficient_ids": [
+    "bartowski-openai-gpt-oss-20b-gguf",
+    "bartowski-qwen2-5-7b-instruct-gguf",
+    "deepseek-ai-deepseek-r1-distill-qwen-7b",
+    "google-gemma-4-12b",
+    "hikari07jp-ternary-bonsai-2-27b-abliterated-gguf",
+    "huggingfacetb-smollm2-1-7b-instruct",
+    "ifm-k2-horizon-7b-gguf",
+    "meta-llama-llama-3-1-8b-instruct",
+    "microsoft-bitnet-b1-58-2b-4t",
+    "microsoft-bitnet-b1-58-2b-4t-gguf",
+    "microsoft-phi-3-mini-4k-instruct",
+    "microsoft-phi-4",
+    "microsoft-phi-4-mini-instruct",
+    "mistralai-mistral-7b-instruct-v0-3",
+    "mistralai-mistral-small-3-2-24b-instruct-2506",
+    "openai-gpt-oss-20b",
+    "openbmb-minicpm5-2b",
+    "orenguteng-llama-3-1-8b-lexi-uncensored-gguf",
+    "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf",
+    "prism-ml-ternary-bonsai-2-27b-gguf",
+    "quantfactory-qwen3-8b-gguf",
+    "qwen-qwen2-5-7b-instruct-awq",
+    "qwen-qwen2-5-coder-14b-instruct",
+    "qwen-qwen2-5-coder-7b-instruct",
+    "qwen-qwen3-0-6b",
+    "qwen-qwen3-14b",
+    "qwen-qwen3-30b-a3b-instruct-2507",
+    "qwen-qwen3-4b-instruct-2507",
+    "qwen-qwen3-8-27b",
+    "qwen-qwen3-8b",
+    "tinyllama-tinyllama-1-1b-chat-v1-0",
+    "unsloth-qwen3-8-27b-gguf",
+    "unsloth-qwen3-8b-gguf",
+    "unsloth-qwen3-coder-30b-a3b-instruct-gguf"
+  ],
+  "note": "Categories are never merged. Zero strict recommendations is reported honestly rather than backfilled with weak candidates.",
+  "promising_candidates": 0,
+  "quality_known_fit_unknown": [
+    "deepseek-ai-deepseek-r1-distill-qwen-7b",
+    "huggingfacetb-smollm2-1-7b-instruct",
+    "microsoft-phi-4"
+  ],
+  "strict": [],
+  "strict_ids": [],
+  "strict_recommendations": 0,
+  "tier_gb": 12
+}

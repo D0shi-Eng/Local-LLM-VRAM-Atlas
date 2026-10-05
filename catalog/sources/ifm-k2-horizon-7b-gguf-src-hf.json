@@ -1,0 +1,15 @@
+{
+  "accessed_at": "2026-10-05T06:10:01.894149Z",
+  "archived_reference": null,
+  "authority_level": "tier_c_specialist",
+  "commit_or_revision": "9fb01f7b397994455262f4b8256e4e00e4949ea9",
+  "notes": "platform=hugging-face; repo_id=IFM/K2-Horizon-7B-GGUF; requested_revision=main; resolved_revision=9fb01f7b397994455262f4b8256e4e00e4949ea9; officiality_status=unverified (namespace alone never proves officiality)",
+  "published_at": null,
+  "publisher": "IFM",
+  "revision": "9fb01f7b397994455262f4b8256e4e00e4949ea9",
+  "schema_version": "0.1.0",
+  "source_id": "ifm-k2-horizon-7b-gguf-src-hf",
+  "source_type": "quantizer_repo",
+  "title": "Hugging Face repository IFM/K2-Horizon-7B-GGUF (publisher-published metadata)",
+  "url": "https://huggingface.co/IFM/K2-Horizon-7B-GGUF"
+}

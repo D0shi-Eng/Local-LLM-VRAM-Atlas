@@ -1,0 +1,14 @@
+{
+  "claim_type": "benchmark_score",
+  "evidence_id": "ev-v2-57d9488b5fbcb3438a2f61d1dd2b7b78814a503393db46a617e6256bb10f9b94",
+  "evidence_level": "publisher_claim",
+  "field_path": "quality",
+  "notes": "Quality claim evidence: recorded publisher-reported evaluation results. See catalog/benchmarks/evaluations/ for per-result provenance and quality evidence_ids. Popularity, size, recency and brand are excluded.",
+  "publisher": "HuggingFaceTB",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "huggingfacetb-smollm2-1-7b-instruct-quality-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "verification_status": "publisher_claim"
+}

@@ -1,0 +1,31 @@
+{
+  "artifact_set_id": "openbmb-minicpm5-2b--safetensors--model.safetensors",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "config",
+    "docs",
+    "index",
+    "metadata",
+    "tokenizer"
+  ],
+  "files": [
+    {
+      "extension": ".safetensors",
+      "filename": "model-00000-of-00001.safetensors",
+      "path": "model-00000-of-00001.safetensors",
+      "source_reported_size_bytes": 5033557096
+    }
+  ],
+  "format": "safetensors",
+  "kind": "sharded",
+  "model_id": "openbmb-minicpm5-2b",
+  "primary_weight_bytes": 5033557096,
+  "revision": "f97400052a43d642bbc6e9975e2397e3ae6a6b52",
+  "schema_version": "0.2.0",
+  "shard_count": 1,
+  "shard_total": 1,
+  "shards_complete": true,
+  "total_source_reported_bytes": 5033557096,
+  "variant": null,
+  "verification_status": "source_reported"
+}

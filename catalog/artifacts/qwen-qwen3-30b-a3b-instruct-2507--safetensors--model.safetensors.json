@@ -1,0 +1,122 @@
+{
+  "artifact_set_id": "qwen-qwen3-30b-a3b-instruct-2507--safetensors--model.safetensors",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "config",
+    "docs",
+    "index",
+    "metadata",
+    "other",
+    "tokenizer"
+  ],
+  "files": [
+    {
+      "extension": ".safetensors",
+      "filename": "model-00001-of-00016.safetensors",
+      "path": "model-00001-of-00016.safetensors",
+      "source_reported_size_bytes": 3998893112
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00002-of-00016.safetensors",
+      "path": "model-00002-of-00016.safetensors",
+      "source_reported_size_bytes": 3999974192
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00003-of-00016.safetensors",
+      "path": "model-00003-of-00016.safetensors",
+      "source_reported_size_bytes": 3997360832
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00004-of-00016.safetensors",
+      "path": "model-00004-of-00016.safetensors",
+      "source_reported_size_bytes": 3999975056
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00005-of-00016.safetensors",
+      "path": "model-00005-of-00016.safetensors",
+      "source_reported_size_bytes": 3999975400
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00006-of-00016.safetensors",
+      "path": "model-00006-of-00016.safetensors",
+      "source_reported_size_bytes": 3999975400
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00007-of-00016.safetensors",
+      "path": "model-00007-of-00016.safetensors",
+      "source_reported_size_bytes": 3999975472
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00008-of-00016.safetensors",
+      "path": "model-00008-of-00016.safetensors",
+      "source_reported_size_bytes": 3997362064
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00009-of-00016.safetensors",
+      "path": "model-00009-of-00016.safetensors",
+      "source_reported_size_bytes": 3999975408
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00010-of-00016.safetensors",
+      "path": "model-00010-of-00016.safetensors",
+      "source_reported_size_bytes": 3999975400
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00011-of-00016.safetensors",
+      "path": "model-00011-of-00016.safetensors",
+      "source_reported_size_bytes": 3999975408
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00012-of-00016.safetensors",
+      "path": "model-00012-of-00016.safetensors",
+      "source_reported_size_bytes": 3987924896
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00013-of-00016.safetensors",
+      "path": "model-00013-of-00016.safetensors",
+      "source_reported_size_bytes": 3999975088
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00014-of-00016.safetensors",
+      "path": "model-00014-of-00016.safetensors",
+      "source_reported_size_bytes": 3999975400
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00015-of-00016.safetensors",
+      "path": "model-00015-of-00016.safetensors",
+      "source_reported_size_bytes": 3999975400
+    },
+    {
+      "extension": ".safetensors",
+      "filename": "model-00016-of-00016.safetensors",
+      "path": "model-00016-of-00016.safetensors",
+      "source_reported_size_bytes": 1085307128
+    }
+  ],
+  "format": "safetensors",
+  "kind": "sharded",
+  "model_id": "qwen-qwen3-30b-a3b-instruct-2507",
+  "primary_weight_bytes": 61066575656,
+  "revision": "0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe",
+  "schema_version": "0.2.0",
+  "shard_count": 16,
+  "shard_total": 16,
+  "shards_complete": true,
+  "total_source_reported_bytes": 61066575656,
+  "variant": null,
+  "verification_status": "source_reported"
+}

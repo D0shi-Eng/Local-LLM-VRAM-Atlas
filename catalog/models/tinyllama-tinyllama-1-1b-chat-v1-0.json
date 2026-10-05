@@ -1,0 +1,92 @@
+{
+  "active_parameters_b": null,
+  "alignment": {
+    "alignment_variant": "unknown",
+    "base_model": null,
+    "capability_retention_evidence": null,
+    "method_documented": null,
+    "refusal_evaluation": null,
+    "uncensored_claimed": null,
+    "uncensoring_method": null,
+    "variant_author": "TinyLlama",
+    "variant_source": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "verification_status": "unknown"
+  },
+  "architecture": "LlamaForCausalLM",
+  "architecture_type": "unknown",
+  "base_models": [],
+  "catalog_status": "experimental",
+  "context_length": {
+    "advertised_max": null,
+    "tested": null,
+    "vram_measurement_context": null
+  },
+  "creator": "TinyLlama",
+  "display_name": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "experts_active": null,
+  "experts_total": null,
+  "last_verified_at": null,
+  "license": {
+    "commercial_use_status": "unclear",
+    "derivative_use_status": "unclear",
+    "license_id": "apache-2.0",
+    "license_name": null,
+    "license_notes": "raw_license_value='apache-2.0'; spdx=True",
+    "license_source": "model_card_metadata",
+    "license_url": null,
+    "redistribution_status": "unclear",
+    "verification_status": "publisher_claim"
+  },
+  "lifecycle_reason": null,
+  "lifecycle_status": "active",
+  "modalities": [
+    "text"
+  ],
+  "model_family": null,
+  "model_id": "tinyllama-tinyllama-1-1b-chat-v1-0",
+  "multimodal_components": null,
+  "open_source_ai_reference": null,
+  "openness": "open_weights_permissive",
+  "organization": null,
+  "popularity": {
+    "captured_at": "2026-10-05T09:05:08.788518Z",
+    "downloads": 1322168,
+    "likes": 1837,
+    "trending": null
+  },
+  "quantization": {
+    "bits_per_weight": null,
+    "checksum": null,
+    "compression_category": null,
+    "file_size_bytes": 2200119864,
+    "file_size_gib": 2.049,
+    "format": "safetensors",
+    "native_quantization": null,
+    "quant_family": "unknown",
+    "quant_name": null,
+    "quantizer": null,
+    "quantizer_repo": null,
+    "source_revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+    "split_files": false
+  },
+  "release_date": null,
+  "schema_version": "0.1.0",
+  "slug": "tinyllama-tinyllama-1-1b-chat-v1-0",
+  "total_parameters_b": 1.100048384,
+  "verification": {
+    "evidence_ids": [
+      "tinyllama-tinyllama-1-1b-chat-v1-0-ev-license-license-id",
+      "tinyllama-tinyllama-1-1b-chat-v1-0-ev-openness",
+      "tinyllama-tinyllama-1-1b-chat-v1-0-ev-base-models",
+      "tinyllama-tinyllama-1-1b-chat-v1-0-ev-architecture",
+      "tinyllama-tinyllama-1-1b-chat-v1-0-ev-total-parameters-b",
+      "tinyllama-tinyllama-1-1b-chat-v1-0-ev-context-length-advertised-max",
+      "tinyllama-tinyllama-1-1b-chat-v1-0-ev-quantization-quant-name",
+      "tinyllama-tinyllama-1-1b-chat-v1-0-ev-popularity",
+      "tinyllama-tinyllama-1-1b-chat-v1-0-ev-resolved-revision",
+      "ev-v2-25e40e64d8877a69eed95591802b73c2644954d6e0b0e3a1e80a6dae3882db50",
+      "ev-v2-05e03fcd5a8a8fc7ed87012d9fae3fecfff778d4addc2cff2d923aaf8e18b7b2"
+    ],
+    "status": "publisher_claim"
+  }
+}

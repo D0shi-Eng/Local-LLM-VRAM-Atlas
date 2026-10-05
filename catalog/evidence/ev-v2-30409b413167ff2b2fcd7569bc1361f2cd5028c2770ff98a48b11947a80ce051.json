@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-30409b413167ff2b2fcd7569bc1361f2cd5028c2770ff98a48b11947a80ce051",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.source_revision",
+  "notes": "Current resolved revision and exact artifact identity reacquired anonymously; repo=Qwen/Qwen3-4B-Instruct-2507; revision=cdbee75f17c01a7cc42f958dc650907174af0554; artifact=qwen-qwen3-4b-instruct-2507--safetensors--model.safetensors",
+  "publisher": "Qwen",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-8g-03-qwen3-4b-instruct-2507-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+  "verification_status": "independently_verified"
+}

@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-8712d51947710d074b774af97c58d04a4a949e6be148847df9fe982ce356cc41",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.source_revision",
+  "notes": "Current resolved revision and exact artifact identity reacquired anonymously; repo=bartowski/openai_gpt-oss-20b-GGUF; revision=e39ba3aa000c47c83dacdc9e1ca2c9dd0808c205; artifact=bartowski-openai-gpt-oss-20b-gguf--gguf--openai_gpt-oss-20b-gguf--mxfp4",
+  "publisher": "bartowski",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-12g-03-gpt-oss-20b-mxfp4-gguf-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF",
+  "verification_status": "independently_verified"
+}

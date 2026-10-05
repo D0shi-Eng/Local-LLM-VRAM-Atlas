@@ -1,0 +1,29 @@
+{
+  "evaluation_count": 21,
+  "evaluations_by_origin": {
+    "publisher": 21
+  },
+  "evaluations_by_verification_status": {
+    "publisher_claim": 21
+  },
+  "gap_counts": {
+    "alignment_variant_unevaluated": 3,
+    "arabic_quality_unknown": 34,
+    "architecture_unresolved": 10,
+    "missing_independent_quality_evidence": 34,
+    "missing_quant_retention_evidence": 8,
+    "missing_runtime_evidence": 0,
+    "missing_vram_fit_evidence": 34,
+    "publisher_only_quality": 5
+  },
+  "policy_versions": {
+    "atlas-quality-band": "0.6.0",
+    "atlas-quality-evidence": "0.6.0",
+    "atlas-quality-freshness": "0.6.0",
+    "atlas-recommendation-policy": "0.6.0"
+  },
+  "profile_count": 34,
+  "quality_registry_version": "0.6.0",
+  "quality_snapshot_version": "0.6.0",
+  "retention_record_count": 8
+}

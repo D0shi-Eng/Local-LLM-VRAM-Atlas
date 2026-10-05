@@ -1,0 +1,29 @@
+{
+  "artifact_set_id": "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf--gguf--ternary-bonsai-2-27b-uncensored-heretic-p.gguf--q2_0",
+  "auxiliary_bytes": null,
+  "companion_components": [
+    "docs",
+    "metadata",
+    "projector"
+  ],
+  "files": [
+    {
+      "extension": ".gguf",
+      "filename": "Ternary-Bonsai-2-27B-Uncensored-Heretic-PQ2_0.gguf",
+      "path": "Ternary-Bonsai-2-27B-Uncensored-Heretic-PQ2_0.gguf",
+      "source_reported_size_bytes": 7206168928
+    }
+  ],
+  "format": "GGUF",
+  "kind": "single",
+  "model_id": "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf",
+  "primary_weight_bytes": 7206168928,
+  "revision": "5ab50fd49410941a8d4f97912303b1c7d458ffa2",
+  "schema_version": "0.2.0",
+  "shard_count": 1,
+  "shard_total": null,
+  "shards_complete": null,
+  "total_source_reported_bytes": 7206168928,
+  "variant": "Q2_0",
+  "verification_status": "source_reported"
+}

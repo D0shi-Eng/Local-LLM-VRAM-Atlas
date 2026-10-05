@@ -1,0 +1,2531 @@
+{
+  "counts": {
+    "by_state": {
+      "BLOCKED": 1,
+      "CANDIDATE_READY": 6,
+      "CATALOG_ONLY": 12,
+      "STRICT_READY": 0
+    },
+    "core_candidates": 19,
+    "strict_recommendations": 0
+  },
+  "determinism": "state is a pure function of the persisted evidence snapshot, the catalog snapshot and the declared policies; no manual override exists",
+  "entries": [
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "qwen3",
+      "artifact_set_id": "quantfactory-qwen3-8b-gguf--gguf--qwen3-8b-gguf--q6_k",
+      "candidate_id": "core-12g-01-qwen3-8b-q6k",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-f2f6a96a0b8e4c170aa7a06d6982d72ab5cccc0a9401d9fce2935c1d848b2b33",
+        "ev-v2-52390b4af8d427e469d9e930d8228c0d91839614ae7ccf7557220e88ed59b0aa"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "2 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-f2f6a96a0b8e4c170aa7a06d6982d72ab5cccc0a9401d9fce2935c1d848b2b33",
+            "ev-v2-52390b4af8d427e469d9e930d8228c0d91839614ae7ccf7557220e88ed59b0aa"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=quantfactory-qwen3-8b-gguf--gguf--qwen3-8b-gguf--q6_k",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact",
+            "post-training quantized artifact: the base release's score is never transferred"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=unknown",
+          "reasons": [
+            "retention_status=unknown"
+          ],
+          "status": "missing"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=documented; container_format=GGUF",
+          "reasons": [],
+          "status": "present"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "16": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "4": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            },
+            "8": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=estimated_not_fit; 8GB=insufficient_evidence; 12GB=insufficient_evidence; 16GB=insufficient_evidence",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "quant_retention_when_post_training_quantized",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "quantfactory-qwen3-8b-gguf",
+      "native_low_bit": false,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": true,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "unknown",
+      "quantization_label": "Q6_K",
+      "readiness_state": "CANDIDATE_READY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "documented",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        12
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "qwen3_5",
+      "artifact_set_id": "unsloth-qwen3-8-27b-gguf--gguf--qwen3.8-27b-ud-gguf--iq3_s",
+      "candidate_id": "core-12g-02-qwen38-27b-iq3s",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-48098aadb545608229a944a046d93beb88bf4c95a2492b0231d16e38e091fb3a",
+        "ev-v2-1ea36149fdbce430ab5699a5ca0ef966ba746b4b64a8410fa0877f096772ca66"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "2 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-48098aadb545608229a944a046d93beb88bf4c95a2492b0231d16e38e091fb3a",
+            "ev-v2-1ea36149fdbce430ab5699a5ca0ef966ba746b4b64a8410fa0877f096772ca66"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=unsloth-qwen3-8-27b-gguf--gguf--qwen3.8-27b-ud-gguf--iq3_s",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact",
+            "post-training quantized artifact: the base release's score is never transferred"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=unknown",
+          "reasons": [
+            "retention_status=unknown"
+          ],
+          "status": "missing"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=documented; container_format=GGUF",
+          "reasons": [],
+          "status": "present"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "attention regime hybrid: Atlas has no state-cache model, so estimating from attention layers alone would understate memory and could create a false fit",
+              "state": "unsupported",
+              "strict": false
+            },
+            "16": {
+              "reason": "attention regime hybrid: Atlas has no state-cache model, so estimating from attention layers alone would understate memory and could create a false fit",
+              "state": "unsupported",
+              "strict": false
+            },
+            "4": {
+              "reason": "attention regime hybrid: Atlas has no state-cache model, so estimating from attention layers alone would understate memory and could create a false fit",
+              "state": "unsupported",
+              "strict": false
+            },
+            "8": {
+              "reason": "attention regime hybrid: Atlas has no state-cache model, so estimating from attention layers alone would understate memory and could create a false fit",
+              "state": "unsupported",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=unsupported; 8GB=unsupported; 12GB=unsupported; 16GB=unsupported",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "quant_retention_when_post_training_quantized",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "unsloth-qwen3-8-27b-gguf",
+      "native_low_bit": false,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": true,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "unknown",
+      "quantization_label": "IQ3_S",
+      "readiness_state": "CATALOG_ONLY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "documented",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        12
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "gpt_oss",
+      "artifact_set_id": "bartowski-openai-gpt-oss-20b-gguf--gguf--openai_gpt-oss-20b-gguf--mxfp4",
+      "candidate_id": "core-12g-03-gpt-oss-20b-mxfp4-gguf",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-abf8bacd76aae6192c4c3c6c4df9649b3ed1b435007be19c92abbf2cb9431d44",
+        "ev-v2-8712d51947710d074b774af97c58d04a4a949e6be148847df9fe982ce356cc41",
+        "ev-v2-f74ace1e553ebf2f032a21ea24ff8ab7dfa54afb9945e1ccc984afc764cc552e"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "3 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-abf8bacd76aae6192c4c3c6c4df9649b3ed1b435007be19c92abbf2cb9431d44",
+            "ev-v2-8712d51947710d074b774af97c58d04a4a949e6be148847df9fe982ce356cc41",
+            "ev-v2-f74ace1e553ebf2f032a21ea24ff8ab7dfa54afb9945e1ccc984afc764cc552e"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=bartowski-openai-gpt-oss-20b-gguf--gguf--openai_gpt-oss-20b-gguf--mxfp4",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=complete; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=unclear",
+          "reasons": [
+            "license_status=unclear; recorded without interpretation"
+          ],
+          "status": "missing"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=not_required_native_low_bit",
+          "reasons": [],
+          "status": "present"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=documented; container_format=GGUF",
+          "reasons": [],
+          "status": "present"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "16": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "4": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            },
+            "8": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=estimated_not_fit; 8GB=estimated_not_fit; 12GB=insufficient_evidence; 16GB=insufficient_evidence",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "unclear",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "license_status_acceptable",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "bartowski-openai-gpt-oss-20b-gguf",
+      "native_low_bit": true,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": false,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "not_required_native_low_bit",
+      "quantization_label": "MXFP_4",
+      "readiness_state": "CATALOG_ONLY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "documented",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        12
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "gpt_oss",
+      "artifact_set_id": "openai-gpt-oss-20b--safetensors--original/model.safetensors",
+      "candidate_id": "core-16g-01-gpt-oss-20b-native",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-f5ad0340c80e9c89786b644dd89a3e15348a04f1e5fc3540dad123d90c3df898",
+        "ev-v2-cef905cafaa76070c9e45084968fcbe5951e8659a49c138359e15ca40fbf731b",
+        "ev-v2-cb0eca164636eb72734067d93fb29eaf3da910fe0208a3ba4599dd935e54e98f"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "3 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-f5ad0340c80e9c89786b644dd89a3e15348a04f1e5fc3540dad123d90c3df898",
+            "ev-v2-cef905cafaa76070c9e45084968fcbe5951e8659a49c138359e15ca40fbf731b",
+            "ev-v2-cb0eca164636eb72734067d93fb29eaf3da910fe0208a3ba4599dd935e54e98f"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=openai-gpt-oss-20b--safetensors--original/model.safetensors",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=complete; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=not_required_native_low_bit",
+          "reasons": [],
+          "status": "present"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=partial; container_format=safetensors",
+          "reasons": [
+            "runtime_status=partial; runtime hints: ['Transformers']"
+          ],
+          "status": "missing"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            },
+            "16": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "4": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            },
+            "8": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=estimated_not_fit; 8GB=estimated_not_fit; 12GB=estimated_not_fit; 16GB=insufficient_evidence",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "runtime_compatibility_documented",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "openai-gpt-oss-20b",
+      "native_low_bit": true,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": false,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "not_required_native_low_bit",
+      "quantization_label": "native_mxfp4",
+      "readiness_state": "CATALOG_ONLY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "partial",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        16
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "qwen3_moe",
+      "artifact_set_id": "unsloth-qwen3-coder-30b-a3b-instruct-gguf--gguf--qwen3-coder-30b-a3b-instruct-gguf--q3_k_m",
+      "candidate_id": "core-16g-02-qwen3-coder-30b-q3km",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-d26c8854b1a962cd95d13ceb3b9521cff0e30856c4c8e734d9c87095d7797479",
+        "ev-v2-90c9731e26843ca7e9a4e7b7c6fc080d49b45aa48c8929c881167e4f113195a3"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "2 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-d26c8854b1a962cd95d13ceb3b9521cff0e30856c4c8e734d9c87095d7797479",
+            "ev-v2-90c9731e26843ca7e9a4e7b7c6fc080d49b45aa48c8929c881167e4f113195a3"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=unsloth-qwen3-coder-30b-a3b-instruct-gguf--gguf--qwen3-coder-30b-a3b-instruct-gguf--q3_k_m",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact",
+            "post-training quantized artifact: the base release's score is never transferred"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=unknown",
+          "reasons": [
+            "retention_status=unknown"
+          ],
+          "status": "missing"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=documented; container_format=GGUF",
+          "reasons": [],
+          "status": "present"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            },
+            "16": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "4": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            },
+            "8": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=estimated_not_fit; 8GB=estimated_not_fit; 12GB=estimated_not_fit; 16GB=insufficient_evidence",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "quant_retention_when_post_training_quantized",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "unsloth-qwen3-coder-30b-a3b-instruct-gguf",
+      "native_low_bit": false,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": true,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "unknown",
+      "quantization_label": "Q3_K_M",
+      "readiness_state": "CANDIDATE_READY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "documented",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        16
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "qwen3",
+      "artifact_set_id": "qwen-qwen3-8b--safetensors--model.safetensors",
+      "candidate_id": "core-16g-03-qwen3-8b",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-30574940a93ea8850c477759b573c90543017bbabda8bfc6c7fe754b9276635d",
+        "ev-v2-616bd2845ae0770dc6fa539882614287044e91cd209eddc875fd517fd89c3d82"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "2 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-30574940a93ea8850c477759b573c90543017bbabda8bfc6c7fe754b9276635d",
+            "ev-v2-616bd2845ae0770dc6fa539882614287044e91cd209eddc875fd517fd89c3d82"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=qwen-qwen3-8b--safetensors--model.safetensors",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=not_required_no_post_training_quantization",
+          "reasons": [],
+          "status": "present"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=partial; container_format=safetensors",
+          "reasons": [
+            "runtime_status=partial; runtime hints: ['Transformers']"
+          ],
+          "status": "missing"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            },
+            "16": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            },
+            "4": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            },
+            "8": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=estimated_not_fit; 8GB=estimated_not_fit; 12GB=estimated_not_fit; 16GB=estimated_not_fit",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "runtime_compatibility_documented",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "qwen-qwen3-8b",
+      "native_low_bit": false,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": false,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "not_required_no_post_training_quantization",
+      "quantization_label": "bf16",
+      "readiness_state": "CATALOG_ONLY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "partial",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        16
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "qwen3",
+      "artifact_set_id": "qwen-qwen3-0-6b--safetensors--model.safetensors",
+      "candidate_id": "core-4g-01-qwen3-0-6b",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-9b21dc1db3e56a84e071381d36c2d98358d8a8021c4708b8f9b5731865ae256e",
+        "ev-v2-ab90866732a8c3763db0db368cc5c3d79d345b1965716a4021744492cf8675f8"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "2 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-9b21dc1db3e56a84e071381d36c2d98358d8a8021c4708b8f9b5731865ae256e",
+            "ev-v2-ab90866732a8c3763db0db368cc5c3d79d345b1965716a4021744492cf8675f8"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=qwen-qwen3-0-6b--safetensors--model.safetensors",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=not_required_no_post_training_quantization",
+          "reasons": [],
+          "status": "present"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=partial; container_format=safetensors",
+          "reasons": [
+            "runtime_status=partial; runtime hints: ['Transformers']"
+          ],
+          "status": "missing"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "16": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "4": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "8": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=insufficient_evidence; 8GB=insufficient_evidence; 12GB=insufficient_evidence; 16GB=insufficient_evidence",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "runtime_compatibility_documented",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "qwen-qwen3-0-6b",
+      "native_low_bit": false,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": false,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "not_required_no_post_training_quantization",
+      "quantization_label": "bf16",
+      "readiness_state": "CATALOG_ONLY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "partial",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        4
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "unknown",
+      "artifact_set_id": "microsoft-bitnet-b1-58-2b-4t--safetensors--model.safetensors",
+      "candidate_id": "core-4g-02-bitnet-native",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-836adaaf35a3580451ca55c524c5bf57ff9d61ee0425e0996d6aa7e3301c3759",
+        "ev-v2-bbc1b7f00e4bb90f689ab0ef87b2e2bc15f10bd01eb36aa47d7878a06d835ac6",
+        "ev-v2-79aeeaa7650bb06c96043f9d970ebe3847dc85562966361979366de069904e71"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "3 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-836adaaf35a3580451ca55c524c5bf57ff9d61ee0425e0996d6aa7e3301c3759",
+            "ev-v2-bbc1b7f00e4bb90f689ab0ef87b2e2bc15f10bd01eb36aa47d7878a06d835ac6",
+            "ev-v2-79aeeaa7650bb06c96043f9d970ebe3847dc85562966361979366de069904e71"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=microsoft-bitnet-b1-58-2b-4t--safetensors--model.safetensors",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=not_required_native_low_bit",
+          "reasons": [],
+          "status": "present"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=partial; container_format=safetensors",
+          "reasons": [
+            "runtime_status=partial; runtime hints: ['Transformers']"
+          ],
+          "status": "missing"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "no trustworthy lower bound; unknown overhead blocks the decision",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "16": {
+              "reason": "no trustworthy lower bound; unknown overhead blocks the decision",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "4": {
+              "reason": "no trustworthy lower bound; unknown overhead blocks the decision",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "8": {
+              "reason": "no trustworthy lower bound; unknown overhead blocks the decision",
+              "state": "insufficient_evidence",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=insufficient_evidence; 8GB=insufficient_evidence; 12GB=insufficient_evidence; 16GB=insufficient_evidence",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "runtime_compatibility_documented",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "microsoft-bitnet-b1-58-2b-4t",
+      "native_low_bit": true,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": false,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "not_required_native_low_bit",
+      "quantization_label": "native_1.58bit",
+      "readiness_state": "CATALOG_ONLY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "partial",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        4
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "unknown",
+      "artifact_set_id": "microsoft-bitnet-b1-58-2b-4t-gguf--gguf--ggml-model-i2_s.gguf",
+      "candidate_id": "core-4g-03-bitnet-gguf-i2s",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-e069ae0ef1adabae4a32382af2da2bff1b4a7636a4d7c7a2df84af8a67167d09"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "1 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-e069ae0ef1adabae4a32382af2da2bff1b4a7636a4d7c7a2df84af8a67167d09"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=microsoft-bitnet-b1-58-2b-4t-gguf--gguf--ggml-model-i2_s.gguf",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=not_required_no_post_training_quantization",
+          "reasons": [],
+          "status": "present"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=documented; container_format=GGUF",
+          "reasons": [],
+          "status": "present"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+              "state": "unsupported",
+              "strict": false
+            },
+            "16": {
+              "reason": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+              "state": "unsupported",
+              "strict": false
+            },
+            "4": {
+              "reason": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+              "state": "unsupported",
+              "strict": false
+            },
+            "8": {
+              "reason": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+              "state": "unsupported",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=unsupported; 8GB=unsupported; 12GB=unsupported; 16GB=unsupported",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "microsoft-bitnet-b1-58-2b-4t-gguf",
+      "native_low_bit": false,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": false,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "not_required_no_post_training_quantization",
+      "quantization_label": "unlabeled_gguf_variant",
+      "readiness_state": "CATALOG_ONLY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "documented",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        4
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "qwen2",
+      "artifact_set_id": "bartowski-qwen2-5-7b-instruct-gguf--gguf--qwen2.5-7b-instruct-gguf--iq3_xs",
+      "candidate_id": "core-4g-04-qwen2-5-7b-iq3xs",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-c74a9ea0df4ca728c86e7aa0bc458cf9ca4e756ddab8107511d14f886f716bd4",
+        "ev-v2-014466baf8dbf1ec49df54e976aaa0e88fd0faac6ecc8574a3a77b47783696c8"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "2 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-c74a9ea0df4ca728c86e7aa0bc458cf9ca4e756ddab8107511d14f886f716bd4",
+            "ev-v2-014466baf8dbf1ec49df54e976aaa0e88fd0faac6ecc8574a3a77b47783696c8"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=bartowski-qwen2-5-7b-instruct-gguf--gguf--qwen2.5-7b-instruct-gguf--iq3_xs",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact",
+            "post-training quantized artifact: the base release's score is never transferred"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=unknown",
+          "reasons": [
+            "retention_status=unknown"
+          ],
+          "status": "missing"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=documented; container_format=GGUF",
+          "reasons": [],
+          "status": "present"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "16": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "4": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "8": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=insufficient_evidence; 8GB=insufficient_evidence; 12GB=insufficient_evidence; 16GB=insufficient_evidence",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "quant_retention_when_post_training_quantized",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "bartowski-qwen2-5-7b-instruct-gguf",
+      "native_low_bit": false,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": true,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "unknown",
+      "quantization_label": "IQ3_XS",
+      "readiness_state": "CANDIDATE_READY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "documented",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        4
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "qwen3",
+      "artifact_set_id": "quantfactory-qwen3-8b-gguf--gguf--qwen3-8b-gguf--q2_k",
+      "candidate_id": "core-4g-05-qwen3-8b-q2k",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-0569495b7023482b0ee113d371b43231b5d956f464e94668cd4014c827fd51dc",
+        "ev-v2-f420855ac6971857b133ce7279f8e3c606796c19303895a932214a7423172070"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "2 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-0569495b7023482b0ee113d371b43231b5d956f464e94668cd4014c827fd51dc",
+            "ev-v2-f420855ac6971857b133ce7279f8e3c606796c19303895a932214a7423172070"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=quantfactory-qwen3-8b-gguf--gguf--qwen3-8b-gguf--q2_k",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact",
+            "post-training quantized artifact: the base release's score is never transferred"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=unknown",
+          "reasons": [
+            "retention_status=unknown"
+          ],
+          "status": "missing"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=documented; container_format=GGUF",
+          "reasons": [],
+          "status": "present"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "16": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "4": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            },
+            "8": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=estimated_not_fit; 8GB=insufficient_evidence; 12GB=insufficient_evidence; 16GB=insufficient_evidence",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "quant_retention_when_post_training_quantized",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "quantfactory-qwen3-8b-gguf",
+      "native_low_bit": false,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": true,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "unknown",
+      "quantization_label": "Q2_K",
+      "readiness_state": "CANDIDATE_READY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "documented",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        4
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "llama",
+      "artifact_set_id": "tinyllama-tinyllama-1-1b-chat-v1-0--safetensors--model.safetensors",
+      "candidate_id": "core-4g-06-tinyllama-1-1b",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-25e40e64d8877a69eed95591802b73c2644954d6e0b0e3a1e80a6dae3882db50",
+        "ev-v2-05e03fcd5a8a8fc7ed87012d9fae3fecfff778d4addc2cff2d923aaf8e18b7b2"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "2 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-25e40e64d8877a69eed95591802b73c2644954d6e0b0e3a1e80a6dae3882db50",
+            "ev-v2-05e03fcd5a8a8fc7ed87012d9fae3fecfff778d4addc2cff2d923aaf8e18b7b2"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=tinyllama-tinyllama-1-1b-chat-v1-0--safetensors--model.safetensors",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=not_required_no_post_training_quantization",
+          "reasons": [],
+          "status": "present"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=partial; container_format=safetensors",
+          "reasons": [
+            "runtime_status=partial; runtime hints: ['Transformers']"
+          ],
+          "status": "missing"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "no trustworthy lower bound; unknown overhead blocks the decision",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "16": {
+              "reason": "no trustworthy lower bound; unknown overhead blocks the decision",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "4": {
+              "reason": "no trustworthy lower bound; unknown overhead blocks the decision",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "8": {
+              "reason": "no trustworthy lower bound; unknown overhead blocks the decision",
+              "state": "insufficient_evidence",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=insufficient_evidence; 8GB=insufficient_evidence; 12GB=insufficient_evidence; 16GB=insufficient_evidence",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "runtime_compatibility_documented",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "tinyllama-tinyllama-1-1b-chat-v1-0",
+      "native_low_bit": false,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": false,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "not_required_no_post_training_quantization",
+      "quantization_label": "bf16",
+      "readiness_state": "CATALOG_ONLY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "partial",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        4
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "qwen2",
+      "artifact_set_id": "bartowski-qwen2-5-7b-instruct-gguf--gguf--qwen2.5-7b-instruct-gguf--q4_k_m",
+      "candidate_id": "core-8g-01-qwen2-5-7b-q4km",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-e879f109497f717d6fbe45cb85252722be8e3acd47cfc6a42a57daada150e91f",
+        "ev-v2-04112f88265579e84c3e14afc924ca942740aa877911bdd25bc43d076a9f58ff"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "2 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-e879f109497f717d6fbe45cb85252722be8e3acd47cfc6a42a57daada150e91f",
+            "ev-v2-04112f88265579e84c3e14afc924ca942740aa877911bdd25bc43d076a9f58ff"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=bartowski-qwen2-5-7b-instruct-gguf--gguf--qwen2.5-7b-instruct-gguf--q4_k_m",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact",
+            "post-training quantized artifact: the base release's score is never transferred"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=unknown",
+          "reasons": [
+            "retention_status=unknown"
+          ],
+          "status": "missing"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=documented; container_format=GGUF",
+          "reasons": [],
+          "status": "present"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "16": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "4": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            },
+            "8": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=estimated_not_fit; 8GB=insufficient_evidence; 12GB=insufficient_evidence; 16GB=insufficient_evidence",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "quant_retention_when_post_training_quantized",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "bartowski-qwen2-5-7b-instruct-gguf",
+      "native_low_bit": false,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": true,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "unknown",
+      "quantization_label": "Q4_K_M",
+      "readiness_state": "CANDIDATE_READY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "documented",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        8
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "qwen3",
+      "artifact_set_id": "quantfactory-qwen3-8b-gguf--gguf--qwen3-8b-gguf--q4_k_m",
+      "candidate_id": "core-8g-02-qwen3-8b-q4km",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-33a9e91a5de7cc8738dda3ee6d9da09a0fae61d70c6ac3fb5029af65746b2c02",
+        "ev-v2-5f5ffcd865a302204a34dd8659bdefb20865afd95b13eb088702e2a15112ffbb"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "2 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-33a9e91a5de7cc8738dda3ee6d9da09a0fae61d70c6ac3fb5029af65746b2c02",
+            "ev-v2-5f5ffcd865a302204a34dd8659bdefb20865afd95b13eb088702e2a15112ffbb"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=quantfactory-qwen3-8b-gguf--gguf--qwen3-8b-gguf--q4_k_m",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact",
+            "post-training quantized artifact: the base release's score is never transferred"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=unknown",
+          "reasons": [
+            "retention_status=unknown"
+          ],
+          "status": "missing"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=documented; container_format=GGUF",
+          "reasons": [],
+          "status": "present"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "16": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "4": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            },
+            "8": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=estimated_not_fit; 8GB=insufficient_evidence; 12GB=insufficient_evidence; 16GB=insufficient_evidence",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "quant_retention_when_post_training_quantized",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "quantfactory-qwen3-8b-gguf",
+      "native_low_bit": false,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": true,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "unknown",
+      "quantization_label": "Q4_K_M",
+      "readiness_state": "CANDIDATE_READY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "documented",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        8
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "qwen3",
+      "artifact_set_id": "qwen-qwen3-4b-instruct-2507--safetensors--model.safetensors",
+      "candidate_id": "core-8g-03-qwen3-4b-instruct-2507",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-a5addadfb9961fa895786fed69f9e70dbe37af44dc59e96f6f8b631f19cd4f32",
+        "ev-v2-30409b413167ff2b2fcd7569bc1361f2cd5028c2770ff98a48b11947a80ce051"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "2 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-a5addadfb9961fa895786fed69f9e70dbe37af44dc59e96f6f8b631f19cd4f32",
+            "ev-v2-30409b413167ff2b2fcd7569bc1361f2cd5028c2770ff98a48b11947a80ce051"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=qwen-qwen3-4b-instruct-2507--safetensors--model.safetensors",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=not_required_no_post_training_quantization",
+          "reasons": [],
+          "status": "present"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=partial; container_format=safetensors",
+          "reasons": [
+            "runtime_status=partial; runtime hints: ['Transformers']"
+          ],
+          "status": "missing"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "16": {
+              "reason": "reliable upper bound unavailable; runtime overhead unknown",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "4": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            },
+            "8": {
+              "reason": "trustworthy lower bound alone exceeds tier capacity",
+              "state": "estimated_not_fit",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=estimated_not_fit; 8GB=estimated_not_fit; 12GB=insufficient_evidence; 16GB=insufficient_evidence",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "runtime_compatibility_documented",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "qwen-qwen3-4b-instruct-2507",
+      "native_low_bit": false,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": false,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "not_required_no_post_training_quantization",
+      "quantization_label": "bf16",
+      "readiness_state": "CATALOG_ONLY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "partial",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        8
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "phi",
+      "artifact_set_id": "microsoft-phi-3-mini-4k-instruct--safetensors--model.safetensors",
+      "candidate_id": "core-8g-04-phi-3-mini-4k",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-e0c19c11ebb40e0490dc42ad4f097f0fc8f4648303dc2398b3f26c0ebb927345",
+        "ev-v2-4becb85aaecb45adb3cc54d2b0258b74284e8f01b2466749c50c9b40536d1515"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "2 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-e0c19c11ebb40e0490dc42ad4f097f0fc8f4648303dc2398b3f26c0ebb927345",
+            "ev-v2-4becb85aaecb45adb3cc54d2b0258b74284e8f01b2466749c50c9b40536d1515"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=microsoft-phi-3-mini-4k-instruct--safetensors--model.safetensors",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=not_required_no_post_training_quantization",
+          "reasons": [],
+          "status": "present"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=partial; container_format=safetensors",
+          "reasons": [
+            "runtime_status=partial; runtime hints: ['Transformers']"
+          ],
+          "status": "missing"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "no trustworthy lower bound; unknown overhead blocks the decision",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "16": {
+              "reason": "no trustworthy lower bound; unknown overhead blocks the decision",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "4": {
+              "reason": "no trustworthy lower bound; unknown overhead blocks the decision",
+              "state": "insufficient_evidence",
+              "strict": false
+            },
+            "8": {
+              "reason": "no trustworthy lower bound; unknown overhead blocks the decision",
+              "state": "insufficient_evidence",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=insufficient_evidence; 8GB=insufficient_evidence; 12GB=insufficient_evidence; 16GB=insufficient_evidence",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "runtime_compatibility_documented",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "microsoft-phi-3-mini-4k-instruct",
+      "native_low_bit": false,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": false,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "not_required_no_post_training_quantization",
+      "quantization_label": "bf16",
+      "readiness_state": "CATALOG_ONLY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "partial",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        8
+      ]
+    },
+    {
+      "alignment_variant": "unknown",
+      "arabic_quality": "unknown",
+      "architecture_family": "unknown",
+      "artifact_set_id": "prism-ml-ternary-bonsai-2-27b-gguf--gguf--ternary-bonsai-2-27b-p.gguf--tq1_0",
+      "candidate_id": "core-8g-05-ternary-bonsai-tq1",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-bf56dd9adf3691ce62d40d89110878c15157ff225dcfa0c5dacfd71dd4b2abdb"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "1 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-bf56dd9adf3691ce62d40d89110878c15157ff225dcfa0c5dacfd71dd4b2abdb"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=prism-ml-ternary-bonsai-2-27b-gguf--gguf--ternary-bonsai-2-27b-p.gguf--tq1_0",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=publisher_or_community_only",
+          "reasons": [
+            "origins=['publisher']; no independent evaluation run",
+            "post-training quantized artifact: the base release's score is never transferred"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=insufficient_evidence",
+          "reasons": [
+            "retention_status=insufficient_evidence"
+          ],
+          "status": "missing"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=documented; container_format=GGUF",
+          "reasons": [],
+          "status": "present"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+              "state": "unsupported",
+              "strict": false
+            },
+            "16": {
+              "reason": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+              "state": "unsupported",
+              "strict": false
+            },
+            "4": {
+              "reason": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+              "state": "unsupported",
+              "strict": false
+            },
+            "8": {
+              "reason": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+              "state": "unsupported",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=unsupported; 8GB=unsupported; 12GB=unsupported; 16GB=unsupported",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "independent_multi_source_quality",
+        "quant_retention_when_post_training_quantized",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "prism-ml-ternary-bonsai-2-27b-gguf",
+      "native_low_bit": false,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": true,
+      "quality_state": "publisher_or_community_only",
+      "quant_retention_state": "insufficient_evidence",
+      "quantization_label": "TQ1_0",
+      "readiness_state": "CATALOG_ONLY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "documented",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        8
+      ]
+    },
+    {
+      "alignment_variant": "uncensored",
+      "arabic_quality": "unknown",
+      "architecture_family": "unknown",
+      "artifact_set_id": "orenguteng-llama-3-1-8b-lexi-uncensored-gguf--gguf--llama-3.1-8b-lexi-uncensored-gguf--q4",
+      "candidate_id": "core-8g-06-llama31-lexi-uncensored-q4",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-55bcea5e81b8a0e618664593cda050549745656bf0efb87f6c57d59e71a0a7b3"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "1 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-55bcea5e81b8a0e618664593cda050549745656bf0efb87f6c57d59e71a0a7b3"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=orenguteng-llama-3-1-8b-lexi-uncensored-gguf--gguf--llama-3.1-8b-lexi-uncensored-gguf--q4",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact",
+            "post-training quantized artifact: the base release's score is never transferred"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=unclear",
+          "reasons": [
+            "license_status=unclear; recorded without interpretation"
+          ],
+          "status": "missing"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=unknown",
+          "reasons": [
+            "retention_status=unknown"
+          ],
+          "status": "missing"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=documented; container_format=GGUF",
+          "reasons": [],
+          "status": "present"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+              "state": "unsupported",
+              "strict": false
+            },
+            "16": {
+              "reason": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+              "state": "unsupported",
+              "strict": false
+            },
+            "4": {
+              "reason": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+              "state": "unsupported",
+              "strict": false
+            },
+            "8": {
+              "reason": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+              "state": "unsupported",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=unsupported; 8GB=unsupported; 12GB=unsupported; 16GB=unsupported",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "unclear",
+      "missing_gates": [
+        "alignment_variant_without_declared_lineage",
+        "independent_multi_source_quality",
+        "license_status_acceptable",
+        "quant_retention_when_post_training_quantized",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "orenguteng-llama-3-1-8b-lexi-uncensored-gguf",
+      "native_low_bit": false,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": true,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "unknown",
+      "quantization_label": "Q4",
+      "readiness_state": "BLOCKED",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "documented",
+      "schema_version": "0.1.0",
+      "state_reasons": [],
+      "strict_tiers": [],
+      "target_tiers": [
+        8
+      ]
+    },
+    {
+      "alignment_variant": "heretic",
+      "arabic_quality": "unknown",
+      "architecture_family": "unknown",
+      "artifact_set_id": "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf--gguf--ternary-bonsai-2-27b-uncensored-heretic-p.gguf--tq1_0",
+      "candidate_id": "core-8g-07-ternary-heretic-tq1",
+      "coding_quality": "unknown",
+      "current_evidence_ids": [
+        "ev-v2-ae5f074fec96b6dfb701644b8e5d6581db4174d1c9e2476639cd1e606e0c6347"
+      ],
+      "gates": {
+        "current_provenance_persisted": {
+          "detail": "1 new current evidence record(s)",
+          "evidence_ids": [
+            "ev-v2-ae5f074fec96b6dfb701644b8e5d6581db4174d1c9e2476639cd1e606e0c6347"
+          ],
+          "status": "present"
+        },
+        "exact_artifact_identity": {
+          "detail": "artifact_set_id=os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf--gguf--ternary-bonsai-2-27b-uncensored-heretic-p.gguf--tq1_0",
+          "status": "present"
+        },
+        "historical_sidecar_state": {
+          "detail": "sidecar_completeness=partial; historical references without sidecars remain evidence_sidecar_unavailable",
+          "status": "present"
+        },
+        "independent_multi_source_quality": {
+          "axes": {
+            "arabic": "unknown",
+            "coding": "unknown",
+            "general_quality": "unknown",
+            "long_context": "unknown",
+            "multilingual": "unknown",
+            "reasoning": "unknown"
+          },
+          "detail": "quality_state=unevaluated",
+          "reasons": [
+            "no exact evaluation result exists for this artifact",
+            "post-training quantized artifact: the base release's score is never transferred"
+          ],
+          "status": "missing"
+        },
+        "license_status_acceptable": {
+          "detail": "license_status=permissive",
+          "reasons": [],
+          "status": "present"
+        },
+        "no_evidence_fabrication": {
+          "detail": "every attached result is an exact, revision-aware record; historical sidecars remain unavailable and were not reconstructed",
+          "status": "present"
+        },
+        "no_unresolved_identity_conflict": {
+          "detail": "no identity conflict recorded",
+          "status": "present"
+        },
+        "quant_retention_when_post_training_quantized": {
+          "detail": "retention_state=unknown",
+          "reasons": [
+            "retention_status=unknown"
+          ],
+          "status": "missing"
+        },
+        "runtime_compatibility_documented": {
+          "detail": "runtime_status=documented; container_format=GGUF",
+          "reasons": [],
+          "status": "present"
+        },
+        "vram_fit_state_strict": {
+          "by_tier": {
+            "12": {
+              "reason": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+              "state": "unsupported",
+              "strict": false
+            },
+            "16": {
+              "reason": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+              "state": "unsupported",
+              "strict": false
+            },
+            "4": {
+              "reason": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+              "state": "unsupported",
+              "strict": false
+            },
+            "8": {
+              "reason": "num_hidden_layers / num_key_value_heads / head_dim are required by the standard KV equation and are not resolved from current evidence",
+              "state": "unsupported",
+              "strict": false
+            }
+          },
+          "detail": "no tier reaches estimated_fit: 4GB=unsupported; 8GB=unsupported; 12GB=unsupported; 16GB=unsupported",
+          "status": "refused",
+          "strict_tiers": []
+        }
+      },
+      "general_quality": "unknown",
+      "historical_sidecar_state": "evidence_sidecar_unavailable",
+      "license_status": "permissive",
+      "missing_gates": [
+        "alignment_variant_exact_evaluation:heretic",
+        "independent_multi_source_quality",
+        "quant_retention_when_post_training_quantized",
+        "vram_fit_state_strict"
+      ],
+      "model_id": "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf",
+      "native_low_bit": false,
+      "policy_id": "atlas-closure-readiness",
+      "policy_version": "0.1.0",
+      "post_training_quantized": true,
+      "quality_state": "unevaluated",
+      "quant_retention_state": "unknown",
+      "quantization_label": "TQ1_0",
+      "readiness_state": "CATALOG_ONLY",
+      "reasoning_quality": "unknown",
+      "recommendation_policy_id": "atlas-recommendation-policy",
+      "recommendation_policy_version": "0.6.0",
+      "runtime_status": "documented",
+      "schema_version": "0.1.0",
+      "state_reasons": [
+        "heretic variant: parent quality is reference only and no exact-variant evaluation exists"
+      ],
+      "strict_tiers": [],
+      "target_tiers": [
+        8,
+        16
+      ]
+    }
+  ],
+  "license_decision_required": true,
+  "observed_at": "2026-10-05T00:00:00Z",
+  "policy": {
+    "policy_id": "atlas-closure-readiness",
+    "policy_kind": "publication_readiness",
+    "policy_version": "0.1.0",
+    "rationale": "Publication readiness is reported honestly even when it is zero. Non-zero counts are never manufactured by relaxing a gate.",
+    "reference_date": "2026-10-05",
+    "rules": {
+      "derived_recommendation_policy": {
+        "policy_id": "atlas-recommendation-policy",
+        "policy_version": "0.6.0"
+      },
+      "manual_override_allowed": false,
+      "signals_that_cannot_raise_a_state": [
+        "downloads",
+        "likes",
+        "trending",
+        "parameter_count",
+        "artifact_byte_size",
+        "publisher_brand",
+        "release_recency",
+        "adoption"
+      ],
+      "states": [
+        "STRICT_READY",
+        "CANDIDATE_READY",
+        "CATALOG_ONLY",
+        "BLOCKED"
+      ],
+      "strict_gates": [
+        "exact_artifact_identity",
+        "current_provenance_persisted",
+        "license_status_acceptable",
+        "runtime_compatibility_documented",
+        "vram_fit_state_strict",
+        "independent_multi_source_quality",
+        "no_unresolved_identity_conflict",
+        "quant_retention_when_post_training_quantized",
+        "no_evidence_fabrication"
+      ],
+      "waivers_allowed": false
+    },
+    "schema_version": "0.1.0",
+    "source_assumptions": [
+      "Phase 6 recommendation policy remains authoritative for tier eligibility.",
+      "A quantized artifact without direct comparable retention evidence is never presented as equally evidenced to its base release.",
+      "An alignment-modified variant never inherits its parent's quality score.",
+      "A measurement on a larger GPU is memory-requirement evidence, not hardware verification on the target tier.",
+      "A missing evidence domain lowers a state; it never raises one."
+    ]
+  },
+  "policy_id": "atlas-closure-readiness",
+  "policy_version": "0.1.0",
+  "schema_version": "0.1.0",
+  "tier_coverage_blocker": true,
+  "tier_matrix": {
+    "12": {
+      "BLOCKED": 0,
+      "CANDIDATE_READY": 1,
+      "CATALOG_ONLY": 2,
+      "STRICT_READY": 0,
+      "core_candidates_in_tier": 3,
+      "strict_coverage_gap": true,
+      "top_blocking_gates": [
+        {
+          "candidates": 3,
+          "gate": "independent_multi_source_quality"
+        },
+        {
+          "candidates": 3,
+          "gate": "vram_fit_state_strict"
+        },
+        {
+          "candidates": 2,
+          "gate": "quant_retention_when_post_training_quantized"
+        }
+      ]
+    },
+    "16": {
+      "BLOCKED": 0,
+      "CANDIDATE_READY": 1,
+      "CATALOG_ONLY": 3,
+      "STRICT_READY": 0,
+      "core_candidates_in_tier": 4,
+      "strict_coverage_gap": true,
+      "top_blocking_gates": [
+        {
+          "candidates": 4,
+          "gate": "independent_multi_source_quality"
+        },
+        {
+          "candidates": 4,
+          "gate": "vram_fit_state_strict"
+        },
+        {
+          "candidates": 2,
+          "gate": "quant_retention_when_post_training_quantized"
+        }
+      ]
+    },
+    "4": {
+      "BLOCKED": 0,
+      "CANDIDATE_READY": 2,
+      "CATALOG_ONLY": 4,
+      "STRICT_READY": 0,
+      "core_candidates_in_tier": 6,
+      "strict_coverage_gap": true,
+      "top_blocking_gates": [
+        {
+          "candidates": 6,
+          "gate": "independent_multi_source_quality"
+        },
+        {
+          "candidates": 6,
+          "gate": "vram_fit_state_strict"
+        },
+        {
+          "candidates": 3,
+          "gate": "runtime_compatibility_documented"
+        }
+      ]
+    },
+    "8": {
+      "BLOCKED": 1,
+      "CANDIDATE_READY": 2,
+      "CATALOG_ONLY": 4,
+      "STRICT_READY": 0,
+      "core_candidates_in_tier": 7,
+      "strict_coverage_gap": true,
+      "top_blocking_gates": [
+        {
+          "candidates": 7,
+          "gate": "independent_multi_source_quality"
+        },
+        {
+          "candidates": 7,
+          "gate": "vram_fit_state_strict"
+        },
+        {
+          "candidates": 5,
+          "gate": "quant_retention_when_post_training_quantized"
+        }
+      ]
+    }
+  },
+  "view": "tier-readiness"
+}

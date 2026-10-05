@@ -1,0 +1,14 @@
+{
+  "claim_type": "quantization_property",
+  "evidence_id": "ev-v2-cb0eca164636eb72734067d93fb29eaf3da910fe0208a3ba4599dd935e54e98f",
+  "evidence_level": "publisher_claim",
+  "field_path": "quantization.native_quantization",
+  "notes": "Source-reported training-time quantization method 'mxfp4'; native low-bit is a training property, not a post-training quantization, so no base-vs-quant retention is implied",
+  "publisher": "openai",
+  "retrieved_at": "2026-10-05T00:00:00Z",
+  "schema_version": "0.1.0",
+  "source_id": "core-16g-01-gpt-oss-20b-native-current-src",
+  "source_type": "official_repo",
+  "source_url": "https://huggingface.co/openai/gpt-oss-20b",
+  "verification_status": "independently_verified"
+}

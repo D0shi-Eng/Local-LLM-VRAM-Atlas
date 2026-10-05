@@ -1,0 +1,15 @@
+{
+  "accessed_at": "2026-10-05T06:10:12.659336Z",
+  "archived_reference": null,
+  "authority_level": "tier_a_primary",
+  "commit_or_revision": "023679ed352de9bb66cc873c9009ce3482585c08",
+  "notes": "platform=hugging-face; repo_id=google/gemma-4-12B; requested_revision=main; resolved_revision=023679ed352de9bb66cc873c9009ce3482585c08; officiality_status=unverified (namespace alone never proves officiality)",
+  "published_at": null,
+  "publisher": "google",
+  "revision": "023679ed352de9bb66cc873c9009ce3482585c08",
+  "schema_version": "0.1.0",
+  "source_id": "google-gemma-4-12b-src-hf",
+  "source_type": "official_repo",
+  "title": "Hugging Face repository google/gemma-4-12B (publisher-published metadata)",
+  "url": "https://huggingface.co/google/gemma-4-12B"
+}
