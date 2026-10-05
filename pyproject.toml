@@ -1,0 +1,67 @@
+[project]
+name = "local-llm-vram-atlas"
+version = "0.1.0"
+description = "Evidence-aware atlas for local LLMs across 4/8/12/16 GB VRAM tiers: canonical records, quantization intelligence, architecture-aware memory analysis, quality evidence, recommendation readiness."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+keywords = [
+    "local-llm",
+    "vram",
+    "gguf",
+    "quantization",
+    "model-catalog",
+    "memory-analysis",
+    "recommendation-readiness",
+    "open-weight-models",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Natural Language :: Arabic",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+authors = [{ name = "Local LLM VRAM Atlas" }]
+dependencies = [
+    "jsonschema>=4.26.0",
+    "huggingface_hub>=2.1.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.10",
+]
+
+[build-system]
+# >=77 is required for the PEP 639 SPDX `license` expression and `license-files`.
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+markers = [
+    "live: tests that contact the public Hugging Face Hub (excluded from default offline runs)",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

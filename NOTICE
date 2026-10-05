@@ -1,0 +1,48 @@
+Local LLM VRAM Atlas
+Copyright 2026 Local LLM VRAM Atlas contributors
+
+This product includes software developed by the Local LLM VRAM Atlas
+contributors.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not
+use the files in this repository except in compliance with the License. A
+copy of the License is included in the LICENSE file at the repository root.
+
+---------------------------------------------------------------------------
+Scope of this notice
+---------------------------------------------------------------------------
+
+1. Project code and documentation
+   The Atlas source code, JSON Schema specifications, tests, generated
+   documentation and visual-identity assets in this repository are licensed
+   under the Apache License, Version 2.0.
+
+2. Model weights and model licences
+   This repository contains **no model weights**. It catalogs and analyzes
+   metadata and published evidence about third-party model releases. Every
+   referenced model remains the property of its respective publisher or
+   quantizer and is governed by its own licence, which is recorded per model
+   in the canonical catalog. This repository neither relicences nor
+   redistributes any external model, and no Apache-2.0 grant on Atlas code
+   extends to any third-party model, weight or derivative of one.
+
+3. Evidence sources
+   Recorded evidence (publisher documentation, published benchmark tables,
+   runtime documentation, official model cards) retains the rights of its
+   original authors and publishers. Atlas records factual observations and
+   source references for verification; it does not assert ownership of that
+   material.
+
+4. Trademarks
+   Product names, project names and logos referenced in catalog records or
+   documentation — including those of model publishers, quantizers and
+   inference runtimes — are the trademarks of their respective owners and
+   are used for identification only. The Atlas visual identity in
+   assets/branding/ is original work and is not derived from any third-party
+   brand mark.
+
+5. Affiliation
+   This project is not affiliated with, endorsed by, or sponsored by any
+   model publisher, quantizer, benchmark maintainer or inference runtime
+   mentioned in the catalog, unless such a relationship is explicitly
+   documented and evidenced.
