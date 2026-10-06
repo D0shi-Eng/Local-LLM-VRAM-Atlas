@@ -22,7 +22,7 @@ Given a trustworthy `[lower, upper]` range and a tier capacity:
 - no trustworthy bound, or an unsupported architecture →
   `insufficient_evidence` / `unsupported`
 
-`verified_fit` requires a real measurement and cannot be produced in Phase 2;
+`verified_fit` requires a real measurement and cannot be produced by estimation;
 there is no `tight fit` language until a headroom policy is calibrated, and no
 fixed percentage margin is applied silently.
 

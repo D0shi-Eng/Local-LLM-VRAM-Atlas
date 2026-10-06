@@ -2426,7 +2426,7 @@
     },
     "schema_version": "0.1.0",
     "source_assumptions": [
-      "Phase 6 recommendation policy remains authoritative for tier eligibility.",
+      "The recommendation policy remains authoritative for tier eligibility.",
       "A quantized artifact without direct comparable retention evidence is never presented as equally evidenced to its base release.",
       "An alignment-modified variant never inherits its parent's quality score.",
       "A measurement on a larger GPU is memory-requirement evidence, not hardware verification on the target tier.",

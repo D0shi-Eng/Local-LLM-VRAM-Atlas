@@ -4,7 +4,7 @@
 
 ## Status
 
-Phase 0 defines the quality bar. Catalog contributions open in a later phase; this
+The quality bar is defined for the implementation and its schemas. Catalog
 policy exists so the bar is fixed before any data arrives.
 
 ## What counts as a contribution

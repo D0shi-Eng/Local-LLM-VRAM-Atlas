@@ -39,7 +39,7 @@ class RateLimitedError(IntakeError):
 
 
 class AuthenticationRequiredError(IntakeError):
-    """تتطلب البيانات اعتمادًا ولا يجوز تجاوزها في المرحلة الأولى."""
+    """تتطلب البيانات اعتمادًا ولا يجوز تجاوزها دون تسجيل صريح."""
 
     status = "authentication_required"
 
@@ -69,7 +69,7 @@ class SourceUnavailableError(IntakeError):
 
 
 class UnsupportedMetadataError(IntakeError):
-    """نوع بيانات غير مدعوم في هذه المرحلة دون فقدان الحقيقة."""
+    """نوع بيانات غير مدعوم دون فقدان الحقيقة."""
 
     status = "unsupported_metadata"
 

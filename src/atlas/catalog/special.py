@@ -1,4 +1,4 @@
-"""Special-variant classification (Phase 4).
+"""Special-variant classification.
 
 Evidence-backed only. Never labels post-training quants as native, never
 merges ternary-native / post-training ternarization / TQ format, never

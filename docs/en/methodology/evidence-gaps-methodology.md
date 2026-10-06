@@ -1,4 +1,4 @@
-# Evidence Gaps Methodology (Phase 6)
+# Evidence Gaps Methodology
 
 Evidence gaps are a **feature of the catalog**, not a failure. Atlas reports
 what it does not know so that absence is never mistaken for strength or for

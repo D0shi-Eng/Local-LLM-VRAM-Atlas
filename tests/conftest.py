@@ -14,7 +14,7 @@ INVALID_DIR = FIXTURES_DIR / "invalid"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
-# إتاحة موديول الدعم المشترك لاختبارات الاستقبال (المرحلة الأولى).
+    # إتاحة موديول الدعم المشترك لاختبارات الاستقبال.
 _INTAKE_SUPPORT_DIR = REPO_ROOT / "tests" / "intake"
 if str(_INTAKE_SUPPORT_DIR) not in sys.path:
     sys.path.insert(0, str(_INTAKE_SUPPORT_DIR))

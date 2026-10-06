@@ -1,4 +1,4 @@
-# منهجية حل البنية (المرحلة الثالثة)
+# منهجية حل البنية
 
 > المقابل الإنجليزي: `docs/en/methodology/architecture-resolution.md`
 

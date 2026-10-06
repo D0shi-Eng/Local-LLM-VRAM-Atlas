@@ -3,7 +3,7 @@
 Every record comes from official runtime documentation observed at a stated
 date. Documentation states compatibility; it is never VRAM measurement
 evidence, and no performance numbers (tokens/sec, latency) are collected.
-Runtimes are never installed or executed in this phase.
+Runtimes are never installed or executed.
 """
 
 from __future__ import annotations

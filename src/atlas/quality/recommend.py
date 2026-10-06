@@ -1,4 +1,4 @@
-"""Recommendation readiness engine (Phase 6).
+"""Recommendation readiness engine.
 
 Strict eligibility requires every domain at once:
 QUALITY + VRAM fit + RUNTIME + LICENSE + VARIANT IDENTITY + EVIDENCE QUALITY.
@@ -16,7 +16,7 @@ from atlas.quality import QUALITY_SCHEMA_VERSION
 from atlas.quality.policy import RECOMMENDATION_POLICY
 from atlas.quality.retention import parent_reference_only
 
-# Map Phase 4 alignment classification onto the recommendation domain.
+# Map catalog alignment classification onto the recommendation domain.
 _ALIGNMENT_VARIANTS = ("uncensored", "abliterated", "heretic")
 
 _LICENSE_STATUS = {

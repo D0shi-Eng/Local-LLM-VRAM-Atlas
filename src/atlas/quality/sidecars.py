@@ -1,6 +1,6 @@
-"""Evidence sidecar completeness audit (Phase 6).
+"""Evidence sidecar completeness audit.
 
-Phase 5 reported 243 logical evidence references without persisted sidecars
+change detection reported 243 logical evidence references without persisted sidecars
 (by prior persist_bundle design, not by deletion). This module audits those
 references read-only and determines, per reference, whether a sidecar can be
 reconstructed *deterministically* from data Atlas already persists.
@@ -20,7 +20,7 @@ from pathlib import Path
 
 EVIDENCE_ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]{1,120}$")
 
-# Phase 1-4 intake wrote exactly these nine claims per model.
+# Intake wrote exactly these nine claims per model.
 LEGACY_CLAIMS = (
     ("license-license-id", "license_term"),
     ("openness", "openness_class"),

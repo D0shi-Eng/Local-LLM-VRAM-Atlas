@@ -1,4 +1,4 @@
-# Catalog Views Methodology (Phase 4)
+# Catalog Views Methodology
 
 > Generated from canonical records. Never hand-edited. Deterministic order.
 
@@ -32,4 +32,4 @@ deterministically for future consumers without duplicating full records.
 ## Related
 
 - `vram-tier-methodology.md`, `runtime-support-methodology.md`
-- `generated-documentation-policy.md` (this phase)
+- `generated-documentation-policy.md`

@@ -27,5 +27,5 @@ scores such as `0.92` are forbidden without a justified scientific model.
 Publisher statements remain publisher claims no matter how plausible;
 community channels (forums, chat logs) may motivate investigation but never
 fix the mathematical foundation, and any performance numbers encountered by
-accident never become rankings — Phase 2 covers memory and format only, and
+accident never become rankings: memory and format analysis covers arithmetic only, and
 quantization size never implies quality (`Q5 > Q4 > Q3` is not a verdict).

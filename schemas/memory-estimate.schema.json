@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://local-llm-vram-atlas.local/schemas/memory-estimate.schema.json",
   "title": "AtlasMemoryEstimate",
-  "description": "An evidence-aware VRAM estimate: ranged bounds, unknown components, formula versions, and calculation profile. Unknown never becomes zero; a lone file size never becomes a fit verdict. Specification version 0.2.0 (Phase 2).",
+  "description": "An evidence-aware VRAM estimate: ranged bounds, unknown components, formula versions, and calculation profile. Unknown never becomes zero; a lone file size never becomes a fit verdict. Specification version 0.2.0.",
   "type": "object",
   "additionalProperties": false,
   "required": [

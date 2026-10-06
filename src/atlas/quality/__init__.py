@@ -1,4 +1,4 @@
-"""Quality package (Phase 6).
+"""Quality package.
 
 Evidence-aware quality intelligence: benchmark identity/version handling,
 evaluation-result normalization, quantization retention, multi-axis quality

@@ -1,10 +1,10 @@
-# Runtime Knowledge Model Methodology (Phase 3)
+# Runtime Knowledge Model Methodology
 
 > Arabic counterpart: `docs/ar/methodology/runtime-knowledge-model.md`
 
 ## Knowledge, not execution
 
-Phase 3 builds knowledge about runtimes without installing or running them.
+The runtime knowledge base describes runtimes without installing or running them.
 Each capability record carries runtime, version/revision, backend, platform,
 artifact format, quantization family, architecture family, hardware
 requirement, support status, official source, observation date, and notes.
@@ -21,6 +21,6 @@ TensorRT-LLM, MLX-LM — only where official documentation supports the claim.
 
 A documented supported format is compatibility evidence, never VRAM
 measurement evidence. No performance numbers (tokens/sec, latency) are
-collected; Phase 3 is memory/architecture foundation. Runtime memory
+collected; the foundation is memory and architecture. Runtime memory
 profiles (`src/atlas/memory/runtime_profiles.py`) describe loading behavior
 with no invented overhead and remain distinct from compatibility claims.

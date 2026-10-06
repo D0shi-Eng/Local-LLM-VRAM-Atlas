@@ -1,10 +1,10 @@
-# Static Memory Modeling Methodology (Phase 3)
+# Static Memory Modeling Methodology
 
 > Arabic counterpart: `docs/ar/methodology/static-memory-modeling.md`
 
 ## What the static model covers
 
-The static model builds on Phase 2 with: artifact weight-storage evidence,
+The static model builds on the range estimate with artifact weight-storage evidence,
 architecture-derived cache calculations (global or layer-plan path), known
 auxiliary component sizes, and documented runtime-independent mathematics.
 Every calculation exposes `formula_id`, `formula_version`, inputs, input

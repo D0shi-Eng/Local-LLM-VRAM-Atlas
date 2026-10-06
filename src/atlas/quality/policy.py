@@ -1,4 +1,4 @@
-"""Versioned quality/recommendation policies (Phase 6).
+"""Versioned quality/recommendation policies.
 
 Policies are declared data, never template logic. Every threshold lives here
 with a documented rationale; no S/A/B/C bands are invented from intuition and
@@ -67,7 +67,7 @@ QUALITY_BAND_POLICY = {
     "rules": {
         "bands_defined": False,
         "reason": (
-            "No letter or numeric quality band is emitted in Phase 6: defensible bands require "
+            "No letter or numeric quality band is emitted: defensible bands require "
             "a populated cross-source benchmark population, which the current catalog does not "
             "have. Same-benchmark ranking is still available per benchmark+version+mode."
         ),
@@ -163,7 +163,7 @@ RECOMMENDATION_POLICY = {
         "brand_and_quantizer_bias": "forbidden",
     },
     "source_assumptions": [
-        "VRAM fit states keep Phase 2-5 semantics; no tier verdict is weakened in Phase 6.",
+        "VRAM fit states keep established semantics; no tier verdict is weakened.",
         "Atlas performs no measurement, so every VRAM state is an estimate or is insufficient.",
         "A quantized artifact with unknown retention is disclosed as base-known, "
         "retention-unknown.",

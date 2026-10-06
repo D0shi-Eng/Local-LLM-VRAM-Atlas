@@ -1,4 +1,4 @@
-# Transactional Refresh (Phase 5)
+# Transactional Refresh
 
 Explicit apply only. No inspection command mutates canonical state.
 

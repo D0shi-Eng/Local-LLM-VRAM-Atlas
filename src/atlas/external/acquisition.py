@@ -1,4 +1,4 @@
-"""Phase 6.6 evidence acquisition: normalize, plan, validate, apply.
+"""Evidence acquisition: normalize, plan, validate, apply.
 
 Every fact persisted here was read during a bounded, anonymous, GET-only search
 and is recorded with its source URL, the observation date, the source revision
@@ -37,7 +37,7 @@ from atlas.intake.store import atomic_write_json
 ACQUISITION_SCHEMA_VERSION = "0.1.0"
 OBSERVED_AT = f"{REFERENCE_DATE}T00:00:00Z"
 
-#: Bounded research budget actually consumed by this phase (Gate 57).
+#: Bounded research budget actually consumed by external acquisition (Gate 57).
 DECLARED_REQUEST_CEILING = 300
 DECLARED_BYTE_CEILING = 8 * 1024 * 1024
 
@@ -58,7 +58,7 @@ def runtime_scoped_evidence_ids(evidence: list[dict]) -> list[str]:
     )
 
 
-#: Which canonical model record owns each Phase 6.6 evidence source.
+#: Which canonical model record owns each external evidence source.
 EVIDENCE_OWNER_BY_SOURCE_ID: dict[str, str] = {
     "prism-ml-bonsai-card": "prism-ml-ternary-bonsai-2-27b-gguf",
     "os-software-heretic-card": "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf",
@@ -300,7 +300,7 @@ SOURCES_CONSULTED: tuple[SourceObservation, ...] = (
         outcome=(
             "The public site is a client-rendered single-page application returning 1,066 bytes of "
             "shell HTML; no results are present in the served document. Results are published only "
-            "as Hugging Face datasets, which this phase must not download."
+            "as Hugging Face datasets, which this project must not download."
         ),
         yields_independent_evidence=False,
         note=(
@@ -325,8 +325,8 @@ SOURCES_CONSULTED: tuple[SourceObservation, ...] = (
         ),
         yields_independent_evidence=False,
         note=(
-            "Confirms the Phase 6 registry note. The internal data endpoint is not a documented "
-            "public surface and was deliberately not used."
+            "Confirms the quality-source registry note. The internal data endpoint is not "
+            "a documented public surface and was deliberately not used."
         ),
     ),
     SourceObservation(
@@ -490,7 +490,7 @@ SOURCES_CONSULTED: tuple[SourceObservation, ...] = (
         http_status=200,
         outcome=(
             "Retrieved (366,237 bytes) but not parsed: no PDF text-extraction library is available "
-            "to this environment, and installing one is outside a bounded evidence phase."
+            "to this environment, and installing one is outside a bounded evidence run."
         ),
         yields_independent_evidence=False,
         note=(
@@ -504,7 +504,7 @@ SOURCES_CONSULTED: tuple[SourceObservation, ...] = (
 
 @dataclass
 class AcquisitionPayload:
-    """Everything Phase 6.6 intends to persist, before anything is written."""
+    """Everything acquisition intends to persist, before anything is written."""
 
     evidence: list[dict] = field(default_factory=list)
     evidence_conditions: dict = field(default_factory=dict)
@@ -607,7 +607,7 @@ def prism_quality_class() -> str:
 
 
 def build_payload(*, repo_root: Path, core_set: dict, bonsai_discovery: dict, budget: dict) -> dict:
-    """Assemble the Phase 6.6 acquisition payload from verified observations.
+    """Assemble the acquisition payload from verified observations.
 
     Nothing is written here. The caller validates, then applies.
     """
@@ -692,7 +692,7 @@ def build_payload(*, repo_root: Path, core_set: dict, bonsai_discovery: dict, bu
                 "anywhere in Atlas. It does provide one harness under which the base and low-bit "
                 "sides are directly comparable, which is what a retention computation requires,"
                 "and "
-                "it is the Phase 6.6 extreme-compression investigation: a genuine sub-2-bit build "
+                "it is the extreme-compression investigation: a genuine sub-2-bit build "
                 "scored under the same suite as the FP16 reference."
             ),
         )
@@ -1026,8 +1026,8 @@ def _identity_findings(by_model: dict) -> list[dict]:
     """Exact-artifact discrepancies found in the catalog by external evidence.
 
     These are recorded, not silently repaired: repairing them would rewrite
-    artifact identity across the whole catalog, which is a wider change than an
-    evidence-closure phase may make on its own.
+    artifact identity across the whole catalog, which is a wider change than
+    evidence closure may make on its own.
     """
     return [
         {
@@ -1133,7 +1133,7 @@ def write_acquisition(
     payload: dict,
     dry_run: bool = True,
 ) -> dict:
-    """Persist Phase 6.6 evidence atomically and idempotently.
+    """Persist external evidence atomically and idempotently.
 
     Only new files are written. No existing canonical record is rewritten, so a
     partial failure leaves the previous snapshot intact.
@@ -1246,9 +1246,9 @@ def write_acquisition(
 
 
 def journal_acquisition(*, repo_root: Path, payload: dict) -> int:
-    """Append Phase 6.6 events to the existing Phase 5 journal.
+    """Append acquisition events to the existing change journal.
 
-    No new history system is introduced: the Phase 5/6 quality event builder and
+    No new history system is introduced: the quality event builder and
     the append-only journal file are reused, and events are deduplicated by id so
     re-running is idempotent.
     """
@@ -1265,7 +1265,7 @@ def journal_acquisition(*, repo_root: Path, payload: dict) -> int:
                 evidence_ids=[str(record["evidence_id"])],
                 changed_fields=[str(record.get("field_path") or "evidence")],
                 notes=(
-                    f"Phase 6.6 external read-only acquisition from {record.get('source_id')}; "
+                    f"External read-only acquisition from {record.get('source_id')}; "
                     f"origin={record.get('evidence_level')}"
                 ),
             )
@@ -1359,7 +1359,7 @@ def link_evidence_to_records(
 
 
 def load_acquisition(repo_root: Path, name: str) -> dict | None:
-    """Load one persisted Phase 6.6 external-evidence file, or None."""
+    """Load one persisted external-evidence file, or None."""
     path = repo_root / "catalog" / "closure" / "external" / name
     if not path.is_file():
         return None

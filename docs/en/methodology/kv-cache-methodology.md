@@ -30,7 +30,7 @@ Sliding-window layers cache at most the window, but the window formula
 runtime behavior are all known — otherwise the result is unknown. Multi-head
 Latent Attention (MLA) needs an architecture-specific latent-cache model;
 Mamba/SSM needs a recurrent state model (state dimensions plus convolution
-state); hybrid models need summed component-specific models. Phase 2 defines
+state); hybrid models need summed component-specific models. The cache model defines
 none of these, so all three refuse with
 `unsupported_architecture_for_estimation`. The architecture support matrix
 (`memory/architecture.py`) records per-family weight, cache, overhead, and

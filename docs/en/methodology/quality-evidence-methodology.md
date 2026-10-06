@@ -1,4 +1,4 @@
-# Quality Evidence Methodology (Phase 6)
+# Quality Evidence Methodology
 
 Atlas records quality as **evidence with an origin**, never as a number without
 provenance. A quality claim exists only when a benchmark result, an identified
@@ -43,7 +43,7 @@ is a first-class state in every profile and every recommendation result.
 ## Evidence completeness
 
 Every new quality claim requires a **persisted, schema-valid evidence record**.
-Logical-only references are forbidden for Phase 6 quality evidence. Historical
+Logical-only references are forbidden for quality evidence. Historical
 references that cannot be reconstructed deterministically from data Atlas
 already stores are recorded as `evidence_sidecar_unavailable`, an explicit
 limitation, rather than a fabricated sidecar.

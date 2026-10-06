@@ -1,6 +1,6 @@
 """Verify that every CLI command cited in publication documentation actually runs.
 
-Phase 7 authoring aid. Documentation that shows a command which does not exist,
+Authoring aid. Documentation that shows a command which does not exist,
 or which exits non-zero, is a publication defect: it sends a reader down a dead
 end.
 
@@ -148,9 +148,7 @@ def main(argv: list[str] | None = None) -> int:
             code, out, err = run(["validate", "--help"])
             checked += 1
             if code != 0:
-                problems.append(
-                    f"{citation!r} (from {sources[0]}): parser exit={code} {err[:200]}"
-                )
+                problems.append(f"{citation!r} (from {sources[0]}): parser exit={code} {err[:200]}")
             elif args.verbose:
                 print(f"  ok  [parse] {citation}  <- {sources[0]}")
             continue
@@ -161,8 +159,7 @@ def main(argv: list[str] | None = None) -> int:
         ok = code == 0 or (expected is not None and code in expected)
         if not ok:
             problems.append(
-                f"{citation!r} (from {sources[0]}): exit={code} :: "
-                f"{(err or out).strip()[:200]}"
+                f"{citation!r} (from {sources[0]}): exit={code} :: {(err or out).strip()[:200]}"
             )
         if args.verbose:
             first = (out.strip().splitlines() or ["<no output>"])[0]

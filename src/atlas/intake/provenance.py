@@ -50,7 +50,7 @@ def build_evidence_records(raw: RawModelMetadata, license_verification: str) -> 
 
     def entry(field: str, claim: str, level: str, status: str) -> dict:
         """بناء سجل دليل واحد بحقول موحدة قابلة للتدقيق."""
-        # Phase 5 V2: bounded digest ID over stable semantic inputs only
+        # Bounded digest ID over stable semantic inputs only
         # (source, repo, resolved revision, claim, field). No timestamps,
         # no volatile popularity, no filesystem paths. Revision-aware so
         # rev-A and rev-B evidence never share an ID.

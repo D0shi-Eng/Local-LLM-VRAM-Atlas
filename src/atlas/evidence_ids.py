@@ -39,7 +39,7 @@ def is_valid_evidence_id(value: object) -> bool:
 
 
 def legacy_evidence_id(model_id: str, field_path: str) -> str:
-    """Reproduce the Phase 1-4 generator exactly (for audit/migration only)."""
+    """Reproduce the original legacy generator exactly (for audit/migration only)."""
     slug = field_path.lower().replace(".", "-").replace("_", "-").replace("--", "-")
     return f"{model_id}-ev-{slug}"
 

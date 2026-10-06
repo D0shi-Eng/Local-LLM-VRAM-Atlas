@@ -1,4 +1,4 @@
-# Benchmark Comparability Methodology (Phase 6)
+# Benchmark Comparability Methodology
 
 Two scores may be compared only when everything that can change the number is
 identical. Anything unknown blocks the comparison instead of being assumed

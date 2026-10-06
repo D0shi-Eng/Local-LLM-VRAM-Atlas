@@ -1,4 +1,4 @@
-"""Controlled candidate discovery (Phase 4).
+"""Controlled candidate discovery.
 
 Read-only GET via the official Hugging Face Hub client with explicit
 ``token=False`` anonymous access. Sequential, low-concurrency, budgeted.
@@ -68,7 +68,7 @@ MAX_CANDIDATES_TOTAL = 120
 
 @dataclass
 class DiscoveryBudget:
-    """Counts discovery-phase requests; refuses to exceed the cap."""
+    """Counts candidate-discovery requests; refuses to exceed the cap."""
 
     limit: int = MAX_DISCOVERY_REQUESTS
     used: int = 0

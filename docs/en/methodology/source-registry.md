@@ -29,7 +29,7 @@ organization page, official docs cross-link, verified relationship) exists.
 
 ## Access rules
 
-Phase 1 entries are public and anonymous-only. Reachability of every
+Registry entries are public and anonymous-only. Reachability of every
 registry URL was verified with a light GET (HTTP 200, no redirect) at
 registry build time; no page content is copied into the project — only
 provenance references are stored.

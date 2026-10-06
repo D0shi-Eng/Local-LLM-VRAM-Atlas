@@ -1,4 +1,4 @@
-# Benchmark Identity Methodology (Phase 6)
+# Benchmark Identity Methodology
 
 A benchmark score is meaningless without an exact evaluated identity. Atlas
 attaches a result to a record only when publisher, repository, revision,

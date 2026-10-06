@@ -1,4 +1,4 @@
-"""Quality evidence-gap reporting (Phase 6).
+"""Quality evidence-gap reporting.
 
 Gaps are a feature, not a failure: this report states exactly which evidence
 domains are missing so the absence is never mistaken for a weakness.

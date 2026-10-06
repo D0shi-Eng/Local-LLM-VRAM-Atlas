@@ -1,6 +1,6 @@
-"""Current evidence reacquisition for Core Recommendation Set records (Phase 6.5).
+"""Current evidence reacquisition for Core Recommendation Set records.
 
-Phase 6 left 243 historical logical evidence references without persisted
+Quality ingestion left 243 historical logical evidence references without persisted
 sidecars. Those are never backfilled here: inventing historical provenance is
 forbidden. Instead, for Core records only, *current* evidence is acquired from
 public authoritative sources and persisted as new evidence with new V2 ids.
@@ -8,7 +8,7 @@ public authoritative sources and persisted as new evidence with new V2 ids.
 Rules enforced by this module:
 
 - anonymous public reads only (``token=False``), bounded requests and bytes;
-- metadata allowlist is the Phase 3 one (``config.json`` and index JSON on
+- metadata allowlist is the metadata-fetch one (``config.json`` and index JSON on
   ``huggingface.co``), so no weight payload can be reached;
 - every new evidence id is a V2 digest id, therefore structurally distinct
   from the legacy ``{model_id}-ev-{slug}`` historical references;
@@ -212,14 +212,14 @@ def probe_repository(
 
 
 def _read_config(repo_id: str, *, client: object | None, timeout: float) -> dict:
-    """Read config.json through the injected client or the Phase 3 allowlist."""
+    """Read config.json through the injected client or the metadata-fetch allowlist."""
     if client is not None and hasattr(client, "config_for"):
         return client.config_for(repo_id)
     return _fetch_config(repo_id, timeout=timeout)
 
 
 def _fetch_config(repo_id: str, *, timeout: float) -> dict:
-    """Fetch config.json through the Phase 3 metadata allowlist."""
+    """Fetch config.json through the metadata-fetch allowlist."""
     from atlas.security.metadata_fetch import fetch_small_json
 
     url = CONFIG_PATH_TEMPLATE.format(repo_id=repo_id)
@@ -505,7 +505,7 @@ def reacquire_candidate(
         "requests_used": spent["requests"],
         "bytes_fetched": spent["bytes"],
         "note": (
-            "New current evidence only. Historical Phase 1-4 references remain without "
+            "New current evidence only. Historical intake references remain without "
             "persisted sidecars and are not reconstructed."
         ),
     }
@@ -628,7 +628,7 @@ def link_new_evidence_to_records(
     """Reference every new evidence id from its canonical model record.
 
     Appending is additive and idempotent: historical identifiers are preserved
-    in place, never rewritten or removed, so the Phase 5/6 record of 243
+    in place, never rewritten or removed, so the recorded 243
     references without persisted sidecars stays exactly as it was while the new
     current evidence becomes traceable.
     """

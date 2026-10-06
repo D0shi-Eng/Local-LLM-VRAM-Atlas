@@ -1,4 +1,4 @@
-"""Phase 6.5 closure command implementations (dry-run first, bounded, local).
+"""Closure command implementations (dry-run first, bounded, local).
 
 Every subcommand starts, does bounded work and exits. Nothing listens, nothing
 runs in the background, no model is executed, and no weight payload is
@@ -290,7 +290,7 @@ def _audit(args: argparse.Namespace) -> int:
 
 
 def _external_evidence(args: argparse.Namespace) -> int:
-    """Phase 6.6 external evidence: research, normalize, dry-run, validate, apply.
+    """External evidence: research, normalize, dry-run, validate, apply.
 
     No network access happens here. The bounded read-only search already ran; this
     command only turns verified observations into canonical records, validates

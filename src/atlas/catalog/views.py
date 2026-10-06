@@ -1,4 +1,4 @@
-"""Generated catalog views + bilingual EN/AR indexes (Phase 4).
+"""Generated catalog views + bilingual EN/AR indexes.
 
 Same canonical data drives English and Arabic outputs. Deterministic
 ordering; timestamps only where documented (generated_at). Generated

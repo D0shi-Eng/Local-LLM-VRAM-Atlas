@@ -1,4 +1,4 @@
-"""Benchmark/quality source registry (Phase 6).
+"""Benchmark/quality source registry.
 
 Machine-readable registry of evaluation providers with explicit independence
 class, pinned methodology version and access method. Popularity sources never

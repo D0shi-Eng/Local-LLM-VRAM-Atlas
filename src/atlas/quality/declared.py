@@ -1,4 +1,4 @@
-"""Declared quality-evidence ingestion set (Phase 6).
+"""Declared quality-evidence ingestion set.
 
 Rows below are transcribed from public, publisher-published result tables that
 were read live at the reference date. Each row keeps its raw metric, its

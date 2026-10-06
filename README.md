@@ -330,6 +330,7 @@ Local-LLM-VRAM-Atlas/
 │   ├── benchmarks/           21 evaluation results
 │   ├── quality/              Profiles, retention, gaps
 │   ├── closure/              Core set, VRAM evidence, readiness
+│   ├── runtimes/             Runtime knowledge base and measurements
 │   └── views/                28 generated bilingual views
 │
 ├── docs/
@@ -344,7 +345,7 @@ Local-LLM-VRAM-Atlas/
 │   └── diagrams/             Bilingual figure index
 │
 ├── assets/branding/          Icon, banner, bilingual brand guidelines
-├── tests/                    687 offline tests, synthetic fixtures
+├── tests/                    701 tests, 17 domain directories, synthetic fixtures
 └── tools/                    Publication proofreading aids
 ```
 
@@ -360,9 +361,10 @@ Local-LLM-VRAM-Atlas/
 | All diagrams | [Figure index](docs/diagrams/README.md) |
 | Terminology | [Glossary](docs/en/terminology/glossary.md) |
 
-Documentation files carrying a `-phase-NN` suffix are **public methodology
-documents** that record the revision in which a method was established. They are
-not internal build reports.
+Methodology documents are named after the **method**, not after the order in
+which it was written: `quantization-registry-methodology.md`, never
+`phase-02-something.md`. Internal build reports are not published at all; see
+[repository architecture](docs/en/architecture/repository-architecture.md).
 
 ## Architecture and workflows
 

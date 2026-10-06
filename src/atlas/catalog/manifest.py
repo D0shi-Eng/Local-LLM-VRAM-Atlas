@@ -1,4 +1,4 @@
-"""Catalog manifest (Phase 4): deterministic machine-readable index."""
+"""Catalog manifest: deterministic machine-readable index."""
 
 from __future__ import annotations
 

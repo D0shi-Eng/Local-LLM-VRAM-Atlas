@@ -4,7 +4,7 @@
 
 ## Relations
 
-Phase 1 supports: `base_model`, `fine_tune_of`, `quantized_from`,
+Lineage supports: `base_model`, `fine_tune_of`, `quantized_from`,
 `derived_from`, `format_variant_of`, `official_variant_of`. Each edge
 records its source; `model_card_metadata` edges stay `publisher_declared`
 and are never auto-upgraded to `atlas_verified`.

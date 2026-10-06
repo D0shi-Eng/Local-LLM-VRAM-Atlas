@@ -22,8 +22,8 @@
 | قاعدة معرفة بيئات التشغيل، مشتقة من التوثيق وحده | [`src/atlas/runtimes/knowledge.py`](../../src/atlas/runtimes/knowledge.py) |
 | عقد سجل بيئة التشغيل | [`schemas/runtime.schema.json`](../../schemas/runtime.schema.json) |
 | فئات الدليل وهوية السجل | [`schemas/evidence.schema.json`](../../schemas/evidence.schema.json) |
-| كيف يُقيَّم دعم بيئة التشغيل | [`docs/ar/methodology/runtime-support-methodology.md`](../../ar/methodology/runtime-support-methodology.md) |
-| كيف تُبنى قاعدة معرفة بيئات التشغيل | [`docs/ar/methodology/runtime-knowledge-model.md`](../../ar/methodology/runtime-knowledge-model.md) |
+| كيف يُقيَّم دعم بيئة التشغيل | [`docs/ar/methodology/runtime-support-methodology.md`](../../docs/ar/methodology/runtime-support-methodology.md) |
+| كيف تُبنى قاعدة معرفة بيئات التشغيل | [`docs/ar/methodology/runtime-knowledge-model.md`](../../docs/ar/methodology/runtime-knowledge-model.md) |
 
 ## ما الذي يُحفظ هنا عند وجوده
 
@@ -41,5 +41,5 @@
 التشغيل المحلي المُرصد، أو تقرير مجتمعي، أو استنتاج من اسم ملف، فلا ينشئ سجل بيئة
 تشغيل.
 
-انظر [منهجية دعم بيئات التشغيل](../../ar/methodology/runtime-support-methodology.md)
+انظر [منهجية دعم بيئات التشغيل](../../docs/ar/methodology/runtime-support-methodology.md)
 للقاعدة الكاملة.

@@ -49,7 +49,7 @@ FORMULA_REGISTRY: dict[str, dict] = {
         "2 * sequences * effective_tokens(layer) * kv_heads(layer) * "
         "head_dim(layer) * bytes_per_element; layers without attention "
         "contribute zero only when explicitly marked; unknown stays unknown",
-        "source_refs": ["atlas-phase-03-layer-plan"],
+        "source_refs": ["atlas-layer-plan-v1"],
     },
 }
 

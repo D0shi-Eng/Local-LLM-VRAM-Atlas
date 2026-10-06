@@ -146,7 +146,7 @@ flowchart TB
   end
 
   subgraph INTERNAL["Internal engineering history - not published"]
-    PHASES["docs/phases/**<br/>build-phase reports"]
+    PHASES["docs/phases/**<br/>internal build reports"]
     RUNS["catalog/refresh/**<br/>volatile run records"]
     CKPT["catalog/checkpoints/**<br/>discovery checkpoints"]
     JRNL["catalog/changes/**<br/>operational change journal"]
@@ -184,7 +184,7 @@ The internal engineering history is not an oversight. It is excluded by design:
 
 | Excluded | Reason |
 |---|---|
-| `docs/phases/**` | Build-phase execution reports, closure reports and handoff inventories. Not public documentation. |
+| `docs/phases/**` | Internal build reports, closure reports and handoff inventories. Not public documentation. |
 | `catalog/refresh/**` | Volatile run records; regenerated on demand. |
 | `catalog/checkpoints/**` | Internal discovery scratch state. |
 | `catalog/changes/**` | Operational change journal; regenerable, and noisy as history. |

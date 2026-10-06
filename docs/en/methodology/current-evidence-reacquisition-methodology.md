@@ -1,11 +1,11 @@
-# Current Evidence Reacquisition Methodology (Phase 6.5)
+# Current Evidence Reacquisition Methodology
 
 > Arabic counterpart: `docs/ar/methodology/current-evidence-reacquisition-methodology.md`
 
 ## The problem
 
-Phase 1-4 intake wrote nine evidence references per model. By design those
-references were logical only, so Phase 5/6 measured **243 references without
+Intake wrote nine evidence references per model. By design those
+references were logical only, so change detection measured **243 references without
 persisted sidecars**. Those are not a bug to be deleted: they are the honest
 record of what Atlas cannot prove about the past.
 
@@ -30,7 +30,7 @@ all three are persisted:
 ## How current evidence is acquired
 
 - anonymous public reads only (`token=False`); no credential is read or sent;
-- the Phase 3 metadata allowlist is reused unchanged, so only `config.json`
+- the metadata-fetch allowlist is reused unchanged, so only `config.json`
   and index JSON on `huggingface.co` are reachable - no weight payload can be
   fetched by any code path;
 - bounded requests and bounded bytes, with the budget declared in code;

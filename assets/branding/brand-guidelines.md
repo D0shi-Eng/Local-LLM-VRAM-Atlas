@@ -125,7 +125,7 @@ This is a deliberate engineering constraint, not an oversight.
 |---|---|---|
 | `icon.svg` | Repository icon, light-surface default | 128 × 128 |
 | `icon-dark.svg` | Repository icon, dark-surface variant | 128 × 128 |
-| `banner.svg` | README header and social-preview source | 1280 × 360 |
+| `banner.svg` | README header and social-preview source art | 1280 × 360 |
 | `brand-guidelines.md` | This document | — |
 | `brand-guidelines_AR.md` | Arabic counterpart | — |
 
@@ -190,9 +190,24 @@ inkscape assets/branding/banner.svg --export-type=png \
   --export-filename=assets/branding/social-preview.png
 ```
 
-Then upload through repository settings rather than committing the PNG, unless a
-raster file is deliberately wanted in-tree. Keep the repository tree vector-only
-by default.
+Then upload through repository settings rather than committing the PNG. Keep the
+repository tree **vector-only**, so no raster file is tracked in this repository.
+
+### Delivering the social-preview card
+
+GitHub exposes **no REST endpoint** for the social-preview image. `GET` and `POST`
+on `repos/{owner}/{repo}/social-preview` both return `404`, so this cannot be
+automated with `gh api` and must be set once by the owner:
+
+1. Open the repository **Settings → General → Social preview**.
+2. Choose **Choose a preview image** and upload the 1280 × 640 PNG.
+3. Press **Save**.
+
+Requirements the uploaded file must meet: PNG, JPEG or GIF; between 2:1 and 3:1
+aspect; at least 640 × 320; no larger than 1 MB. A 1280 × 640 PNG satisfies all
+four, and renders correctly in GitHub's link previews, the profile card and the
+repository list.
+
 
 ---
 
@@ -211,7 +226,8 @@ by default.
 ```
 Primary mark          assets/branding/icon.svg          (light surface)
 Dark-surface mark     assets/branding/icon-dark.svg    (dark surface)
-Header / preview      assets/branding/banner.svg        1280 x 360
+Header (vector)       assets/branding/banner.svg        1280 x 360
+Social preview (raster) assets/branding/social-preview.png  1280 x 640  (uploaded, not tracked)
 Accent                #E8B45A light  /  #F0C070 dark   — evidence only
 Structural ramp       #3E7CB1 -> #1B3552 light         — 4 GB -> 16 GB
 Grid                  4 px sub-grid inside 128 x 128

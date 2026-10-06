@@ -1,4 +1,4 @@
-"""Exact model/revision identity matching for evaluation results (Phase 6).
+"""Exact model/revision identity matching for evaluation results.
 
 A score is attached to a catalog record only when the evaluated identity is
 resolvable to that exact record. Name similarity never produces a match:
@@ -18,7 +18,7 @@ MATCH_STATUSES = (
     "identity_conflict",
 )
 
-# Repo-id normalization shared with Phase 1/4 identity rules.
+# Repo-id normalization shared with intake and catalog identity rules.
 _SLUG_RE = re.compile(r"[^a-z0-9]+")
 
 

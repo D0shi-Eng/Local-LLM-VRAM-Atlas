@@ -276,6 +276,6 @@ def normalize(raw: RawModelMetadata) -> tuple[dict, list[str]]:
     }
     if quantization is not None:
         record["quantization"] = quantization
-    # لا تُسند أي طبقة VRAM في المرحلة الأولى: حقل vram يُحذف عمدًا.
+    # لا تُسند أي طبقة VRAM في الاستقبال: حقل vram يُحذف عمدًا.
     record.pop("vram", None)
     return record, warnings

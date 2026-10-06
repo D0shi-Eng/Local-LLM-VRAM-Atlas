@@ -1,4 +1,4 @@
-"""Quantization retention evidence (Phase 6).
+"""Quantization retention evidence.
 
 A retention number exists only when a base score and a quantized score come
 from the *same* comparable setup. Otherwise the state stays explicit

@@ -28,7 +28,7 @@ class TierSetResult:
     warnings: tuple[str, ...] = field(default_factory=tuple)
 
 
-# حالات التصنيف المسموحة؛ verified_fit تتطلب قياسًا خارج نطاق المرحلة.
+# حالات التصنيف المسموحة؛ verified_fit تتطلب قياسًا خارج نطاق الأدوات المتوفرة.
 CLASSIFICATION_STATES = (
     "estimated_fit",
     "indeterminate_fit",

@@ -1,4 +1,4 @@
-# Checkpoint Semantics (Phase 5)
+# Checkpoint Semantics
 
 No global cursor. One checkpoint per (discovery source, strategy,
 publisher/query, provider) under `catalog/checkpoints/`.
@@ -26,4 +26,4 @@ Rules:
   invocation processes it.
 - Scheduler-ready interface only: an external scheduler may one day run
   `start → one refresh → exit with documented code`. No scheduler, task,
-  service, or persistent process is created in Phase 5.
+  service or persistent process is ever created.

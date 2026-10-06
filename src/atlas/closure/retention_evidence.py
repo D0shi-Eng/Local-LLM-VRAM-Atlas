@@ -2,7 +2,7 @@
 
 Atlas computes a retention number only when a base score and a quantized score
 come from the same comparable setup. This module pairs exact base-release and
-exact quantized-artifact results and delegates the decision to the Phase 6
+exact quantized-artifact results and delegates the decision to the
 retention builder and comparability rules.
 
 Never performed here:
@@ -50,8 +50,8 @@ def _exact_results(evaluations: list[dict], *, require_quant: str | None) -> lis
 def _harness_divergence(base_result: dict | None, quant_result: dict | None) -> str | None:
     """Extra comparability gate on the evaluation harness identity.
 
-    Phase 6 compares benchmark id/version, metric, unit and evaluation modes.
-    Phase 6.5 adds one further requirement: the same harness/suite version must
+    Quality comparison uses benchmark id/version, metric, unit and evaluation modes.
+    Closure adds one further requirement: the same harness/suite version must
     have produced both numbers, because a different harness is a different
     measurement setup even when every declared setting matches.
     """

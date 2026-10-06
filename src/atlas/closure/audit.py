@@ -1,11 +1,11 @@
-"""Local secret and privacy audit for the project tree (Phase 6.5).
+"""Local secret and privacy audit for the project tree.
 
 Read-only, offline, and redaction-first. A finding never carries the full
 secret value: reports receive a prefix plus ``***REDACTED***``.
 
 This module does not publish, upload, or remediate anything. It produces an
-internal inventory for the owner so that a later phase can decide what, if
-anything, must be cleaned before publication.
+internal inventory for the owner so that a later, separately authorised
+cleanup can decide what, if anything, must change before publication.
 """
 
 from __future__ import annotations
@@ -228,7 +228,7 @@ def audit_project(*, root: Path) -> dict:
         "redaction": "every reported value is a prefix plus ***REDACTED***",
         "publication_blocker": any(f.severity in ("critical", "high") for f in secret_findings),
         "remediation": (
-            "not performed: this audit only inventories. Cleanup belongs to a later owner-approved "
-            "phase."
+            "not performed: this audit only inventories. Cleanup belongs to a later, "
+            "owner-approved effort."
         ),
     }

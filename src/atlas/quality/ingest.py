@@ -1,4 +1,4 @@
-"""Evaluation-result ingestion, normalization and persistence (Phase 6).
+"""Evaluation-result ingestion, normalization and persistence.
 
 Design rules:
 - raw source score and metric are preserved verbatim; a normalized score

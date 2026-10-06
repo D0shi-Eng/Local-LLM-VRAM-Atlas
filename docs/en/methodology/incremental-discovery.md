@@ -1,4 +1,4 @@
-# Incremental Discovery (Phase 5)
+# Incremental Discovery
 
 On-demand only. No daemon, no watcher, no server, no scheduler.
 
@@ -53,7 +53,7 @@ last_seen_identity, last_seen_revision, continuation_state, status`.
 ## Discovery ≠ qualification
 
 Trending/likes/downloads/sort order are popularity signals only. Every new
-candidate still passes the Phase-4 qualification pipeline
+candidate still passes the qualification pipeline
 (`qualified → verified`, `limited → experimental`, no auto-promotion).
 Processing priority (trusted source class, recency, 4–16 GB relevance,
 quantized artifacts) is never quality ranking.

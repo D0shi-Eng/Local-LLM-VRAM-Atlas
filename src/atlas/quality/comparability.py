@@ -1,4 +1,4 @@
-"""Benchmark identity, version handling and comparability rules (Phase 6).
+"""Benchmark identity, version handling and comparability rules.
 
 Two results are only comparable when *everything that changes the score* is
 identical: benchmark id and version, metric and unit, reasoning mode, tool

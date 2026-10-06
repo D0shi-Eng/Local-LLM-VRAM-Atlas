@@ -27,7 +27,7 @@ CHANGE_TYPES = (
     "runtime_evidence_changed",
     "source_officiality_changed",
     "popularity_changed",
-    # Phase 6 quality-evidence events (additive; severity is data-integrity
+    # Quality-evidence events (additive; severity is data-integrity
     # impact, never model quality or intelligence).
     "quality_evidence_added",
     "quality_evidence_updated",
@@ -35,7 +35,7 @@ CHANGE_TYPES = (
     "benchmark_superseded",
     "evaluation_identity_conflict",
     "retention_evidence_added",
-    # Phase 6.5 evidence-closure events (additive; same data-integrity semantics).
+    # Evidence-closure events (additive; same data-integrity semantics).
     "evidence_reacquired",
     "vram_evidence_recorded",
     "recommendation_status_changed",

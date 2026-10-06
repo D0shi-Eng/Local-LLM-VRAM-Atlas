@@ -60,8 +60,8 @@ Brand assets are documented separately and are not diagrams:
 
 | Asset | File |
 |---|---|
-| Repository icon (light surface) | [`assets/branding/icon.svg`](../assets/branding/icon.svg) |
-| Repository icon (dark surface) | [`assets/branding/icon-dark.svg`](../assets/branding/icon-dark.svg) |
-| Banner / social preview source | [`assets/branding/banner.svg`](../assets/branding/banner.svg) |
-| Brand guidelines (English) | [`assets/branding/brand-guidelines.md`](../assets/branding/brand-guidelines.md) |
-| Brand guidelines (Arabic) | [`assets/branding/brand-guidelines_AR.md`](../assets/branding/brand-guidelines_AR.md) |
+| Repository icon (light surface) | [`assets/branding/icon.svg`](../../assets/branding/icon.svg) |
+| Repository icon (dark surface) | [`assets/branding/icon-dark.svg`](../../assets/branding/icon-dark.svg) |
+| Banner / social preview source | [`assets/branding/banner.svg`](../../assets/branding/banner.svg) |
+| Brand guidelines (English) | [`assets/branding/brand-guidelines.md`](../../assets/branding/brand-guidelines.md) |
+| Brand guidelines (Arabic) | [`assets/branding/brand-guidelines_AR.md`](../../assets/branding/brand-guidelines_AR.md) |

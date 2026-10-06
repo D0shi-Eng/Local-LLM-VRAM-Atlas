@@ -1,4 +1,4 @@
-"""Canonical Atlas identity and duplicate resolution (Phase 4).
+"""Canonical Atlas identity and duplicate resolution.
 
 Separates MODEL FAMILY -> RELEASE/CHECKPOINT -> DERIVED/FINE-TUNE ->
 QUANTIZED VARIANT -> ARTIFACT SET -> REMOTE FILE(S).

@@ -1,4 +1,4 @@
-# Change Detection (Phase 5)
+# Change Detection
 
 Revision change ≠ semantic change. A new SHA may carry README-only edits.
 

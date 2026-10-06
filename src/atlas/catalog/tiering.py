@@ -1,6 +1,6 @@
-"""VRAM tiering integration (Phase 4).
+"""VRAM tiering integration.
 
-Uses only the established Phase 2/3 classifier. Never infers fit from
+Uses only the established VRAM classifier. Never infers fit from
 file size alone. Lower-bound-only without a trustworthy upper bound stays
 indeterminate/insufficient, never estimated_fit.
 """
@@ -16,15 +16,15 @@ TIER_GBS = tuple(SUPPORTED_TIERS_GB)
 
 
 def canonical_family_for(architecture_raw: object) -> str:
-    """Map a publisher architecture name to a Phase 3 canonical KV family.
+    """Map a publisher architecture name to a canonical KV family.
 
     Unknown stays unknown; BitNet/hybrid have no standard KV model. Shared by
-    Phase 4 record tiering and Phase 6.5 candidate-level estimation so a
+    catalog record tiering and closure candidate-level estimation so a
     second, divergent mapping never appears.
     """
     arch_raw = str(architecture_raw or "unknown")
     family = arch_raw.lower() if arch_raw != "unknown" else "unknown"
-    # Map publisher architecture names to Phase 3 canonical KV families.
+    # Map publisher architecture names to canonical KV families.
     # Unknown stays unknown; BitNet/hybrid have no standard KV model.
     if "qwen3" in family and "moe" in family:
         family = "qwen3_moe"

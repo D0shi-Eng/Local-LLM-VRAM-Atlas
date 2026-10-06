@@ -1,6 +1,6 @@
-# Recommendation Eligibility Methodology (Phase 6)
+# Recommendation Eligibility Methodology
 
-Phase 6 builds **recommendation readiness**, not a winner. A strict
+Recommendation readiness builds a defensible state, not a winner. A strict
 recommendation requires every domain to hold simultaneously.
 
 ## Required domains
@@ -34,7 +34,7 @@ result.
 
 If VRAM state is `insufficient_evidence`, `unsupported` or
 `indeterminate_fit`, the model is not presented as "strictly fits 8GB". The
-Phase 2-5 classifier semantics are not weakened in Phase 6: every VRAM state
+Existing classifier semantics are not weakened: every VRAM state
 here is the existing estimate state, carried through unchanged.
 
 Current catalog outcome: all 34 records classify as `insufficient_evidence`
@@ -52,7 +52,7 @@ without model, revision, quant, runtime, backend, context, batch, KV format,
 offload mode and stage is weak evidence.
 
 `atlas_measured` is never overloaded with external data: no Atlas measurement
-exists in Phase 6, and external evidence keeps its own origin label.
+is preserved, and external evidence keeps its own origin label.
 
 ## License handling
 

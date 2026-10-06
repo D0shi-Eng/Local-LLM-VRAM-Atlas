@@ -286,7 +286,7 @@ DECLARED_CORE_CANDIDATES: tuple[dict, ...] = (
 
 
 def closure_dir(repo_root: Path) -> Path:
-    """Canonical Phase 6.5 output directory."""
+    """Canonical closure output directory."""
     return repo_root / "catalog" / "closure"
 
 

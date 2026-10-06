@@ -1,7 +1,7 @@
-"""Quality change events on the Phase 5 journal (Phase 6).
+"""Quality change events on the append-only change journal.
 
 Quality evidence changes reuse the existing append-only change journal and the
-Phase 5 change taxonomy: Phase 6 does not create a second history mechanism.
+Refresh change taxonomy: quality evidence does not create a second history mechanism.
 
 Quality events carry data-integrity severity (never model quality): adding
 evidence is informational, a withdrawn result is medium, an unresolved
@@ -12,7 +12,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-# Phase 6 additions to the canonical Phase 5 taxonomy (see refresh.changes).
+# Quality additions to the canonical refresh taxonomy (see refresh.changes).
 QUALITY_EVENT_TYPES = (
     "quality_evidence_added",
     "quality_evidence_updated",
@@ -33,7 +33,7 @@ def quality_event(
     changed_fields: list[str] | None = None,
     notes: str | None = None,
 ) -> dict:
-    """Build one quality change event through the Phase 5 event builder.
+    """Build one quality change event through the change-event builder.
 
     ``subject_id`` (an evaluation_id, retention_id or profile_id) becomes the
     new fingerprint so event identity stays deterministic and idempotent.
@@ -56,7 +56,7 @@ def quality_event(
 
 
 def append_quality_events(changes_dir: Path, events: list[dict]) -> int:
-    """Append quality events through the Phase 5 journal (idempotent)."""
+    """Append quality events through the change journal (idempotent)."""
     from atlas.refresh.journal import append_events
 
     return append_events(changes_dir, events)

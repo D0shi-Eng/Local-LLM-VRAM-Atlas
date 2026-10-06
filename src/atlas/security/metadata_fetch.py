@@ -16,7 +16,7 @@ ALLOWED_SUFFIXES = (
     ".index.json",
 )
 
-# مضيفو المصادر المسموحين (Hugging Face فقط في المرحلة الثانية).
+# مضيفو المصادر المسموحين (مستودع عام واحد فقط).
 ALLOWED_HOSTS = ("huggingface.co", "cdn-lfs.huggingface.co")
 
 # حدود صارمة: حجم ومهلة وميزانية تراكمية.

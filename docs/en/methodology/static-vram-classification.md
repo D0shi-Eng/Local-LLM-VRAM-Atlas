@@ -1,8 +1,8 @@
-# Static VRAM Classification Methodology (Phase 3)
+# Static VRAM Classification Methodology
 
 > Arabic counterpart: `docs/ar/methodology/static-vram-classification.md`
 
-## Conservative range semantics (unchanged from Phase 2)
+## Conservative range semantics
 
 For 4/8/12/16 GB tiers against nominal capacity (`atlas-tier-nominal-v1`):
 a reliable upper bound at or under capacity yields `estimated_fit`; capacity
@@ -23,4 +23,4 @@ ground it. Calculated and measured stay terminologically separate.
 
 Recommended VRAM remains deferred until a headroom calibration policy
 exists (`not_calibrated`). There are no best-model lists, no top-model
-claims, no Atlas Score, and no rankings of any kind in this phase.
+claims, no Atlas Score, and no rankings of any kind.

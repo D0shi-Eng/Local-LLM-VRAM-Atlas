@@ -1,4 +1,4 @@
-# Generated Documentation Policy (Phase 4)
+# Generated Documentation Policy
 
 > Canonical records drive views. Markdown is generated, never a second database.
 

@@ -1,12 +1,12 @@
-"""Phase 6.6 — read-only inspection of an already-running local model server.
+"""Read-only inspection of an already-running local model server.
 
-The owner may already have a model server running. Phase 6.6 treats it as a
+The owner may already have a model server running. This module treats it as a
 pre-existing owner resource:
 
 - it is **inspected**, never started, restarted, stopped or reconfigured;
 - discovery is read-only: listening sockets, owning PID, executable path,
   command line, and the server's own publicly exposed model/status documents;
-- **inference is not performed by this phase.** The authorization guard below
+- **inference is not performed by this audit.** The authorization guard below
   exists so that "no diagnostic ran" is a structural fact rather than a promise,
   and so any future diagnostic would still be bounded to a tiny, justified,
   single-shot request.
@@ -34,7 +34,7 @@ LOOPBACK_HOSTS: frozenset[str] = frozenset({"127.0.0.1", "localhost", "::1", "[:
 
 ALLOWED_INSPECTION_METHODS: frozenset[str] = frozenset({"GET", "HEAD"})
 
-#: Hard diagnostic caps declared by Phase 6.6. These are maxima, not targets.
+#: Hard diagnostic caps declared by the external-evidence stage. These are maxima, not targets.
 MAX_DIAGNOSTIC_REQUESTS = 5
 MAX_DIAGNOSTIC_OUTPUT_TOKENS = 64
 MAX_DIAGNOSTIC_CONTEXT_TOKENS = 4096
@@ -167,7 +167,7 @@ def inspect(
     request = urllib.request.Request(
         url,
         method=str(method).upper(),
-        headers={"User-Agent": "atlas-phase6.6-local-inspection/0.1 (read-only)"},
+        headers={"User-Agent": "atlas-local-inspection/1.0 (read-only)"},
     )
     try:
         with opener.open(request, timeout=timeout) as response:  # noqa: S310
@@ -201,7 +201,7 @@ def inspect(
 class DiagnosticGuard:
     """Authorization guard for a hypothetical tiny Bonsai diagnostic.
 
-    Phase 6.6 planned **zero** diagnostic inference requests. This guard exists
+    Local inspection planned **zero** diagnostic inference requests. This guard exists
     so that outcome is enforced, not merely asserted: every refusal condition is
     a hard stop, and a request is refused unless identity, bounds and locality
     are all proven first.
@@ -296,7 +296,7 @@ def classify_local_observation(*, observation_kind: str) -> str:
     """Label a local observation honestly.
 
     Atlas never labels a value ``atlas_measured`` unless its own measurement
-    methodology produced it, and this phase performs no measurement. A value the
+    methodology produced it, and this audit performs no measurement. A value the
     runtime reported about itself is ``runtime_reported``; anything else observed
     from outside is a ``local_observation``.
     """

@@ -1,4 +1,4 @@
-"""External VRAM evidence handling and candidate-level fit states (Phase 6.5).
+"""External VRAM evidence handling and candidate-level fit states.
 
 Atlas performs no measurement. This module only:
 
@@ -7,7 +7,7 @@ Atlas performs no measurement. This module only:
 - decides whether an external measurement may support a tier verdict for one
   exact artifact, preserving runtime, context, KV format, offload, shared
   memory and hardware-tier distinctions;
-- feeds the Phase 2 estimator and Phase 2 classifier with newly reacquired
+- feeds the memory estimator and the VRAM classifier with newly reacquired
   architecture inputs for one exact artifact.
 
 Hard invariants:
@@ -273,7 +273,7 @@ def build_candidate_estimate(
 ) -> dict:
     """Estimate one exact artifact with reacquired architecture inputs.
 
-    The Phase 2 formulas and the Phase 2 classifier are used unchanged. No
+    The memory formulas and the VRAM classifier are used unchanged. No
     runtime overhead profile is invented, so the upper bound stays absent and
     the classifier's own semantics decide the tier state.
     """

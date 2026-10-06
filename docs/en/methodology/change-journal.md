@@ -1,4 +1,4 @@
-# Change Journal (Phase 5)
+# Change Journal
 
 Append-only, machine-readable (`catalog/changes/change-journal.jsonl`,
 one compact event per line). Historical events are never rewritten to

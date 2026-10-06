@@ -17,7 +17,7 @@ shards, no partial downloads, no byte-range header inspection.
 The future public repository must link users to original providers instead
 of rehosting weights. No model cache is ever populated (not even redirected
 to another drive). Remote payloads are metadata only: 2 MiB per document,
-25 MiB total per phase unless the owner explicitly approves otherwise.
+25 MiB total per run unless the owner explicitly approves otherwise.
 Regression tests prove the architecture and memory subsystems never call
-weight downloaders or loaders. Any weight download is an automatic Phase
+weight downloaders or loaders. Any weight download is an automatic
 FAIL unless fully remediated.

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://local-llm-vram-atlas.local/schemas/discovery-checkpoint.schema.json",
   "title": "AtlasDiscoveryCheckpoint",
-  "description": "Per-strategy discovery watermark. Specification version 0.5.0 (Phase 5, pre-1.0). Operational state only, never inside model records.",
+  "description": "Per-strategy discovery watermark. Specification version 0.5.0 (pre-1.0). Operational state only, never inside model records.",
   "type": "object",
   "additionalProperties": false,
   "required": ["strategy_id", "source_id", "provider", "status"],

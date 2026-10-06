@@ -1,4 +1,4 @@
-"""Phase 6.6 external evidence acquisition (bounded, read-only, GET/HEAD only).
+"""External evidence acquisition (bounded, read-only, GET/HEAD only).
 
 The mission of this package is narrow: acquire *public independent evidence*
 about exact catalog artifacts, with a hard request budget, no credentials, no
@@ -11,7 +11,7 @@ Design rules enforced structurally, not by convention:
   cloud-metadata and numeric-obfuscated hosts are refused before any socket is
   opened. A local inspection can therefore never become an external request.
 - An explicit host allowlist is required in addition: an arbitrary public host is
-  still refused unless it was registered as a Phase 6.6 evidence source.
+  still refused unless it was registered as an external evidence source.
 - Only ``GET`` and ``HEAD`` exist here. There is no ``POST``/``PUT``/``PATCH``/
   ``DELETE`` code path, so the external surface cannot mutate a remote resource.
 - Redirects are refused, never followed, so a redirect can never bounce a request
@@ -34,9 +34,9 @@ from atlas.intake.url_safety import assert_safe_url
 
 EXTERNAL_SCHEMA_VERSION = "0.1.0"
 
-USER_AGENT = "atlas-phase6.6-evidence/0.1 (read-only; GET/HEAD only)"
+USER_AGENT = "atlas-evidence-acquisition/1.0 (read-only; GET/HEAD only)"
 
-#: Phase 6.6 external evidence sources. Anything else is out of budget.
+#: External evidence sources. Anything else is out of budget.
 ALLOWED_EXTERNAL_HOSTS: tuple[str, ...] = (
     "aider.chat",
     "api.github.com",
@@ -50,7 +50,7 @@ ALLOWED_EXTERNAL_HOSTS: tuple[str, ...] = (
     "vlmevalkit.github.io",
 )
 
-#: Quality source classes Q1-Q5 (Phase 6 contract, reused unchanged).
+#: Quality source classes Q1-Q5 (quality-evidence contract, reused unchanged).
 QUALITY_SOURCE_CLASSES: tuple[str, ...] = ("Q1", "Q2", "Q3", "Q4", "Q5")
 
 QUALITY_SOURCE_CLASS_DEFINITIONS: dict[str, str] = {
@@ -182,7 +182,7 @@ def check_external_url(url: str) -> str:
 
     Rejects, in order: non-string/empty, unsafe host (loopback, private,
     cloud-metadata, obfuscated numeric, non-http(s)), non-https scheme, a host
-    outside the Phase 6.6 allowlist, and any weight-payload path.
+    outside the external-evidence allowlist, and any weight-payload path.
     """
     if not isinstance(url, str) or not url.strip():
         raise IntakeRejectedError("external evidence url must be a non-empty string")
@@ -192,7 +192,7 @@ def check_external_url(url: str) -> str:
         raise IntakeRejectedError(f"external evidence must use https: {url!r}")
     host = (parsed.hostname or "").lower()
     if host not in ALLOWED_EXTERNAL_HOSTS:
-        raise IntakeRejectedError(f"host not in the Phase 6.6 evidence allowlist: {host!r}")
+        raise IntakeRejectedError(f"host not in the external-evidence allowlist: {host!r}")
     if url_is_weight_payload(url):
         raise IntakeRejectedError(f"weight payload url refused: {url!r}")
     return host

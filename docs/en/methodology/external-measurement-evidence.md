@@ -1,4 +1,4 @@
-# External Measurement Evidence Methodology (Phase 3)
+# External Measurement Evidence Methodology
 
 > Arabic counterpart: `docs/ar/methodology/external-measurement-evidence.md`
 

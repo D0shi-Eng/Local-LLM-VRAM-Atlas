@@ -1,12 +1,12 @@
-# External VRAM Evidence Closure (Phase 6.5)
+# External VRAM Evidence Closure
 
 > Arabic counterpart: `docs/ar/methodology/external-vram-evidence-closure-methodology.md`
 
 ## Atlas never measures
 
-Atlas stores externally reported VRAM observations and performs none. The Phase 3
+Atlas stores externally reported VRAM observations and performs none. The
 measurement registry, its origins and its schema are reused unchanged. Atlas
-still has no `verified_fit` state and Phase 6.5 did not add one.
+still has no `verified_fit` state, and evidence closure did not add one.
 
 ## Evidence source classes
 
@@ -46,10 +46,10 @@ are never assumed.
 
 ## Why strict VRAM fit is currently zero
 
-The Phase 2 classifier declares `estimated_fit` only when a *reliable upper
+The VRAM classifier declares `estimated_fit` only when a *reliable upper
 bound* fits inside tier capacity. The upper bound requires runtime static and
 dynamic overhead. No Atlas runtime memory profile carries a documented overhead
-figure, and inventing one would be fabrication. Phase 6.5 therefore reports
+figure, and inventing one would be fabrication. Closure therefore reports
 `insufficient_evidence` for candidates whose lower bound is inside the tier,
 plus genuine evidence-based `estimated_not_fit` verdicts where the lower bound
 already exceeds capacity.

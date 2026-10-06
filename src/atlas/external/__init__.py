@@ -1,4 +1,4 @@
-"""Phase 6.6 external evidence acquisition package."""
+"""External evidence acquisition package."""
 
 from __future__ import annotations
 

@@ -4,7 +4,7 @@
 
 ## Meaning of `metadata_verified`
 
-In Phase 1, `metadata_verified` means exactly this: the required
+In the catalog, `metadata_verified` means exactly this: the required
 metadata for this stage was obtained, its provenance and structure were
 checked under the rules. It does not mean the model is good, smart, fast,
 fitting a VRAM budget, recommended, benchmark-verified, or safety-verified.
@@ -23,7 +23,7 @@ downloading; popularity kept as popularity; `unknown`/`null` preserved
 No parameter inference from repository names (`Model-7B` alone proves
 nothing). No file-size-to-VRAM inference (a dedicated regression test
 locks this: the canonical record carries no `vram` block at all in
-Phase 1). No advertised-context passed off as tested context. No runtime
+the base record). No advertised-context passed off as tested context. No runtime
 claim (`works with llama.cpp`) upgraded without a runtime test. No
 `uncensored` label treated as a capability verdict.
 

@@ -1,4 +1,4 @@
-# Quality Profiles Methodology (Phase 6)
+# Quality Profiles Methodology
 
 A quality profile is a **multi-axis** view of one model release, built
 deterministically from canonical evaluation records. Atlas does not create a
@@ -69,7 +69,7 @@ When two sources report different values for the same model, benchmark, version
 and metric, the profile exposes the disagreement as an axis note. Results are
 never cherry-picked to the highest value.
 
-## No bands in Phase 6
+## No quality bands
 
 Letter or numeric quality bands are deliberately **not** implemented. Defensible
 bands require a populated cross-source population, which the current catalog

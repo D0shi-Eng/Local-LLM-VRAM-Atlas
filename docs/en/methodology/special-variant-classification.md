@@ -1,4 +1,4 @@
-# Special Variant Classification (Phase 4)
+# Special Variant Classification
 
 > Evidence-backed. No quality claims. Uncensored ≠ better.
 
@@ -24,7 +24,7 @@ Three separate concepts: `ternary-native`, post-training ternarization,
 
 Recorded as `variant_author_claim` with author, base model, method (or
 "method undocumented"), and verification status. Capability retention and
-refusal behavior require independent evidence deferred to later phases.
+refusal behavior require independent evidence that is deferred, not guessed.
 Popularity (likes/downloads) is never quality.
 
 ## Related

@@ -1,4 +1,4 @@
-# Architecture Resolution Methodology (Phase 3)
+# Architecture Resolution Methodology
 
 > Arabic counterpart: `docs/ar/methodology/architecture-resolution.md`
 

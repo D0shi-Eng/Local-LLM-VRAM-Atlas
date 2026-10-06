@@ -1,4 +1,4 @@
-"""Phase 5 refresh configuration (budgets as data, not magic numbers)."""
+"""refresh configuration (budgets as data, not magic numbers)."""
 
 from __future__ import annotations
 

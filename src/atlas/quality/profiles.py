@@ -1,4 +1,4 @@
-"""Multi-axis quality profiles (Phase 6).
+"""Multi-axis quality profiles.
 
 Deterministic: the same evidence snapshot yields the same profile. No
 timestamps enter profile identity. Missing axes stay ``unknown`` and are

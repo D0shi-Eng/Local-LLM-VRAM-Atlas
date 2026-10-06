@@ -1,4 +1,4 @@
-# منهجية أدلة القياس الخارجي (المرحلة الثالثة)
+# منهجية أدلة القياس الخارجي
 
 > المقابل الإنجليزي: `docs/en/methodology/external-measurement-evidence.md`
 

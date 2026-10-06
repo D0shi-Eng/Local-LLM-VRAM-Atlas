@@ -2,20 +2,37 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://local-llm-vram-atlas.local/schemas/quality-policy.schema.json",
   "title": "AtlasQualityPolicy",
-  "description": "Versioned decision policy for quality evidence, quality bands and recommendation readiness. Policies are data, never view-template logic; thresholds are only present when justified in the policy rationale. Specification version 0.6.0 (Phase 6, pre-1.0).",
+  "description": "Versioned decision policy for quality evidence, quality bands and recommendation readiness. Policies are data, never view-template logic; thresholds are only present when justified in the policy rationale. Specification version 0.6.0 (pre-1.0).",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "policy_id", "policy_version", "rules", "source_assumptions"],
+  "required": [
+    "schema_version",
+    "policy_id",
+    "policy_version",
+    "rules",
+    "source_assumptions"
+  ],
   "properties": {
     "schema_version": {
       "type": "string",
       "pattern": "^0\\.[0-9]+\\.[0-9]+$"
     },
-    "policy_id": { "type": "string", "minLength": 1 },
-    "policy_version": { "type": "string", "minLength": 1 },
+    "policy_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "policy_version": {
+      "type": "string",
+      "minLength": 1
+    },
     "policy_kind": {
       "type": "string",
-      "enum": ["quality_evidence", "quality_band", "recommendation_eligibility", "freshness"]
+      "enum": [
+        "quality_evidence",
+        "quality_band",
+        "recommendation_eligibility",
+        "freshness"
+      ]
     },
     "rules": {
       "type": "object",
@@ -24,11 +41,31 @@
     },
     "source_assumptions": {
       "type": "array",
-      "items": { "type": "string", "minLength": 1 },
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
       "description": "Explicit assumptions about sources, freshness and comparability this policy relies on."
     },
-    "rationale": { "type": ["string", "null"], "maxLength": 4000 },
-    "superseded_by": { "type": ["string", "null"] },
-    "created_at": { "type": ["string", "null"], "format": "date-time" }
+    "rationale": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 4000
+    },
+    "superseded_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
   }
 }

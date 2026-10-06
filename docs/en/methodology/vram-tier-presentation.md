@@ -1,4 +1,4 @@
-# VRAM Tier Presentation (Phase 4)
+# VRAM Tier Presentation
 
 > Conservative. File size ≠ VRAM. Qualified ≠ recommended.
 
@@ -9,11 +9,11 @@ Tier pages are titled e.g. "8GB VRAM Atlas", never "All models that work on
 `estimated_fit`, `indeterminate_fit`, `estimated_not_fit`,
 `insufficient_evidence`, `unsupported` (plus `verified_fit` only when
 external measurement evidence with full conditions exists; Atlas never
-measures in Phase 4).
+measures during intake).
 
 ## Method
 
-Only the Phase 2/3 classifier (`src/atlas/vram/classifier.py`) with ranged
+Only the range classifier (`src/atlas/vram/classifier.py`) with ranged
 static estimates (`src/atlas/memory/estimator.py`, 8K baseline). No
 `artifact_size < tier_size → fits` shortcut exists; regression tests guard
 it. MoE active parameters are never used as resident weights.
@@ -23,7 +23,7 @@ it. MoE active parameters are never used as resident weights.
 Stored, never performed. Each preserves origin, revision, artifact, runtime
 + version, GPU, context, batch, KV format, offload, stage, reported VRAM,
 source, observed_at. Vague "uses 7GB" claims stay weak or unused for tier
-promotion. `atlas_measured` is structurally forbidden in Phase 4.
+promotion. `atlas_measured` is structurally forbidden at intake.
 
 ## Related
 

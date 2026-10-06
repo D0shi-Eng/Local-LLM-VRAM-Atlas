@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from pathlib import PurePosixPath
 
-# لواحق ملفات الأوزان المحظور تنزيلها في المرحلة الأولى.
+# لواحق ملفات الأوزان المحظور تنزيلها بصرامة.
 WEIGHT_SUFFIXES = frozenset(
     {
         ".gguf",

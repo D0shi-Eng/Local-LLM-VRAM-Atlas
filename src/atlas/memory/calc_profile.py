@@ -21,7 +21,7 @@ class CalculationProfile:
     multimodal_mode: str = "text_only"
 
 
-# خط الأساس النصي التفاعلي الصريح من المرحلة الثانية.
+# خط الأساس النصي التفاعلي المُصرَّح.
 ATLAS_TEXT_8K_BASELINE_V1 = CalculationProfile(
     profile_id="atlas-text-8k-baseline-v1",
     profile_version="1",

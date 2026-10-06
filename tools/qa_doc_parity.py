@@ -1,6 +1,6 @@
 """Report English/Arabic title and heading parity across the Atlas documentation.
 
-Phase 7 authoring aid. The Atlas documentation is bilingual by contract, so a
+Authoring aid. The Atlas documentation is bilingual by contract, so a
 mismatched heading between `docs/en/**` and `docs/ar/**` is a real defect: it
 means one language promises something the other does not.
 

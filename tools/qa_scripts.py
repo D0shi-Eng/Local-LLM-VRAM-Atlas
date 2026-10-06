@@ -1,6 +1,6 @@
 """Audit the published tree for foreign-script and homoglyph contamination.
 
-Phase 7 authoring aid, promoted to a permanent hygiene tool because it caught a
+Authoring aid, promoted to a permanent hygiene tool because it caught a
 real defect: a Cyrillic small letter O (``U+043E``) inside the benchmark-axis key
 ``"cnm" + U+043E + "-2024"``, which made that key unreachable for any future record
 carrying the Latin spelling. The key has been corrected to the Latin spelling.

@@ -1,4 +1,4 @@
-# Refresh Planning (Phase 5)
+# Refresh Planning
 
 Plan before apply. Default is dry-run.
 

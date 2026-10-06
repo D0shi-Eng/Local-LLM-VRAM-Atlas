@@ -1,4 +1,4 @@
-# Layer Plan Methodology (Phase 3)
+# Layer Plan Methodology
 
 > Arabic counterpart: `docs/ar/methodology/layer-plan.md`
 

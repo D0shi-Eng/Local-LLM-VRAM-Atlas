@@ -1,6 +1,6 @@
-"""Artifact catalog records from source-reported siblings (Phase 4).
+"""Artifact catalog records from source-reported siblings.
 
-No downloads. Reuses Phase 2 grouping: split shards stay together,
+No downloads. Reuses artifact grouping: split shards stay together,
 quant variants stay separate, BF16/projector/tokenizer/config/index
 companions are recorded apart from primary weights.
 """

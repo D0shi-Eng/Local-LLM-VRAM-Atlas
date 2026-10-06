@@ -16,7 +16,7 @@ class InsufficientCacheEvidenceError(ValueError):
     """رفع صريح عند غياب حقل حرج للكاش بدل الصفر المضلل."""
 
 
-# المعماريات التي تقبل المعادلة القياسية حصرًا (مسميات المرحلة الثانية).
+# المعماريات التي تقبل المعادلة القياسية حصرًا.
 _STANDARD_CACHE_FAMILIES = frozenset(
     {
         "standard_transformer",
@@ -28,7 +28,7 @@ _STANDARD_CACHE_FAMILIES = frozenset(
 
 
 def _standard_family_eligible(family: str) -> bool:
-    """Phase 2 estimator names plus Phase 3 canonical standard-attention families.
+    """Memory-estimator names plus canonical standard-attention families.
 
     MLA/SSM/hybrid families are disjoint from both sets and always refuse.
     """

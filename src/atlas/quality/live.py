@@ -1,4 +1,4 @@
-"""Bounded live quality-evidence ingestion (Phase 6).
+"""Bounded live quality-evidence ingestion.
 
 Rules:
 - read-only public GET/HEAD, anonymous (``token=False``), no credentials;

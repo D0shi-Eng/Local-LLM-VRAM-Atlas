@@ -1,4 +1,4 @@
-"""Catalog population orchestrator (Phase 4).
+"""Catalog population orchestrator.
 
 Dry-run by default; explicit apply persists atomically with idempotency.
 One malformed candidate never aborts the run; systemic schema/security

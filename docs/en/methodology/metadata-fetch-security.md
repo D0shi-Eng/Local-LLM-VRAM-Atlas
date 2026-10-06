@@ -1,4 +1,4 @@
-# Metadata Fetch Security Methodology (Phase 3)
+# Metadata Fetch Security Methodology
 
 > Arabic counterpart: `docs/ar/methodology/metadata-fetch-security.md`
 
@@ -14,7 +14,7 @@ credentials, and unsafe redirect targets are refused.
 
 ## Bounds
 
-One document is capped at 256 KiB (stricter than the 2 MiB Phase 3 ceiling),
+One document is capped at 256 KiB (stricter than the 2 MiB base ceiling),
 requests are GET-only with short timeouts, and a per-run budget caps request
 count. Oversized payloads, malformed JSON, unexpected content types, and
 excessive redirects refuse with explicit errors. Config JSON is parsed as

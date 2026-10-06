@@ -1,4 +1,4 @@
-"""Quality ingestion orchestration (Phase 6).
+"""Quality ingestion orchestration.
 
 Flow: audit sidecars -> build evidence sidecars for new quality claims ->
 bounded source read -> normalize evaluation results -> persist atomically ->
@@ -208,7 +208,7 @@ def write_quality_snapshot(
     """Materialize profiles, retention records, gaps, manifest and events.
 
     Deterministic: the same evidence snapshot yields byte-identical outputs.
-    Change events go through the Phase 5 append-only journal and are idempotent
+    Change events go through the append-only change journal and are idempotent
     by event_id, so re-running writes no duplicate history.
     """
     root = repo_root or _repo_root()

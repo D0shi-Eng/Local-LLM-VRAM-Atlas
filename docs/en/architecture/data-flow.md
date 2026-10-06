@@ -4,7 +4,7 @@
 
 ## Status
 
-Concept only. Phase 0 documents the intended future flow; nothing here is implemented,
+Concept only. This document records the intended flow shape; the implemented
 scheduled, or connected to any external service.
 
 ## Intended pipeline
@@ -61,4 +61,4 @@ Future automation may observe public hubs, official organizations, quantization
 repositories, runtime projects, and official releases, and it must be able to discover
 previously unknown publishers rather than working from a hard-coded vendor list.
 Automation must never auto-trust: every promotion between lifecycle states requires
-the evidence the schemas demand. No crawler, watcher, or scheduler exists in Phase 0.
+the evidence the schemas demand. No crawler, watcher or scheduler exists.

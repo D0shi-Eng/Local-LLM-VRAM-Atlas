@@ -1,11 +1,11 @@
-# Publication Readiness Data Policy (Phase 6.5)
+# Publication Readiness Data Policy
 
 > Arabic counterpart: `docs/ar/methodology/publication-readiness-data-policy.md`
 
-## What this phase decides
+## What readiness decides
 
-Phase 6.5 decides whether the **data layer** is strong enough for a later
-publication phase. It does not publish, package, mirror, tag, upload or prepare
+Publication readiness decides whether the **data layer** is strong enough for a later
+publication step. It does not publish, package, mirror, tag, upload or prepare
 a public tree, and it does not choose a project license.
 
 ## Default technical target
@@ -13,7 +13,7 @@ a public tree, and it does not choose a project license.
 At least one `STRICT_READY` recommendation in each of the 4 GB, 8 GB, 12 GB and
 16 GB tiers.
 
-If any tier has zero, the phase report must state **TIER COVERAGE BLOCKER**.
+If any tier has zero, the readiness report must state **TIER COVERAGE BLOCKER**.
 Engineering can still pass; publication readiness defaults to **NOT READY**
 unless the owner explicitly accepts reduced coverage.
 

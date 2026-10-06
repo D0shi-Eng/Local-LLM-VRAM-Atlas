@@ -4,7 +4,7 @@
 
 ## Status
 
-Specification only. Phase 0 implements no Atlas Score, no ranking, and no
+Specification only. The project implements no Atlas Score, no ranking, and no
 "best model per VRAM" answer. Numeric weights are deliberately left undecided.
 
 ## Future inputs

@@ -1,6 +1,6 @@
-# Catalog Qualification Methodology (Phase 4)
+# Catalog Qualification Methodology
 
-> Status: Phase 4 initial curated snapshot. Metadata-only. No ranking, no score.
+> Status: curated snapshot. Metadata-only. No ranking, no score.
 
 ## What "qualified" means
 

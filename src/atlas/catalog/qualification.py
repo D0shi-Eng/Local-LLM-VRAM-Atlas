@@ -1,10 +1,10 @@
-"""Qualification rules for Phase 4 catalog inclusion.
+"""Qualification rules for catalog inclusion.
 
 "Qualified" means Atlas holds enough trustworthy metadata to include the
 model under current catalog rules. It never means best, recommended, safe,
 smartest, fastest, or fully VRAM-verified.
 
-Maps Phase 4 conceptual states onto existing model.schema.json
+Maps conceptual intake states onto existing model.schema.json
 ``catalog_status`` values to avoid schema drift:
 - discovered -> discovered
 - metadata_pending/lineage_pending/architecture_pending/artifact_pending
@@ -21,7 +21,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-# Conceptual Phase 4 states (subset persisted via catalog_status mapping).
+# Conceptual intake states (subset persisted via catalog_status mapping).
 CONCEPTUAL_STATES = (
     "discovered",
     "metadata_pending",

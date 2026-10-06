@@ -26,7 +26,7 @@ three separate claims.
 
 ## Documented profiles, honest limits
 
-Phase 2 ships explicit engineering profiles (llama.cpp/CUDA full offload,
+The project ships explicit engineering profiles (llama.cpp/CUDA full offload,
 ExLlamaV2/CUDA, MLX unified memory, TensorRT-LLM/CUDA) with overhead unknown
 by design. A missing runtime from the user yields independent components
 only — never a silent default runtime.

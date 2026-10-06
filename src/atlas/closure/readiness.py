@@ -3,7 +3,7 @@
 Four states, never merged and never waived:
 
 ``STRICT_READY``      every declared strict gate is satisfied by persisted
-                      evidence and the Phase 6 recommendation policy;
+                      evidence and the recommendation policy;
 ``CANDIDATE_READY``   useful catalog content with substantial evidence where one
                       or more strict gates are still incomplete, and every
                       missing gate is listed;
@@ -70,7 +70,7 @@ CLOSURE_POLICY = {
         ],
     },
     "source_assumptions": [
-        "Phase 6 recommendation policy remains authoritative for tier eligibility.",
+        "The recommendation policy remains authoritative for tier eligibility.",
         "A quantized artifact without direct comparable retention evidence is never presented "
         "as equally evidenced to its base release.",
         "An alignment-modified variant never inherits its parent's quality score.",
@@ -153,7 +153,7 @@ def _quality_state(
         state = "independent_single_source"
         reasons.append(
             "one independent run only; the strict quality gate requires independent "
-            "multi-source evidence under the Phase 6 policy"
+            "multi-source evidence under the recommendation policy"
         )
     elif own:
         origins = sorted({str(e.get("evaluation_origin")) for e in own})
@@ -193,7 +193,7 @@ def _retention_state(
 
 
 def _license_state(*, record: dict) -> tuple[str, list[str]]:
-    """License acceptability, reusing the Phase 6 domain unchanged."""
+    """License acceptability, reusing the recommendation domain unchanged."""
     from atlas.quality.recommend import license_domain
 
     domain = license_domain(record)
@@ -207,7 +207,7 @@ def _license_state(*, record: dict) -> tuple[str, list[str]]:
 
 
 def _runtime_state(*, runtime_hints: list[str]) -> tuple[str, list[str]]:
-    """Runtime compatibility state, reusing the Phase 6 domain unchanged."""
+    """Runtime compatibility state, reusing the recommendation domain unchanged."""
     from atlas.quality.recommend import runtime_domain
 
     domain = runtime_domain(record={}, runtime_support=runtime_hints)
@@ -221,7 +221,7 @@ def _runtime_state(*, runtime_hints: list[str]) -> tuple[str, list[str]]:
 
 
 def _axis_states(*, model_id: str, evaluations: list[dict]) -> dict[str, str]:
-    """Per-axis quality state, reusing the Phase 6 profile builder unchanged."""
+    """Per-axis quality state, reusing the quality profile builder unchanged."""
     from atlas.quality import QUALITY_SNAPSHOT_VERSION
     from atlas.quality.profiles import build_profile
 
@@ -550,9 +550,9 @@ def build_readiness(
 
 
 def journal_readiness_events(*, repo_root: Path, payload: dict) -> int:
-    """Journal closure events through the Phase 5 append-only journal.
+    """Journal closure events through the append-only change journal.
 
-    No parallel history system is introduced: events are built by the Phase 5
+    No parallel history system is introduced: events are built by the
     change builder and deduplicated by event id, so re-running is idempotent.
     """
     from atlas.quality.changes import append_quality_events, quality_event

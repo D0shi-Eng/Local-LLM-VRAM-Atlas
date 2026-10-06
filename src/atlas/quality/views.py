@@ -1,4 +1,4 @@
-"""Generated quality views, EN/AR from one canonical dataset (Phase 6).
+"""Generated quality views, EN/AR from one canonical dataset.
 
 Views derive from quality records only; no hand-maintained table exists.
 English and Arabic render from the same payload so rankings can never diverge.

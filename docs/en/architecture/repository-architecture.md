@@ -86,7 +86,7 @@ history or machine-local state rather than public documentation:
 
 | Withheld path | Reason |
 |---|---|
-| `docs/phases/` | Build-phase execution reports, closure reports, audits and handoff inventories |
+| `docs/phases/` | Internal build reports, closure reports, audits and handoff inventories |
 | `catalog/refresh/` | Volatile per-run records |
 | `catalog/checkpoints/` | Internal discovery scratch state |
 | `catalog/changes/` | Operational change journal |

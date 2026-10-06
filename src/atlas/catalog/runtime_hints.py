@@ -1,4 +1,4 @@
-"""Runtime compatibility hints (Phase 4).
+"""Runtime compatibility hints.
 
 Versioned and sourced. Never infers "works everywhere" from a filename.
 Hints map container/quant families to documented runtime capabilities;

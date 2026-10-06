@@ -4,7 +4,7 @@
 
 ## Threat model
 
-Future discovery will touch model sources that are not fully trustworthy. Phase 0
+Future discovery will touch model sources that are not fully trustworthy. The
 therefore fixes the rules before any contact happens.
 
 ## Automatic prohibitions
@@ -29,6 +29,6 @@ metadata, model cards, and specifications — never by executing publisher code.
 - No Hugging Face tokens, API keys, passwords, cookies, authentication headers,
   private URLs, or credentials of any kind. An automated test scans for secret-like
   patterns outside the explicitly allowlisted test fixture. No `.env` file exists in
-  Phase 0; if a template is ever needed, it will be a secret-free `.env.example`.
+  No template is shipped; if one is ever needed, it will be a secret-free `.env.example`.
 - The validation tooling makes no network requests, runs nothing it validates,
   and requires no privileges beyond reading local files.

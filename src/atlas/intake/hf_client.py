@@ -19,7 +19,7 @@ from atlas.intake.errors import (
 from atlas.intake.models import RawArtifact, RawModelMetadata
 from atlas.intake.url_safety import assert_safe_url
 
-# مهلة افتراضية محدودة لكل طلب شبكي في هذه المرحلة.
+# مهلة افتراضية محدودة لكل طلب شبكي.
 DEFAULT_TIMEOUT = 15.0
 # عدد محدود من المحاولات للأخطاء المؤقتة فقط دون حلقات لا نهائية.
 MAX_ATTEMPTS = 2

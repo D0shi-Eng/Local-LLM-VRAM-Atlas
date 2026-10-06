@@ -59,11 +59,11 @@ mmdc -i input.md -o diagrams.svg
 
 | الأصل | الملف |
 |---|---|
-| أيقونة المستودع (سطح فاتح) | [`assets/branding/icon.svg`](../assets/branding/icon.svg) |
-| أيقونة المستودع (سطح داكن) | [`assets/branding/icon-dark.svg`](../assets/branding/icon-dark.svg) |
-| اللافتة ومصدر المعاينة الاجتماعية | [`assets/branding/banner.svg`](../assets/branding/banner.svg) |
-| إرشادات العلامة (بالإنجليزية) | [`assets/branding/brand-guidelines.md`](../assets/branding/brand-guidelines.md) |
-| إرشادات العلامة (بالعربية) | [`assets/branding/brand-guidelines_AR.md`](../assets/branding/brand-guidelines_AR.md) |
+| أيقونة المستودع (سطح فاتح) | [`assets/branding/icon.svg`](../../assets/branding/icon.svg) |
+| أيقونة المستودع (سطح داكن) | [`assets/branding/icon-dark.svg`](../../assets/branding/icon-dark.svg) |
+| اللافتة ومصدر المعاينة الاجتماعية | [`assets/branding/banner.svg`](../../assets/branding/banner.svg) |
+| إرشادات العلامة (بالإنجليزية) | [`assets/branding/brand-guidelines.md`](../../assets/branding/brand-guidelines.md) |
+| إرشادات العلامة (بالعربية) | [`assets/branding/brand-guidelines_AR.md`](../../assets/branding/brand-guidelines_AR.md) |
 
 ## لماذا لا نرسم الأشكال بالعربية؟
 

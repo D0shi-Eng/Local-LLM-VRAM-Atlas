@@ -1,4 +1,4 @@
-"""Quality evidence hierarchy (Phase 6, V1).
+"""Quality evidence hierarchy (V1).
 
 Quality claims require evidence. Popularity is deliberately outside this
 hierarchy: downloads/likes/trending never enter a quality tier, a quality band

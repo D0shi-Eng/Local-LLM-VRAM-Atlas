@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://local-llm-vram-atlas.local/schemas/quantization.schema.json",
   "title": "AtlasQuantizationEntry",
-  "description": "One versioned quantization registry entry: family, container, runtime, bit depth, and provenance. Families are labels, never quality rankings. Specification version 0.2.0 (Phase 2).",
+  "description": "One versioned quantization registry entry: family, container, runtime, bit depth, and provenance. Families are labels, never quality rankings. Specification version 0.2.0.",
   "type": "object",
   "additionalProperties": false,
   "required": [

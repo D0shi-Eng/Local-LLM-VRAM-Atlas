@@ -1,4 +1,4 @@
-# Quantization Retention Methodology (Phase 6)
+# Quantization Retention Methodology
 
 Quantization retention answers one question: **how much of the base release's
 measured quality survives in the quantized artifact?** The answer requires

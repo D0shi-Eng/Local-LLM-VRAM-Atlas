@@ -16,9 +16,7 @@ from atlas.validation.validator import SUPPORTED_KINDS, ValidatorUsageError, val
 
 def build_parser() -> argparse.ArgumentParser:
     """بناء محلل الأوامر الفرعية للمرحلتين الأولى والثانية."""
-    parser = argparse.ArgumentParser(
-        prog="atlas", description="Local LLM VRAM Atlas CLI (Phase 1 + Phase 2 foundation)."
-    )
+    parser = argparse.ArgumentParser(prog="atlas", description="Local LLM VRAM Atlas CLI.")
     sub = parser.add_subparsers(dest="command", required=True)
 
     inspect_cmd = sub.add_parser(
@@ -60,9 +58,7 @@ def build_parser() -> argparse.ArgumentParser:
     sources_cmd.add_argument("--check", action="store_true", help="Validate every registry entry.")
     sources_cmd.add_argument("--registry", default=str(REGISTRY_PATH))
 
-    quant_cmd = sub.add_parser(
-        "quantization", help="Phase 2: inspect the versioned quant registry."
-    )
+    quant_cmd = sub.add_parser("quantization", help="Inspect the versioned quantization registry.")
     quant_sub = quant_cmd.add_subparsers(dest="quant_action", required=True)
     quant_list = quant_sub.add_parser(
         "list", help="List registry entries (family filter optional)."
@@ -70,7 +66,7 @@ def build_parser() -> argparse.ArgumentParser:
     quant_list.add_argument("--family", default=None, help="Filter by family, e.g. q4.")
     quant_list.add_argument("--json", action="store_true", help="Machine-readable JSON output.")
 
-    artifact_cmd = sub.add_parser("artifact", help="Phase 2: group files into artifact sets.")
+    artifact_cmd = sub.add_parser("artifact", help="Group files into artifact sets.")
     artifact_sub = artifact_cmd.add_subparsers(dest="artifact_action", required=True)
     artifact_inspect = artifact_sub.add_parser(
         "inspect", help="Group sibling files without downloads."
@@ -87,7 +83,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--json", action="store_true", help="Machine-readable JSON output."
     )
 
-    memory_cmd = sub.add_parser("memory", help="Phase 2: evidence-aware memory estimation.")
+    memory_cmd = sub.add_parser("memory", help="Evidence-aware memory estimation.")
     memory_sub = memory_cmd.add_subparsers(dest="memory_action", required=True)
     memory_est = memory_sub.add_parser("estimate", help="Estimate peak VRAM range from metadata.")
     memory_est.add_argument("--architecture-family", default="unknown")
@@ -104,7 +100,7 @@ def build_parser() -> argparse.ArgumentParser:
     memory_est.add_argument("--advertised-max-context", type=int, default=None)
     memory_est.add_argument("--json", action="store_true", help="Machine-readable JSON output.")
 
-    vram_cmd = sub.add_parser("vram", help="Phase 2: range-based 4/8/12/16GB classification.")
+    vram_cmd = sub.add_parser("vram", help="Range-based 4/8/12/16GB classification.")
     vram_sub = vram_cmd.add_subparsers(dest="vram_action", required=True)
     vram_classify = vram_sub.add_parser("classify", help="Classify a lower/upper byte range.")
     vram_classify.add_argument("--lower-bytes", type=int, default=None)
@@ -112,7 +108,7 @@ def build_parser() -> argparse.ArgumentParser:
     vram_classify.add_argument("--estimate-status", default="estimated")
     vram_classify.add_argument("--json", action="store_true", help="Machine-readable JSON output.")
 
-    arch_cmd = sub.add_parser("arch", help="Phase 3: metadata-only architecture resolution.")
+    arch_cmd = sub.add_parser("arch", help="Metadata-only architecture resolution.")
     arch_sub = arch_cmd.add_subparsers(dest="arch_action", required=True)
     arch_resolve = arch_sub.add_parser(
         "resolve", help="Resolve canonical architecture from a config JSON file."
@@ -121,13 +117,13 @@ def build_parser() -> argparse.ArgumentParser:
     arch_resolve.add_argument("--revision", default=None)
     arch_resolve.add_argument("--json", action="store_true", help="Machine-readable JSON output.")
 
-    runtime_cmd = sub.add_parser("runtime", help="Phase 3: runtime knowledge base (docs only).")
+    runtime_cmd = sub.add_parser("runtime", help="Runtime knowledge base (documentation only).")
     runtime_sub = runtime_cmd.add_subparsers(dest="runtime_action", required=True)
     runtime_list = runtime_sub.add_parser("list", help="List researched runtime capabilities.")
     runtime_list.add_argument("--json", action="store_true", help="Machine-readable JSON output.")
 
     measure_cmd = sub.add_parser(
-        "measurement", help="Phase 3: external measurement registry (stored, never performed)."
+        "measurement", help="External measurement registry (stored, never performed)."
     )
     measure_sub = measure_cmd.add_subparsers(dest="measurement_action", required=True)
     measure_validate = measure_sub.add_parser(
@@ -136,7 +132,7 @@ def build_parser() -> argparse.ArgumentParser:
     measure_validate.add_argument("--record", required=True)
     measure_validate.add_argument("--json", action="store_true")
 
-    catalog_cmd = sub.add_parser("catalog", help="Phase 4: canonical catalog views.")
+    catalog_cmd = sub.add_parser("catalog", help="Canonical catalog views.")
     catalog_sub = catalog_cmd.add_subparsers(dest="catalog_action", required=True)
     catalog_list = catalog_sub.add_parser("list", help="List catalog models with filters.")
     catalog_list.add_argument("--vram-tier", type=int, default=None, choices=[4, 8, 12, 16])
@@ -166,7 +162,7 @@ def build_parser() -> argparse.ArgumentParser:
     catalog_qualify.add_argument("model_id")
     catalog_qualify.add_argument("--json", action="store_true")
 
-    discover_cmd = sub.add_parser("discover", help="Phase 4: controlled candidate discovery.")
+    discover_cmd = sub.add_parser("discover", help="Controlled candidate discovery.")
     discover_sub = discover_cmd.add_subparsers(dest="discover_action", required=True)
     discover_cand = discover_sub.add_parser("candidates", help="Show controlled passes.")
     discover_cand.add_argument("--dry-run", action="store_true", default=True)
@@ -174,12 +170,12 @@ def build_parser() -> argparse.ArgumentParser:
     discover_cand.add_argument("--limit", type=int, default=None)
     discover_cand.add_argument("--json", action="store_true")
     discover_delta = discover_sub.add_parser(
-        "delta", help="Phase 5: bounded incremental discovery (dry-run, exits after run)."
+        "delta", help="Bounded incremental discovery (dry-run, exits after run)."
     )
     discover_delta.add_argument("--limit", type=int, default=None)
     discover_delta.add_argument("--json", action="store_true", default=False)
 
-    refresh_cmd = sub.add_parser("refresh", help="Phase 5: incremental refresh (one-shot).")
+    refresh_cmd = sub.add_parser("refresh", help="Incremental refresh (one-shot).")
     refresh_sub = refresh_cmd.add_subparsers(dest="refresh_action", required=True)
     refresh_plan = refresh_sub.add_parser("plan", help="Dry-run: discover, probe, delta, plan.")
     refresh_plan.add_argument("--json", action="store_true", default=False)
@@ -196,7 +192,7 @@ def build_parser() -> argparse.ArgumentParser:
     refresh_recover.add_argument("--confirm", action="store_true", default=False)
     refresh_recover.add_argument("--json", action="store_true", default=False)
 
-    changes_cmd = sub.add_parser("changes", help="Phase 5: change journal inspection.")
+    changes_cmd = sub.add_parser("changes", help="Change journal inspection.")
     changes_sub = changes_cmd.add_subparsers(dest="changes_action", required=True)
     changes_list = changes_sub.add_parser("list", help="List journaled change events.")
     changes_list.add_argument("--json", action="store_true", default=False)
@@ -205,7 +201,7 @@ def build_parser() -> argparse.ArgumentParser:
     changes_show.add_argument("event_id")
     changes_show.add_argument("--json", action="store_true", default=False)
 
-    checkpoints_cmd = sub.add_parser("checkpoints", help="Phase 5: checkpoint inspection.")
+    checkpoints_cmd = sub.add_parser("checkpoints", help="Checkpoint inspection.")
     checkpoints_sub = checkpoints_cmd.add_subparsers(dest="checkpoints_action", required=True)
     checkpoints_list = checkpoints_sub.add_parser("list", help="List per-strategy checkpoints.")
     checkpoints_list.add_argument("--json", action="store_true", default=False)
@@ -213,7 +209,7 @@ def build_parser() -> argparse.ArgumentParser:
     checkpoints_inspect.add_argument("checkpoint_file")
     checkpoints_inspect.add_argument("--json", action="store_true", default=False)
 
-    quality_cmd = sub.add_parser("quality", help="Phase 6: quality evidence intelligence.")
+    quality_cmd = sub.add_parser("quality", help="Quality evidence intelligence.")
     quality_sub = quality_cmd.add_subparsers(dest="quality_action", required=True)
     quality_sources = quality_sub.add_parser("sources", help="List/check quality source registry.")
     quality_sources.add_argument("--check", action="store_true", default=False)
@@ -246,13 +242,13 @@ def build_parser() -> argparse.ArgumentParser:
     quality_views_cmd.add_argument("--apply", action="store_true", default=False)
     quality_views_cmd.add_argument("--json", action="store_true", default=False)
 
-    retention_cmd = sub.add_parser("retention", help="Phase 6: quantization retention.")
+    retention_cmd = sub.add_parser("retention", help="Quantization retention.")
     retention_sub = retention_cmd.add_subparsers(dest="retention_action", required=True)
     retention_show = retention_sub.add_parser("show", help="Show retention for a model.")
     retention_show.add_argument("model_id")
     retention_show.add_argument("--json", action="store_true", default=False)
 
-    recommend_cmd = sub.add_parser("recommend", help="Phase 6: recommendation readiness.")
+    recommend_cmd = sub.add_parser("recommend", help="Recommendation readiness.")
     recommend_sub = recommend_cmd.add_subparsers(dest="recommend_action", required=True)
     recommend_tier = recommend_sub.add_parser("tier", help="Recommendation readiness for a tier.")
     recommend_tier.add_argument("--tier", type=int, required=True, choices=[4, 8, 12, 16])
@@ -265,7 +261,7 @@ def build_parser() -> argparse.ArgumentParser:
     recommend_model.add_argument("--json", action="store_true", default=False)
 
     closure_cmd = sub.add_parser(
-        "closure", help="Phase 6.5: bounded evidence closure for a Core Recommendation Set."
+        "closure", help="Bounded evidence closure for a Core Recommendation Set."
     )
     closure_sub = closure_cmd.add_subparsers(dest="closure_action", required=True)
     closure_core = closure_sub.add_parser(
@@ -307,10 +303,7 @@ def build_parser() -> argparse.ArgumentParser:
     closure_views_cmd.add_argument("--json", action="store_true", default=False)
     closure_evidence_cmd = closure_sub.add_parser(
         "external-evidence",
-        help=(
-            "Phase 6.6: normalize, validate and persist bounded external evidence "
-            "(dry-run by default)."
-        ),
+        help=("Normalize, validate and persist bounded external evidence (dry-run by default)."),
     )
     closure_evidence_cmd.add_argument("--apply", action="store_true", default=False)
     closure_evidence_cmd.add_argument("--json", action="store_true", default=False)
@@ -493,7 +486,7 @@ def main(argv: list[str] | None = None) -> int:
 
 
 def _run_quality(args: argparse.Namespace) -> int:
-    """Phase 6 quality inspection; read-only unless --apply is explicit."""
+    """Quality inspection; read-only unless --apply is explicit."""
     from atlas.quality.engine import (
         generate_quality_dataset,
         quality_manifest,
@@ -603,7 +596,7 @@ def _run_quality(args: argparse.Namespace) -> int:
         if not bool(args.apply):
             print("dry-run: nothing was written")
             print("targets: catalog/quality/{profiles,retention,gaps.json,manifest.json}")
-            print("change events are journaled through the Phase 5 journal on apply")
+            print("change events are journaled through the change journal on apply")
             return 0
         outcome = write_quality_snapshot(repo_root=repo_root)
         if getattr(args, "json", False):
@@ -713,7 +706,7 @@ def _run_quality(args: argparse.Namespace) -> int:
 
 
 def _run_retention(args: argparse.Namespace) -> int:
-    """Phase 6 retention inspection (read-only)."""
+    """Retention inspection (read-only)."""
     from atlas.quality.engine import generate_quality_dataset
 
     repo_root = Path(__file__).resolve().parents[3]
@@ -743,7 +736,7 @@ def _run_retention(args: argparse.Namespace) -> int:
 
 
 def _run_recommend(args: argparse.Namespace) -> int:
-    """Phase 6 recommendation readiness (read-only, honest empty results)."""
+    """Recommendation readiness (read-only, honest empty results)."""
     from atlas.quality.engine import generate_quality_dataset
 
     repo_root = Path(__file__).resolve().parents[3]
@@ -1390,7 +1383,7 @@ def _load_catalog_records() -> dict[str, dict]:
 
 
 def _run_catalog(args: argparse.Namespace) -> int:
-    """Phase 4 catalog inspection (read-only unless views regeneration)."""
+    """Catalog inspection (read-only unless views regeneration)."""
 
     from atlas.catalog.qualification import qualify_candidate
     from atlas.catalog.tiering import classify_record
@@ -1647,7 +1640,7 @@ def _run_discover(args: argparse.Namespace) -> int:
 
 
 def _run_discover_delta(args: argparse.Namespace) -> int:
-    """Phase 5 incremental discovery summary (one-shot, exits after run)."""
+    """Incremental discovery summary (one-shot, exits after run)."""
     from atlas.refresh import engine as _engine
 
     try:
@@ -1673,7 +1666,7 @@ def _run_discover_delta(args: argparse.Namespace) -> int:
 
 
 def _run_refresh(args: argparse.Namespace) -> int:
-    """Phase 5 one-shot refresh: plan / apply / status / recover (exit, no daemon)."""
+    """One-shot refresh: plan / apply / status / recover (exit, no daemon)."""
     action = getattr(args, "refresh_action", None)
     if action == "plan":
         from atlas.refresh import engine as _engine

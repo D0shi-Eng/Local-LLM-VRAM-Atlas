@@ -1,11 +1,11 @@
-# Core Recommendation Set Methodology (Phase 6.5)
+# Core Recommendation Set Methodology
 
 > Arabic counterpart: `docs/ar/methodology/core-recommendation-set-methodology.md`
 
 ## Why a bounded set
 
 Deep evidence closure for 34 releases and 201 artifacts is not achievable
-without executing models, running benchmarks or crawling. Phase 6.5 therefore
+without executing models, running benchmarks or crawling. The closure stage therefore
 declares a small **Core Recommendation Set** chosen by neutral eligibility
 signals, and works only on that set.
 

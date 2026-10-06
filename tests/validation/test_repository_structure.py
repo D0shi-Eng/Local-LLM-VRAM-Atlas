@@ -111,11 +111,10 @@ def test_internal_history_is_not_version_controlled():
     tracked = subprocess.run(
         ["git", "-C", str(REPO_ROOT), "ls-files", "--error-unmatch", *FORBIDDEN_PATHS],
         capture_output=True,
-        text=True,
+        encoding="utf-8",
     )
     assert tracked.returncode != 0, (
-        "internal-only paths must not be tracked by git: "
-        f"{sorted(FORBIDDEN_PATHS)}"
+        f"internal-only paths must not be tracked by git: {sorted(FORBIDDEN_PATHS)}"
     )
 
 
@@ -209,10 +208,12 @@ def _run_cli(schema: str, record: Path) -> subprocess.CompletedProcess:
     """تشغيل أداة التحقق كعملية فرعية لاختبار رموز الخروج."""
     env = dict(os.environ)
     env["PYTHONPATH"] = str(SRC_DIR) + os.pathsep + env.get("PYTHONPATH", "")
+    env["PYTHONIOENCODING"] = "utf-8"
     return subprocess.run(
         [sys.executable, "-m", "atlas.validation.cli", "--schema", schema, "--record", str(record)],
         capture_output=True,
-        text=True,
+        encoding="utf-8",
+        errors="replace",
         cwd=str(REPO_ROOT),
         env=env,
         timeout=60,

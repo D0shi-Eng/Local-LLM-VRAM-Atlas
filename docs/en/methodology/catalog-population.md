@@ -1,4 +1,4 @@
-# Catalog Population Methodology (Phase 4)
+# Catalog Population Methodology
 
 > Controlled snapshot. 25–50 model releases, up to ~200 artifact variants.
 > Sequential, budgeted, anonymous (`token=False`). No crawl of the Hub.
